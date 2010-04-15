@@ -1,0 +1,9 @@
+# to inherit styling from
+masterSite=default.cat-v.org
+
+# titles
+siteTitle='Lorenzo''s Homepage'
+siteSubTitle='Yet another personal homepage'
+
+# apps
+#conf_enable_comments

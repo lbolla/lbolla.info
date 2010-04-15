@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ cgi-bin/start.py [QSA,L]
