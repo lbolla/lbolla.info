@@ -4,6 +4,7 @@
 	<a href="http://www.flickr.com/photos/lbolla">flickr</a> |
 	<a href="http://www.last.fm/user/lbolla">last.fm</a> |
 	<a href="http://www.linkedin.com/in/lorenzobolla">linkedin</a> |
+	<a href="http://www.github.com/lbolla">github</a> |
 	<a href="http://lbolla.wordpress.com">wordpress</a>
 </div>
 
