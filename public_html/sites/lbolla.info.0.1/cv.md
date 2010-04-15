@@ -8,6 +8,9 @@ London E1 5EN United Kingdom
 0044 778 6189180 (UK)  
 0039 328 0105860 (IT)  
 
+[LinkedIn](http://www.linkedin.com/in/lorenzobolla)  
+[Online Resume](http://lorenzobolla.emurse.com/)  
+
 
 PROFILE
 -------
@@ -20,9 +23,6 @@ Logical thinking and ability to provide effective solutions to solve difficult p
 Great team-player & fun attitude, competent time management, very dependable under pressure and passionately dedicated to the task.
 
 As resident in one of the European Economic Area countries, eligible to work in the UK.
-
-[LinkedIn](http://www.linkedin.com/in/lorenzobolla)  
-[Online Resume](http://lorenzobolla.emurse.com/)  
 
 
 WORK EXPERIENCE
@@ -156,7 +156,7 @@ PUBLICATIONS
 
 * V. Sorianello, M. Balbi, L. Colace, G. Assanto, L. Socci, L. Bolla, G. Mutinati, M. Romagnoli, 'Guided-wave photodetectors in Germanium on SOI optical chips', Physica E: Low-dimensional Systems and Nanostructures, abstract
 
-* M. Romagnoli, L. Socci, L. Bolla, et al., 'Silicon Photonics in Pirelli' (invited), Proc. SPIE 2008, website
+* M. Romagnoli, L. Socci, L. Bolla, et al., ['Silicon Photonics in Pirelli'](http://dx.doi.org/10.1016/j.physe.2008.08.038) (invited), Proc. SPIE 2008
 
 * T. P. Felici, D. F. G. Gallagher, L. Bolla, 'Automatic design and optimisation of Si nanophotonics devices using finite element frequency domain solvers', Proc. SPIE Vol. 6475, 64750L, Integrated Optics: Devices, Materials, and Technologies XI, 2007, abstract
 

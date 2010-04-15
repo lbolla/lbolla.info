@@ -1,7 +1,10 @@
 <div class="left">
-	<a href="http://lorenzobolla.emurse.com">cv</a> |
-	<a href="http://www.flickr.com/photos/lbolla">photos</a> |
-	<a href="http://lbolla.wordpress.com">wp</a>
+	<a href="http://claimid.com/lbolla">claimid</a> |
+	<a href="http://flavors.me/lbolla">flavors.me</a> |
+	<a href="http://www.flickr.com/photos/lbolla">flickr</a> |
+	<a href="http://www.last.fm/user/lbolla">last.fm</a> |
+	<a href="http://www.linkedin.com/in/lorenzobolla">linkedin</a> |
+	<a href="http://lbolla.wordpress.com">wordpress</a>
 </div>
 
 <div class="right">
