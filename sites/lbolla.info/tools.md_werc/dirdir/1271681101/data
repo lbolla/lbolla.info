@@ -1,0 +1,7 @@
+Useful tools
+============
+
+* [markdown](http://daringfireball.net/projects/markdown/)
+* [hg](http://mercurial.selenic.com/)
+    * `hg log -p` to create patches
+
