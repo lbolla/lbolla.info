@@ -1,2 +1,4 @@
+AddHandler fcgid-script .py
 RewriteEngine On
-RewriteRule ^(.*)$ cgi-bin/start.py [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.py/$1 [QSA,L]

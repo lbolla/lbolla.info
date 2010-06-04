@@ -1,9 +1,0 @@
-Useful tools
-============
-
-* [markdown](http://daringfireball.net/projects/markdown/)
-* [hg](http://mercurial.selenic.com/)
-    * `hg diff > proj-X.Y-yourpatchname.diff`
-    * `hg log -p`
-
-

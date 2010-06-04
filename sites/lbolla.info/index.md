@@ -1,4 +1,0 @@
-About
-=====
-
-Personal blurbs.

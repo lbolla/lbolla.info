@@ -1,8 +1,0 @@
-.*~
-*~
-.git
-.ftpquota
-blog
-tmp
-*.py
-*.pyc
