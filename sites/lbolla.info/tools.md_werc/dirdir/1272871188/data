@@ -9,8 +9,6 @@ Tools
     * [`vim` syntax file](http://www.vim.org/scripts/script.php?script_id=2880)
     * history and file completion: `rlwrap -c -b '(){}[],+=&^%$#@"";|\' rc -l`
 * [sup](http://sup.rubyforge.org/) mail client.
-* usable `ed`:
 
-        TERM=linux setterm -regtabs 2
-        rlwrap ed -p '>>> ' $*
+
 
