@@ -1,18 +1,18 @@
 #!/usr/bin/python
 
 import web
-
-render = web.template.render('tmpl')
+import config
+from view import render
 
 urls = (
-	'/(.*)', 'Main',
+	'/(.*)', 'index',
 )
 
-class Main:
+class index:
 	def GET(self, *args, **kwargs):
-		return render.index()
+		return render.base(render.main(), 'Main')
 
-web.wsgi.runwsgi = lambda func, addr=None: web.wsgi.runfcgi(func, addr)
 if __name__ == '__main__':
 	app = web.application(urls, globals())
+	app.internalerror = web.debugerror
 	app.run()
