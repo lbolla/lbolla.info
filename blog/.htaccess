@@ -1,0 +1,8 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^blog.lbolla.info$ [OR]
+RewriteCond %{HTTP_HOST} ^www.blog.lbolla.info$
+RewriteRule ^/?$ "http\:\/\/lbolla\.wordpress\.com" [R=301,L]
+
+Options -Indexes
