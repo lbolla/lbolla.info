@@ -1,0 +1,11 @@
+diff -r 19aa387ec1a0 -r 079ba6443ccd apps/hello/app.rc
+--- a/apps/hello/app.rc Tue Oct 20 02:28:10 2009 +0200
++++ b/apps/hello/app.rc Mon Apr 19 11:25:32 2010 +0100
+@@ -1,6 +1,6 @@
+ fn hello_init {
+     if(~ $req_path /hello) {
+-        app_body_handler = 'hello_body'
++        handler_body_main = 'hello_body'
+         pageTitle='Hi title!'
+     }
+ }
