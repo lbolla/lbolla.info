@@ -1,0 +1,2 @@
+bloglogin = ''
+blogpasswd = ''

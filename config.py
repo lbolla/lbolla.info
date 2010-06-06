@@ -1,7 +1,10 @@
+import os
 import web
 
-# runs as FastCGI
-#web.wsgi.runwsgi = lambda func, addr=None: web.wsgi.runfcgi(func, addr)
+hostname = os.uname()[1]
+if hostname not in ('laptop', ):
+	# runs as FastCGI
+	web.wsgi.runwsgi = lambda func, addr=None: web.wsgi.runfcgi(func, addr)
 
 # use cache for templates?
 cache = False

@@ -2,6 +2,7 @@
 
 import web
 import config
+import view
 from view import render
 
 urls = (
@@ -10,7 +11,7 @@ urls = (
 
 class index:
 	def GET(self, *args, **kwargs):
-		return render.base(render.main(), 'Main')
+		return view.main()
 
 if __name__ == '__main__':
 	app = web.application(urls, globals())
