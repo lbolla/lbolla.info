@@ -2,7 +2,6 @@ import logging
 import web
 import wordpresslib
 import config
-import secret
 
 t_globals = dict(
 	datestr=web.datestr,
@@ -16,7 +15,7 @@ render._keywords['globals']['render'] = render
 def get_last_blog_post():
 	try:
 		url = 'http://lbolla.wordpress.com/xmlrpc.php'
-		c = wordpresslib.WordPressClient(url, secret.bloglogin, secret.blogpasswd)
+		c = wordpresslib.WordPressClient(url, config.wp_login, config.wp_passwd)
 		c.selectBlog(0)
 		return c.getLastPost()
 	except Exception, e:
