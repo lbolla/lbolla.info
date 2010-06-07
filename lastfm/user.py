@@ -224,7 +224,7 @@ class User(LastfmBase):
                       image = dict([(i.get('size'), i.text) for i in t.findall('image')]),
                       playedOn = datetime(*(
                                            time.strptime(
-                                                         t.findtext('date').strip(),
+                                                   (t.findtext('date') or '01 Jan 1970, 00:00').strip(),
                                                          '%d %b %Y, %H:%M'
                                                          )[0:6])
                                            )
