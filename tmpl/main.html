@@ -1,4 +1,4 @@
-$def with (blog_posts, loved_tracks)
+$def with (wp_posts, lastfm_tracks)
 
 <h1><a href="/">$maintitle</a></h1>
 <p>Work in progress</p>
@@ -8,15 +8,15 @@ $def with (blog_posts, loved_tracks)
 	<li><a href="http://lbolla.info/patches">Patches</a></li>
 </ul>
 
-$if blog_posts or loved_tracks:
+$if wp_posts or lastfm_tracks:
 	<div id="activity">
 		<h2>Recent activity</h2>
 
-		$if blog_posts:
+		$if wp_posts:
 			<div id="blog-posts">
 				<h3>Last blog posts</h3>
 				<ul>
-				$for p in blog_posts:
+				$for p in wp_posts:
 					<li>
 						<a href="$p.link">$:fmt.fmt_tt(p.date) "$p.title"</a>
 						$if p.excerpt:
@@ -25,11 +25,11 @@ $if blog_posts or loved_tracks:
 				</ul>
 			</div>
 
-		$if loved_tracks:
-			<div id="loved-tracks">
-				<h3>Loved tracks</h3>
+		$if lastfm_tracks:
+			<div id="lastfm-tracks">
+				<h3>Recent tracks</h3>
 				<ul>
-				$for t in loved_tracks:
+				$for t in lastfm_tracks:
 					<li>"$t.name" - $t.artist.name</li>
 				</ul>
 			</div>
