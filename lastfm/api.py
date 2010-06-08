@@ -301,7 +301,7 @@ from tasteometer import Tasteometer
 from track import Track
 from user import User
 
-if sys.version.startswith('2.5'):
+if sys.version_info[0] >=2 and sys.version_info[1] >= 5:
     import xml.etree.cElementTree as ElementTree
 else:
     try:
