@@ -25,6 +25,9 @@ $if wp_posts or lastfm_tracks:
 				</ul>
 			</div>
 
+		<div id="buzz">
+		</div>
+
 		$if lastfm_tracks:
 			<div id="lastfm-tracks">
 				<h3>Recent tracks</h3>
@@ -35,3 +38,5 @@ $if wp_posts or lastfm_tracks:
 			</div>
 
 	</div>
+
+<script src="https://www.googleapis.com/buzz/v1/activities/lbolla/@public?alt=json&callback=buzzHandleResponse"></script>
