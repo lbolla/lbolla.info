@@ -1,2 +1,0 @@
-bloglogin = ''
-blogpasswd = ''

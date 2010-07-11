@@ -1,46 +1,25 @@
+html {
+	background-color: red;
+}
+
 body {
-	color: black;
-	background-color: white;
-	font-family: Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
-	font-size: 84%;  /* Enables font size scaling in MSIE */
-	margin: 2em;
+	position: relative;
+	overflow: hidden;
+}
+
+.quote {
+	margin: 1em 0 1em 0;
+}
+
+.quote p {
+	margin: 0;
 	padding: 0;
 }
 
-#page {
-}
-
-
-#topbar {
-	/*color: white;
-	background-color: rgb(100,135,220);*/
-	height: 1.6em;
-}
-
-#topbar img {
-	vertical-align: bottom;
-}
-
-#topbar a {
-	/*color: white;*/
-	/*background-color: transparent;*/
-	font-size: 91%;
-	margin: 0;
-	padding: 0 0.5ex 0 0.25ex;
-}
-
-#footer {
-	/*color: white;
-	background-color: rgb(100,135,220);*/
-	clear: both;
-}
-
-.left {
-	text-align: left;
-	float: left;
-}
-
-.right {
-	text-align: right;
-	/*float: right;*/
+#title {
+	position: relative;
+	width: 10%
+	left: 45%;
+	top: 25%;
+	text-align: center;
 }

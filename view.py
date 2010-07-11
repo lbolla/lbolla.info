@@ -1,31 +1,38 @@
-import logging
+from random import randint
 import web
-import wordpresslib
 import config
-import secret
 
 t_globals = dict(
 	datestr=web.datestr,
-	maintitle="Lorenzo's Homepage",
+	title="Lorenzo Bolla",
 )
 
 render = web.template.render('tmpl/', cache=config.cache, globals=t_globals)
 
 render._keywords['globals']['render'] = render
 
-def get_last_blog_post():
-	try:
-		url = 'http://lbolla.wordpress.com/xmlrpc.php'
-		c = wordpresslib.WordPressClient(url, secret.bloglogin, secret.blogpasswd)
-		c.selectBlog(0)
-		return c.getLastPost()
-	except Exception, e:
-		logging.error('Error fetching last blog post: %s' % e)
-		return None
+top_min = 0
+top_max = 600
+left_min = 0
+left_max = 800
+width_min = 200
+width_max = 500
+
+def get_quotes_raw():
+	return [q.split('\n') for q in open('quotes.txt', 'r').read().split('\n\n')]
+
+def get_quotes():
+	quotes = []
+	for quote in get_quotes_raw():
+		quotes.append({
+			'lines': quote,
+			'top':   '%spx' % randint(top_min, top_max),
+			'left':  '%spx' % randint(left_min, left_max),
+			'width': '%spx' % randint(width_min, width_max),
+			})
+	return quotes
 
 def main():
 	return render.base(
-		page=render.main(
-			last_blog_post=get_last_blog_post(),
-			),
-		title='Main')
+		page=render.main(get_quotes()),
+		)

@@ -1,17 +1,13 @@
-$def with (page, title=None)
+$def with (page)
 
 <!DOCTYPE HTML> 
 <html>
 	<head>
 		<meta name="google-site-verification" content="u6Ekzp6BEO0HdVjqYNtt1NTtxENsdiuwXbx098D2xvs" />
 		<link rel="stylesheet" href="/static/css/default.css" type="text/css" media="screen, handheld" title="default">
-		<title>$maintitle
-		$if title: | $title
-		</title>
+		<title>$title</title>
 	</head>
 	<body>
-		<div id="topbar">$:render.topbar()</div>
-		<div id="page">$:page</div>
-		<div id="footer">$:render.footer()</div>
+		$:page
 	</body>
 </html>
