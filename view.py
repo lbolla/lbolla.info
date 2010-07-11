@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, sample
 import web
 import config
 
@@ -11,6 +11,7 @@ render = web.template.render('tmpl/', cache=config.cache, globals=t_globals)
 
 render._keywords['globals']['render'] = render
 
+nquotes = 10
 top_min = 0
 top_max = 600
 left_min = 0
@@ -19,7 +20,8 @@ width_min = 200
 width_max = 500
 
 def get_quotes_raw():
-	return [q.split('\n') for q in open('quotes.txt', 'r').read().split('\n\n')]
+	quotes = [q.split('\n') for q in open('quotes.txt', 'r').read().split('\n\n')]
+	return sample(quotes, min(len(quotes), nquotes))
 
 def get_quotes():
 	quotes = []
@@ -35,4 +37,9 @@ def get_quotes():
 def main():
 	return render.base(
 		page=render.main(get_quotes()),
+		)
+
+def admin():
+	return render.base(
+		page=render.admin(),
 		)

@@ -1,10 +1,11 @@
 html {
-	background-color: red;
+	background-color: #a60000;
 }
 
 body {
 	position: relative;
 	overflow: hidden;
+	font-family: verdana, arial, sans-serif;
 }
 
 .quote {
@@ -14,6 +15,8 @@ body {
 .quote p {
 	margin: 0;
 	padding: 0;
+	color: white;
+	font-size: 70%;
 }
 
 #title {
@@ -22,4 +25,6 @@ body {
 	left: 45%;
 	top: 25%;
 	text-align: center;
+	font-weight: bold;
+	z-index: 10;
 }
