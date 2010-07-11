@@ -39,6 +39,11 @@ def main():
 		page=render.main(get_quotes()),
 		)
 
+def login():
+	return render.base(
+		page=render.login(),
+		)
+
 def admin():
 	return render.base(
 		page=render.admin(),
