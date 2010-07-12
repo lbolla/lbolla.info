@@ -32,8 +32,7 @@ class login:
 		return view.login()
 	def POST(self):
 		i = web.input()
-		if i.username == config.admin['username'] and \
-				md5(i.password).hexdigest() == config.admin['md5pwd']:
+		if md5(i.username + i.password).hexdigest() == config.admin_key:
 			session.logged_in = True
 			raise web.seeother('/admin')
 		else:

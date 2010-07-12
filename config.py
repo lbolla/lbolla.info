@@ -9,10 +9,7 @@ if hostname not in ('laptop', 'garfield', 'eee'):
 # use cache for templates?
 cache = False
 
-admin = {
-		'username' : 'lollo',
-		'md5pwd'   : '04d6309df80bf23df7b1c5cbbd921225',
-		}
+admin_key = '42638a329474f850fca989f4e51a041b'
 
 quotes = {
 		'filename'  : 'quotes.txt',
