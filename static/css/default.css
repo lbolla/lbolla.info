@@ -1,11 +1,13 @@
 html {
 	background-color: #a60000;
+	height: 100%;
 }
 
 body {
 	position: relative;
 	overflow: hidden;
 	font-family: verdana, arial, sans-serif;
+	height: 100%;
 }
 
 .quote {
