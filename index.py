@@ -49,6 +49,10 @@ class admin:
 			return view.admin()
 		else:
 			raise web.seeother('/login')
+	def POST(self, *args):
+		i = web.input()
+		open(config.quotesfile, 'w').write(i.quotes)
+		raise web.seeother('/admin')
 
 if __name__ == '__main__':
 	app.run()

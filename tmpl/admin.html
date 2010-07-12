@@ -1,4 +1,9 @@
+$def with (quotes)
+
 <div id="admin">
-Admin
-<a href="/logout">Logout</a>
+	<a href="/logout">Logout</a>
+	<form action="/admin" method="post">
+		<textarea name="quotes" rows="20" cols="80">$quotes</textarea>
+		<input type="submit" value="Submit">
+	</form>
 </div>
