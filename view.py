@@ -12,8 +12,8 @@ render = web.template.render('tmpl/', cache=config.cache, globals=t_globals)
 render._keywords['globals']['render'] = render
 
 def get_quotes_raw():
-	quotes = [q.split('\r\n') for q in open(config.quotesfile, 'r').read().split('\r\n'*2)]
-	return sample(quotes, min(len(quotes), config.nquotes))
+	quotes = [q.split('\r\n') for q in open(config.quotes['filename'], 'r').read().split('\r\n'*2)]
+	return sample(quotes, min(len(quotes), config.quotes['nquotes']))
 
 def get_quotes():
 	quotes = []
@@ -22,7 +22,7 @@ def get_quotes():
 			'lines': quote,
 			'top':   '%d%%' % randint(0, 100),
 			'left':  '%d%%' % randint(0, 100),
-			'width': '%sem' % randint(config.width_min, config.width_max),
+			'width': '%sem' % randint(config.quotes['width_min'], config.quotes['width_max']),
 			})
 	return quotes
 
@@ -38,5 +38,5 @@ def login():
 
 def admin():
 	return render.base(
-		page=render.admin(open(config.quotesfile, 'r').read()),
+		page=render.admin(open(config.quotes['filename'], 'r').read()),
 		)

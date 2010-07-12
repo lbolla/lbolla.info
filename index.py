@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from hashlib import md5
 import web
 import config
 import view
@@ -31,7 +32,8 @@ class login:
 		return view.login()
 	def POST(self):
 		i = web.input()
-		if i.username == 'lbolla' and i.password == 'test':
+		if i.username == config.admin['username'] and \
+				md5(i.password).hexdigest() == config.admin['md5pwd']:
 			session.logged_in = True
 			raise web.seeother('/admin')
 		else:
@@ -41,6 +43,7 @@ class login:
 class logout:
 	def GET(self):
 		session.logged_in = False
+		session.kill()
 		raise web.seeother('/')
 
 class admin:
@@ -51,7 +54,7 @@ class admin:
 			raise web.seeother('/login')
 	def POST(self, *args):
 		i = web.input()
-		open(config.quotesfile, 'w').write(i.quotes)
+		open(config.quotes['filename'], 'w').write(i.quotes)
 		raise web.seeother('/admin')
 
 if __name__ == '__main__':

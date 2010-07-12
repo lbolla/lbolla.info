@@ -9,8 +9,15 @@ if hostname not in ('laptop', 'garfield', 'eee'):
 # use cache for templates?
 cache = False
 
-quotesfile = 'quotes.txt'
-nquotes = 10
-width_min = 20
-width_max = 50
+admin = {
+		'username' : 'lollo',
+		'md5pwd'   : '04d6309df80bf23df7b1c5cbbd921225',
+		}
+
+quotes = {
+		'filename'  : 'quotes.txt',
+		'nquotes'   : 10,
+		'width_min' : 20,
+		'width_max' : 50,
+		}
 
