@@ -1,6 +1,14 @@
 import os
 import web
 
+web.config.debug = False
+
+# avoids showing index.py in url
+# http://webpy.org/cookbook/cgi-apache
+home = ''
+os.environ["SCRIPT_NAME"] = home
+os.environ["REAL_SCRIPT_NAME"] = home
+
 hostname = os.uname()[1]
 if hostname not in ('laptop', 'garfield', 'eee'):
 	# runs as FastCGI

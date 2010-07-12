@@ -18,7 +18,6 @@ urls = (
 	'/', 'index',
 )
 
-web.config.debug = False
 app = web.application(urls, globals())
 session = web.session.Session(app, web.session.DiskStore('sessions'))
 app.internalerror = web.debugerror
