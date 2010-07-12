@@ -13,6 +13,7 @@ urls = (
 	'/', 'index',
 )
 
+web.config.debug = False
 app = web.application(urls, globals())
 session = web.session.Session(app, web.session.DiskStore('sessions'))
 app.internalerror = web.debugerror
@@ -32,7 +33,7 @@ class login:
 		i = web.input()
 		if i.username == 'lbolla' and i.password == 'test':
 			session.logged_in = True
-			return web.seeother('/admin')
+			raise web.seeother('/admin')
 		else:
 			session.logged_in = False
 			raise web.seeother('/login')
