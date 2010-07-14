@@ -23,7 +23,7 @@ quotes = {
 		'filename'  : 'quotes.txt',
 		'n_min'     : 3,
 		'n_max'     : 10,
-		'width_min' : 20,
-		'width_max' : 50,
+		'width_min' : 10,
+		'width_max' : 30,
 		}
 
