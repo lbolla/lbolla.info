@@ -1,5 +1,5 @@
 function init () {
-	$('html').mousemove(function () { $('#topbar').fadeIn(); });
+	$('html').mousemove(function () { $('.fade').fadeIn(); });
 }
 
 $(document).ready(init);

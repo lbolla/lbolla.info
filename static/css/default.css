@@ -10,17 +10,6 @@ body {
 	height: 100%;
 }
 
-.quote {
-	margin: 1em 0 1em 0;
-}
-
-.quote p {
-	margin: 0;
-	padding: 0;
-	color: white;
-	font-size: 70%;
-}
-
 #title {
 	position: relative;
 	width: 10%
@@ -32,8 +21,46 @@ body {
 }
 
 #topbar {
-	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
+
+#statusbar {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.quote {
+	margin: 1em 0 1em 0;
+}
+
+.quote p {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 70%;
+}
+
+.fade {
+	display: none;
+}
+
+.menubar ul {
+	padding: 0;
+	margin: 0;
+}
+
+.menubar ul li {
+	display: inline;
+	list-style-type: none;
+	padding-right: .5em;
+}
+
+.menubar a {
+	font-size: 70%;
+	color: black;
+	text-decoration: none;
+}
+

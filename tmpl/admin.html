@@ -1,9 +1,14 @@
 $def with (quotes)
 
+<div id="adminbar" class="menubar">
+	<ul>
+		<li><a href="/logout">Logout</a></li>
+	</ul>
+</div>
+
 <div id="admin">
-	<a href="/logout">Logout</a>
 	<form action="/admin" method="post">
-		<textarea name="quotes" rows="20" cols="80">$quotes</textarea>
+		<textarea name="quotes" rows="20" cols="80">$quotes</textarea><br />
 		<input type="submit" value="Submit">
 	</form>
 </div>

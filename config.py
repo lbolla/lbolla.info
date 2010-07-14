@@ -21,7 +21,8 @@ admin_key = '42638a329474f850fca989f4e51a041b'
 
 quotes = {
 		'filename'  : 'quotes.txt',
-		'nquotes'   : 10,
+		'n_min'     : 3,
+		'n_max'     : 10,
 		'width_min' : 20,
 		'width_max' : 50,
 		}

@@ -1,9 +1,16 @@
 $def with (quotes)
 
+<div id="topbar" class="fade menubar">
+	<ul>
+		<li><a href="http://lbolla.wordpress.com/">Blog</a></li>
+		<li><a href="http://lorenzobolla.emurse.com/">CV</a></li>
+	</ul>
+</div>
+
 <div id="title">$title</div>
 
 $for quote in quotes:
-	<div class="quote" style="position:absolute;top:$quote['top'];left:$quote['left'];width:$quote['width'];">
+	<div class="quote" style="$quote['css'];">
 	$for line in quote['lines']:
 		<p>$line</p>
 	</div>
