@@ -9,11 +9,12 @@ import web
 import config
 import view
 from view import render
-from diego import diego
+from diego import diego, diego_author
 
 urls = (
-	'/admin/?(.*)', 'admin',
+	'/diego/author/(.+)', 'diego_author',
 	'/diego/?(.*)', 'diego',
+	'/admin/?(.*)', 'admin',
 	'/login', 'login',
 	'/logout', 'logout',
 	'/(.+)', 'redirect',
