@@ -1,5 +1,7 @@
 include MANIFEST.in
 include *.txt
+graft bin
+graft conf
 graft screens/tmpl
 graft screens/static
 recursive-exclude screens *.pyc *~
