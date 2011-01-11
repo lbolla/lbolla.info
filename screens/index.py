@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 try:
-        from hashlib import md5
+	from hashlib import md5
 except ImportError:
-        from md5 import md5
+	from md5 import md5
 
 import web
 import config
