@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scp -oPort=2222 $1 lbolla@lbolla.info:stuff/.
