@@ -1,0 +1,8 @@
+AddHandler fcgid-script .py
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^lbolla.info
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.py/$1 [QSA,L]
+RewriteCond %{HTTP_HOST} ^lauraelorenzo.info$ [OR]
+RewriteCond %{HTTP_HOST} ^www.lauraelorenzo.info$
+RewriteRule ^/?$ "http\:\/\/w\.lbolla\.info" [R=301,L]
