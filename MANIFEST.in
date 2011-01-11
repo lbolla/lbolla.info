@@ -1,0 +1,5 @@
+include MANIFEST.in
+include *.txt
+graft screens/tmpl
+graft screens/static
+recursive-exclude screens *.pyc *~
