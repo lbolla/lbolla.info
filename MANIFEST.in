@@ -2,8 +2,8 @@ include MANIFEST.in
 include *.txt
 graft bin
 graft conf
-graft screens/.htaccess
-graft screens/quotes.txt
+include screens/.htaccess
+include screens/quotes.txt
 graft screens/tmpl
 graft screens/static
 recursive-exclude screens *.pyc *~
