@@ -7,7 +7,7 @@ t_globals = dict(
 	title="Lorenzo Bolla",
 )
 
-render = web.template.render('tmpl/', cache=config.cache, globals=t_globals)
+render = web.template.render('tmpl/', base='base', cache=config.cache, globals=t_globals)
 
 render._keywords['globals']['render'] = render
 
@@ -26,16 +26,10 @@ def get_quotes():
 	return quotes
 
 def main():
-	return render.base(
-		page=render.main(get_quotes()),
-		)
+	return render.main(get_quotes())
 
 def login():
-	return render.base(
-		page=render.login(),
-		)
+	return render.login()
 
 def admin():
-	return render.base(
-		page=render.admin(open(config.quotes['filename'], 'r').read()),
-		)
+	return render.admin(open(config.quotes['filename'], 'r').read())
