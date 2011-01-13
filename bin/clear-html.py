@@ -57,27 +57,26 @@ def clean_doc(doc):
 	return doc
 
 
+def flatten(a):
+	if a.text:
+		text = a.text.strip()
+	else:
+		text = ''.join(map(lambda x: x.text, a.getchildren())).strip()
+	return text
+
+
 def clean_for_md(doc):
 
 	for a in doc.findall('.//strong'):
 		if len(list(a.iterancestors('a'))) == 0:
 			new_a = ET.Element('span')
-			if a.text:
-				text = a.text.strip()
-			else:
-				text = ''.join(map(ET.tostring, a.getchildren())).strip()
-			new_a.text = '*%s*' % text
+			new_a.text = '*%s*' % flatten(a)
 			a.getparent().replace(a, new_a)
 
 	for a in doc.findall('.//a'):
 		if a.get('href'):
 			new_a = ET.Element('span')
-			if a.text:
-				text = a.text.strip()
-			else:
-				# text = ''.join(map(ET.tostring, a.getchildren())).strip()
-				text = ''.join(map(lambda x: x.text, a.getchildren())).strip()
-			new_a.text = '[%s](%s)' % (text , a.get('href'))
+			new_a.text = '[%s](%s)' % (flatten(a) , a.get('href'))
 			a.getparent().replace(a, new_a)
 		else:
 			a.getparent().remove(a)
