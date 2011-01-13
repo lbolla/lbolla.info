@@ -9,6 +9,8 @@ from lxml import etree as ET
 
 
 CLEAN_HTML_RE = [
+		(re.compile('\r'), ''),
+		(re.compile('\n'), ''),
 		(re.compile('&nbsp;'), ''),
 		(re.compile('<content[^>]*>'), ''),
 		(re.compile('<font[^>]*>'), ''),
@@ -41,6 +43,22 @@ def clean_doc(doc):
 				doc.findall('.//style') + \
 				doc.findall('.//content'):
 		item.getparent().remove(item)
+
+	# FIXME: for each TD
+	#        if it has a and br children
+	#        then probably is a ul
+	#        substitute
+	#
+	# list_re = re.compile('<td>(.+)</td>')
+	# list = list_re.search(text)
+	# if list is not None:
+	#     ul = ET.Element('ul')
+	#     for item in list.groups()[0].split('<br>'):
+	#         li = ET.Element('li')
+	#         li.text = item
+	#         ul.append(li)
+	#     start, end = list.span()
+	#     text[start:end] = ET.tostring(ul)
 
 	head = doc.find('head')
 	if head is not None:
