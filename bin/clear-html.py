@@ -3,12 +3,15 @@
 import os
 import sys
 import re
+import logging
 
 from lxml import etree as ET
 
 
 CLEAN_HTML_RE = [
 		(re.compile('&nbsp;'), ''),
+		(re.compile('<content[^>]*>'), ''),
+		(re.compile('<font[^>]*>'), ''),
 		]
 
 CLEAN_TEXT_RE = [
@@ -35,7 +38,7 @@ def clean_html(text):
 def clean_doc(doc):
 
 	for item in doc.findall('.//meta') + \
-			    doc.findall('.//style') + \
+				doc.findall('.//style') + \
 				doc.findall('.//content'):
 		item.getparent().remove(item)
 
@@ -54,10 +57,48 @@ def clean_doc(doc):
 	return doc
 
 
-infile   = sys.argv[1]
-htmlfile = infile.split('.')[0] + '.out.html'
-textfile = infile.split('.')[0] + '.out.txt'
-errfile  = infile.split('.')[0] + '.out.err'
+def clean_for_md(doc):
+
+	for a in doc.findall('.//strong'):
+		if len(list(a.iterancestors('a'))) == 0:
+			new_a = ET.Element('span')
+			if a.text:
+				text = a.text.strip()
+			else:
+				text = ''.join(map(ET.tostring, a.getchildren())).strip()
+			new_a.text = '*%s*' % text
+			a.getparent().replace(a, new_a)
+
+	for a in doc.findall('.//a'):
+		if a.get('href'):
+			new_a = ET.Element('span')
+			if a.text:
+				text = a.text.strip()
+			else:
+				# text = ''.join(map(ET.tostring, a.getchildren())).strip()
+				text = ''.join(map(lambda x: x.text, a.getchildren())).strip()
+			new_a.text = '[%s](%s)' % (text , a.get('href'))
+			a.getparent().replace(a, new_a)
+		else:
+			a.getparent().remove(a)
+	
+	return doc
+
+
+logging.basicConfig(level=logging.DEBUG)
+
+infile = sys.argv[1]
+if len(sys.argv) > 1:
+	outdir = sys.argv[2]
+else:
+	outdir = '/tmp'
+
+inbase = os.path.basename(infile)
+inbase = os.path.splitext(inbase)[0]
+
+htmlfile = os.path.join(outdir, inbase + '.html')
+textfile = os.path.join(outdir, inbase + '.txt')
+errfile  = os.path.join(outdir, inbase + '.err')
 tmpfile  = '/tmp/tmp.html'
 
 doc = clean_doc(ET.HTML(clean_html(open(infile, 'r').read())))
@@ -66,5 +107,5 @@ html = doctype + ET.tostring(doc, method='html', encoding='utf8')
 open(tmpfile, 'w').write(html)
 os.system('tidy -i -clean -utf8 -ashtml -f %s -w 0 -o %s %s' % (errfile, htmlfile, tmpfile))
 
-text = clean_text(ET.tostring(doc, method='text', encoding='utf8'))
+text = clean_text(ET.tostring(clean_for_md(doc), method='text', encoding='utf8'))
 open(textfile, 'w').write(text)
