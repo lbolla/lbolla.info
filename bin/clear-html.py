@@ -9,8 +9,6 @@ from lxml import etree as ET
 
 
 CLEAN_HTML_RE = [
-		(re.compile('\r'), ''),
-		(re.compile('\n'), ''),
 		(re.compile('&nbsp;'), ''),
 		(re.compile('<content[^>]*>'), ''),
 		(re.compile('<font[^>]*>'), ''),
@@ -44,21 +42,17 @@ def clean_doc(doc):
 				doc.findall('.//content'):
 		item.getparent().remove(item)
 
-	# FIXME: for each TD
-	#        if it has a and br children
-	#        then probably is a ul
-	#        substitute
-	#
-	# list_re = re.compile('<td>(.+)</td>')
-	# list = list_re.search(text)
-	# if list is not None:
-	#     ul = ET.Element('ul')
-	#     for item in list.groups()[0].split('<br>'):
-	#         li = ET.Element('li')
-	#         li.text = item
-	#         ul.append(li)
-	#     start, end = list.span()
-	#     text[start:end] = ET.tostring(ul)
+	for td in doc.findall('.//td'):
+		all_a = td.findall('.//a')
+		all_br = td.findall('.//br')
+		if len(all_a) > 3 and abs(len(all_a) - len(all_br)) < 2:
+			logging.debug('looks like a list of links')
+			ul = ET.Element('ul')
+			for a in all_a:
+				li = ET.Element('li')
+				li.append(a)
+				ul.append(li)
+			td.getparent().replace(td, ul)
 
 	head = doc.find('head')
 	if head is not None:
@@ -99,6 +93,13 @@ def clean_for_md(doc):
 		else:
 			a.getparent().remove(a)
 	
+	for a in doc.findall('.//ul'):
+		new_a = ET.Element('span')
+		new_a.text = ''
+		for li in a.findall('li'):
+			new_a.text += '* %s\n' % flatten(li)
+		a.getparent().replace(a, new_a)
+
 	return doc
 
 
@@ -114,7 +115,7 @@ inbase = os.path.basename(infile)
 inbase = os.path.splitext(inbase)[0]
 
 htmlfile = os.path.join(outdir, inbase + '.html')
-textfile = os.path.join(outdir, inbase + '.txt')
+textfile = os.path.join(outdir, inbase + '.md')
 errfile  = os.path.join(outdir, inbase + '.err')
 tmpfile  = '/tmp/tmp.html'
 
