@@ -5,9 +5,17 @@ $def with (content)
 	<head>
 		<meta name="google-site-verification" content="u6Ekzp6BEO0HdVjqYNtt1NTtxENsdiuwXbx098D2xvs" />
 		<link rel="stylesheet" href="/static/css/default.css" type="text/css" media="screen, handheld" title="default">
+		$if content.get('cssfiles'):
+			$for f in content.cssfiles.split():
+				<link rel="stylesheet" href="/static/css/$f" type="text/css" media="screen" charset="utf-8"/>
+
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 		<script type="text/javascript" src="/static/js/default.js"></script>
-		<title>$title</title>
+		$if content.get('jsfiles'):
+			$for f in content.jsfiles.split():
+				<script type="text/javascript" src="/static/js/$f"></script>
+
+		<title>$title $content.get('title', '')</title>
 	</head>
 	<body>
 		$:content
