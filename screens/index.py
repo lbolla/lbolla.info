@@ -12,7 +12,7 @@ from view import render
 import diego
 
 urls = (
-	'/diego/author/(.+)', 'diego.author',
+	'/diego/authors/(.+)', 'diego.author',
 	'/diego/?(.*)', 'diego.index',
 	'/admin/?(.*)', 'admin',
 	'/login', 'login',
