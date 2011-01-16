@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# TODO
+# 1. relink images to new urls
+# 2. href without .htm
+
 import os
 import sys
 import re
@@ -23,6 +27,7 @@ CLEAN_TEXT_RE = [
 		(re.compile('\n$'), ''),
 		]
 
+HTML_RE = re.compile('\.html?$')
 DIEGO_LOGO_RE = re.compile('DiegoLogo')
 
 DIEGO_SIGNATURE = ET.Element('span')
@@ -83,11 +88,17 @@ def flatten(a):
 
 def clean_for_md(doc):
 
+	for a in doc.findall('.//script'):
+		a.getparent().remove(a)
+
 	for a in doc.findall('.//strong'):
 		if len(list(a.iterancestors('a'))) == 0:
 			new_a = ET.Element('span')
 			new_a.text = '*%s*' % flatten(a)
 			a.getparent().replace(a, new_a)
+
+	for a in doc.findall('.//a'):
+		a.set('href', HTML_RE.sub('', a.get('href')))
 
 	for a in doc.findall('.//a'):
 		if a.get('href'):
