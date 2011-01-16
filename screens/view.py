@@ -12,7 +12,10 @@ render = web.template.render('tmpl/', base='base', cache=config.cache, globals=t
 render._keywords['globals']['render'] = render
 
 def get_quotes_raw():
-	quotes = [q.split('\r\n') for q in open(config.quotes['filename'], 'r').read().split('\r\n'*2)]
+	try:
+		quotes = [q.split('\r\n') for q in open(config.quotes['filename'], 'r').read().split('\r\n'*2)]
+	except IOError:
+		quotes = []
 	return sample(quotes, min(len(quotes), randint(config.quotes['n_min'], config.quotes['n_max'])))
 
 def get_quotes():
