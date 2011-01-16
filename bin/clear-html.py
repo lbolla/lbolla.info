@@ -4,6 +4,7 @@ import os
 import sys
 import re
 import logging
+import glob
 
 from lxml import etree as ET
 
@@ -21,6 +22,11 @@ CLEAN_TEXT_RE = [
 		(re.compile('\n ?(\n *)+'), '\n\n'),
 		(re.compile('\n$'), ''),
 		]
+
+DIEGO_LOGO_RE = re.compile('DiegoLogo')
+
+DIEGO_SIGNATURE = ET.Element('span')
+DIEGO_SIGNATURE.text = 'Diego Fusaro'
 
 
 def clean_text(text):
@@ -61,10 +67,8 @@ def clean_doc(doc):
 		content_type.set('content', 'text/html;charset=utf-8')
 		head.append(content_type)
 
-	diego = ET.Element('span')
-	diego.text = 'Diego Fusaro'
-	for i in [img for img in doc.findall('.//img') if img.get('src') == 'DiegoLogoAnim2.gif']:
-		i.getparent().replace(i, diego)
+	for i in [img for img in doc.findall('.//img') if DIEGO_LOGO_RE.search(img.get('src'))]:
+		i.getparent().replace(i, DIEGO_SIGNATURE)
 
 	return doc
 
@@ -73,7 +77,7 @@ def flatten(a):
 	if a.text:
 		text = a.text.strip()
 	else:
-		text = ''.join(map(lambda x: x.text, a.getchildren())).strip()
+		text = ''.join(map(lambda x: x.text or '', a.getchildren())).strip()
 	return text
 
 
@@ -91,7 +95,8 @@ def clean_for_md(doc):
 			new_a.text = '[%s](%s)' % (flatten(a) , a.get('href'))
 			a.getparent().replace(a, new_a)
 		else:
-			a.getparent().remove(a)
+			logging.warning('Empty a: %s', ET.tostring(a))
+			# a.getparent().remove(a)
 	
 	for a in doc.findall('.//ul'):
 		new_a = ET.Element('span')
@@ -104,26 +109,30 @@ def clean_for_md(doc):
 
 
 logging.basicConfig(level=logging.DEBUG)
-
-infile = sys.argv[1]
 if len(sys.argv) > 1:
 	outdir = sys.argv[2]
 else:
 	outdir = '/tmp'
 
-inbase = os.path.basename(infile)
-inbase = os.path.splitext(inbase)[0]
+logging.info('Outdir %s', outdir)
+for infile in glob.glob(sys.argv[1]):
+	logging.info('Processing %s', infile)
 
-htmlfile = os.path.join(outdir, inbase + '.html')
-textfile = os.path.join(outdir, inbase + '.md')
-errfile  = os.path.join(outdir, inbase + '.err')
-tmpfile  = '/tmp/tmp.html'
+	inbase = os.path.basename(infile)
+	inbase = os.path.splitext(inbase)[0]
 
-doc = clean_doc(ET.HTML(clean_html(open(infile, 'r').read())))
-doctype = '<!DOCTYPE HTML>'
-html = doctype + ET.tostring(doc, method='html', encoding='utf8')
-open(tmpfile, 'w').write(html)
-os.system('tidy -i -clean -utf8 -ashtml -f %s -w 0 -o %s %s' % (errfile, htmlfile, tmpfile))
+	htmlfile = os.path.join(outdir, inbase + '.html')
+	textfile = os.path.join(outdir, inbase + '.md')
+	errfile  = os.path.join(outdir, inbase + '.err')
+	tmpfile  = '/tmp/tmp.html'
 
-text = clean_text(ET.tostring(clean_for_md(doc), method='text', encoding='utf8'))
-open(textfile, 'w').write(text)
+	doc = clean_doc(ET.HTML(clean_html(open(infile, 'r').read())))
+	doctype = '<!DOCTYPE HTML>'
+	html = doctype + ET.tostring(doc, method='html', encoding='utf8')
+	open(tmpfile, 'w').write(html)
+	os.system('tidy -i -clean -utf8 -ashtml -f %s -w 0 -o %s %s' % (errfile, htmlfile, tmpfile))
+	logging.info('%s done', htmlfile)
+
+	text = clean_text(ET.tostring(clean_for_md(doc), method='text', encoding='utf8'))
+	open(textfile, 'w').write(text)
+	logging.info('%s done', textfile)
