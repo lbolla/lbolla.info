@@ -5,6 +5,7 @@
 # 2. href without .htm
 # 3. img tags: ![Alt text](/path/to/img.jpg "Optional title")
 # 4. automatic links <address@example.com> (maybe for href-less a aka bookmarks)
+# 5. use html2markdown from pandoc
 
 import os
 import sys
