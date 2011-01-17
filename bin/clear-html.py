@@ -3,6 +3,8 @@
 # TODO
 # 1. relink images to new urls
 # 2. href without .htm
+# 3. img tags: ![Alt text](/path/to/img.jpg "Optional title")
+# 4. automatic links <address@example.com> (maybe for href-less a aka bookmarks)
 
 import os
 import sys
@@ -98,7 +100,7 @@ def clean_for_md(doc):
 			a.getparent().replace(a, new_a)
 
 	for a in doc.findall('.//a'):
-		a.set('href', HTML_RE.sub('', a.get('href')))
+		a.set('href', HTML_RE.sub('', a.get('href', '')))
 
 	for a in doc.findall('.//a'):
 		if a.get('href'):
@@ -120,10 +122,10 @@ def clean_for_md(doc):
 
 
 logging.basicConfig(level=logging.DEBUG)
-if len(sys.argv) > 1:
+if len(sys.argv) > 2:
 	outdir = sys.argv[2]
 else:
-	outdir = '/tmp'
+	outdir = '.'
 
 logging.info('Outdir %s', outdir)
 for infile in glob.glob(sys.argv[1]):
