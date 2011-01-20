@@ -3,6 +3,7 @@
 # TODO
 # 1. relink images to new urls
 # 2. href without .htm
+# 3. soft links (no href, only name): leave them as html: <a name="bookmark">Bookmark-me</a>
 
 import os
 import sys
@@ -53,10 +54,11 @@ def clean_doc(doc):
 				doc.findall('.//content'):
 		item.getparent().remove(item)
 
-	for td in doc.findall('.//td'):
+	# for td in doc.findall('.//td') + doc.findall('.//div'):
+	for td in doc.findall('.//div'):
 		all_a = td.findall('.//a')
 		all_br = td.findall('.//br')
-		if len(all_a) > 3 and abs(len(all_a) - len(all_br)) < 2:
+		if len(all_a) > 3 and 1. * abs(len(all_a) - len(all_br)) / len(all_a) < .1:
 			logging.debug('looks like a list of links')
 			ul = ET.Element('ul')
 			for a in all_a:
@@ -98,7 +100,7 @@ def clean_for_md(doc):
 			a.getparent().replace(a, new_a)
 
 	for a in doc.findall('.//a'):
-		a.set('href', HTML_RE.sub('', a.get('href')))
+		a.set('href', HTML_RE.sub('', a.get('href', '')))
 
 	for a in doc.findall('.//a'):
 		if a.get('href'):
