@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 
 # TODO
-# 1. relink images to new urls
-# 2. href without .htm
-# 3. soft links (no href, only name): leave them as html: <a name="bookmark">Bookmark-me</a>
+# relink images to new urls
+# ref without .htm
+# oft links (no href, only name): leave them as html: <a name="bookmark">Bookmark-me</a>
+# mg tags: ![Alt text](/path/to/img.jpg "Optional title")
+# utomatic links <address@example.com> (maybe for href-less a aka bookmarks)
+# se html2markdown from pandoc
 
 import os
 import sys
@@ -122,10 +125,10 @@ def clean_for_md(doc):
 
 
 logging.basicConfig(level=logging.DEBUG)
-if len(sys.argv) > 1:
+if len(sys.argv) > 2:
 	outdir = sys.argv[2]
 else:
-	outdir = '/tmp'
+	outdir = '.'
 
 logging.info('Outdir %s', outdir)
 for infile in glob.glob(sys.argv[1]):
