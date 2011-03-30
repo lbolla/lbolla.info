@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript" src="xd.js"></script>
+    </head>
+    <body>
+        <div>This is inside an iframe</div>
+        <button id="move">Move me!</button>
+        <button id="resize">Resize me!</button>
+        <script type="text/javascript" >
+
+            function get_random_position () {
+                return Math.random() * 600 + ', ' + Math.random() * 400;
+            };
+
+            function get_random_width () {
+                return 100 + Math.random() * 400;
+            };
+
+            document.getElementById('move').onclick = function () { 
+                XD.postMessage('move,' + get_random_position(), '*') 
+            };
+
+            document.getElementById('resize').onclick = function () { 
+                XD.postMessage('resize,' + get_random_width(), '*') 
+            };
+
+        </script>
+    </body>
+</html>
