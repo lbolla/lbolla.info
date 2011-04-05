@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script type="text/javascript" src="xd.js"></script>
+        <style type="text/css">
+            #iframe { background-color: rgba(80, 80, 80, 0.5); position: absolute; top: 30%; left: 0; }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+            <li><a href="http://www.google.com">link</a></li>
+        </ul>
+        <iframe id="iframe" src="iframe.html" width="200px" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" noresize></iframe>
+        <script type="text/javascript">
+            XD.receiveMessage(function (message) { 
+                var pos = message.data.split(',');
+                if (pos[0] == 'move') {
+                    document.getElementById('iframe').style.top = pos[1];
+                    document.getElementById('iframe').style.left = pos[2];
+                } else {
+                    document.getElementById('iframe').style.width = pos[1];
+                }
+            });
+        </script>
+    </body>
+</html>

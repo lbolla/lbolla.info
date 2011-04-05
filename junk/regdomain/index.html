@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script type="text/javascript" src="regdomain.js"></script>
+        <script type="text/javascript">
+            function regDomain() {
+                var domain = document.getElementById("domain").value;
+                var regDomain = RegDomain.getRegisteredDomain(domain);
+                document.getElementById("regdomain").value = regDomain;
+                return false;
+            }
+        </script>
+        <style type="text/css">
+            label {
+                width: 8em;
+                float: left;
+                text-align: right;
+                margin-right: 0.5em;
+                display: block;
+            }
+            input {
+                color: #781351;
+                background: #fee3ad;
+                border: 1px solid #781351;
+            }
+            .submit input {
+                color: #000;
+                background: #ffa20f;
+                border: 2px outset #d7b9c9;
+                width: 100%;
+            } 
+            fieldset {
+                border: 1px solid #781351;
+                width: 20em;
+            }
+            legend {
+                color: #fff;
+                background: #ffa20c;
+                border: 1px solid #781351;
+                padding: 2px 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" onsubmit="return regDomain();">
+            <fieldset>
+                <legend>Get Registered Domain</legend>
+                <p><label for"domain">Insert domain:</label><input id="domain" /></p>
+                <p><label for"regdomain">Registered domain:</label><input id="regdomain"  readonly /></p>
+                <p class="submit"><input type="submit" value="Get Registered Domain" /></p>
+            </fieldset>
+        </form>
+    </body>
+</html>

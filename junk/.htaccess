@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+Options +Indexes
+<IfModule mod_autoindex.c>
+	IndexOptions FancyIndexing
+</IfModule>
