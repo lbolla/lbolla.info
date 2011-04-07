@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style type="text/css">
+            table {
+                border-collapse: collapse;
+            }
+            td, th {
+                padding: 0.2em;
+                border: 1px solid black;
+            }
+        </style>
+        <script type="text/javascript">
+            function ns_speed_test () {
+                var N = 1e6;
+
+                function report (what, howlong) {
+                    var tr = document.createElement('tr');
+                    var td1 = document.createElement('td');
+                    var td2 = document.createElement('td');
+                    td1.innerHTML = what;
+                    td2.innerHTML = howlong;
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    document.getElementById('results').appendChild(tr);
+                }
+
+                (function(){
+                    var s = new Date();
+                    for (var i=N; i--; ) {
+
+                    }
+                    var e = new Date();
+                    report('ref', e.getTime()-s.getTime()); // 60 ms
+                })();
+
+                (function(){
+                    var s = new Date();
+                    var foo;
+                    for (var i=N; i--; ) {
+                        foo;
+                    }
+                    var e = new Date();
+                    report('0 [foo]', e.getTime()-s.getTime()); // 340 ms
+                })();
+
+                // 1-level namespace
+
+                (function(){
+                    var foo = {ns1: null};
+                    var s = new Date();
+                    for (var i=N; i--; ) {
+                        foo.ns1;
+                    }
+                    var e = new Date();
+                    report('1 [foo.ns1]', e.getTime()-s.getTime()); // 530 ms
+                })();
+
+                // 2-levels namespace
+
+                (function(){
+                    var foo = {ns1: {ns2: null}};
+                    var s = new Date();
+                    for (var i=N; i--; ) {
+                        foo.ns1.ns2;
+                    }
+                    var e = new Date();
+                    report('2 [foo.ns1.ns2]', e.getTime()-s.getTime()); // 530 ms
+                })();
+
+                // 3-levels namespace
+
+                (function(){
+                    var foo={ns1: {ns2: {ns3: null}}};
+                    var s = new Date();
+                    for (var i=N; i--; ) {
+                        foo.ns1.ns2.ns3;
+                    }
+                    var e = new Date();
+                    report('3 [foo.ns1.ns2.ns3]', e.getTime()-s.getTime()); // 530 ms
+                })();
+            }
+            window.addEventListener("load", ns_speed_test, false);
+        </script>
+    </head>
+    <body>
+        <h1>JS Object Attributes Access Speed Benchmark</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>attrib level</th>
+                    <th>msecs</th>
+                </tr>
+            <tbody id="results">
+            </tbody>
+        </table>
+    </body>
+</html>
