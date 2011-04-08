@@ -1,4 +1,5 @@
 from random import randint, sample, choice
+import os
 import web
 import config
 
@@ -7,7 +8,8 @@ t_globals = dict(
 	title="Lorenzo Bolla",
 )
 
-render = web.template.render('tmpl/', base='base', cache=config.cache, globals=t_globals)
+tmpldir = os.path.join(os.path.dirname(__file__), 'tmpl')
+render = web.template.render(tmpldir, base='base', cache=config.cache, globals=t_globals)
 
 render._keywords['globals']['render'] = render
 
