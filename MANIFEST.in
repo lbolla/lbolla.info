@@ -1,8 +1,0 @@
-include MANIFEST.in
-include *.txt
-graft bin
-graft conf
-include screens/quotes.txt
-graft screens/tmpl
-graft screens/static
-recursive-exclude screens *.pyc *~
