@@ -1,2 +1,0 @@
-- use setuptools to build
-- automate deployment process
