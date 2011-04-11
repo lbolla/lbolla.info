@@ -2,8 +2,8 @@ AddHandler fcgid-script .py
 RewriteEngine On
 
 # redirect www
-RewriteCond %{HTTP_HOST} !^lbolla.info$ [NC]
-RewriteRule ^(.*)$ http://lbolla.info/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.lbolla.info$
+RewriteRule ^/?$ "http\:\/\/lbolla\.info" [R=301,L]
 
 # lbolla.info
 RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
