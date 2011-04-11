@@ -5,6 +5,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.lbolla.info$
 RewriteRule ^/?$ "http\:\/\/lbolla\.info" [R=301,L]
 
+# external websites
+Redirect 301 /cv http://lorenzobolla.emurse.com
+Redirect 301 /pics http://www.flickr.com/lbolla
+
 # lbolla.info
 RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
