@@ -32,11 +32,23 @@
                 };
                 caseSensitiveFilter.prototype.searchComplete = function (searchControl, searcher) {
                     var that = this;
-                    $('.gsc-result .gs-snippet').each(function (idx, elem) { 
-                        if ($(elem).html().search(that.query) === -1) {
+                    var filter_f = function (elem, accessor) {
+                        var queryWords = that.query.split(' ');
+                        var found = false;
+                        for (var queryWordIdx in queryWords) {
+                            var queryWord = queryWords[queryWordIdx];
+                            if (queryWord) {
+                                if ($(elem)[accessor]().search(queryWord) !== -1) {
+                                    found = true;
+                                };
+                            }
+                        }
+                        if (!found) {
                             $(elem).parents('.gsc-result').fadeOut(1000); 
-                        };
-                    });
+                        }
+                    };
+                    $('.gsc-result .gs-title a').each(function (idx, elem) { return filter_f(elem, 'text'); });
+                    $('.gsc-result .gs-snippet').each(function (idx, elem) { return filter_f(elem, 'html'); });
                 };
                 customSearchControl.setSearchStartingCallback(caseSensitiveFilter, caseSensitiveFilter.prototype.searchStarting);
                 customSearchControl.setSearchCompleteCallback(caseSensitiveFilter, caseSensitiveFilter.prototype.searchComplete);
