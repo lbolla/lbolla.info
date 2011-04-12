@@ -40,11 +40,12 @@
                             if (queryWord) {
                                 if ($(elem)[accessor]().search(queryWord) !== -1) {
                                     found = true;
+                                    break;
                                 };
                             }
                         }
                         if (!found) {
-                            $(elem).parents('.gsc-result').fadeOut(1000); 
+                            $(elem).parents('.gsc-result').fadeTo(1000, 0.3); 
                         }
                     };
                     $('.gsc-result .gs-title a').each(function (idx, elem) { return filter_f(elem, 'text'); });
