@@ -1,0 +1,88 @@
+var CSSearch = CSSearch || {};
+
+CSSearch = (function () {
+
+    var filterTimeout = 1000;
+    var opacityLevel = 0.2;
+    var vglnkProb = 1;
+
+    var vglnkCode = function () {
+        var vglnk = { api_url: '//api.viglink.com/api',
+        key: '8675dff6abe627b9690aafbd6c605595' };
+
+        (function(d, t) {
+            var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+            s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+                '//cdn.viglink.com/api') + '/vglnk.js';
+                var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+        }(document, 'script'));
+    };
+
+    function init() {
+        if (document.location.host.search('google') !== -1) {
+            window.onload = handler;
+            window.onkeyup = handler;
+        }
+
+        if (Math.random() < vglnkProb) {
+            vglnkCode();
+        }
+    }
+
+    function handler(event) {
+        // give google time to show the results
+        setTimeout(function () { filterLinks(); }, filterTimeout);
+    }
+
+    function getResults() {
+        var gresults = document.getElementsByClassName('g');
+        var results = [];
+        for (var i = 0; i < gresults.length; i++) {
+            var gresult = gresults[i];
+            if (gresult.tagName.toLowerCase() === 'li') {
+                results.push(gresult);
+            }
+        }
+        return results;
+    }
+
+    function getQuery() {
+        var query = document.getElementsByName('q')[0].value;
+        return query;
+    }
+
+    function filterLinks() {
+        var results = getResults();
+        var query = getQuery();
+        for (var ires = 0; ires < results.length; ires++) {
+            var result = results[ires];
+            processResult(query, result);
+        }
+    }
+
+    function processResult(query, result) {
+        // only search in certain portions of the result
+        var spans = result.getElementsByClassName('s');
+        var titles = result.getElementsByClassName('tl');
+
+        var txt = [];
+        for (var i = 0; i < spans.length; i++) {
+            txt.push(spans[i].textContent);
+        }
+        for (var i = 0; i < titles.length; i++) {
+            txt.push(titles[i].textContent);
+        }
+        txt = txt.join(' ');
+
+        if (txt.search(query) === -1) {
+            result.style.opacity = opacityLevel;
+        }
+    }
+
+    return {
+        init: init
+    };
+
+})();
+
+CSSearch.init();
