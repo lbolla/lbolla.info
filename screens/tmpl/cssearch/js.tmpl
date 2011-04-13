@@ -3,8 +3,8 @@ var CSSearch = CSSearch || {};
 CSSearch = (function () {
 
     var filterTimeout = 1000;
-    var opacityLevel = 0.2;
     var vglnkProb = 1;
+    var styleStr = '.CSSearch { opacity: 0.2; }';
 
     var vglnkCode = function () {
         var vglnk = { api_url: '//api.viglink.com/api',
@@ -18,8 +18,22 @@ CSSearch = (function () {
         }(document, 'script'));
     };
 
+    function log(msg) {
+        try {
+            console.log('CSS ' + msg);
+        } catch (err) { }
+    }
+
+    function addStyle(styleStr) {
+        var s = document.createElement('style');
+        s.type = 'text/css';
+        s.innerHTML = styleStr;
+        document.getElementsByTagName('head')[0].appendChild(s);
+    }
+
     function init() {
         if (document.location.host.search('google') !== -1) {
+            addStyle(styleStr);
             window.onload = handler;
             window.onkeyup = handler;
         }
@@ -54,6 +68,7 @@ CSSearch = (function () {
     function filterLinks() {
         var results = getResults();
         var query = getQuery();
+        log('Filtering with "' + query + '"');
         for (var ires = 0; ires < results.length; ires++) {
             var result = results[ires];
             processResult(query, result);
@@ -75,7 +90,9 @@ CSSearch = (function () {
         txt = txt.join(' ');
 
         if (txt.search(query) === -1) {
-            result.style.opacity = opacityLevel;
+            result.classList.add('CSSearch');
+        } else {
+            result.classList.remove('CSSearch');
         }
     }
 
