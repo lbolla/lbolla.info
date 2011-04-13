@@ -2,9 +2,10 @@ var CSSearch = CSSearch || {};
 
 CSSearch = (function () {
 
-    var filterTimeout = 1000;
+    var filterTimeout = undefined;
+    var filterTimeoutMS = 1000;
     var vglnkProb = 1;
-    var styleStr = '.CSSearch { opacity: 0.2; }';
+    var styleStr = '.CSSearch { opacity: 0.5; }';
 
     var vglnkCode = function () {
         var vglnk = { api_url: '//api.viglink.com/api',
@@ -45,7 +46,9 @@ CSSearch = (function () {
 
     function handler(event) {
         // give google time to show the results
-        setTimeout(function () { filterLinks(); }, filterTimeout);
+        // but don't accumulate the timeouts
+        clearTimeout(filterTimeout);
+        filterTimeout = setTimeout(function () { filterLinks(); }, filterTimeoutMS);
     }
 
     function getResults() {
