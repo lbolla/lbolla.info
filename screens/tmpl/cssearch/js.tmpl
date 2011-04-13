@@ -84,10 +84,11 @@ CSSearch = (function () {
         var titles = result.getElementsByClassName('tl');
 
         var txt = [];
-        for (var i = 0; i < spans.length; i++) {
+        var i;
+        for (i = 0; i < spans.length; i++) {
             txt.push(spans[i].textContent);
         }
-        for (var i = 0; i < titles.length; i++) {
+        for (i = 0; i < titles.length; i++) {
             txt.push(titles[i].textContent);
         }
         txt = txt.join(' ');
