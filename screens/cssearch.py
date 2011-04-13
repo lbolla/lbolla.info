@@ -12,6 +12,6 @@ render._keywords['globals']['render'] = render
 class index:
     def GET(self, what):
         if what == 'js':
-            return render.jsmin()
+            return render.js()
         else:
             raise web.seeother('/')
