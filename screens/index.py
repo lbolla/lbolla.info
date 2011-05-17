@@ -60,7 +60,7 @@ class admin:
             raise web.seeother('/login')
     def POST(self, *args):
         i = web.input()
-        open(config.quotes['filename'], 'w').write(i.quotes)
+        open(config.quotes['filename'], 'w').write(i.quotes.encode('utf-8'))
         raise web.seeother('/admin')
 
 if __name__ == '__main__':
