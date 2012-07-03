@@ -6,17 +6,11 @@ RewriteCond %{HTTP_HOST} ^www.lbolla.info$
 RewriteRule ^/?$ "http\:\/\/lbolla\.info" [R=301,L]
 
 # external websites
-Redirect 301 /cv http://lorenzobolla.emurse.com
-Redirect 301 /pics http://www.flickr.com/lbolla
-
-# screens
-# RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^(.*)$ screens/index.py/$1 [QSA,L]
+Redirect temp /pics http://www.flickr.com/lbolla
 
 # about/me page
 RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
-RewriteRule ^/?$ "http\:\/\/lbolla.info\/blog\/me" [R=301,L]
+RewriteRule ^/?$ /blog/me/ [R]
 
 # lauraelorenzo.info
 RewriteCond %{HTTP_HOST} ^lauraelorenzo.info$ [OR]
