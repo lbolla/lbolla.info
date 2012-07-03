@@ -9,10 +9,14 @@ RewriteRule ^/?$ "http\:\/\/lbolla\.info" [R=301,L]
 Redirect 301 /cv http://lorenzobolla.emurse.com
 Redirect 301 /pics http://www.flickr.com/lbolla
 
-# lbolla.info
+# screens
+# RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)$ screens/index.py/$1 [QSA,L]
+
+# about/me page
 RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ screens/index.py/$1 [QSA,L]
+RewriteRule ^/?$ "http\:\/\/lbolla.info\/blog\/me" [R=301,L]
 
 # lauraelorenzo.info
 RewriteCond %{HTTP_HOST} ^lauraelorenzo.info$ [OR]
