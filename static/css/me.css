@@ -1,10 +1,10 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans") ;
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 
 body {
   margin : 0;
   padding : 0;
   color : #555;
-  font-family : "Open Sans", lucida console, monaco, monospace
+  font-family : "Open Sans", lucida console, monaco, monospace;
 }
 
 .page-wrap {
