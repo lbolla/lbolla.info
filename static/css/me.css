@@ -114,8 +114,7 @@ blockquote+center {
   margin-top : 0.5em !important
 }
 
-#widget {
-  background : url(../img/widget.png) no-repeat;
+#gravatar {
   position : fixed;
   right : 20px;
   bottom : 20px;
