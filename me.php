@@ -8,7 +8,7 @@ Template Name: Me
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Lorenzo Bolla's Home Page</title>
+        <title>Lorenzo Bolla</title>
         <link href="/static/css/me.css" media="all" rel="stylesheet" type="text/css">
         <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -23,9 +23,13 @@ Template Name: Me
         </script>
     </head>
     <body>
-        <div id="widget"></div>
+        <div id="gravatar">
+	<?php 
+	   echo get_avatar( 'lbolla@gmail.com', $size = '50'); 
+	   ?>
+	</div>
         <div class="page-wrap">
-        <h1>Lorenzo Bolla's Home Page</h1>
+        <h1>Lorenzo Bolla</h1>
         <div id="posts">
             <h2>Recent Blog Posts</h2>
             <ul>
