@@ -1,3 +1,0 @@
-#!/bin/sh
-
-tidy -i -latin0 -clean -asxhtml -w 0 -o $2 $1

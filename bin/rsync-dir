@@ -1,3 +1,0 @@
-#!/bin/sh
-
-rsync -Cauzv --delete $1 lbolla.info:www/$1

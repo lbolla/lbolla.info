@@ -1,4 +1,3 @@
-AddHandler fcgid-script .py
 RewriteEngine On
 
 # redirect www
@@ -11,8 +10,3 @@ Redirect temp /pics http://www.flickr.com/lbolla
 # about/me page
 RewriteCond %{HTTP_HOST} ^lbolla.info$ [NC]
 RewriteRule ^/?$ /blog/me/ [R]
-
-# lauraelorenzo.info
-RewriteCond %{HTTP_HOST} ^lauraelorenzo.info$ [OR]
-RewriteCond %{HTTP_HOST} ^www.lauraelorenzo.info$
-RewriteRule ^/?$ "http\:\/\/w\.lbolla\.info" [R=301,L]

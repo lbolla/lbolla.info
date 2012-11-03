@@ -1,4 +1,0 @@
-HEGEL
-=====
-
-Hegel usa markdown!

@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ssh -p 2222 lbolla@lbolla.info
-

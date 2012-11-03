@@ -1,6 +1,0 @@
-#!/bin/sh
-
-LOCAL=.
-REMOTE=lbolla@lbolla.info:www/.
-
-rsync -Cauvzb --exclude-from=$LOCAL/bin/rsync-exclude -e "ssh -p 2222" $REMOTE $LOCAL
