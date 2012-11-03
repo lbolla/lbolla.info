@@ -1,5 +1,6 @@
 - Disqus
 - Google analytics
-
-- Review all posts
+- New footer
+- Review all posts in review/
 - Catch up with new posts
+- add "category" to post template with link to other posts in the same category: http://localhost:8000/blog/programming/
