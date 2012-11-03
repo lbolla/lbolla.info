@@ -58,14 +58,14 @@ writer:
 
 #: theme variables
 theme:
-    name: default
+    name: moment
 
     # theme variables are defined by theme creator
     # you can access theme in template with ``theme`` namespace
     # for instance: {{theme.disqus}}
     vars:
-        disqus: "your_short_name"
-        analytics: "UA-21475122-1"
+        disqus: "lorenzobolla"
+        analytics: "UA-15875446-1"
         navigation:
             - link: "/blog/"
               name: "Blog"
