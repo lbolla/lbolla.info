@@ -1,6 +1,9 @@
 - Disqus
 - Google analytics
 - New footer
+- Add post's summary in list of posts
 - Review all posts in review/
 - Catch up with new posts
 - add "category" to post template with link to other posts in the same category: http://localhost:8000/blog/programming/
+- fix all links to lbolla.info
+- download images from lbolla.info and relink

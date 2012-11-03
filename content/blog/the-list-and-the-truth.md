@@ -20,4 +20,4 @@
 
 From "[Practical Common Lisp][1]"
 
-   [1]: http://gigamonkeys.com/book/they-called-it-lisp-for-a-reason-list-processing.html
+  [1]: http://gigamonkeys.com/book/they-called-it-lisp-for-a-reason-list-processing.html
