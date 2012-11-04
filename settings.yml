@@ -55,6 +55,7 @@ writer:
     vars:
         # uncomment if you want to reset archive page
         # archive_output: archive.html
+        archive_title: "Blog"
 
 #: theme variables
 theme:

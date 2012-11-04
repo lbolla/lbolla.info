@@ -1,32 +1,35 @@
-# free phone calls from italy to uk
+# Free phone calls from Italy to UK
 
-- title: free phone calls from italy to uk
 - author: lbolla
-- category: links,tech
-- tags: voip free phone call
-- summary: 
-- post_id: 56
+- category: links
+- tags: voip
+- summary: How to call from free from Italy to UK
 - date: 2007-11-22 01:05:40
-- post_date_gmt: 2007-11-21 23:05:40
-- comment_status: open
-- post_name: free-phone-calls-from-italy-to-uk
-- status: publish
-- post_type: post
 
 ----------------
 
-since today, I always used [Skype][1] to call landline and mobile phones in the uk: it is much cheaper than any italian telephone company. but from today, I'm going with something else: [VoipWise ][2]and [VoipBuster][3]. here is a comparison of the rates to call the uk: 
+Since today, I always used [Skype][1] to call landline and mobile phones in the
+UK: it is much cheaper than any Italian telephone company. But from today, I'm
+going with something else: [VoipWise ][2]and [VoipBuster][3]. Here is a
+comparison of the rates to call the UK: 
 
-  * [Skype ][4]
+* [Skype ][4]
+
     * landline: 0.020 eur/min
     * mobile: 0.236 eur/min
-  * [VoipWise ][5]
+
+* [VoipWise ][5]
+
     * landline: FREE
     * mobile: 0.100 eur/min
-  * [VoipBuster ][6]
+
+* [VoipBuster ][6]
+
     * landline: 0.010 eur/min
     * mobile: 0.180 eur/min
-VoipWise is the winner!!! now I can call uk for free! I wonder how long it will last...
+
+VoipWise is the winner!!! Now I can call UK for free! I wonder how long it will
+last...
 
    [1]: http://www.skype.com (skype)
    [2]: http://www.voipwise.com (voipwise)
