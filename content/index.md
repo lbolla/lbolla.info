@@ -5,3 +5,4 @@
 * Last posts (see 404 template)
 * Hire me page, maybe?
 * avatar picture
+* contact me form

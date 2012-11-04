@@ -1,17 +1,10 @@
 # EMpy has moved!
 
-- title: EMpy has moved!
 - author: lbolla
-- category: About me,links,programming
-- tags: 
-- summary: 
-- post_id: 426
+- category: programming
+- tags: python, electromagnetism, empy, numerical
+- summary: New repository for EMpy
 - date: 2012-06-25 14:22:21
-- post_date_gmt: 2012-06-25 13:22:21
-- comment_status: open
-- post_name: empy-has-moved
-- status: publish
-- post_type: post
 
 ----------------
 

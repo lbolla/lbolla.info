@@ -1,4 +1,4 @@
-# Blog post with charm
+# Blog post with Charm
 
 - author: lbolla
 - category: programming
@@ -8,7 +8,7 @@
 
 ----------------
 
-This is a test blog entry, posted with [charm][1]! [charm][1] is a text-based
+This is a test blog entry, posted with [Charm][1]! [Charm][1] is a text-based
 client which uses the MetaWeblog API to post entries to Wordpress powered
 blogs. It also implements other APIs.
 
