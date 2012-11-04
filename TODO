@@ -6,3 +6,6 @@
 - Catch up with new posts
 - fix all links to lbolla.info
 - download images from lbolla.info and relink
+- nginx
+    - enable gzip
+    - caching

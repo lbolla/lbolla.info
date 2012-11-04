@@ -1,3 +1,7 @@
 # This is the main page
 
-Hire me page, maybe?
+----------------
+
+* Last posts (see 404 template)
+* Hire me page, maybe?
+* avatar picture

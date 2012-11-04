@@ -1,21 +1,16 @@
-# binary hand counting
+# Binary hand counting
 
-- title: binary hand counting
 - author: lbolla
-- category: italiano,nice words
-- tags: 
-- summary: 
-- post_id: 41
+- category: nice-words
+- tags: italiano
+- summary: A way to count with your fingers
 - date: 2007-04-17 18:29:07
-- post_date_gmt: 2007-04-17 16:29:07
-- comment_status: open
-- post_name: binary-hand-counting
-- status: publish
-- post_type: post
 
 ----------------
 
-![binary hand counting][1] ecco un modo molto comodo di contare da 0 a 31 usando una mano sola. avendone a disposizione due, si puo' arrivare a 1023... ho ideato il metodo mentre mi annoiavo a ripetere lo stesso esercizio 30 volte e, distraendomi, perdevo il conto. naturalmente, [qualcuno][2] ci aveva gia' pensato e [qualcun'altro][3] ci ha anche fatto delle magliette... praticamente, ogni dito della mano ha due stati: CHIUSO (0) o APERTO (1). 5 dita danno 32 possibili stadi, numerabili da 0 a 31. 10 dita danno 1024 stadi, numerabili da 0 a 1023. usando i piedi, le possibilita' aumentano...
+![binary hand counting][1]
+
+Ecco un modo molto comodo di contare da 0 a 31 usando una mano sola. avendone a disposizione due, si puo' arrivare a 1023... Ho ideato il metodo mentre mi annoiavo a ripetere lo stesso esercizio 30 volte e, distraendomi, perdevo il conto. naturalmente, [qualcuno][2] ci aveva gia' pensato e [qualcun'altro][3] ci ha anche fatto delle magliette... Praticamente, ogni dito della mano ha due stati: CHIUSO (0) o APERTO (1). 5 dita danno 32 possibili stadi, numerabili da 0 a 31. 10 dita danno 1024 stadi, numerabili da 0 a 1023. Usando i piedi, le possibilita' aumentano...
 
    [1]: http://lbolla.info/blog/wp-content/uploads/2007/04/hands32.gif
    [2]: http://www.intuitor.com/counting/ (binary hand counting)

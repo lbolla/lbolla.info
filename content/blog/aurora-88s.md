@@ -1,21 +1,16 @@
-# aurora 88s
+# Aurora 88s
 
-- title: aurora 88s
 - author: lbolla
-- category: About me
-- tags: 
-- summary: 
-- post_id: 24
+- category: personal
+- tags: italiano
+- summary: Aurora 88s was a present
 - date: 2006-10-14 13:24:57
-- post_date_gmt: 2006-10-14 11:24:57
-- comment_status: open
-- post_name: aurora-88s
-- status: publish
-- post_type: post
 
 ----------------
 
-![aurora 88s][1] this is an aurora 88s fountain pen. it was a present of my grand-grand-grandmother to my father, about 50 years ago. now, my grandmother has given it to me. amazingly, it still works smoothly. I wonder what of all the things I've bought in the last year will last for 50 years. probably nothing. I will take care of it and I will use it wisely. Thank you.
+![aurora 88s][1]
+
+This is an `Aurora 88s` fountain pen. It was a present of my grand-grand-grandmother to my father, about 50 years ago. Now, my grandmother has given it to me. Amazingly, it still works smoothly. I wonder what of all the things I've bought in the last year will last for 50 years. Probably nothing. I will take care of it and I will use it wisely. Thank you.
 
    [1]: http://lbolla.info/blog/wp-content/uploads/2006/10/aurora88goldcap.jpg
 
