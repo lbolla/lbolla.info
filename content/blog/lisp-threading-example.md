@@ -1,23 +1,17 @@
 # lisp threading example
 
-- title: lisp threading example
 - author: lbolla
 - category: programming
-- tags: lisp,sbcl,threading
-- summary: 
-- post_id: 223
+- tags: lisp
+- summary: Example of threading programming in Lisp
 - date: 2010-10-23 15:31:34
-- post_date_gmt: 2010-10-23 13:31:34
-- comment_status: open
-- post_name: lisp-threading-example
-- status: publish
-- post_type: post
 
 ----------------
 
-today I wanted to experiment with threads in lisp ([sbcl][1], in particular).
+Today I wanted to experiment with threads in lisp ([sbcl][1], in particular).
 
-here is a trivial example of how to access a shared resource (a closure, keeping a list of integers), from a set of `*nt*` threads.
+Here is a trivial example of how to access a shared resource (a closure,
+keeping a list of integers), from a set of `*nt*` threads.
     
     (use-package :sb-thread)
     
@@ -57,6 +51,6 @@ here is a trivial example of how to access a shared resource (a closure, keeping
     (print (get-acc))
     
 
-it can't get much simpler than that...
+It can't get much simpler than that...
 
    [1]: http://www.sbcl.org/
