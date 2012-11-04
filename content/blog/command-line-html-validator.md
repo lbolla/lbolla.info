@@ -2,7 +2,7 @@
 
 - author: lbolla
 - category: programming
-- tags: HTML, python
+- tags: html, python
 - summary: Command line HTML validator
 - date: 2009-01-31 23:00:22
 
