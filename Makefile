@@ -1,13 +1,19 @@
+REMOTE_HOST="mylinode"
+LL="/home/lbolla/.virtualenvs/lbolla.info/bin/liquidluck"
+
 build: clean
-	liquidluck build -v
+	${LL} build -v
 
 server:
-	liquidluck server
+	${LL} server
 
 deploy: build
 	cd _themes/momentum
 	git pull
 	cd ../..
+
+remote:
+	ssh ${REMOTE_HOST} "cd src/lbolla.info && git pull && make build"
 
 clean: 
 	rm -rf deploy
