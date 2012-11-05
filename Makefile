@@ -8,9 +8,7 @@ server:
 	${LL} server
 
 theme:
-	cd _themes/momentum
-	git checkout momentum && git pull
-	cd ../..
+	cd _themes/momentum && git checkout momentum && git pull && cd ../..
 
 deploy: build theme
 
