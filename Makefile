@@ -13,7 +13,7 @@ deploy: build
 	cd ../..
 
 remote:
-	ssh ${REMOTE_HOST} "cd src/lbolla.info && git pull && make build"
+	ssh ${REMOTE_HOST} "cd src/lbolla.info && git pull && make deploy"
 
 clean: 
 	rm -rf deploy
