@@ -7,10 +7,12 @@ build: clean
 server:
 	${LL} server
 
-deploy: build
+theme:
 	cd _themes/momentum
 	git pull
 	cd ../..
+
+deploy: build theme
 
 remote:
 	ssh ${REMOTE_HOST} "cd src/lbolla.info && git pull && make deploy"
