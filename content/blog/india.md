@@ -1,6 +1,5 @@
 # India!
 
-- title: india!
 - author: lbolla
 - category: personal
 - tags: italiano
@@ -9,7 +8,7 @@
 
 ----------------
 
-![india][1]
+![India][1]
 
 Dopo lunghe pensate, ecco l'itinerario! Dal 26 aprile al 16 maggio.
 

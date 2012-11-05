@@ -2,7 +2,7 @@
 
 - author: lbolla
 - category: programming
-- tags: javascript
+- tags: javascript, benchmark
 - summary: 
 - date: 2011-05-23 09:47:46
 

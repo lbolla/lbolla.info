@@ -1,21 +1,19 @@
-# my first post
+# My first post
 
-- title: my first post
 - author: lbolla
 - category: About me
 - tags: 
 - summary: 
-- post_id: 169
 - date: 2006-04-05 19:23:06
-- post_date_gmt: 2006-04-05 19:23:06
-- comment_status: open
-- post_name: my-first-post
-- status: publish
-- post_type: post
 
 ----------------
 
-hi all! this is my first post. finally, i've decided to start my own blog instead of just reading the others'. hopefully, i'll give them back some of the fun i've taken. cheers.
+Hi all! This is my first post.
+
+Finally, I've decided to start my own blog instead of just reading the others'.
+Hopefully, I'll give them back some of the fun I've taken.
+
+Cheers.
 
 ## Comments
 

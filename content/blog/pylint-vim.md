@@ -1,21 +1,35 @@
 # pylint.vim
 
-- title: pylint.vim
 - author: lbolla
 - category: programming
-- tags: pylint,python,vim
+- tags: python, vim
 - summary: 
-- post_id: 291
 - date: 2011-08-25 10:48:52
-- post_date_gmt: 2011-08-25 10:48:52
-- comment_status: open
-- post_name: pylint-vim
-- status: publish
-- post_type: post
 
 ----------------
 
-vim + python + [pylint][1] is a powerful combination, especially when using this [vim plugin][2]. unfortunately, the script stopped working after a pylint upgrade: [shell] $ pylint --version pylint 0.24.0, astng 0.22.0, common 0.56.0 Python 2.7.2 (default, Jun 29 2011, 11:10:00) [GCC 4.6.1] [/shell] you can download the [fixed version here][3]! if interested, the patch looks like this: [diff] diff pylint.vim.orig pylint.vim 69c69 < CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ %) --- > CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ --output-format=parseable\ %) 74c74 < CompilerSet efm=%+P[%f],%t:\ %#%l:%m,%Z,%+IYour\ code%m,%Z,%-G%.%# --- > CompilerSet efm=%f:%l:\ [%t]%m,%f:%l:%m [/diff]
+`vim` + Python + [`pylint`][1] is a powerful combination, especially when using this [`vim` plugin][2]. Unfortunately, the script stopped working after a `pylint` upgrade:
+
+    $ pylint --version
+    pylint 0.24.0,
+    astng 0.22.0, common 0.56.0
+    Python 2.7.2 (default, Jun 29 2011, 11:10:00)
+    [GCC 4.6.1]
+
+You can download the [fixed version here][3]!
+
+If interested, the patch looks like this:
+
+    diff pylint.vim.orig pylint.vim
+    69c69
+    < CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ %)
+    ---
+    > CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ --output-format=parseable\
+    > %)
+    74c74
+    < CompilerSet efm=%+P[%f],%t:\ %#%l:%m,%Z,%+IYour\ code%m,%Z,%-G%.%#
+    ---
+    > CompilerSet efm=%f:%l:\ [%t]%m,%f:%l:%m
 
    [1]: http://www.logilab.org/857
    [2]: http://www.vim.org/scripts/script.php?script_id=891

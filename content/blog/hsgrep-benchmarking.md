@@ -2,7 +2,7 @@
 
 - author: lbolla
 - category: programming
-- tags: haskell
+- tags: haskell, benchmark
 - summary: Benchmark for binary search grep in Haskell
 - date: 2011-11-30 23:38:02
 

@@ -1,25 +1,24 @@
 # py2dot
 
-- title: py2dot
 - author: lbolla
 - category: programming
-- tags: programming python graph graphviz
-- summary: 
-- post_id: 81
+- tags: python
+- summary: A library to view Python dependencies as graphs
 - date: 2008-10-05 14:17:12
-- post_date_gmt: 2008-10-05 12:17:12
-- comment_status: open
-- post_name: py2dot
-- status: publish
-- post_type: post
 
 ----------------
 
-[caption id="attachment_73" align="alignnone" width="572" caption="py2dot example"]![py2dot example][1][/caption] py2dot is a python script to generate graphs from a  python program. it interprets a python program as a graphs of function calls. it can represent classes and imported modules. [py2dot is available from pypi][2]. more information are available [here][3].
+![py2dot example][1]
+
+`py2dot` is a Python script to generate graphs from a  python program. It
+interprets a Python program as a graphs of function calls. It can represent
+classes and imported modules.
+
+[py2dot is available from pypi][2]. More information are available [here][3].
 
    [1]: http://lbolla.info/blog/wp-content/uploads/2008/10/complicated.png (py2dot)
    [2]: http://pypi.python.org/pypi/py2dot/ (pypi)
-   [3]: http://lbolla.wordpress.com/py2dot/ (py2dot)
+   [3]: http://packages.python.org/py2dot/ (py2dot doc)
 
 ## Comments
 
