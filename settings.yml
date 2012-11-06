@@ -67,8 +67,8 @@ theme:
     vars:
         disqus: "lorenzobolla"
         github: "lbolla"
-        analytics: "UA-15875446-1"
-#         gravatar: "dfdab99de1e829865bb27a0939bf2cbb.png"
+#         analytics: "UA-15875446-1"
+        gravatar: "dfdab99de1e829865bb27a0939bf2cbb.png"
         navigation:
             - link: "/blog/"
               name: "Blog"
