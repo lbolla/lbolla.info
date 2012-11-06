@@ -1,0 +1,5 @@
+# Feed
+
+- template: rss.xml
+
+----------------

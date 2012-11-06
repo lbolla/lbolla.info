@@ -2,5 +2,9 @@
     - Add post's summary in list of posts
     - add "category" to post template with link to other posts in the same category: http://localhost:8000/blog/programming/
 - generate pdfs from posts/pages
-- RSS feed: /blog/feed/
-- find broken links
+- RSS feed: /feed.xml
+    - generate from template
+- link checker
+- css checker
+- page speed
+
