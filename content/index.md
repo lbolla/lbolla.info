@@ -1,8 +1,19 @@
-# This is the main page
+# Lorenzo Bolla
+
+- template: me.html
 
 ----------------
 
-* Last posts (see 404 template)
-* Hire me page, maybe?
-* avatar picture
-* contact me form
+* [EMail][1]
+* [PGP key][2]
+* [Github][3]
+* [StackOverflow][4]
+* [LinkedIn][5]
+
+### Latest posts
+
+   [1]: mailto:lbolla@gmail.com
+   [2]: /keys/lbolla_gmail_com.asc
+   [3]: https://github.com/lbolla/
+   [4]: http://stackoverflow.com/users/1063605/lbolla
+   [5]: http://www.linkedin.com/in/lorenzobolla
