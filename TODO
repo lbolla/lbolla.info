@@ -8,3 +8,9 @@
 - rewrite rules for:
     - lbolla.info/blog/tag/client/ -> http://localhost:8000/blog/tag/#client
     - lbolla.info/blog/category/programming/ -> http://localhost:8000/blog/programming/
+
+===
+Probably, all blog posts should have category: "blog"
+Other pages might have other categories.
+So /blog/feed.xml would contain all the blogs entries.
+===
