@@ -1,5 +1,5 @@
 REMOTE_HOST="mylinode"
-LL="/home/lbolla/.virtualenvs/lbolla.info/bin/liquidluck"
+LL="${HOME}/.virtualenvs/lbolla.info/bin/liquidluck"
 
 build: clean
 	${LL} build -v
