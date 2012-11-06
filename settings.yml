@@ -71,7 +71,7 @@ theme:
         navigation:
             - link: "/blog/"
               name: "Blog"
-            - link: "/cv/"
+            - link: "/cv"
               name: "CV"
 
 #: template variables
