@@ -148,7 +148,7 @@ Publishing the application on Google infrastructure is a matter of seconds:
 
 You can visit it at: <http://go-count-urls.appspot.com/hello>. The code is available here: <https://github.com/lbolla/go-count-urls>.
 
-   [1]: http://lbolla.info/blog/tag/haskell/
+   [1]: /blog/tag/#haskell
    [2]: http://golang.org/
    [3]: https://developers.google.com/appengine/
    [4]: http://www.spypig.com/

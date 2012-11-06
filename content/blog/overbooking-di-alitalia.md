@@ -22,7 +22,7 @@ d'accordo][6].
 Certo, rimane quantomeno fuorviante il messaggio: ti dovresti forse sentire
 premiato a restare a piedi?
 
-   [1]: http://lbolla.info/blog/wp-content/uploads/2007/11/alitalia.jpg
+   [1]: /blog/img/alitalia.jpg
    [2]: http://www.alitalia.it (alitalia)
    [3]: http://www.altroconsumo.it/map/src/73281.htm (altroconsumo)
    [4]: http://it.wikipedia.org/wiki/Overbooking (overbooking)

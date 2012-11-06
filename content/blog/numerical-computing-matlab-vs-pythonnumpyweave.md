@@ -65,12 +65,13 @@ reported in the following thumbnails.
 ![speed factor with respect to Matlab][7]
 
    [1]: http://www.scipy.org/PerformancePython (performance python)
-   [2]: http://lbolla.info/blog/wp-content/uploads/2007/04/laplacem.doc (laplace.m)
-   [3]: http://lbolla.info/blog/wp-content/uploads/2007/04/time.png
-   [4]: http://lbolla.info/blog/wp-content/uploads/2007/04/factor.png
+   [2]: /blog/img/laplacem.doc (laplace.m)
+   [3]: /blog/img/time.png
+   [4]: /blog/img/factor.png
    [5]: http://mpi4py.scipy.org/
-   [6]: http://lbolla.info/blog/wp-content/uploads/2007/04/pico_time.png
-   [7]: http://lbolla.info/blog/wp-content/uploads/2007/04/pico_factor.png
+   [6]: /blog/img/pico_time.png
+   [7]: /blog/img/pico_factor.png
+   [8]: http://linearalgebra21.blogspot.com
 
 ## Comments
 
@@ -94,9 +95,8 @@ reported in the following thumbnails.
 
 **[lbolla](#23 "2008-07-29 15:41:58"):** I used Matlab 6.5, iirc. No JIT compiler.
 
-**[itsrsu](#25 "2009-10-10 10:48:08"):** [ Mathematics of Linear Algebra ][1]
+**[itsrsu](#25 "2009-10-10 10:48:08"):** [ Mathematics of Linear Algebra ][8]
 
-   [1]: http://linearalgebra21.blogspot.com
 
 **[isabel](#26 "2010-02-24 02:54:14"):** hi i have laplace.py, but when i run it it has error i want to know how can i do? or if you can say me how did you install the program, i hace python 2.6 for ubuntu
 

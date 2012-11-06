@@ -24,4 +24,4 @@ You can also have them [bundled all together][5].
    [2]: http://www.haskell.org/haddock/
    [3]: http://www.vim.org/scripts/script.php?script_id=1968
    [4]: http://urchin.earth.li/~ian/style/haskell.html
-   [5]: http://lbolla.info/blog/wp-content/uploads/2011/10/haskell-vim-config.tar.gz
+   [5]: /blog/assets/haskell-vim-config.tar.gz

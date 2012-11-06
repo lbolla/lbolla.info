@@ -18,7 +18,7 @@ It somehow belongs to the [Web2.0][2] websites, so popular these days. And it re
 
 Someone thinks this is the same thing. It's like a huge social experiment, where users contribute to create the "super-user" with an experience equals to the sums of their experiences. The real question about AI is: is it the sum or more?
 
-  [1]: http://lbolla.info/blog/wp-content/uploads/2006/05/gnod.jpg
+  [1]: /blog/img/gnod.jpg
   [2]: http://www.oreillynet.com/pub/a/oreilly/tim/news/2005/09/30/what-is-web-20.html?page=1 (Web2.0)
   [3]: http://www.pandora.com (Pandora)
   [4]: /blog/2006/04/07/strange-beautiful-music (Pandora's post)

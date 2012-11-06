@@ -27,11 +27,14 @@ You can download it as:
 
         javascript:(function(){var s = document.createElement('script'); s.setAttribute('type', 'text/javascript'); s.setAttribute('src', 'http://lbolla.info/cssearch/js'); document.getElementsByTagName('head')[0].appendChild(s);})();
 
+A demo is available [here][7].
+
 Let me know what you think!
 
-   [1]: http://lbolla.info/blog/wp-content/uploads/2011/04/Screen-shot-2011-04-13-at-15.27.29-300x252.png (Case Sensitive Google Search)
+   [1]: /blog/img/Screen-shot-2011-04-13-at-15.27.29-300x252.png (Case Sensitive Google Search)
    [2]: http://www.google.com/support/websearch/bin/answer.py?hl=en&answer=134479
    [3]: http://www.google.com/support/forum/p/Web+Search/thread?tid=282a99b488daa33f&hl=en
    [4]: http://www.google.com/support/forum/p/Web%20Search/thread?tid=654360f674f696e7&hl=en
    [5]: http://www.labnol.org/internet/search/case-sensitive-google-search/6279/
    [6]: https://github.com/lbolla/junk/raw/master/cssearch/bin/cssearch.xpi
+   [7]: /junk/case_sensitive_search/

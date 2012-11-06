@@ -12,7 +12,7 @@
 
 Better go before I break it...
 
-   [1]: http://lbolla.info/blog/wp-content/uploads/2011/04/Screen-shot-2011-04-27-at-15.38.26-300x21.png (10/10)
+   [1]: /blog/img/Screen-shot-2011-04-27-at-15.38.26-300x21.png (10/10)
 
 ## Comments
 

@@ -16,7 +16,7 @@ classes and imported modules.
 
 [py2dot is available from pypi][2]. More information are available [here][3].
 
-   [1]: http://lbolla.info/blog/wp-content/uploads/2008/10/complicated.png (py2dot)
+   [1]: /blog/img/complicated.png (py2dot)
    [2]: http://pypi.python.org/pypi/py2dot/ (pypi)
    [3]: http://packages.python.org/py2dot/ (py2dot doc)
 

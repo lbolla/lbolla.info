@@ -20,5 +20,5 @@ For example:
 Surely, a better response would be something like the one returned when the `videoId` is missing: <http://www.youtube.com/watch?v=>. It seems like [predictions became true][3].
 
   [1]: http://www.youtube.com/watch?v=wtf
-  [2]: http://lbolla.info/blog/wp-content/uploads/2011/12/capture.jpg (500 on Youtube)
+  [2]: /blog/img/capture.jpg (500 on Youtube)
   [3]: http://www.youtube.com/watch?v=OxXc_fXxMoE

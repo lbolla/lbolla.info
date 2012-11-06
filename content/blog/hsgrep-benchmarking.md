@@ -23,9 +23,9 @@ and it wins for files larger than few megabytes!
 
 ![HSGrep benchmark][6]
 
-   [1]: http://lbolla.info/blog/2011/11/27/hsgrep-sorted-grep-in-haskell/
+   [1]: /blog/2011/11/27/hsgrep-sorted-grep-in-haskell
    [2]: http://en.wikipedia.org/wiki/Grep
    [3]: http://hackage.haskell.org/packages/archive/bytestring/latest/doc/html/Data-ByteString.html
    [4]: https://github.com/lbolla/HSGrep/tree/bytestring
    [5]: https://github.com/lbolla/HSGrep/blob/bytestring/data/gendata.hs
-   [6]: http://lbolla.info/blog/wp-content/uploads/2011/11/bench1.png (HSGrep benchmark)
+   [6]: /blog/img/bench1.png (HSGrep benchmark)
