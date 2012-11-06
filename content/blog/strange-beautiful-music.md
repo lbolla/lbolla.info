@@ -1,7 +1,7 @@
 # Strange beautiful music
 
 - author: lbolla
-- category: links,tech
+- category: personal
 - date: 2006-04-07 14:18:17
 - summary: Suggestion from a friend
 - tags: music

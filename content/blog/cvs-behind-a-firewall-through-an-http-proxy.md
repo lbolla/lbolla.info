@@ -1,7 +1,7 @@
 # CVS behind a firewall through an http proxy
 
 - author: lbolla
-- category: links,programming
+- category: programming
 - tags: cvs, firewall, proxy
 - summary: How to avoid firewalls
 - date: 2008-04-21 13:45:37

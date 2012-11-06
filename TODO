@@ -2,3 +2,9 @@
     - Add post's summary in list of posts
     - add "category" to post template with link to other posts in the same category: http://localhost:8000/blog/programming/
 - generate pdfs from posts/pages
+- Generate feed.xml using something like CategoryFeedWriter
+- Add rss link in footer and in category pages
+- Category page with category header
+- rewrite rules for:
+    - lbolla.info/blog/tag/client/ -> http://localhost:8000/blog/tag/#client
+    - lbolla.info/blog/category/programming/ -> http://localhost:8000/blog/programming/
