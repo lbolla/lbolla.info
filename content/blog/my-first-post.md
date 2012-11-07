@@ -1,7 +1,7 @@
 # My first post
 
 - author: lbolla
-- category: About me
+- category: personal
 - tags: 
 - summary: 
 - date: 2006-04-05 19:23:06

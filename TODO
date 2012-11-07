@@ -3,11 +3,14 @@
     - add "category" to post template with link to other posts in the same category: http://localhost:8000/blog/programming/
 - generate pdfs from posts/pages
 - Generate feed.xml using something like CategoryFeedWriter
+    - redirect http://lbolla.info/blog/feed/ (and anything ending with "feed/") to /feed.xml
 - Add rss link in footer and in category pages
 - Category page with category header
 - rewrite rules for:
     - lbolla.info/blog/tag/client/ -> http://localhost:8000/blog/tag/#client
     - lbolla.info/blog/category/programming/ -> http://localhost:8000/blog/programming/
+
+- search box does not collapse
 
 ===
 Probably, all blog posts should have category: "blog"
