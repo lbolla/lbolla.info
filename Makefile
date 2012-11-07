@@ -3,7 +3,6 @@ LL="${HOME}/.virtualenvs/lbolla.info/bin/liquidluck"
 
 build: clean
 	${LL} build -v
-	mv deploy/feed.html deploy/feed.xml
 
 server:
 	${LL} server
