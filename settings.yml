@@ -69,6 +69,7 @@ theme:
         github: "lbolla"
         analytics: "UA-15875446-1"
         gravatar: "dfdab99de1e829865bb27a0939bf2cbb.png"
+        search_q: "q"
         navigation:
             - link: "/blog/"
               name: "Blog"
