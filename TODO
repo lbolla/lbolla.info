@@ -4,11 +4,4 @@
 
 - Category page with category header
 
-- rewrite rules for:
-    - lbolla.info/blog/tag/client/ -> http://localhost:8000/blog/tag/#client
-    - lbolla.info/blog/category/programming/ -> http://localhost:8000/blog/programming/
-    - redirect http://lbolla.info/blog/feed/ (and anything ending with "feed/") to /feed.xml
-
-- search box does not collapse
-
-* console error in "useful scripts"
+- size of tagcloud

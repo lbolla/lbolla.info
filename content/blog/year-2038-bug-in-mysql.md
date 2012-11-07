@@ -2,7 +2,7 @@
 
 - author: lbolla
 - category: programming
-- tags: mysql, 2038
+- tags: mysql
 - summary: 
 - date: 2011-03-04 16:35:43
 
