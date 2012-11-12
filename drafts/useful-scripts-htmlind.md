@@ -9,3 +9,5 @@
 ----------------
 
 Get $tabstop from env to pretty print with BeautifulSoup. See code in `cmd`.
+
+TO GO into useful-scripts series.
