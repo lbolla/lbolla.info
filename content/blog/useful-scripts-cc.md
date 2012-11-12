@@ -40,7 +40,7 @@ Here is the code:
 
 Next week, I'll describe a more complex script: [`Watch`][6].
 
- [1]: /blog/tag/#useful-scripts
+ [1]: /blog/tag/useful-scripts/
  [2]: http://acme.cat-v.org/
  [3]: https://github.com/lbolla/cmd
  [4]: https://github.com/lbolla/cmd/blob/master/c%2B

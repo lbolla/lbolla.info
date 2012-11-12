@@ -52,7 +52,7 @@ ported to *nix][9] (although, in this case, any shell would do.) Here it is:
 
     sed 's/^ //'  
 
- [1]: /blog/tag/#useful-scripts
+ [1]: /blog/tag/useful-scripts/
  [2]: http://acme.cat-v.org/
  [3]: https://github.com/lbolla/cmd
  [4]: https://github.com/lbolla/cmd/blob/master/a%2B

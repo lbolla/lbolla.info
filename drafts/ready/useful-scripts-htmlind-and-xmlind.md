@@ -41,7 +41,7 @@ For example:
      </c>
     </a>
 
-   [1]: /blog/tag/#useful-scripts
+   [1]: /blog/tag/useful-scripts/
    [2]: http://acme.cat-v.org/
    [3]: https://github.com/lbolla/cmd/blob/master/htmlind
    [4]: https://github.com/lbolla/cmd/blob/master/xmlind

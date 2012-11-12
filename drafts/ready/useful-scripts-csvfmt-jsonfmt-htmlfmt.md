@@ -92,7 +92,7 @@ Try it out:
 
 All three scripts are written in Python and available [here][8].
 
-   [1]: /blog/tag/#useful-scripts
+   [1]: /blog/tag/useful-scripts/
    [2]: https://github.com/lbolla/cmd/blob/master/csvfmt
    [3]: https://github.com/lbolla/cmd/blob/master/xmlfmt
    [4]: https://github.com/lbolla/cmd/blob/master/jsonfmt
