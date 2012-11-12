@@ -4,7 +4,7 @@
 - author: lbolla
 - category: programming
 - tags: useful-scripts, python
-- summary: Useful formatting scripts for CSV, XML and JSON files.
+- summary: Useful scripts to format CSV, XML and JSON files for easier reading
 - date: 2012-11-12 13:14:52
 
 ----------------
@@ -38,12 +38,12 @@ Output looks like this:
     {'a': '1', 'b': '2', 'c': '3'}
     {'a': '4', 'b': '5', 'c': '6'}
 
-[`xmlfmt`][3] takes an `XML` file from either
-`stdin` or a file (specified on the cmd line) and extracts all the
-text from it. This script is thought to be used to read the text
-embedded in `XML` tags, and it's analogous to `[htmlfmt`][5]. If you
-want to format an `XML` file, maintaining the `XML` tags, use `[xmllint
--format`][6], or my `[xmlind`][7] (described in another blog post.)
+[`xmlfmt`][3] takes an `XML` file from either `stdin` or a file
+(specified on the cmd line) and extracts all the text from it. This
+script is thought to be used to read the text embedded in `XML` tags,
+and it's analogous to `[htmlfmt`][5]. If you want to format an `XML`
+file, maintaining the `XML` tags, use `[xmllint -format`][6], or my
+`[xmlind`][7] (described another blog post of this series.)
 
     #!/usr/bin/env python
     
