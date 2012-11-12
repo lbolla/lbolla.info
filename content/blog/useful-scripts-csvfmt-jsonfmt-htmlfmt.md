@@ -5,7 +5,7 @@
 - category: programming
 - tags: useful-scripts, python
 - summary: Useful formatting scripts for CSV, XML and JSON files.
-- date: 2012-12-01 13:14:52
+- date: 2012-11-12 13:14:52
 
 ----------------
 
@@ -13,10 +13,10 @@ This is the third post of a [series][1] describing simple scripts that
 I wrote to ease my life as a programmer.
 
 In this post, I'll describe 3 scripts to "pretty print" some common
-file types, to improve readability: `[csvfmt`][2], `[xmlfmt`][3] and
-`[jsonfmt`][4].
+file types, to improve readability: [`csvfmt`][2], [`xmlfmt`][3] and
+[`jsonfmt`][4].
 
-`[csvfmt`][2] takes a `CSV` ("Comma Separated Values") file from
+[`csvfmt`][2] takes a `CSV` ("Comma Separated Values") file from
 `stdin`, parses it and pretty print each record as a Python
 dictionary.
 
@@ -38,7 +38,7 @@ Output looks like this:
     {'a': '1', 'b': '2', 'c': '3'}
     {'a': '4', 'b': '5', 'c': '6'}
 
-`[xmlfmt`][3] takes an `XML` file from either
+[`xmlfmt`][3] takes an `XML` file from either
 `stdin` or a file (specified on the cmd line) and extracts all the
 text from it. This script is thought to be used to read the text
 embedded in `XML` tags, and it's analogous to `[htmlfmt`][5]. If you
@@ -58,7 +58,7 @@ For example:
     % echo '<a>a text<b>b text</b>more a text</a>' | xmlfmt
     a textb textmore a text
 
-`[jsonfmt`][4] takes a `JSON` file from `stdin` and pretty prints it as
+[`jsonfmt`][4] takes a `JSON` file from `stdin` and pretty prints it as
 a Python object.
 
     #!/usr/bin/env python
@@ -92,7 +92,7 @@ Try it out:
 
 All three scripts are written in Python and available [here][8].
 
-   [1]: http://lbolla.info/blog/tag/#useful-scripts
+   [1]: /blog/tag/#useful-scripts
    [2]: https://github.com/lbolla/cmd/blob/master/csvfmt
    [3]: https://github.com/lbolla/cmd/blob/master/xmlfmt
    [4]: https://github.com/lbolla/cmd/blob/master/jsonfmt
