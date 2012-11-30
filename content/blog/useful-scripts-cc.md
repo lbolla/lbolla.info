@@ -38,12 +38,9 @@ Here is the code:
 
     sed 's/^#//'
 
-Next week, I'll describe a more complex script: [`Watch`][6].
-
  [1]: /blog/tag/useful-scripts/
  [2]: http://acme.cat-v.org/
  [3]: https://github.com/lbolla/cmd
  [4]: https://github.com/lbolla/cmd/blob/master/c%2B
  [5]: https://github.com/lbolla/cmd/blob/master/c-
- [6]: https://github.com/lbolla/cmd/blob/master/Watch
  [7]: /blog/img/cc_acme.png
