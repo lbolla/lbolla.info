@@ -41,8 +41,3 @@ Use `DATETIME` instead! And [RTFM][3] before doing anything!
    [1]: http://2038bug.com/
    [2]: http://dev.mysql.com/doc/refman/5.0/en/datetime.html
    [3]: http://a8888emfzelkaw4avz1gqr8s7y.hop.clickbank.net/
-
-## Comments
-
-**[Mark](#88 "2011-03-04 16:41:49"):** Or a better database.
-

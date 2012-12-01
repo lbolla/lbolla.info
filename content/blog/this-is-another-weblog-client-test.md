@@ -13,8 +13,3 @@
 Better...
 
    [1]: http://blogtk.sourceforge.net/
-
-## Comments
-
-**[Roofius](#58 "2009-02-01 20:33:34"):** nice blogg i like it and i do read it very often
-

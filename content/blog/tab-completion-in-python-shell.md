@@ -20,10 +20,3 @@ Obviously, you can use the environmental variable `PYTHONSTART` to execute this 
 Enjoy!
 
    [1]: http://groups.google.com/group/comp.lang.python/browse_thread/thread/b1f19db3f69cd8ce#
-
-## Comments
-
-**[h4p0](#50 "2009-12-27 01:57:05"):** I noticed that with CTRL+tab I can get the same result as "double-tab" to get completion. Is there a way to have the normal Tabulator with TAB and the completion with CTRL+TAB?
-
-**[Mark](#51 "2010-01-04 10:17:17"):** You could use ipython too which does this job for you and provides a hoddy of other stuff besides.
-

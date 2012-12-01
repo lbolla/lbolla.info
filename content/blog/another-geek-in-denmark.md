@@ -14,8 +14,3 @@ Why "another" in the title? Because the original one is [this][2].
 
    [1]: http://www.dtu.dk/English.aspx (DTU)
    [2]: http://www.emanuelezattin.info (emanuelez)
-
-## Comments
-
-**[Emanuele](#5 "2006-05-16 12:54:43"):** Here's the one, the original Italian geek in DK! :D I can't wait to meet you again and have some more good time! Citybikes cuea!
-

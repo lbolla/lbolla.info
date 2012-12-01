@@ -19,8 +19,3 @@ Here is a simple shell script to change the engine of all the tables in a MySQL 
     done
 
 Just because, as usual, I keep forgetting these kind of things...
-
-## Comments
-
-**[Andre](#921 "2012-10-10 22:19:51"):** Thank you, Works great!
-

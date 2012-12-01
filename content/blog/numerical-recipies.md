@@ -30,8 +30,3 @@ Enjoy!
    [4]: https://addons.mozilla.org/en-US/firefox/addon/4336
    [5]: http://www.adrive.com/public/4fa81bea9d89a52a47f67990fff6b9b98a387f0ce41bda70408768c160bb5846.html
    [6]: http://www.inkguides.com/merging-extracting-and-converting-postscript-files.asp
-
-## Comments
-
-**[Emanuele](#49 "2008-07-06 12:04:09"):** I'm a proud member of the last group :) Thank you!
-

@@ -32,8 +32,3 @@ Now your new font should compare in `xfontsel` and you should be able to use it 
 By the way, [this][1] is a very nice font for programming!
 
    [1]: http://www.proggyfonts.com/
-
-## Comments
-
-**[Download Fonts](#862 "2012-02-28 05:42:20"):** thankyou for the easy guide, I too keep forgetting how to install these fonts. keep it up
-

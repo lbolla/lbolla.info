@@ -34,12 +34,3 @@ If interested, the patch looks like this:
    [1]: http://www.logilab.org/857
    [2]: http://www.vim.org/scripts/script.php?script_id=891
    [3]: https://gist.github.com/1170413
-
-## Comments
-
-**[Xavier](#857 "2012-02-09 13:58:20"):** Hello. Are you aware if it stopped working with another Pylint upgrade? I'm using the script for the first time, and I'm unable to get anything beyond "code rate: 0.00, prev: 0.00" (pylint 0.25.1) Thanks in advance for any input. -Xavier
-
-**[Xavier](#858 "2012-02-11 00:07:22"):** Oops! It was my .vimrc's fault, that was also setting efm https://github.com/sontek/dotfiles/blob/master/_vimrc#L284 that I found in http://sontek.net/turning-vim-into-a-modern-python-ide I also found another fork from the unmantained original vim script: http://www.held.org.il/blog/2011/08/pylint-vim-plugin-update-0-24-0-support/ My apologies. And thanks! -Xavier
-
-**[lbolla](#859 "2012-02-13 09:29:03"):** Good!
-

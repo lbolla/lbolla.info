@@ -32,8 +32,3 @@ Conclusione: continuero' ad andare in bici il piu' possibile.
    [1]: http://www.prezzibenzina.it/ (prezzi della benzina)
    [2]: /blog/img/prezzo.png
    [3]: /blog/img/risparmio.png
-
-## Comments
-
-**[Staff de "Il Filtro"](#39 "2008-03-16 20:08:54"):** Abbiamo messo un link a questo post sul nostro sito http://ilfiltro.blogspot.com Ciao
-

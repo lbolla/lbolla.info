@@ -40,10 +40,3 @@ It's a long time since I found so many new concepts while studying a new program
 
    [1]: http://learnyouahaskell.com/functors-applicative-functors-and-monoids
    [2]: http://hackage.haskell.org/packages/archive/HTTP/4000.0.9/doc/html/Network-HTTP-Base.html#t:Response
-
-## Comments
-
-**[jacques](#930 "2012-10-16 20:32:27"):** How do I get the response-code (int) i.e 200,404 in any of those ?
-
-**[lbolla](#931 "2012-10-17 09:17:26"):** You can use `rspCode` on the response: [rspCode][2].
-

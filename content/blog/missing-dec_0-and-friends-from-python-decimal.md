@@ -37,8 +37,3 @@ Those definitions are missing in `py2.4` and `py2.5.1`, and renamed in `py2.6`.
 Damn: never use undocumented features!
 
    [1]: http://bugs.python.org/issue4812
-
-## Comments
-
-**[Emanuele Zattin](#73 "2010-07-29 13:23:51"):** Ma a che mai ti servirá?? :D
-

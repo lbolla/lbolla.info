@@ -48,10 +48,3 @@ Enjoy!
    [3]: http://www.google.co.uk/chrome
    [4]: http://dwm.suckless.org
    [5]: http://tools.suckless.org/dmenu
-
-## Comments
-
-**[Emanuelez](#65 "2009-09-07 11:39:05"):** You might want to give uzbl a try :) http://www.uzbl.org/
-
-**[lbolla](#66 "2009-10-04 13:29:43"):** done already ;-) the config file is too long for my tastes!
-

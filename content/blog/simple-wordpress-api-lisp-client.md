@@ -71,8 +71,3 @@ Enjoy!
    [2]: http://github.com/lbolla/junk/blob/master/lisp/wordpress.lisp
    [3]: http://common-lisp.net/project/s-xml-rpc/
    [4]: http://www.sbcl.org/
-
-## Comments
-
-**[Mark](#74 "2010-08-04 14:22:04"):** And yet you're a vi user!!!
-

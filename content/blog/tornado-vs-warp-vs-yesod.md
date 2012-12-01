@@ -85,16 +85,3 @@ servers.
    [4]: http://ziutek.github.com/web_bench/
    [5]: https://github.com/yesodweb/yesod/issues/415
    [6]: https://gist.github.com/3567006/76f6245c21adc5576f201bcf83437269e8f56d93
-
-## Comments
-
-**[Emanuele Zattin](#899 "2012-09-03 09:50:37"):** How about node.js? :)
-
-**[lbolla](#900 "2012-09-03 10:02:43"):** Tze'! I don't follow "trends" ;-) Anyway, [here you go][1]!
-
-   [1]: http://www.ostinelli.net/a-comparison-between-misultin-mochiweb-cowboy-nodejs-and-tornadoweb/
-
-**[Andy](#936 "2012-10-20 10:39:50"):** > I strongly suggest you to disable session management from Yesod if you want high performance. If you disabled session management, how do you identify individual users to provide personalized features such as shopping cart or news feed?
-
-**[lbolla](#937 "2012-10-20 12:44:17"):** If you want personalized content, either you live with Yesod's slow session management until the bug is fixed, or you roll out your own session management!
-

@@ -37,8 +37,3 @@ last...
    [4]: http://www.skype.com/intl/en/prices/callrates/#listing-U (skype rates)
    [5]: http://www.voipwise.com/en/rates.html (voipwise rates)
    [6]: http://www.voipbuster.com/en/rates.html (voipbuster rates)
-
-## Comments
-
-**[ray](#40 "2009-03-13 22:24:19"):** Ciaocellular.com is offering 5$ free credit when you signup, that is up to free 300 minutes of talk time. This can be used to make about 100 minutes to landline or 125 minutes to cell phones in India, or 263 minutes to Italy & most of Europe, or 50 minutes to Philippines. To avail the free offers, just create an account by entering your email address and password here. You will be able to register up to 5 phone numbers which won’t require any pin to enter while calling. Confirm your email and for calling purpose you need to enter your Credit Card information to verify and avoid fake registrations. Your credit card will not be charged for your Free Trial and it uses secure http(s) protocol for registrations. Just dial one of their access numbers, and then enter your destination number. It has access numbers in about 17 countries. After finishing the free minutes, you have an option to buy some credit and the call rates are very competitive (India at 4cents/minute). www.Ciaocellular.com is a pretty good deal.
-

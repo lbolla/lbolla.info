@@ -72,35 +72,3 @@ reported in the following thumbnails.
    [6]: /blog/img/pico_time.png
    [7]: /blog/img/pico_factor.png
    [8]: http://linearalgebra21.blogspot.com
-
-## Comments
-
-**[lbolla](#13 "2007-04-11 13:45:52"):** thanks to David Joyner for correcting a typo in the post!
-
-**[Michael Lerner](#14 "2007-04-11 18:32:52"):** What happens if you use psyco under the same conditions as blitz?
-
-**[lbolla](#15 "2007-04-18 11:35:23"):** psyco used with weave gives a polite error: "local variables of functions run by Psyco cannot be accessed in any way, sorry." I guess this should be fixed, somehow, but I don't know if it worths the time: numpy+psyco runs just a 5% faster than numpy alone.
-
-**[lorenzo](#16 "2007-09-07 17:05:53"):** other benchmarks specifically on linear algebra can be found here. https://www.osc.edu/blogs/index.php/sip?blog=7&p=37&page=1&more=1&c=1&tb=1&pb=1&disp=single
-
-**[Maximus](#17 "2007-12-20 08:00:11"):** I would like to see a continuation of the topic
-
-**[Rob Steele](#19 "2008-03-06 19:28:05"):** Been there done that. Try R (http://www.r-project.org/). I've never been more productive.
-
-**[Casey](#20 "2008-03-06 22:03:21"):** Ever tried Scilab?
-
-**[Adolph](#21 "2008-03-12 17:36:11"):** I would like to see times for grid sizes 600 to 900?
-
-**[Memming](#22 "2008-07-29 14:54:11"):** What was the version of MATLAB? Did it have JIT compiler on?
-
-**[lbolla](#23 "2008-07-29 15:41:58"):** I used Matlab 6.5, iirc. No JIT compiler.
-
-**[itsrsu](#25 "2009-10-10 10:48:08"):** [ Mathematics of Linear Algebra ][8]
-
-
-**[isabel](#26 "2010-02-24 02:54:14"):** hi i have laplace.py, but when i run it it has error i want to know how can i do? or if you can say me how did you install the program, i hace python 2.6 for ubuntu
-
-**[Kitty](#27 "2010-05-28 08:17:22"):** numerical computing: matlab vs python+numpy+weave ? lorenzo bolla’s blogguy@gigemail.net
-
-**[Carlton](#28 "2010-06-02 08:57:26"):** numerical computing: matlab vs python+numpy+weave ? lorenzo bolla’s blog guy@gigemail.net
-

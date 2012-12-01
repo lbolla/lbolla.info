@@ -34,13 +34,3 @@ again. If you really want to quit X, you need to kill the sleeper.
 
    [1]: http://dwm.suckless.org/
 
-## Comments
-
-**[Stonebot](#68 "2010-01-28 22:58:43"):** When I try this i go to load dwm and it loads for 1 second then back to the login manager...
-
-**[Neotericpiguy](#69 "2010-03-02 01:39:45"):** while true; do dwm 2> ~/.dwm.log ; done When you kill dwm it will restart right back up. Useful if you update config.h and sudo make install a new binary.
-
-**[meillo](#70 "2010-10-14 21:25:20"):** Instead of `/bin/true` use : . That puts less load onto the machine, is easier to type, and if you know the idiom it's easier to read too. while :; do whatever done
-
-**[Mark](#71 "2010-10-15 09:16:56"):** Thanks, didn't know about the :
-

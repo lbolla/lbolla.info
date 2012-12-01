@@ -109,14 +109,3 @@ talk to the DB are needed. For example: [Motor][8] for MongoDB.
    [6]: http://stackoverflow.com/questions/1897993/difference-between-concurrent-programming-and-parallel-programming
    [7]: http://golang.org/
    [8]: http://blog.mongodb.org/post/30927719826/motor-asynchronous-driver-for-mongodb-and-python
-
-## Comments
-
-**[abdelouahab](#919 "2012-10-03 19:27:41"):** here is another good link to learn, it's a slide explaining the non-blocking in a good-simple way: http://fr.slideshare.net/simon/evented-io-based-web-servers-explained-using-bunnies
-
-**[abdelouahab](#916 "2012-10-03 16:06:04"):** hi thank you, really interresting for us as beginner! by the way, as you said about the libraries, i've tried to use the amazom api library, and because it's blocking then, i always get the error saying the it needs a callback! so here is the asynchronous library for amazon, it's the Boto but asynchronous: https://github.com/yyuu/botornado and this one for facebook: https://github.com/pauloalem/tornado-facebook-sdk
-
-**[lbolla](#917 "2012-10-03 16:20:14"):** @abdelouahab: Thanks for the links, Aliane!
-
-**[abdelouahab](#918 "2012-10-03 19:23:32"):** you're welcome, thank you for "you" for helping us, non-blocking is a real head ache, and espetially for Python users, the problem of GIL will make the solution of using event-handler the best choice! making the apache-way is not a good idea, since making a new thread is valuable for the server (sorry if i dont understand well, this is what i got for now as a beginner) ;)
-

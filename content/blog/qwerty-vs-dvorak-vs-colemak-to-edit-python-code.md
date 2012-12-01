@@ -1059,14 +1059,3 @@ seem to be a good idea...
    [3]: http://en.wikipedia.org/wiki/Colemak
    [4]: http://www.codeaxe.co.uk/dvorak/
    [5]: http://webpy.org/
-
-## Comments
-
-**[Kerith](#59 "2009-03-03 16:52:16"):** First blog I read after wakeup from sleep today! ---------------------------- [Are you tension? panic?][1]
-
-   [1]: http://www.google.com/url?q=http://rosezy.panicaway.hop.clickbank.net/%3Ftid%3DPANIC&sa=X&ct=targetlink&ust=1236093308612693&usg=AFQjCNEOXPwQzGqCH1QN6wBBkbkOvoHFuA
-
-**[Manish](#60 "2009-05-08 01:31:09"):** great stuff - thank you. i know you are only one sample but the results are encouraging. just a few months ago i took the plunge and switched from qwerty to dvorak. a few weeks ago i found out about colemak and felt qualms about having missed this as it was supposed to be more modern and easier than dvorak. turns out the advantages are not that significant so i'm glad to stick with dvorak.
-
-**[Mark Hammond](#61 "2010-11-21 02:07:53"):** lol 'does not seem to be a good idea' = what's wrong with you? There is a clear advantage migrating away for qwerty but NOT a clear advantage from either dvorak or colemak. In fact I would go as far as saying that if you do want to make 'the switch' from qwerty - just learn colemak. If you know dvorak already...unless you are uncomforable with the layout, don't bother imo.
-

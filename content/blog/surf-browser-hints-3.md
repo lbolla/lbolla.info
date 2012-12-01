@@ -47,8 +47,3 @@ No need for shell scripts!
    [2]: /blog/2009/08/25/surf-browser-hints-2/
    [3]: http://tools.suckless.org/dmenu
    [4]: http://surf.suckless.org/files/simple_bookmarking_redux
-
-## Comments
-
-**[Andrew](#72 "2010-01-11 09:04:07"):** Hey Lorenzo - I put your config.h setup on the suckless wiki, if you want to [check it out][4]. Cheers, man!
-
