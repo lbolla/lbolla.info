@@ -75,6 +75,8 @@ theme:
               name: "Blog"
             - link: "/cv"
               name: "CV"
+            - link: "/hire-me"
+              name: "Hire me"
 
 #: template variables
 template:
