@@ -10,6 +10,8 @@
 * [StackOverflow][4]
 * [LinkedIn][5]
 
+### [Hire me!][6]
+
 ### Latest posts
 
    [1]: mailto:lbolla@gmail.com
@@ -17,3 +19,4 @@
    [3]: https://github.com/lbolla/
    [4]: http://stackoverflow.com/users/1063605/lbolla
    [5]: http://www.linkedin.com/in/lorenzobolla
+   [6]: /hire-me
