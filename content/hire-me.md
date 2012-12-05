@@ -22,7 +22,9 @@ My preferred technology stack is:
 * [MySQL][9], [SQlite][11] and [MongoDB][12] as databases
 * [SQLAlchemy][7] as Object Relational Mapper
 * [Bootstrap][8] as front-end framework
-* [Backbonejs][10] as client-side MVC
+* [JQuery][10] as javascript library
+* [AWS][13] for hosting
+* [git][13] as version control system
 
 My full CV is available [here][2] and [here][3]; examples of my code can be
 found [here][4].
@@ -41,6 +43,8 @@ term projects or for consultancy.
    [7]: http://www.sqlalchemy.org/
    [8]: http://twitter.github.com/bootstrap/index.html
    [9]: http://www.mysql.com/
-   [10]: http://backbonejs.org/
+   [10]: http://jquery.com/
    [11]: http://www.sqlite.org/
    [12]: http://www.mongodb.org/
+   [13]: http://aws.amazon.com/
+   [14]: http://git-scm.com/
