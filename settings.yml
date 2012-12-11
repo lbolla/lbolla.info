@@ -7,6 +7,7 @@
 site:
     name: Lorenzo Bolla  # your site name
     url: "http://lbolla.info/"  # your site url
+    desc: "Personal homepage of Lorenzo Bolla, Senior Software Architect in London, UK. Expert Python developer available for hire."
     prefix: "blog"
 
 #: this config defined information of your site
