@@ -9,6 +9,7 @@ site:
     url: "http://lbolla.info/"  # your site url
     desc: "Personal homepage of Lorenzo Bolla, Senior Software Architect in London, UK. Expert Python developer available for hire."
     prefix: "blog"
+    feed: "/blog/feed.xml"
 
 #: this config defined information of your site
 #: 1. where the resources  2. how should the site be generated
