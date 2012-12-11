@@ -1,16 +1,19 @@
-# Lorenzo Bolla
+# About me
 
 - template: me.html
 
 ----------------
+
+My name is Lorenzo Bolla and I am a Senior Software Architect in London, UK. I love
+programming, music, basketball and chess.
+
+#### [Hire me!][6]
 
 * [EMail][1]
 * [PGP key][2]
 * [Github][3]
 * [StackOverflow][4]
 * [LinkedIn][5]
-
-### [Hire me!][6]
 
 ### Latest posts
 
