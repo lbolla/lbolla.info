@@ -85,7 +85,7 @@ You can make the "SleepHandler" Tornado-friendly by executing it in another thre
 
 Very simply, the `unblock` decorator submits the decorated function to the thread pool, which returns a future; a callback is added to this future to return control to the IOLoop, by calling `add_callback`, which eventually will call `self.finish` and conclude the request.
 
-Note that the decorated function must be itself be decorated with `tornado.web.asynchronous`, in order to not call `self.finish` too soon!
+Note that the decorated function must be itself be decorated with `tornado.web.asynchronous`, in order to not call `self.finish` too soon! Moreover, `self.write` is not thread-safe (thanks mrjoes!) therefore it must be called in the main thread with the future's result as parameter.
 
 Full code is below, available on [gist][6].
 
