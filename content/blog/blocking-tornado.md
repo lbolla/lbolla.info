@@ -67,11 +67,16 @@ You can make the "SleepHandler" Tornado-friendly by executing it in another thre
         @wraps(f)
         def wrapper(*args, **kwargs):
             self = args[0]
+
+            def callback(future):
+                self.write(future.result())
+                self.finish()
+
             EXECUTOR.submit(
                 partial(f, *args, **kwargs)
             ).add_done_callback(
                 lambda future: tornado.ioloop.IOLoop.instance().add_callback(
-                    self.finish))
+                    partial(callback, future)))
     
         return wrapper
 
@@ -81,7 +86,7 @@ You can make the "SleepHandler" Tornado-friendly by executing it in another thre
         @unblock
         def get(self, n):
             time.sleep(float(n))
-            self.write("Awake! %s" % time.time())
+            return "Awake! %s" % time.time()
 
 Very simply, the `unblock` decorator submits the decorated function to the thread pool, which returns a future; a callback is added to this future to return control to the IOLoop, by calling `add_callback`, which eventually will call `self.finish` and conclude the request.
 
