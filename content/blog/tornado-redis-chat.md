@@ -4,7 +4,7 @@
 - category: programming
 - tags: tornado,redis,websocket
 - summary: Simple chat server implemented with Tornado, Redis and websockets
-- date: 2013-12-02 11:00:00
+- date: 2013-02-12 11:00:00
 
 ----------------
 
