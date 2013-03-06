@@ -1,18 +1,18 @@
-# Use Postgres advanced types with SQLAlchemy
+# Use Postgres advanced types in Python
 
 - author: lbolla
 - category: programming
-- tags: postgres, sqlalchemy, python
+- tags: postgres, sqlalchemy, python, psycopg2
 - summary: How to use Postgres types with SQLAlchemy
 - date: 2013-03-06 12:00:00
 
 ----------------
 
 Postgres has a lot of useful [builtin data types][1], but only some of them are
-mapped to Python types when accessing the DB using [SQLAlchemy][2].
+mapped to Python types when accessing the DB using [psycopg2][2].
 
-Extending the support of SQLAlchemy to other types is not straightforward, and
-involves the following steps:
+Extending the support to other types is not straightforward, and involves the
+following steps:
 
    * Create a Python class to store the data, e.g. `class Point`
    * Write a function to convert a `Point` to its SQL string representation,
@@ -27,5 +27,5 @@ The complete code is as follows, also available [as a gist][3]:
 
 
    [1]: http://www.postgresql.org/docs/9.2/static/datatype.html
-   [2]: http://docs.sqlalchemy.org/en/rel_0_8/core/types.html
+   [2]: http://initd.org/psycopg/
    [3]: https://gist.github.com/lbolla/5098907
