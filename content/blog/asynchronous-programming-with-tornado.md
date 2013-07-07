@@ -45,7 +45,7 @@ control multiple tasks and this model becomes quickly complicated.
 The second step is to figure out if you _can_ go asynchronous. Unfortunately in
 Tornado, not all the tasks can be executed asynchronously.
 
-Tornado is single threaded (in its common usage, although in supports multiple
+Tornado is single threaded (in its common usage, although it supports multiple
 threads in advanced configurations), therefore any "blocking" task will block
 the whole server.  This means that a blocking task will not allow the framework
 to pick the next task waiting to be processed. The selection of tasks is done
