@@ -8,6 +8,7 @@ server:
 	${LL} server
 
 theme:
+	#  git submodule add git@github.com:lbolla/liquidluck-theme-moment.git _themes/momentum
 	cd _themes/momentum && git checkout momentum && git pull && cd ../..
 
 deploy: theme build
