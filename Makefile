@@ -1,4 +1,4 @@
-REMOTE_HOST="mylinode"
+REMOTE_HOST="lbolla.info"
 LL="${HOME}/.virtualenvs/lbolla.info/bin/liquidluck"
 
 all: build
