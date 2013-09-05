@@ -4,7 +4,7 @@
 
 ----------------
 
-[**I'm available for hire**][1]. I have 10+ years of experience developing software
+[I'm available for hire][1]. I have 10+ years of experience developing software
 and I love it!
 
 I am a mature developer, very dependable and precise. Committing to a project,
