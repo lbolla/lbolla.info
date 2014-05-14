@@ -24,9 +24,9 @@ Looking at the [implementation][6] of `cPickle`, the comments in the code have s
 > should not be used if with self-referential
 > objects.
 
-[memo][7] is basically a cache, withing the pickler, to remember what objects have already been processed, to avoid infinite loops in case of self-referential data structures. But if you are dumping data structures that do not reference themselves, you can spare the cost of updating and checking this cache during dumping.
+[memo][7] is basically a cache, within the pickler, that remembers what objects have already been processed, used mainly to avoid infinite loops when dumping self-referential data structures. But if you are dumping data structures that do not reference themselves, you can spare some time disabling this caching.
 
-To test these settings, I compared "vanilla" `cPickle.dumps`, with `HIGHEST_PROTOCOL` and "fast mode", for 3 different objects: a small, a medium and a large list of dictionaries. The code is available in [`gist`][8]:
+To test these settings, I compared "vanilla" `cPickle.dumps`, with "highest_protocol" and "fast mode", for 3 different objects: a small, a medium and a large list of dictionaries. The code is available in [`gist`][8]:
 
 <script src="https://gist.github.com/lbolla/1bec1b70ef9c8e254b57.js"></script>
 
@@ -64,7 +64,7 @@ On my machine, I get these results:
 
 _Note: I've reduced the number of iterations to 3 for "vanilla LARGE" because it was taking too long..._
 
-`HIGH_PROTOCOL` is between 2 and 3 times faster than "vanilla" for all objects, and "fast mode" is from 2 to 5 times faster than `HIGH_PROTOCOL` for medium-large objects and 10 times faster than "vanilla"!
+"high_protocol" is between 2 and 3 times faster than "vanilla" for all objects, and **"fast mode" is 6 times faster than "high_protocol" and 10 times faster than "vanilla" for large objects**!
 
 
    [1]: https://docs.python.org/2/library/pickle.html
