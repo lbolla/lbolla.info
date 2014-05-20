@@ -1,12 +1,13 @@
-# Wordpress Python library
-
-- author: lbolla
-- category: programming
-- tags: python, wordpress
-- summary: 
-- date: 2010-06-06 21:25:52
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-06-06"
+description: "None"
+tags:
+  - "python"
+  - "wordpress"
+title: "Wordpress Python library"
+---
 
 Today, I found [this][1]. It's a wonderfully simple Python library to manage your Wordpress blog via [XML-RPC][2].
 

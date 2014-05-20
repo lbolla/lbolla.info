@@ -1,13 +1,13 @@
-# Long running processes manager
-
-- author: lbolla
-- category: programming
-- tags: futures,python
-- summary: Class to manage long running processes in Python, restarting them
-  when necessary
-- date: 2014-01-17 15:33:00
-
-----------------
+---
+title: "Long running processes manager"
+description: "Class to manage long running processes in Python, restarting them when necessary"
+date: "2014-01-17"
+categories:
+  - "programming"
+tags:
+  - "futures"
+  - "python"
+---
 
 If you want to run multiple processes in Python, the nicest way, in my opinion,
 is to use [concurrent.futures][1] (there is a [backport][2] for Python 2.x, too).

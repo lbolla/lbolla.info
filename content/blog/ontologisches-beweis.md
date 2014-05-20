@@ -1,12 +1,9 @@
-# Ontologisches Beweis
-
-- author: lbolla
-- category: nice-words
-- tags: 
-- summary: 
-- date: 2006-08-11 21:50:05
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2006-08-11"
+title: "Ontologisches Beweis"
+---
 
     Ass.1: P(φ).P(ψ) ⊃ P(φ.ψ)
     Ass.2: P(φ) ∨ P(-φ)

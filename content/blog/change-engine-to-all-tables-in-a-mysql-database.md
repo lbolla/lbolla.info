@@ -1,12 +1,12 @@
-# Change engine to all tables in a MySQL database
-
-- author: lbolla
-- category: programming
-- tags: mysql
-- summary: Change engine to all tables in a MySQL database
-- date: 2012-04-05 16:53:57
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-04-05"
+description: "Change engine to all tables in a MySQL database"
+tags:
+  - "mysql"
+title: "Change engine to all tables in a MySQL database"
+---
 
 Here is a simple shell script to change the engine of all the tables in a MySQL database:
 

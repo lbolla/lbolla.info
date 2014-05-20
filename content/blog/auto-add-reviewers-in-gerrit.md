@@ -1,12 +1,14 @@
-# Auto add reviewers in Gerrit
-
-- author: lbolla
-- category: programming
-- tags: gerrit, javascript, git
-- summary: Trick to add reviewers to Gerrit automatically
-- date: 2012-08-01 11:04:21
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-08-01"
+description: "Trick to add reviewers to Gerrit automatically"
+tags:
+  - "gerrit"
+  - "javascript"
+  - "git"
+title: "Auto add reviewers in Gerrit"
+---
 
 If you are using [Gerrit][1] for code review and project management of
 git-based projects, you might find yourself manually adding the same bunch of

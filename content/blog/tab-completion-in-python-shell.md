@@ -1,12 +1,11 @@
-# Tab completion in Python shell
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2008-06-25 11:52:39
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-06-25"
+tags:
+  - "python"
+title: "Tab completion in Python shell"
+---
 
 Recently [I saw with this little piece of code][1] to give the standard python shell tab completion capabilities:
 

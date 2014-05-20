@@ -1,12 +1,11 @@
-# My first post
-
-- author: lbolla
-- category: personal
-- tags: 
-- summary: 
-- date: 2006-04-05 19:23:06
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-04-05"
+description: "None"
+tags:
+title: "My first post"
+---
 
 Hi all! This is my first post.
 

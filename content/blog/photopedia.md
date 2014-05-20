@@ -1,12 +1,12 @@
-# Photopedia
-
-- author: lbolla
-- category: personal
-- tags: italiano, photography
-- summary: 
-- date: 2007-12-24 12:11:43
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-12-24"
+tags:
+  - "italiano"
+  - "photography"
+title: "Photopedia"
+---
 
 ![photopedia][1]
 

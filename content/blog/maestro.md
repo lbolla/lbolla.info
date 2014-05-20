@@ -1,12 +1,11 @@
-# Maestro
-
-- author: lbolla
-- category: personal
-- tags: photography
-- summary: 
-- date: 2006-08-30 23:24:44
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-08-30"
+tags:
+  - "photography"
+title: "Maestro"
+---
 
 ![henry cartier-bresson][1]
 

@@ -1,12 +1,15 @@
-# Useful scripts - c+/c-
-
-- author: lbolla
-- category: programming
-- date: 2012-11-09 16:20:00
-- summary: Series about useful scripts
-- tags: rc, acme, useful-scripts, python
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-11-09"
+description: "Series about useful scripts"
+tags:
+  - "rc"
+  - "acme"
+  - "useful-scripts"
+  - "python"
+title: "Useful scripts - c+/c-"
+---
 
 This is the second post of a [series][1] describing simple scripts that I wrote
 to ease my life as a programmer.

@@ -1,13 +1,11 @@
-# They broke delicious
-
-- title: they broke delicious
-- author: lbolla
-- category: personal
-- tags:
-- summary: 
-- date: 2011-09-30 09:23:39
-
-----------------
+---
+categories:
+  - "personal"
+date: "2011-09-30"
+description: "None"
+tags:
+title: "They broke delicious"
+---
 
 The new redesign of [delicious.com][1] broke so many things, that I thought I had to take notes: 
 

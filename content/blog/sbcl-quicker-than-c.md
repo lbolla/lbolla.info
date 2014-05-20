@@ -1,12 +1,14 @@
-# SBCL quicker than C?
-
-- author: lbolla
-- category: programming
-- tags: lisp, c, benchmark
-- summary: 
-- date: 2010-12-05 17:21:02
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-12-05"
+description: "None"
+tags:
+  - "lisp"
+  - "c"
+  - "benchmark"
+title: "SBCL quicker than C?"
+---
 
 After reading a [nice conversation on comp.lang.lisp][1] I decided to play a
 little bit with SBCL and [Debian's Shootout Benchmarks][2].

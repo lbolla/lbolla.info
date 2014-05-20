@@ -1,12 +1,11 @@
-# Overbooking di Alitalia!
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-11-28 01:19:17
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-11-28"
+tags:
+  - "italiano"
+title: "Overbooking di Alitalia!"
+---
 
 ![alitalia][1]
 

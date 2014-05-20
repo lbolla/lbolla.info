@@ -1,12 +1,14 @@
-# Editors' speed on opening big files
-
-- author: lbolla
-- category: programming
-- tags: ed, sam, vim
-- summary: How quick are common editors in opening big files?
-- date: 2010-05-17 15:05:47
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-05-17"
+description: "How quick are common editors in opening big files?"
+tags:
+  - "ed"
+  - "sam"
+  - "vim"
+title: "Editors' speed on opening big files"
+---
 
 While playing with different editors (namely [vim][1] and [sam][2]) I tried to
 time how long some common editors take to open a big file (~140Mb).

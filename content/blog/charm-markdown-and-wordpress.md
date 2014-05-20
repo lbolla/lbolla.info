@@ -1,12 +1,15 @@
-# Charm, Markdown and Wordpress
-
-- author: lbolla
-- category: programming
-- tags: markdown, wordpress, python, blog
-- summary: How to write Wordpress posts using markdown
-- date: 2010-04-28 17:14:13
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-04-28"
+description: "How to write Wordpress posts using markdown"
+tags:
+  - "markdown"
+  - "wordpress"
+  - "python"
+  - "blog"
+title: "Charm, Markdown and Wordpress"
+---
 
 Following my [previous post][1], a nice enhancement is using [Markdown][2] to
 filter your post before submitting it to [Wordpress][3].

@@ -1,12 +1,11 @@
-# qwerty vs dvorak vs colemak to edit Python code
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2009-02-02 09:30:37
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-02-02"
+tags:
+  - "python"
+title: "qwerty vs dvorak vs colemak to edit Python code"
+---
 
 Yesterday, I was intrigued by the idea of choosing a more efficient keyboard
 layout to work with everyday. As long as I type Python code 90% of my time, I

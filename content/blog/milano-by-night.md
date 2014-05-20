@@ -1,12 +1,11 @@
-# Milano by night
-
-- author: lbolla
-- category: personal
-- tags: 
-- summary: 
-- date: 2006-05-17 00:24:34
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-05-17"
+description: "None"
+tags:
+title: "Milano by night"
+---
 
 ![Garibaldi train station][1]
 

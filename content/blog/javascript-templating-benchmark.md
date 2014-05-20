@@ -1,12 +1,13 @@
-# Javascript templating benchmark
-
-- author: lbolla
-- category: programming
-- tags: javascript, benchmark
-- summary: 
-- date: 2011-05-23 09:47:46
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-05-23"
+description: "None"
+tags:
+  - "javascript"
+  - "benchmark"
+title: "Javascript templating benchmark"
+---
 
 There are many popular libraries to do templating in Javascript.
 

@@ -1,12 +1,14 @@
-# Useful scripts - htmlind and xmlind
-
-- author: lbolla
-- category: programming
-- tags: useful-scripts, python, acme
-- summary: Useful scripts to indent HTML and XML files
-- date: 2012-11-23 15:02:00
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-11-23"
+description: "Useful scripts to indent HTML and XML files"
+tags:
+  - "useful-scripts"
+  - "python"
+  - "acme"
+title: "Useful scripts - htmlind and xmlind"
+---
 
 This is the forth post of a [series][1] describing simple scripts that
 I wrote to ease my life as a programmer.

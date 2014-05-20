@@ -1,12 +1,12 @@
-# URL Counter in GO
-
-- author: lbolla
-- category: programming
-- tags: go, google
-- summary: 
-- date: 2012-10-10 14:33:56
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-10-10"
+tags:
+  - "go"
+  - "google"
+title: "URL Counter in GO"
+---
 
 After having [tinkered with Haskell for quite a bit][1], I decided that I
 needed some rest from theory and esoteric concepts, and a more pragmatic

@@ -1,12 +1,12 @@
-# Qui Milano libera
-
-- author: lbolla
-- category: nice-words
-- tags: italiano 
-- summary: 
-- date: 2007-07-19 22:05:01
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2007-07-19"
+description: "None"
+tags:
+  - "italiano"
+title: "Qui Milano libera"
+---
 
 [youtube=http://www.youtube.com/watch?v=H--4qyu5sSY]
 

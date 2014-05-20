@@ -1,12 +1,13 @@
-# surf browser hints /3
-
-- author: lbolla
-- category: programming
-- tags: suckless, c
-- summary: 
-- date: 2010-01-09 20:37:59
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-01-09"
+description: "None"
+tags:
+  - "suckless"
+  - "c"
+title: "surf browser hints /3"
+---
 
 Another couple of hints about [`surf`][1], after [my previous post][2].
 

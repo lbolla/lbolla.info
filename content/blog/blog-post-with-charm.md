@@ -1,12 +1,14 @@
-# Blog post with Charm
-
-- author: lbolla
-- category: programming
-- tags: blog, python, wordpress
-- summary: Post to Wordpress from command line
-- date: 2009-04-07 17:52:30
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-04-07"
+description: "Post to Wordpress from command line"
+tags:
+  - "blog"
+  - "python"
+  - "wordpress"
+title: "Blog post with Charm"
+---
 
 This is a test blog entry, posted with [Charm][1]! [Charm][1] is a text-based
 client which uses the MetaWeblog API to post entries to Wordpress powered

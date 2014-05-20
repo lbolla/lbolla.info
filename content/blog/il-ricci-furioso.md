@@ -1,12 +1,11 @@
-# Il Ricci furioso
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2010-07-30 14:31:02
-
-----------------
+---
+categories:
+  - "personal"
+date: "2010-07-30"
+tags:
+  - "italiano"
+title: "Il Ricci furioso"
+---
 
 L'articolo ["Il Ricci furioso"][1] di Massimiliano Panarari, apparso stamattina
 su [MicroMega][2] e' misteriosamente [scomparso][1]...

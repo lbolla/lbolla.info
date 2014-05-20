@@ -1,12 +1,13 @@
-# Installing pcf fonts in X
-
-- author: lbolla
-- category: programming
-- tags: linux, X
-- summary: 
-- date: 2010-01-07 18:55:00
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-01-07"
+description: "None"
+tags:
+  - "linux"
+  - "X"
+title: "Installing pcf fonts in X"
+---
 
 As I keep forgetting, here is how to install `pcf` fonts in X 
 

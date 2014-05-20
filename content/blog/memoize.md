@@ -1,12 +1,12 @@
-# Memoize
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2008-04-17 14:51:48
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-04-17"
+description: "None"
+tags:
+  - "python"
+title: "Memoize"
+---
 
 Recently, from a [discussion][1] on the [scipy-user group][2] I discovered a
 very elegant way to code a function with memory.

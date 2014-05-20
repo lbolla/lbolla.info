@@ -1,12 +1,14 @@
-# Simple chat with Postgres LISTEN/NOTIFY and Tornado's IOLoop
-
-- author: lbolla
-- category: programming
-- tags: tornado,postgres,python
-- summary: Simple chat implemented with Tornado's IOLoop and Postgres LISTEN/NOTIFY
-- date: 2013-03-21 16:00:00
-
-----------------
+---
+categories:
+  - "programming"
+date: "2013-03-21"
+description: "Simple chat implemented with Tornado's IOLoop and Postgres LISTEN/NOTIFY"
+tags:
+  - "tornado"
+  - "postgres"
+  - "python"
+title: "Simple chat with Postgres LISTEN/NOTIFY and Tornado's IOLoop"
+---
 
 Postgres supports from version 8.4 a very interesting functionality:
 [LISTEN][1]/[NOTIFY][2] allows sending asynchronous messages to clients

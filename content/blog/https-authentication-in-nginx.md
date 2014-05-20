@@ -1,12 +1,11 @@
-# HTTPS authentication in nginx
-
-- author: lbolla
-- category: programming
-- tags: http
-- summary: 
-- date: 2012-02-20 13:20:29
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-02-20"
+tags:
+  - "http"
+title: "HTTPS authentication in nginx"
+---
 
 In order not to forget again how to setup [http authentication][1] in
 [nginx][2] here is a reminder.

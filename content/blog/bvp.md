@@ -1,12 +1,14 @@
-# Boundary Value Problem
-
-- author: lbolla
-- category: programming
-- tags: python, matlab, numerical
-- summary: Boundary Value Problem using numpy
-- date: 2008-04-14 20:04:20
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-04-14"
+description: "Boundary Value Problem using numpy"
+tags:
+  - "python"
+  - "matlab"
+  - "numerical"
+title: "Boundary Value Problem"
+---
 
 For you, Python lover, who always needs Matlab functions: boundary value
 problems are not a problem anymore.

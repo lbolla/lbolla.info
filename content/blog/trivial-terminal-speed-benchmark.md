@@ -1,12 +1,12 @@
-# Trivial terminal speed benchmark
-
-- author: lbolla
-- category: programming
-- tags: benchmark, linux
-- summary: 
-- date: 2010-04-28 16:59:01
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-04-28"
+tags:
+  - "benchmark"
+  - "linux"
+title: "Trivial terminal speed benchmark"
+---
 
 Today, while playing with [st][1], I tried a very simple benchmark. Here it is:
     

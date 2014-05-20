@@ -1,12 +1,12 @@
-# Migrating away from wordpress.com
-
-- author: lbolla
-- category: programming
-- tags: wordpress
-- summary: 
-- date: 2011-04-11 14:36:00
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-04-11"
+description: "None"
+tags:
+  - "wordpress"
+title: "Migrating away from wordpress.com"
+---
 
 Today I decided to migrate my blog from [wordpress.com][1] to [my own domain][2].
 

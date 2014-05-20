@@ -1,12 +1,9 @@
-# Nature
-
-- author: lbolla
-- category: personal
-- tags: 
-- summary: 
-- date: 2006-08-12 12:05:15
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-08-12"
+title: "Nature"
+---
 
 ![Venus Flower Basket glass sponge][1]
 

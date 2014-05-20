@@ -1,12 +1,11 @@
-# Epytaph
-
-- author: lbolla
-- category: nice-words
-- tags: music
-- summary: 
-- date: 2007-05-01 20:11:31
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2007-05-01"
+tags:
+  - "music"
+title: "Epytaph"
+---
 
 > Knowledge is a deadly friend
 

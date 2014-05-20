@@ -1,19 +1,15 @@
-# Trackback
-
-- title: trackback
-- author: lbolla
-- category: programming
-- tags: 
-- summary: 
-- post_id: 46
-- date: 2007-09-10 15:29:30
-- post_date_gmt: 2007-09-10 13:29:30
-- comment_status: open
-- post_name: trackback
-- status: publish
-- post_type: post
-
-----------------
+---
+categories:
+  - "programming"
+comment_status: "open"
+date: "2007-09-10"
+post_date_gmt: "2007-09-10 13:29:30"
+post_id: "46"
+post_name: "trackback"
+post_type: "post"
+status: "publish"
+title: "Trackback"
+---
 
 Today, I discovered a new cool feature of blogs: trackbacks!
 

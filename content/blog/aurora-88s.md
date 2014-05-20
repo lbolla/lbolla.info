@@ -1,12 +1,12 @@
-# Aurora 88s
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: Aurora 88s was a present
-- date: 2006-10-14 13:24:57
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-10-14"
+description: "Aurora 88s was a present"
+tags:
+  - "italiano"
+title: "Aurora 88s"
+---
 
 ![aurora 88s][1]
 

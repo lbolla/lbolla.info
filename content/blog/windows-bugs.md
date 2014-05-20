@@ -1,12 +1,10 @@
-# Windows' bugs
-
-- title: Windows' bugs
-- author: lbolla
-- category: nice-words
-- tags:
-- summary: 
-- date: 2009-05-01 17:31:49
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2009-05-01"
+description: "None"
+tags:
+title: "Windows' bugs"
+---
 
 A bug's just hidden in my keyboard... A green one... Under the Windows key!

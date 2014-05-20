@@ -1,12 +1,16 @@
-# git pre-commit hook for Python and Javascript
-
-- author: lbolla
-- category: programming
-- tags: git,javascript,pep8,pyflakes,python
-- summary: 
-- date: 2011-11-17 22:50:21
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-11-17"
+description: "None"
+tags:
+  - "git"
+  - "javascript"
+  - "pep8"
+  - "pyflakes"
+  - "python"
+title: "git pre-commit hook for Python and Javascript"
+---
 
 Following a [recent discussion on HN][1], I decided to share my own [git pre-commit hook][2].
 

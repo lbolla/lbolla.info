@@ -1,12 +1,13 @@
-# Simple Wordpress API lisp client
-
-- author: lbolla
-- category: programming
-- tags: lisp, wordpress
-- summary: A simple lisp client to talk to Wordpress
-- date: 2010-08-04 14:20:41
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-08-04"
+description: "A simple lisp client to talk to Wordpress"
+tags:
+  - "lisp"
+  - "wordpress"
+title: "Simple Wordpress API lisp client"
+---
 
 I like old things, therefore I started to learn Lisp.
 

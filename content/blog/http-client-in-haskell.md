@@ -1,12 +1,13 @@
-# HTTP client in Haskell
-
-- author: lbolla
-- category: programming
-- tags: haskell, http
-- summary: There is more than one way to do it
-- date: 2011-09-26 15:05:28
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-09-26"
+description: "There is more than one way to do it"
+tags:
+  - "haskell"
+  - "http"
+title: "HTTP client in Haskell"
+---
 
 To try to make sense of [this][1], I decided to write a "simple" http client in
 Haskell in as many styles as I could think of:

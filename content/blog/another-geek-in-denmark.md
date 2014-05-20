@@ -1,12 +1,12 @@
-# Another geek in Denmark
-
-- author: lbolla
-- category: travel
-- tags: denmark
-- summary: Impressions on Denmark
-- date: 2006-04-27 11:53:17
-
-----------------
+---
+categories:
+  - "travel"
+date: "2006-04-27"
+description: "Impressions on Denmark"
+tags:
+  - "denmark"
+title: "Another geek in Denmark"
+---
 
 I'm writing from [here][1], today. Man, a really nice place: it seems to me I'm a student, again! Sleeping on the floor in the dormitory, eating together in the common kitchen, coming to the uni and not attending to the lessons... I'm a bit scared of the "kantine", though. Denmark is not famous for food, is it?
 

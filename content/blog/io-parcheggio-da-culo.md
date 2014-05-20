@@ -1,12 +1,12 @@
-# io parcheggio da culo!
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-03-28 00:06:41
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-03-28"
+description: "None"
+tags:
+  - "italiano"
+title: "io parcheggio da culo!"
+---
 
 ![io parcheggio da culo][1]
 

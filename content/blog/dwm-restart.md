@@ -1,12 +1,12 @@
-# dwm restart
-
-- author: lbolla
-- category: programming
-- tags: dwm,script
-- summary: 
-- date: 2010-01-08 19:14:05
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-01-08"
+tags:
+  - "dwm"
+  - "script"
+title: "dwm restart"
+---
 
 [`dwm`][1] is a wonderful window manager for X: it's small, fast and stable.
 

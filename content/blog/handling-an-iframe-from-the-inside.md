@@ -1,12 +1,11 @@
-# Handling an iframe from the inside
-
-- author: lbolla
-- category: programming
-- tags: javascript
-- summary: 
-- date: 2011-03-30 19:19:30
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-03-30"
+tags:
+  - "javascript"
+title: "Handling an iframe from the inside"
+---
 
 If you've ever worked with `iframes` you've certainly run into the [same origin
 policy][1].

@@ -1,12 +1,13 @@
-# Experiments in pickling
-
-- author: lbolla
-- category: programming
-- tags: python,pickle
-- summary: Benchmark cPickle Python's module
-- date: 2014-05-14 12:33:49
-
-----------------
+---
+categories:
+  - "programming"
+date: "2014-05-14"
+description: "Benchmark cPickle Python's module"
+tags:
+  - "python"
+  - "pickle"
+title: "Experiments in pickling"
+---
 
 [`pickle`][1] is a standard library module to serialize and deserialize Python objects. Being written in pure Python, it's fairly slow, so the standard library provides a pure-C implementation, called [`cPickle`][2], with the limitation that it cannot be [subclassed][3].
 

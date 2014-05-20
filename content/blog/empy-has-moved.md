@@ -1,12 +1,15 @@
-# EMpy has moved!
-
-- author: lbolla
-- category: programming
-- tags: python, electromagnetism, empy, numerical
-- summary: New repository for EMpy
-- date: 2012-06-25 14:22:21
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-06-25"
+description: "New repository for EMpy"
+tags:
+  - "python"
+  - "electromagnetism"
+  - "empy"
+  - "numerical"
+title: "EMpy has moved!"
+---
 
 EMpy has [moved to Github][1]!
 

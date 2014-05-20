@@ -1,12 +1,12 @@
-# Numerical recipes
-
-- author: lbolla
-- category: programming
-- tags: numerical
-- summary: 
-- date: 2008-06-11 13:48:21
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-06-11"
+description: "None"
+tags:
+  - "numerical"
+title: "Numerical recipes"
+---
 
 Numerical Recipes is a classic of Scientific Computing.
 

@@ -1,12 +1,12 @@
-# hsenv
-
-- author: lbolla
-- category: programming
-- tags: haskell
-- summary: Virtual environment for Haskell
-- date: 2012-03-29 11:04:55
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-03-29"
+description: "Virtual environment for Haskell"
+tags:
+  - "haskell"
+title: "hsenv"
+---
 
 If you have never used [hsenv][1] before, you should. It's basically the
 Haskell's equivalent of Python's [virtualenv][2].

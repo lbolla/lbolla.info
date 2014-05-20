@@ -1,12 +1,11 @@
-# Pubblicita' non richiesta da parte di RAI su e-mail
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2008-12-24 21:06:42
-
-----------------
+---
+categories:
+  - "personal"
+date: "2008-12-24"
+tags:
+  - "italiano"
+title: "Pubblicita' non richiesta da parte di RAI su e-mail"
+---
 
 RAI utilizza la e-mail degli utenti per informazioni pubblicitarie non
 richieste. Se questo vi da' fastidio tanto quanto ne da' a me, evitate di

@@ -1,12 +1,12 @@
-# HSGrep: Sorted grep in Haskell
-
-- author: lbolla
-- category: programming
-- tags: haskell
-- summary: Rewrite of sgrep in Haskell
-- date: 2011-11-27 16:30:40
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-11-27"
+description: "Rewrite of sgrep in Haskell"
+tags:
+  - "haskell"
+title: "HSGrep: Sorted grep in Haskell"
+---
 
 As an exercise to learn [Haskell][1], I wrote a specialized `grep` to work on
 sorted files. It uses [binary search][2] to scan a text file and print all the

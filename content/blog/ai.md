@@ -1,12 +1,12 @@
-# AI for fun
-
-- author: lbolla
-- category: programming
-- date: 2006-05-19 13:38:02
-- summary: AI can be fun
-- tags: ai
-
-----------------
+---
+categories:
+  - "programming"
+date: "2006-05-19"
+description: "AI can be fun"
+tags:
+  - "ai"
+title: "AI for fun"
+---
 
 ![gnod screenshot][1]
 

@@ -1,12 +1,14 @@
-# Tornado Redis chat
-
-- author: lbolla
-- category: programming
-- tags: tornado,redis,websocket
-- summary: Simple chat server implemented with Tornado, Redis and websockets
-- date: 2013-02-12 11:00:00
-
-----------------
+---
+categories:
+  - "programming"
+date: "2013-02-12"
+description: "Simple chat server implemented with Tornado, Redis and websockets"
+tags:
+  - "tornado"
+  - "redis"
+  - "websocket"
+title: "Tornado Redis chat"
+---
 
 [redis][3] is often described as an "in-memory persistent key-value store", but
 [it's much more than that][5]. One of its nicest features is its support for

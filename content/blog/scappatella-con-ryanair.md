@@ -1,12 +1,11 @@
-# Scappatella con Ryanair
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2011-06-03 09:17:33
-
-----------------
+---
+categories:
+  - "personal"
+date: "2011-06-03"
+tags:
+  - "italiano"
+title: "Scappatella con Ryanair"
+---
 
 ![][1]
 

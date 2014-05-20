@@ -1,12 +1,13 @@
-# Command line HTML validator
-
-- author: lbolla
-- category: programming
-- tags: html, python
-- summary: Command line HTML validator
-- date: 2009-01-31 23:00:22
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-01-31"
+description: "Command line HTML validator"
+tags:
+  - "html"
+  - "python"
+title: "Command line HTML validator"
+---
 
 Valid HTML is something we should strive to achieve. [W3C Validator][1] is an
 invaluable tool to do just that. Unfortunately, validating a local file you are

@@ -1,13 +1,12 @@
-# Il Metodo
-
-- title: Il Metodo
-- author: lbolla
-- category: nice-words
-- tags: italiano
-- summary: 
-- date: 2007-02-14 20:17:00
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2007-02-14"
+description: "None"
+tags:
+  - "italiano"
+title: "Il Metodo"
+---
 
 > Il primo era di non prendere mai niente per vero, se non ciò che io avessi
 > chiaramente riconosciuto come tale; ovvero, evitare accuratamente la fretta e

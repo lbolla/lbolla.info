@@ -1,12 +1,15 @@
-# Numerical computing: Matlab vs Python + numpy + weave
-
-- author: lbolla
-- category: programming
-- tags: python, numerical, benchmark, matlab
-- summary: A comparison between Matlab and Python for numerical computing
-- date: 2007-04-11 12:06:57
-
-----------------
+---
+categories:
+  - "programming"
+date: "2007-04-11"
+description: "A comparison between Matlab and Python for numerical computing"
+tags:
+  - "python"
+  - "numerical"
+  - "benchmark"
+  - "matlab"
+title: "Numerical computing: Matlab vs Python + numpy + weave"
+---
 
 Recently, I've discovered the power of Python for numerical computing. Being a
 slave of Matlab for many years, I've decided to give Python (and it's numerical

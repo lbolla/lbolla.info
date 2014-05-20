@@ -1,12 +1,11 @@
-# V-day
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-07-16 13:44:41
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-07-16"
+tags:
+  - "italiano"
+title: "V-day"
+---
 
 ![][1]
 

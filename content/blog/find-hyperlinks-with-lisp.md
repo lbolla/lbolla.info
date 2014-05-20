@@ -1,12 +1,12 @@
-# Find hyperlinks with lisp
-
-- author: lbolla
-- category: programming
-- tags: lisp
-- summary: Script to find hyperlinks in an HTML page
-- date: 2010-10-23 15:55:30
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-10-23"
+description: "Script to find hyperlinks in an HTML page"
+tags:
+  - "lisp"
+title: "Find hyperlinks with lisp"
+---
 
 Here is a quick-and-dirty script to extract all the unique links from a web
 page.

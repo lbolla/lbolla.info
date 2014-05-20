@@ -1,13 +1,14 @@
-# Overcoming Python's GIL with Cython
-
-- author: lbolla
-- category: programming
-- tags: python,thread,cython
-- summary: How to avoid that Python's GIL kills the performance of
-  multithreaded programs
-- date: 2013-12-23 12:33:49
-
-----------------
+---
+title: "Overcoming Python's GIL with Cython"
+description: "How to avoid that Python's GIL kills the performance of multithreaded programs"
+date: "2013-12-23"
+categories:
+  - "programming"
+tags:
+  - "cython"
+  - "python"
+  - "thread"
+---
 
 Everybody is aware of the infamous [Python's GIL][3]. In a nutshell, the GIL is
 a global variable that prevents multiple threads to be run concurrently by the

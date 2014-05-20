@@ -1,12 +1,12 @@
-# Pipelines in Python
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2012-04-20 14:07:10
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-04-20"
+description: "None"
+tags:
+  - "python"
+title: "Pipelines in Python"
+---
 
 Generators ([PEP 255 "Simple Generators"][1]) and Coroutines ([PEP 342
 "Coroutines via Enhanced Generators"][2]) are the cleanest way I've come across

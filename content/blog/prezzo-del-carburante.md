@@ -1,12 +1,12 @@
-# Prezzo del carburante
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-10-04 22:24:54
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-10-04"
+description: "None"
+tags:
+  - "italiano"
+title: "Prezzo del carburante"
+---
 
 Oggi ho fatto benzina dopo un sacco di tempo e mi ha colpito quanta poca
 differenza di prezzo ci sia ormai tra benzina verde e diesel. Cosi' mi sono

@@ -1,12 +1,12 @@
-# Related to... Andrew Lloyd Webber!
-
-- author: lbolla
-- category: personal
-- tags: google
-- summary: 
-- date: 2011-04-11 15:18:23
-
-----------------
+---
+categories:
+  - "personal"
+date: "2011-04-11"
+description: "None"
+tags:
+  - "google"
+title: "Related to... Andrew Lloyd Webber!"
+---
 
 It looks like I'm [related][1] to [Andrew Lloyd Webber][2]! Funny it's in Portuguese, though...
 

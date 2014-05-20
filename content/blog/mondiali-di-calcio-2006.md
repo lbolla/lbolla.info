@@ -1,12 +1,11 @@
-# Mondiali di calcio 2006
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2006-06-26 22:26:53
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-06-26"
+tags:
+  - "italiano"
+title: "Mondiali di calcio 2006"
+---
 
 Questo e' il mio primo post in italiano. Ho pensato che quello che ho da dire
 interessera' piu' gli italiani che gli altri, quindi...

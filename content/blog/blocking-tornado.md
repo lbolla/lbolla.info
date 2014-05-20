@@ -1,12 +1,13 @@
-# Blocking tasks in Tornado
-
-- author: lbolla
-- category: programming
-- tags: tornado, futures, python
-- summary: 
-- date: 2013-01-22 14:33:56
-
-----------------
+---
+categories:
+  - "programming"
+date: "2013-01-22"
+tags:
+  - "tornado"
+  - "futures"
+  - "python"
+title: "Blocking tasks in Tornado"
+---
 
 Every now and then a [new discussion is raised on Tornado's mailling list about what is the best way to execute blocking tasks][3]. It turns out that there are 3 feasible options, in order of increasing complexity:
 

@@ -1,12 +1,13 @@
-# Python and C with ctypes
-
-- author: lbolla
-- category: programming
-- tags: python,ctypes
-- summary: Very basic guide on how to call C code from Python using ctypes
-- date: 2013-08-28 11:17:03
-
-----------------
+---
+categories:
+  - "programming"
+date: "2013-08-28"
+description: "Very basic guide on how to call C code from Python using ctypes"
+tags:
+  - "python"
+  - "ctypes"
+title: "Python and C with ctypes"
+---
 
 Calling C code from Python is very simple using [ctypes][1]. Here is a very
 simple example to get you started and to serve as a reminder for me!

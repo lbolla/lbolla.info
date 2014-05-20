@@ -1,12 +1,11 @@
-# Secure GMail Notifier
-
-- author: lbolla
-- category: programming
-- tags: google
-- summary: 
-- date: 2007-10-15 13:23:09
-
-----------------
+---
+categories:
+  - "programming"
+date: "2007-10-15"
+tags:
+  - "google"
+title: "Secure GMail Notifier"
+---
 
 As you might have noticed, [GMail Notifier][1] uses the url
 <http://mail.google.com/mail> to access your personal mailbox. This is quite

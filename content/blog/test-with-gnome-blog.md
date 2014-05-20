@@ -1,12 +1,12 @@
-# Test with gnome-blog
-
-- author: lbolla
-- category: programming
-- tags: wordpress
-- summary: 
-- date: 2009-02-01 00:54:14
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-02-01"
+description: "None"
+tags:
+  - "wordpress"
+title: "Test with gnome-blog"
+---
 
 This is a post using [gnome-blog][1], a weblog client for gnome. [Here][2] I
 read about this possibility, but there were no instructions about how to

@@ -1,12 +1,13 @@
-# IQ test
-
-- author: lbolla
-- category: programming
-- tags: italiano, python
-- summary: 
-- date: 2008-02-02 16:52:49
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-02-02"
+description: "None"
+tags:
+  - "italiano"
+  - "python"
+title: "IQ test"
+---
 
 Qualche giorno fa, mi sono imbattuto in questo [test di intelligenza][1],
 proposto da [ECM][2]. Riporto il testo, per semplicita': 

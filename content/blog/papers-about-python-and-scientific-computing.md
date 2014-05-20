@@ -1,12 +1,12 @@
-# Papers about Python and scientific computing
-
-- author: lbolla
-- category: programming
-- tags: numerical, python
-- summary: 
-- date: 2007-04-25 19:16:03
-
-----------------
+---
+categories:
+  - "programming"
+date: "2007-04-25"
+tags:
+  - "numerical"
+  - "python"
+title: "Papers about Python and scientific computing"
+---
 
 Here is a list of articles about Python and scientific computing appeared in
 [Computing in Science and Engineering][1], available online: 

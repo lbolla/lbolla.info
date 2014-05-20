@@ -1,12 +1,12 @@
-# Free phone calls from Italy to UK
-
-- author: lbolla
-- category: links
-- tags: voip
-- summary: How to call from free from Italy to UK
-- date: 2007-11-22 01:05:40
-
-----------------
+---
+categories:
+  - "links"
+date: "2007-11-22"
+description: "How to call from free from Italy to UK"
+tags:
+  - "voip"
+title: "Free phone calls from Italy to UK"
+---
 
 Since today, I always used [Skype][1] to call landline and mobile phones in the
 UK: it is much cheaper than any Italian telephone company. But from today, I'm

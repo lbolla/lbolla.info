@@ -1,12 +1,17 @@
-# Tornado vs. Warp vs. Yesod
-
-- author: lbolla
-- category: programming
-- tags: benchmark, haskell, python, tornado, warp, yesod
-- summary: 
-- date: 2012-09-02 17:07:02
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-09-02"
+description: "None"
+tags:
+  - "benchmark"
+  - "haskell"
+  - "python"
+  - "tornado"
+  - "warp"
+  - "yesod"
+title: "Tornado vs. Warp vs. Yesod"
+---
 
 Today I tried to benchmark 3 web servers that I've used recently: 
 

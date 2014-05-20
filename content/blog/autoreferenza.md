@@ -1,12 +1,11 @@
-# Autoreferenza
-
-- author: lbolla
-- category: nice-words
-- tags: italiano
-- summary: 
-- date: 2007-04-08 12:45:37
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2007-04-08"
+tags:
+  - "italiano"
+title: "Autoreferenza"
+---
 
 ![altan][1]
 

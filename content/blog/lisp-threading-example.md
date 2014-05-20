@@ -1,12 +1,12 @@
-# lisp threading example
-
-- author: lbolla
-- category: programming
-- tags: lisp
-- summary: Example of threading programming in Lisp
-- date: 2010-10-23 15:31:34
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-10-23"
+description: "Example of threading programming in Lisp"
+tags:
+  - "lisp"
+title: "lisp threading example"
+---
 
 Today I wanted to experiment with threads in lisp ([sbcl][1], in particular).
 

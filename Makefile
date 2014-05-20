@@ -1,25 +1,10 @@
-REMOTE_HOST="lbolla.info"
-LL="${HOME}/.virtualenvs/lbolla.info/bin/liquidluck"
+HUGO=${GOPATH}/bin/hugo
 
-all: build
+run:
+	${HUGO} server -w -s .
 
-prerequisite:
-	git submodule add git@github.com:lbolla/liquidluck-theme-moment.git _themes/momentum
-	pip install liquidluck tornado
+build:
+	${HUGO} -s .
 
-build: clean
-	${LL} build -v
-
-server:
-	${LL} server
-
-theme:
-	cd _themes/momentum && git checkout momentum && git pull && cd ../..
-
-deploy: theme build
-
-remote:
-	ssh ${REMOTE_HOST} "cd src/lbolla.info && git checkout liquidluck && git pull && make deploy"
-
-clean: 
-	rm -rf deploy
+push:
+	rsync -av --delete public/ lbolla.info:public/

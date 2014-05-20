@@ -1,12 +1,13 @@
-# Broadcom 43xx driver install in Arch Linux
-
-- author: lbolla
-- category: tech
-- tags: linux, wireless
-- summary: How to install Broadcom drivers in Linux
-- date: 2012-07-31 10:13:28
-
-----------------
+---
+categories:
+  - "tech"
+date: "2012-07-31"
+description: "How to install Broadcom drivers in Linux"
+tags:
+  - "linux"
+  - "wireless"
+title: "Broadcom 43xx driver install in Arch Linux"
+---
 
 This is a vintage post to remind me how to install `b43` drivers on Arch Linux for my "shiny" Belkin PCMCIA card (dated 2002...).
 

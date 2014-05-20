@@ -1,12 +1,15 @@
-# Connect to MSSQL from Python with ODBC and FreeTDS
-
-- author: lbolla
-- category: programming
-- tags: python,mssql,odbc,freetds
-- summary: Reminder on how to connect to MSSQL servers from Python
-- date: 2013-08-28 12:17:03
-
-----------------
+---
+categories:
+  - "programming"
+date: "2013-08-28"
+description: "Reminder on how to connect to MSSQL servers from Python"
+tags:
+  - "python"
+  - "mssql"
+  - "odbc"
+  - "freetds"
+title: "Connect to MSSQL from Python with ODBC and FreeTDS"
+---
 
 This is another of those posts that I wrote because I always forget how to do
 things...

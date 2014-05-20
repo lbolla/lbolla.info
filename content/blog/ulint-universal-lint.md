@@ -1,12 +1,13 @@
-# ulint, Universal Lint
-
-- author: lbolla
-- category: programming
-- tags: python, javascript, haskell
-- summary: 
-- date: 2012-01-05 14:09:53
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-01-05"
+tags:
+  - "python"
+  - "javascript"
+  - "haskell"
+title: "ulint, Universal Lint"
+---
 
 I've been using so many code static checkers lately, that I decided to write a
 wrapper around the ones I use the most. I called it: [Universal Lint][1],

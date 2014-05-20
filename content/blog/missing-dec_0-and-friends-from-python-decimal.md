@@ -1,12 +1,11 @@
-# Missing `Dec_0` and friends from Python Decimal
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2010-07-29 12:05:31
-
-----------------
+---
+categories:
+  - "programming"
+date: "2010-07-29"
+tags:
+  - "python"
+title: "Missing `Dec_0` and friends from Python Decimal"
+---
 
 This fails in `py2.4`, `py2.5.1` and `py2.6`:
     

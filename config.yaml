@@ -1,0 +1,7 @@
+---
+baseurl: "http://lbolla.info:81/"
+title: "Lorenzo Bolla"
+canonifyurls: false
+permalinks:
+  blog: "/blog/:year/:month/:day/:title"
+---

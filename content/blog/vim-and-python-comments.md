@@ -1,12 +1,13 @@
-# vim and Python comments
-
-- author: lbolla
-- category: programming
-- tags: python, vim
-- summary: 
-- date: 2009-08-12 17:56:15
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-08-12"
+description: "None"
+tags:
+  - "python"
+  - "vim"
+title: "vim and Python comments"
+---
 
 I'm currently undergoing a profound revision (read "cleanup") of my `.vimrc` and
 I recently had to choose a decent plug-in to comment python code.

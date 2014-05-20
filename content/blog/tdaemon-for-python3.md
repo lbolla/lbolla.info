@@ -1,12 +1,11 @@
-# tdaemon for Python3
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2011-02-20 20:07:16
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-02-20"
+tags:
+  - "python"
+title: "tdaemon for Python3"
+---
 
 [tdaemon][1] is a neat little utility to do [continuous testing][2] in Python.
 Unfortunately, the original version only works with Python2. I've spent a

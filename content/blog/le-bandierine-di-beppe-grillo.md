@@ -1,12 +1,11 @@
-# Le bandierine di Beppe Grillo
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-09-13 18:43:38
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-09-13"
+tags:
+  - "italiano"
+title: "Le bandierine di Beppe Grillo"
+---
 
 Oggi sul [blog di Beppe Grillo][1] e' comparsa questa [mappa][2]. I marker blu
 non vi ricordano pericolosamente le bandierine di Emilio Fede?

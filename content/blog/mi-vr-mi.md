@@ -1,12 +1,9 @@
-# mi-vr-mi
-
-- author: lbolla
-- category: personal
-- tags:
-- summary: 
-- date: 2006-05-14 21:21:38
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-05-14"
+title: "mi-vr-mi"
+---
 
 ![mi-vr][1]
 

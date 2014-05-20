@@ -1,12 +1,11 @@
-# Time to go home!
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2011-04-27 14:44:44
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-04-27"
+tags:
+  - "python"
+title: "Time to go home!"
+---
 
 ![][1]
 

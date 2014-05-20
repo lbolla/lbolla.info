@@ -1,12 +1,11 @@
-# Here is where I work!
-
-- author: lbolla
-- category: personal
-- tags: google
-- summary: 
-- date: 2006-06-27 14:11:14
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-06-27"
+tags:
+  - "google"
+title: "Here is where I work!"
+---
 
 [pic][1] [diggin'][2], I found another cool link I'd like to share with you:
 [quikmaps][3].

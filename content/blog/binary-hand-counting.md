@@ -1,12 +1,12 @@
-# Binary hand counting
-
-- author: lbolla
-- category: nice-words
-- tags: italiano
-- summary: A way to count with your fingers
-- date: 2007-04-17 18:29:07
-
-----------------
+---
+categories:
+  - "nice-words"
+date: "2007-04-17"
+description: "A way to count with your fingers"
+tags:
+  - "italiano"
+title: "Binary hand counting"
+---
 
 ![binary hand counting][1]
 

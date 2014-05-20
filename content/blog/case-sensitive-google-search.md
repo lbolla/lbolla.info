@@ -1,12 +1,16 @@
-# Case sensitive Google search
-
-- author: lbolla
-- category: programming
-- tags: bookmarklet, extension, firefox, google, javascript
-- summary: Hack to simplify case sensitive searches on Google
-- date: 2011-04-13 17:26:36
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-04-13"
+description: "Hack to simplify case sensitive searches on Google"
+tags:
+  - "bookmarklet"
+  - "extension"
+  - "firefox"
+  - "google"
+  - "javascript"
+title: "Case sensitive Google search"
+---
 
 ![Case Sensitive Google Search][1]
 

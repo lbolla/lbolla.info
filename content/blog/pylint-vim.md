@@ -1,12 +1,13 @@
-# pylint.vim
-
-- author: lbolla
-- category: programming
-- tags: python, vim
-- summary: 
-- date: 2011-08-25 10:48:52
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-08-25"
+description: "None"
+tags:
+  - "python"
+  - "vim"
+title: "pylint.vim"
+---
 
 `vim` + Python + [`pylint`][1] is a powerful combination, especially when using this [`vim` plugin][2]. Unfortunately, the script stopped working after a `pylint` upgrade:
 

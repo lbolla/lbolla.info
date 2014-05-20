@@ -1,12 +1,12 @@
-# Python and vim
-
-- author: lbolla
-- category: programming
-- tags: vim, python
-- summary: 
-- date: 2008-04-22 12:01:38
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-04-22"
+tags:
+  - "vim"
+  - "python"
+title: "Python and vim"
+---
 
 Just a reminder of a very useful set of tips to effectively use vim to edit
 Python files:

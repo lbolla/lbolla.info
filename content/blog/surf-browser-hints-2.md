@@ -1,12 +1,14 @@
-# surf browser hints /2
-
-- author: lbolla
-- category: programming
-- tags: suckless, c, X
-- summary: 
-- date: 2009-08-25 12:45:04
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-08-25"
+description: "None"
+tags:
+  - "suckless"
+  - "c"
+  - "X"
+title: "surf browser hints /2"
+---
 
 Following [yesterday's post][1], here is another useful hint about surf's
 usage.

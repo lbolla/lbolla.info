@@ -1,12 +1,13 @@
-# MD5 vs SHA1 in Python
-
-- author: lbolla
-- category: programming
-- tags: benchmark, python
-- summary: Benchmark between `MD5` and `SHA1` in Python
-- date: 2011-08-24 15:53:51
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-08-24"
+description: "Benchmark between `MD5` and `SHA1` in Python"
+tags:
+  - "benchmark"
+  - "python"
+title: "MD5 vs SHA1 in Python"
+---
 
 If you are interested to know if the [myth about `MD5` being faster than `SHA1`][1]
 holds for Python, here is the result I got on my box:

@@ -1,12 +1,14 @@
-# CVS behind a firewall through an http proxy
-
-- author: lbolla
-- category: programming
-- tags: cvs, firewall, proxy
-- summary: How to avoid firewalls
-- date: 2008-04-21 13:45:37
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-04-21"
+description: "How to avoid firewalls"
+tags:
+  - "cvs"
+  - "firewall"
+  - "proxy"
+title: "CVS behind a firewall through an http proxy"
+---
 
 If you work in a company with a too restrictive firewall, but you still need to
 access a CVS repository like [Sourceforge][1], you can bypass it using the

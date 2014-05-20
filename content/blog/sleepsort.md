@@ -1,12 +1,11 @@
-# sleepsort
-
-- author: lbolla
-- category: programming
-- tags: lisp
-- summary: 
-- date: 2011-06-17 14:42:37
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-06-17"
+tags:
+  - "lisp"
+title: "sleepsort"
+---
 
 To honor [the funniest thread in months][1], here is a lisp implementation of [sleepsort][2]!
 

@@ -1,12 +1,12 @@
-# Die zombie, die!
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: Different ways to kill zombies
-- date: 2014-01-23 11:02:00
-
-----------------
+---
+categories:
+  - "programming"
+date: "2014-01-23"
+description: "Different ways to kill zombies"
+tags:
+  - "python"
+title: "Die zombie, die!"
+---
 
 The [`subprocess`][3] module in Python standard library allows you to spanw
 processes to do some tasks. The parent process should [`wait`][4] on its

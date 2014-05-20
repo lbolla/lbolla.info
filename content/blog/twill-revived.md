@@ -1,12 +1,12 @@
-# twill revived
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: 
-- date: 2011-03-11 18:14:42
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-03-11"
+description: "None"
+tags:
+  - "python"
+title: "twill revived"
+---
 
 After reading [how to do automated testing in python][1], I've started using
 [twill][2], by [C. Titus Brown][3]

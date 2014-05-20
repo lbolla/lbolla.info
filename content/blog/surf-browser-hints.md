@@ -1,12 +1,13 @@
-# surf browser hints
-
-- author: lbolla
-- category: programming
-- tags: suckless, c
-- summary: 
-- date: 2009-08-24 18:13:01
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-08-24"
+description: "None"
+tags:
+  - "suckless"
+  - "c"
+title: "surf browser hints"
+---
 
 [`surf`][1] is a simple web browser based on [webkit][2]/gtk+, the same web
 engine that powers [Google Chrome][3]. Used with [`dwm`][4] and [dmenu][5], it's

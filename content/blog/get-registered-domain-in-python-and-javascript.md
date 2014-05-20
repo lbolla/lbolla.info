@@ -1,12 +1,13 @@
-# Get registered domain in Python and Javascript
-
-- author: lbolla
-- category: programming
-- tags: javascript, python
-- summary: Script to find the tld of a url
-- date: 2011-04-05 15:08:14
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-04-05"
+description: "Script to find the tld of a url"
+tags:
+  - "javascript"
+  - "python"
+title: "Get registered domain in Python and Javascript"
+---
 
 [reg-dom-libs][1] are a set of libraries for `C`, `PHP` and `Perl` to convert
 an arbitrary domain name to the registered domain name. 

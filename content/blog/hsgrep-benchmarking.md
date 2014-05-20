@@ -1,12 +1,13 @@
-# HSGrep benchmarking
-
-- author: lbolla
-- category: programming
-- tags: haskell, benchmark
-- summary: Benchmark for binary search grep in Haskell
-- date: 2011-11-30 23:38:02
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-11-30"
+description: "Benchmark for binary search grep in Haskell"
+tags:
+  - "haskell"
+  - "benchmark"
+title: "HSGrep benchmarking"
+---
 
 Few days ago, [I rewrote `sgrep` in Haskell][1]. I was curious to know how it
 compares to [`grep`][2] in term of execution speed. In particular, I was

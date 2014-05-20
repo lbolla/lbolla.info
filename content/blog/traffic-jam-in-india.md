@@ -1,12 +1,9 @@
-# Traffic jam in India
-
-- author: lbolla
-- category: personal
-- tags: 
-- summary: 
-- date: 2006-07-07 14:07:27
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-07-07"
+title: "Traffic jam in India"
+---
 
 A friend of mine sent me [this][1]. It reminded me of my trip in India just 4
 months ago...

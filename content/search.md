@@ -1,5 +1,4 @@
-# Search results
-
-- template: search.html
-
-----------------
+---
+title: "Search results"
+type: "search"
+---

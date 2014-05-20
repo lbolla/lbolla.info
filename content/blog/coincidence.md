@@ -1,12 +1,11 @@
-# Coincidence?
-
-- author: lbolla
-- category: personal
-- tags:
-- summary: Coincidences do not exist. Or do they?
-- date: 2006-04-11 18:05:59
-
-----------------
+---
+categories:
+  - "personal"
+date: "2006-04-11"
+description: "Coincidences do not exist. Or do they?"
+tags:
+title: "Coincidence?"
+---
 
 ![Coincidence][1]
 

@@ -1,12 +1,14 @@
-# Wordpress to markdown
-
-- author: lbolla
-- date: 2012-11-12 15:00:00
-- category: programming
-- tags: markdown, python, wordpress
-- summary: How I decided to drop Wordpress and use markdown
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-11-12"
+description: "How I decided to drop Wordpress and use markdown"
+tags:
+  - "markdown"
+  - "python"
+  - "wordpress"
+title: "Wordpress to markdown"
+---
 
 Recently, I moved away from [Wordpress][1]. I did it primarily because
 [Wordpress is so much more than **just** a blogging platform][4] and

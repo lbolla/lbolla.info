@@ -1,12 +1,14 @@
-# Useful scripts - Watch
-
-- author: lbolla
-- category: programming
-- date: 2012-11-30 16:20:00
-- summary: Series about useful scripts
-- tags: acme, useful-scripts, python
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-11-30"
+description: "Series about useful scripts"
+tags:
+  - "acme"
+  - "useful-scripts"
+  - "python"
+title: "Useful scripts - Watch"
+---
 
 This is the fifth post of a [series][1] describing simple scripts that I wrote
 to ease my life as a programmer.

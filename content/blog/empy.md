@@ -1,12 +1,15 @@
-# EMpy
-
-- author: lbolla
-- category: programming
-- tags: electromagnetic, python, numerical, empy
-- summary: EMpy release note
-- date: 2007-09-27 23:07:28
-
-----------------
+---
+categories:
+  - "programming"
+date: "2007-09-27"
+description: "EMpy release note"
+tags:
+  - "electromagnetic"
+  - "python"
+  - "numerical"
+  - "empy"
+title: "EMpy"
+---
 
 [EMpy][1] is out! Here is the release note: 
 

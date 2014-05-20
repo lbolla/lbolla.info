@@ -1,12 +1,12 @@
-# India!
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2008-04-10 14:13:24
-
-----------------
+---
+categories:
+  - "personal"
+date: "2008-04-10"
+description: "None"
+tags:
+  - "italiano"
+title: "India!"
+---
 
 ![India][1]
 

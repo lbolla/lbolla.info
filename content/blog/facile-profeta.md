@@ -1,12 +1,11 @@
-# Facile profeta
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-09-15 22:59:31
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-09-15"
+tags:
+  - "italiano"
+title: "Facile profeta"
+---
 
 Questo e' il secondo post in cui nomino Beppe Grillo: ormai e' una delle mie
 fonti di informazione primarie! Su [repubblica.it][1] di oggi e' riportata la

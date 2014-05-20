@@ -1,12 +1,12 @@
-# Google Docs
-
-- author: lbolla
-- category: programming
-- tags: google
-- summary: 
-- date: 2006-10-11 23:46:32
-
-----------------
+---
+categories:
+  - "programming"
+date: "2006-10-11"
+description: "None"
+tags:
+  - "google"
+title: "Google Docs"
+---
 
 Cool! Google has launched a new service, called "Google Docs&Spreadsheets":
 <http://docs.google.com>. They are merging two different services already

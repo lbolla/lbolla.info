@@ -1,12 +1,13 @@
-# Experiments with ExtJS
-
-- author: lbolla
-- category: programming
-- tags: extjs, javascript
-- summary: Experiments while studying the Javascript library ExtJS
-- date: 2012-09-20 17:35:21
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-09-20"
+description: "Experiments while studying the Javascript library ExtJS"
+tags:
+  - "extjs"
+  - "javascript"
+title: "Experiments with ExtJS"
+---
 
 For a non-designer, [Ext JS][1] is kind-of a blessing. It is a self-contained
 fully-fledged Javascript framework, with loads of fancy re-usable browser-compatible

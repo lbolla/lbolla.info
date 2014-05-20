@@ -1,12 +1,11 @@
-# Installing Ubuntu 6.06 on Dell Inspiron 5150
-
-- author: lbolla
-- category: programming
-- tags: linux
-- summary: 
-- date: 2006-06-05 21:32:46
-
-----------------
+---
+categories:
+  - "programming"
+date: "2006-06-05"
+tags:
+  - "linux"
+title: "Installing Ubuntu 6.06 on Dell Inspiron 5150"
+---
 
 I decided to switch to Ubuntu, at last. And I'm definitely happy for the
 choice: smooth looking feel, decent speed and big selection of applications.

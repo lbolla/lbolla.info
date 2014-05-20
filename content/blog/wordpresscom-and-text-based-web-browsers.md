@@ -1,12 +1,11 @@
-# wordpress.com and text based web browsers
-
-- author: lbolla
-- category: programming
-- tags: wordpress
-- summary: 
-- date: 2009-01-31 23:07:16
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-01-31"
+tags:
+  - "wordpress"
+title: "wordpress.com and text based web browsers"
+---
 
 Today, I was appreciating how well wordpress.com renders on text based web
 browsers (using [elinks][1]). Unfortunately, even if reading posts looks great,

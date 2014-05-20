@@ -1,12 +1,12 @@
-# Year 2038 bug in MySQL
-
-- author: lbolla
-- category: programming
-- tags: mysql
-- summary: 
-- date: 2011-03-04 16:35:43
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-03-04"
+description: "None"
+tags:
+  - "mysql"
+title: "Year 2038 bug in MySQL"
+---
 
 Today I hit the ["year 2038" bug][1]. While working on MySQL, I did something like: 
     

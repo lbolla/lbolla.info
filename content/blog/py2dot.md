@@ -1,12 +1,12 @@
-# py2dot
-
-- author: lbolla
-- category: programming
-- tags: python
-- summary: A library to view Python dependencies as graphs
-- date: 2008-10-05 14:17:12
-
-----------------
+---
+categories:
+  - "programming"
+date: "2008-10-05"
+description: "A library to view Python dependencies as graphs"
+tags:
+  - "python"
+title: "py2dot"
+---
 
 ![py2dot example][1]
 

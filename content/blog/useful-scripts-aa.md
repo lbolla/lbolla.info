@@ -1,12 +1,14 @@
-# Useful scripts - a+/a-
-
-- author: lbolla
-- category: programming
-- date: 2012-11-02 15:42:02
-- summary: Series about useful scripts
-- tags: rc, acme, useful-scripts
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-11-02"
+description: "Series about useful scripts"
+tags:
+  - "rc"
+  - "acme"
+  - "useful-scripts"
+title: "Useful scripts - a+/a-"
+---
 
 This is the first post of a [series][1] describing simple scripts that I wrote
 to ease my life as a programmer.

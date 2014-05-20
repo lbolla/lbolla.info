@@ -1,12 +1,11 @@
-# Riprendiamoci Telecom!
-
-- author: lbolla
-- category: personal
-- tags: italiano
-- summary: 
-- date: 2007-04-07 10:23:51
-
-----------------
+---
+categories:
+  - "personal"
+date: "2007-04-07"
+tags:
+  - "italiano"
+title: "Riprendiamoci Telecom!"
+---
 
 ![][1]
 

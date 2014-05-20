@@ -1,12 +1,11 @@
-# Sudoku solver in Haskell
-
-- author: lbolla
-- category: programming
-- tags: haskell
-- summary: 
-- date: 2012-02-27 17:27:16
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-02-27"
+tags:
+  - "haskell"
+title: "Sudoku solver in Haskell"
+---
 
 Recently, I've been challenged to write a [Sudoku][1] solver. Not knowing the
 rules and with only 30 minutes, I needed some help...

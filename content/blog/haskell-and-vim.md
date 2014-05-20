@@ -1,12 +1,13 @@
-# Haskell and VIM
-
-- author: lbolla
-- category: programming
-- tags: haskell, vim
-- summary: 
-- date: 2011-10-15 11:13:15
-
-----------------
+---
+categories:
+  - "programming"
+date: "2011-10-15"
+description: "None"
+tags:
+  - "haskell"
+  - "vim"
+title: "Haskell and VIM"
+---
 
 I had to tinker quite a bit before finding a decent configuration for vim to
 edit Haskell files. Here are the packages and config files I use: 

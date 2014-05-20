@@ -1,13 +1,13 @@
-# Useful scripts - csvfmt, xmlfmt, jsonfmt
-
-- title: Useful scripts - csvfmt, xmlfmt, jsonfmt
-- author: lbolla
-- category: programming
-- tags: useful-scripts, python
-- summary: Useful scripts to format CSV, XML and JSON files for easier reading
-- date: 2012-11-16 13:45:52
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-11-16"
+description: "Useful scripts to format CSV, XML and JSON files for easier reading"
+tags:
+  - "useful-scripts"
+  - "python"
+title: "Useful scripts - csvfmt, xmlfmt, jsonfmt"
+---
 
 This is the third post of a [series][1] describing simple scripts that
 I wrote to ease my life as a programmer.

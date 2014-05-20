@@ -1,12 +1,14 @@
-# Escape sequences for rxvt
-
-- author: lbolla
-- category: programming
-- tags: X, vim, rxvt
-- summary: 
-- date: 2009-05-01 10:07:06
-
-----------------
+---
+categories:
+  - "programming"
+date: "2009-05-01"
+description: "None"
+tags:
+  - "X"
+  - "vim"
+  - "rxvt"
+title: "Escape sequences for rxvt"
+---
 
 I'm posting this info because I had a hard time searching for it on the
 internet.

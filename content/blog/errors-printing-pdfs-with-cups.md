@@ -1,12 +1,12 @@
-# Errors printing PDFs with CUPS
-
-- author: lbolla
-- category: programming
-- tags: cups
-- summary: 
-- date: 2012-09-13 09:38:57
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-09-13"
+description: "None"
+tags:
+  - "cups"
+title: "Errors printing PDFs with CUPS"
+---
 
 This is another of those posts _to not forget_. If printing a PDF file with
 `lp` prints a blank page with error messages like: 

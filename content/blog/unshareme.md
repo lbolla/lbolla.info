@@ -1,12 +1,14 @@
-# UnshareMe
-
-- author: lbolla
-- category: programming
-- tags: go, web, hash
-- summary: Encrypt URLs so that they cannot be shared with others
-- date: 2012-12-12 11:17:03
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-12-12"
+description: "Encrypt URLs so that they cannot be shared with others"
+tags:
+  - "go"
+  - "web"
+  - "hash"
+title: "UnshareMe"
+---
 
 Last my weekend project was to write something similar to [WeHasLinks][2]. In
 fact, [WeHasLinks][2] is a file sharing website, but I misread it as

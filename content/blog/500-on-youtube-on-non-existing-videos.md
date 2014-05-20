@@ -1,12 +1,12 @@
-# 500 on YouTube on non-existing videos
-
-- author: lbolla
-- category: links
-- date: 2011-12-17 15:27:01
-- summary: YouTube is broken for some links
-- tags: youtube
-
-----------------
+---
+categories:
+  - "links"
+date: "2011-12-17"
+description: "YouTube is broken for some links"
+tags:
+  - "youtube"
+title: "500 on YouTube on non-existing videos"
+---
 
 Now, [this is embarassing...][1] It looks like requesting a non-existent video on YouTube causes a "500 Internal Server Error"!
 

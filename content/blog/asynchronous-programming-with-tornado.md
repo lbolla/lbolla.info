@@ -1,12 +1,14 @@
-# Asynchronous programming with Tornado
-
-- author: lbolla
-- category: programming
-- tags: tornado,web,asynchronous
-- summary: Tutorial about asynchronous web programming with Tornado
-- date: 2012-10-03 12:33:49
-
-----------------
+---
+categories:
+  - "programming"
+date: "2012-10-03"
+description: "Tutorial about asynchronous web programming with Tornado"
+tags:
+  - "tornado"
+  - "web"
+  - "asynchronous"
+title: "Asynchronous programming with Tornado"
+---
 
 Asynchronous programming can be tricky for beginners, therefore I think it's
 useful to iron some basic concepts to avoid common pitfalls. For an explanation
