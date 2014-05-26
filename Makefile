@@ -1,10 +1,13 @@
 HUGO=${GOPATH}/bin/hugo
 
-run:
+run: clean
 	${HUGO} server -w -s .
 
-build:
+build: clean
 	${HUGO} -s .
+
+clean:
+	rm -rf public/
 
 push:
 	rsync -av --delete public/ lbolla.info:public/
