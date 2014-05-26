@@ -3,13 +3,14 @@ body {
 }
 
 footer {
-    margin: 50px 0;
+    margin: 70px 0 0 0;
+    position: relative;
 }
 
 #gravatar {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 90px;
     opacity: 0.2;
     z-index: -1;
 }
