@@ -1,3 +1,6 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
+    {{ if isset .Params "style" }}
+	<link href="/css/{{ index .Params "style" }}" rel="stylesheet">
+    {{ end }}
