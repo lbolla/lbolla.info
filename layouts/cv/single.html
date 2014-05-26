@@ -1,0 +1,21 @@
+{{ template "chrome/header.html" . }}
+<body>
+  {{ template "chrome/navbar.html" . }}
+  <div class="container">
+    <div class="row">
+      <div id="cv" class="col-md-9">
+	<h3>
+	  {{ .Params.name }}<br>
+	  <small>{{ .Description }}</small>
+	</h3>
+	<hr>
+	{{ .Content }}
+      </div>
+      <!-- Sidebar -->
+      <div class="col-md-3">
+	{{ template "chrome/menu.html" . }}
+      </div>
+    </div>
+    {{ template "chrome/footer.copyright.html" . }}
+  </div>
+  {{ template "chrome/footer.html" . }}
