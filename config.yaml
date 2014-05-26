@@ -1,5 +1,5 @@
 ---
-baseurl: "http://lbolla.info:81/"
+baseurl: "http://lbolla.info/"
 title: "Lorenzo Bolla"
 canonifyurls: false
 permalinks:
