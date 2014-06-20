@@ -5,6 +5,8 @@ date: "2009-01-31"
 tags:
   - "wordpress"
 title: "wordpress.com and text based web browsers"
+aliases:
+  - /blog/2009/01/31/wordpress.com-and-text-based-web-browsers
 ---
 
 Today, I was appreciating how well wordpress.com renders on text based web

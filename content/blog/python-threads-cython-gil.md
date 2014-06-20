@@ -8,6 +8,8 @@ tags:
   - "cython"
   - "python"
   - "thread"
+aliases
+  - /blog/2013/12/23/overcoming-pythons-gil-with-cython
 ---
 
 Everybody is aware of the infamous [Python's GIL][3]. In a nutshell, the GIL is

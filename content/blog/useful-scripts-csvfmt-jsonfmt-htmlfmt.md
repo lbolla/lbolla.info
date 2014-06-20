@@ -43,7 +43,7 @@ Output looks like this:
 script is thought to be used to read the text embedded in `XML` tags,
 and it's analogous to `[htmlfmt`][5]. If you want to format an `XML`
 file, maintaining the `XML` tags, use `[xmllint -format`][6], or my
-`[xmlind`][7] (described another blog post of this series.)
+`[xmlind][7]` (described another blog post of this series.)
 
     #!/usr/bin/env python
     

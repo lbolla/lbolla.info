@@ -7,6 +7,8 @@ tags:
   - "python"
   - "vim"
 title: "pylint.vim"
+aliases:
+  - /blog/2011/08/25/pylint.vim
 ---
 
 `vim` + Python + [`pylint`][1] is a powerful combination, especially when using this [`vim` plugin][2]. Unfortunately, the script stopped working after a `pylint` upgrade:

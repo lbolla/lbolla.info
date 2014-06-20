@@ -11,6 +11,8 @@ tags:
   - "warp"
   - "yesod"
 title: "Tornado vs. Warp vs. Yesod"
+aliases:
+  - /blog/2012/09/02/tornado-vs.-warp-vs.-yesod
 ---
 
 Today I tried to benchmark 3 web servers that I've used recently: 

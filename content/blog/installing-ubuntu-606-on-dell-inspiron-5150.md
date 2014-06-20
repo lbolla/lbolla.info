@@ -5,6 +5,8 @@ date: "2006-06-05"
 tags:
   - "linux"
 title: "Installing Ubuntu 6.06 on Dell Inspiron 5150"
+aliases:
+  - /blog/2006/06/05/installing-ubuntu-6.06-on-dell-inspiron-5150
 ---
 
 I decided to switch to Ubuntu, at last. And I'm definitely happy for the

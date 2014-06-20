@@ -1,7 +1,7 @@
 ---
 categories:
   - "programming"
-date: "2013-02-12"
+date: "2013-12-02"
 description: "Simple chat server implemented with Tornado, Redis and websockets"
 tags:
   - "tornado"
