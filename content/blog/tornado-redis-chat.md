@@ -8,6 +8,8 @@ tags:
   - "redis"
   - "websocket"
 title: "Tornado Redis chat"
+aliases:
+  - /blog/2013/02/12/tornado-redis-chat
 ---
 
 [redis][3] is often described as an "in-memory persistent key-value store", but

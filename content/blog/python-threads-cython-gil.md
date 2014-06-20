@@ -8,7 +8,7 @@ tags:
   - "cython"
   - "python"
   - "thread"
-aliases
+aliases:
   - /blog/2013/12/23/overcoming-pythons-gil-with-cython
 ---
 
