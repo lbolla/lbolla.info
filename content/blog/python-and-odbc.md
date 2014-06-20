@@ -9,6 +9,8 @@ tags:
   - "odbc"
   - "freetds"
 title: "Connect to MSSQL from Python with ODBC and FreeTDS"
+aliases:
+  - /blog/2013/08/28/connect-to-mssql-from-python-with-odbc-and-freetds
 ---
 
 This is another of those posts that I wrote because I always forget how to do

@@ -9,6 +9,8 @@ tags:
   - "benchmark"
   - "matlab"
 title: "Numerical computing: Matlab vs Python + numpy + weave"
+aliases:
+  - /blog/2007/04/11/numerical-computing-matlab
 ---
 
 Recently, I've discovered the power of Python for numerical computing. Being a

@@ -8,6 +8,8 @@ tags:
   - "postgres"
   - "python"
 title: "Simple chat with Postgres LISTEN/NOTIFY and Tornado's IOLoop"
+aliases:
+  - /blog/2013/03/21/simple-chat-with-postgres-listen/notify-and-tornados-ioloop
 ---
 
 Postgres supports from version 8.4 a very interesting functionality:

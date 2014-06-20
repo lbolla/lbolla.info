@@ -9,6 +9,8 @@ tags:
   - "python"
   - "psycopg2"
 title: "Use Postgres advanced types in Python"
+aliases:
+  - /blog/2013/03/06/use-postgres-advanced-types-in-python
 ---
 
 Postgres has a lot of useful [builtin data types][1], but only some of them are
