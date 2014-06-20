@@ -8,6 +8,8 @@ tags:
   - "python"
   - "acme"
 title: "Useful scripts - htmlind and xmlind"
+aliases:
+  - /blog/2012/11/23/useful-scripts---htmlind-and-xmlind
 ---
 
 This is the forth post of a [series][1] describing simple scripts that

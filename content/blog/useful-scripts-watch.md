@@ -8,6 +8,8 @@ tags:
   - "useful-scripts"
   - "python"
 title: "Useful scripts - Watch"
+aliases:
+  - /blog/2012/11/30/useful-scripts---watch
 ---
 
 This is the fifth post of a [series][1] describing simple scripts that I wrote

@@ -6,8 +6,6 @@ tags:
   - "dwm"
   - "script"
 title: "dwm restart"
-aliases:
-  - /blog/2010/01/08/dwm-restart/feed
 ---
 
 [`dwm`][1] is a wonderful window manager for X: it's small, fast and stable.
