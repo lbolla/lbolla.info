@@ -46,7 +46,7 @@ Nonetheless, the results were very interesting. First of all, here is the code.
 
 ### Yesod
 
-<script src="https://gist.github.com/3567006.js?file=yesod"></script>
+<script src="https://gist.github.com/3567006.js?file=yesod.hs"></script>
 
 And the results, obtained using httperf:
 
