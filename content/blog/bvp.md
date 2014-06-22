@@ -8,6 +8,8 @@ tags:
   - "matlab"
   - "numerical"
 title: "Boundary Value Problem"
+aliases:
+  - /blog/2008/04/14/boundary-value-problem
 ---
 
 For you, Python lover, who always needs Matlab functions: boundary value

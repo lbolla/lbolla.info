@@ -9,6 +9,8 @@ tags:
   - "useful-scripts"
   - "python"
 title: "Useful scripts - c+/c-"
+aliases:
+  - /blog/2012/11/09/userful-scripts-cc
 ---
 
 This is the second post of a [series][1] describing simple scripts that I wrote
