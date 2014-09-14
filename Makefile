@@ -9,5 +9,5 @@ build: clean
 clean:
 	rm -rf public/
 
-push:
+push: build
 	rsync -av --delete public/ lbolla.info:public/
