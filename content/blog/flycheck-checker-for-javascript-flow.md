@@ -11,7 +11,7 @@ title: "Flycheck checker for Flow"
 ---
 
 [Yesterday][1] Facebook open sourced [Flow][1], a static type checker for Javascript.
-If you use [Emacs][3], you can use [Flycheck][4] to check your .js files on the fly using flow.
+If you use [Emacs][3], you can use [Flycheck][4] to check your .js files on the fly using Flow.
 
 Here is the checker definition I use:
 
