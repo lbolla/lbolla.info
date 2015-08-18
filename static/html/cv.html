@@ -1,408 +1,417 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-    <head>
-        <title>Lorenzo Bolla | Lead Python Developer, London, UK</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content="software,python,london,haskell,mongodb,mysql,html,javascript" />
-        <meta name="description" content="Lorenzo Bolla curriculumn vitae" />
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
-	<style>
-/*
----------------------------------------------------------------------------------
-	STRIPPED DOWN RESUME TEMPLATE
-    html resume
+  <head>
+    <title>Lorenzo Bolla | Lead Python Developer, London, UK</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="software,python,london,haskell,mongodb,mysql,html,javascript" />
+    <meta name="description" content="Lorenzo Bolla curriculumn vitae" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+    <style>
+      /*
+      ---------------------------------------------------------------------------------
+      STRIPPED DOWN RESUME TEMPLATE
+      html resume
 
-    v0.9: 5/28/09
+      v0.9: 5/28/09
 
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
----------------------------------------------------------------------------------
-*/
+      design and code by: thingsthatarebrown.com 
+      (matt brown)
+      ---------------------------------------------------------------------------------
+      */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-.msg { padding: 10px; background: #222; position: relative; }
-.msg h1 { color: #fff;  }
-.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
-.msg a:hover { background: #266400; }
+      .msg { padding: 10px; background: #222; position: relative; }
+      .msg h1 { color: #fff;  }
+      .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+      .msg a:hover { background: #266400; }
 
-/* //-- yui-grids style overrides -- */
- body { font-family: 'Open Sans', sans-serif; color: #444; } 
-body { color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+      /* //-- yui-grids style overrides -- */
+      body { font-family: 'Open Sans', sans-serif; color: #444; } 
+      body { color: #444; }
+      #inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+      .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
-/* //-- header, body, footer -- */
-#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
-#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
-#bd, #ft { margin-bottom: 2em; }
+      /* //-- header, body, footer -- */
+      #hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
+      #hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+      #bd, #ft { margin-bottom: 2em; }
 
-/* //-- footer -- */
-#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
-#ft p { margin-bottom: 0; text-align: center;   }
+      /* //-- footer -- */
+      #ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+      #ft p { margin-bottom: 0; text-align: center;   }
 
-/* //-- core typography and style -- */
-#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
-h2 { font-size: 152% }
-h3, h4 { font-size: 122%; }
-h1, h2, h3, h4 { color: #333; }
-p { font-size: 100%; line-height: 18px; padding-right: 3em; }
-a { color: #990003 }
-a:hover { text-decoration: none; }
-strong { font-weight: bold; }
-em { font-style: italic; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
-p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
-p.enlarge span { color: #000 }
-.contact-info { margin-top: 7px; }
-.first h2 { font-style: italic; }
-.last { border-bottom: 0 }
+      /* //-- core typography and style -- */
+      #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+      h2 { font-size: 152% }
+      h3, h4 { font-size: 122%; }
+      h1, h2, h3, h4 { color: #333; }
+      p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+      a { color: #990003 }
+      a:hover { text-decoration: none; }
+      strong { font-weight: bold; }
+      em { font-style: italic; }
+      li { line-height: 24px; border-bottom: 1px solid #ccc; }
+      p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+      p.enlarge span { color: #000 }
+      .contact-info { margin-top: 7px; }
+      .first h2 { font-style: italic; }
+      .last { border-bottom: 0 }
 
 
-/* //-- section styles -- */
+      /* //-- section styles -- */
 
-@media screen {
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
-a#pdf:hover { background: #222; }
-}
-@media print {
-        a#pdf { display: none; }
-}
+      @media screen {
+      a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+      a#pdf:hover { background: #222; }
+      }
+      @media print {
+      a#pdf { display: none; }
+      }
 
-.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
-.job h4 { position: absolute; top: 0.35em; right: 0 }
-.job p { margin: 0.75em 0 3em 0; }
+      .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+      .job h4 { position: absolute; top: 0.35em; right: 0 }
+      .job p { margin: 0.75em 0 3em 0; }
 
-.last { border: none; }
-.skills-list {  }
-.skills-list ul { margin: 0; }
-.skills-list li { margin: 3px 0; padding: 3px 0; }
-.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
-.talent h2 { margin-bottom: 6px; }
+      .last { border: none; }
+      .skills-list {  }
+      .skills-list ul { margin: 0; }
+      .skills-list li { margin: 3px 0; padding: 3px 0; }
+      .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+      .talent { width: 32%; float: left }
+      .talent h2 { margin-bottom: 6px; }
 
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
+      #srt-ttab { margin-bottom: 100px; text-align: center;  }
+      #srt-ttab img.last { margin-top: 20px }
 
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width:80.2%;}
-.yui-gf div.first{width:12.3%;}
+      /* --// override to force 1/8th width grids -- */
+      .yui-gf .yui-u{width:80.2%;}
+      .yui-gf div.first{width:12.3%;}
 
-.article { margin-bottom: 0.5em; }
-	</style>
-    </head>
-    <body>
+      .article { margin-bottom: 0.5em; }
+    </style>
+  </head>
+  <body>
 
-        <div id="doc2" class="yui-t7">
-            <div id="inner">
+    <div id="doc2" class="yui-t7">
+      <div id="inner">
 
-                <div id="hd">
-                    <div class="yui-gc">
-                        <div class="yui-u first">
-                            <h1>Lorenzo Bolla</h1>
-                            <h2>Senior Software Architect</h2>
+        <div id="hd">
+          <div class="yui-gc">
+            <div class="yui-u first">
+              <h1>Lorenzo Bolla</h1>
+              <h2>Senior Software Architect</h2>
+            </div>
+
+            <div class="yui-u">
+              <div class="contact-info">
+                <!-- <h3><a id="pdf" href="/doc/lorenzo-bolla-resume.pdf">Download PDF</a></h3> -->
+                <h3><a href="mailto:lbolla@gmail.com">lbolla@gmail.com</a></h3>
+                <h3>+44 (0)7786 189 180</h3>
+              </div><!--// .contact-info -->
+            </div>
+          </div><!--// .yui-gc -->
+        </div><!--// hd -->
+
+        <div id="bd">
+          <div id="yui-main">
+            <div class="yui-b">
+
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Profile</h2>
+                </div>
+                <div class="yui-u">
+                  <p class="enlarge">Software Engineer with background in Physics and a crush for hard (yet) unsolved problems.</p>
+                  <p>Telecommunication Engineer with a strong
+                    mathematical and physical background,
+                    specifically in the field of classical
+                    optics and telecommunications.</p>
+
+                  <p>Doctorate on Numerical Methods and proved
+                    abilities to develop complex algorithms
+                    efficiently, in both academic and business
+                    environments.</p>
+
+                  <p>5+ years of experience in software design:
+                    highly scalable web applications, numerical
+                    intensive simulations and massively
+                    parallel data analysis.</p>
+
+                  <p>Fluent in Python, Javascript, HTML, CSS,
+                    C/C++ (using both STL and Boost libraries),
+                    Fortran and Matlab.</p>
+
+                  <p>Interested in other programming languages,
+                    like Haskell, Lisp and Go.</p>
+
+                  <p>Experienced with many different libraries
+                    and frameworks: Tornado, Pandas, Disco,
+                    JQuery, ExtJS, git, MySQL, sqlite, MongoDB,
+                    nginx, and many more.</p>
+
+                  <p>Familiar with UNIX-like (mainly Linux) and
+                    Windows OSes.</p>
+
+                  <p>Logical thinker, able to provide effective
+                    solutions to solve difficult problems.</p>
+
+                  <p>Great team-player &amp; fun attitude, competent
+                    time manager, very dependable under
+                    pressure and passionately dedicated to the
+                    task.</p>
+                </div>
+              </div><!--// .yui-gf -->
+
+              <div class="yui-gf">
+                <div class="yui-u first">
+                  <h2>Skills</h2>
+                </div>
+                <div class="yui-u">
+
+                  <div class="talent">
+                    <h2>Software<br />Architecture</h2>
+                    <p>Proved experience in designing, implementing and deploying highly scalable software systems.</p>
+                  </div>
+
+                  <div class="talent">
+                    <h2>Software<br />Development</h2>
+                    <p>
+                      Years of experience in <a href="http://stackoverflow.com/search?q=user:1063605+[python]">Python</a> development, using
+                      <a href="http://stackoverflow.com/search?q=user:1063605+[tornado]">Tornado</a>,
+                      <a href="http://stackoverflow.com/search?q=user:1063605+[pandas]">Pandas</a>,
+                      <a href="http://stackoverflow.com/search?q=user:1063605+[sql]">MySQL</a>,
+                      <a href="http://stackoverflow.com/search?q=user:1063605+[mongodb]">MongoDB</a>
+                      and many other tools.
+                      Very interested in functional programming, especially <a href="http://stackoverflow.com/search?q=user:1063605+[haskell]">Haskell</a>.
+                    </p>
+                  </div>
+
+                  <div class="talent">
+                    <h2>More<br />&nbsp;</h2>
+                    <ul>
+                      <li><a href="https://github.com/lbolla/">Github</a>
+                      <li><a href="http://stackoverflow.com/users/1063605/lbolla">StackOverflow</a>
+                      <li><a href="http://www.linkedin.com/profile/view?id=16061503&trk=tab_pro">LinkedIn</a>
+                      </ul>
+                      </div>
+                      </div>
+                    </div><!--// .yui-gf -->
+
+                    <div class="yui-gf">
+                      <div class="yui-u first">
+                        <h2>Technical</h2>
+                      </div>
+                      <div class="yui-u">
+                        <ul class="talent">
+                          <li>Python</li>
+                          <li>Haskell</li>
+                          <li>Go</li>
+                          <li class="last">C/C++</li>
+                        </ul>
+
+                        <ul class="talent">
+                          <li>Javascript</li>
+                          <li>JQuery</li>
+                          <li>HTML/CSS</li>
+                          <li class="last">ExtJS</li>
+                        </ul>
+
+                        <ul class="talent">
+                          <li>MySQL</li>
+                          <li>SQlite</li>
+                          <li>MongoDB</li>
+                          <li class="last">Memcache</li>
+                        </ul>
+                      </div>
+                    </div><!--// .yui-gf-->
+
+                    <div class="yui-gf">
+
+                      <div class="yui-u first">
+                        <h2>Experience</h2>
+                      </div><!--// .yui-u -->
+
+                      <div class="yui-u">
+
+                        <div class="job">
+                          <h2><a href="https://yougov.com/">YouGov</a></h2>
+                          <h3>Director of DevOps</h3>
+                          <h4>Aug 2014 - now</h4>
+                          <p>Lead the DevOps team, to improve automation of development processes.<br />
+                            Responsibilities include soliciting project ideas, setting priorities and scheduling projects.<br />
+                            25% time position dedicated to this role; remaining 75% Lead Python Developer.</p>
                         </div>
 
-                        <div class="yui-u">
-                            <div class="contact-info">
-                                <!-- <h3><a id="pdf" href="/doc/lorenzo-bolla-resume.pdf">Download PDF</a></h3> -->
-                                <h3><a href="mailto:lbolla@gmail.com">lbolla@gmail.com</a></h3>
-                                <h3>+44 (0)7786 189 180</h3>
-                            </div><!--// .contact-info -->
+                        <div class="job">
+                          <h2><a href="https://yougov.com/">YouGov</a></h2>
+                          <h3>Lead Python Developer</h3>
+                          <h4>Aug 2013 - now</h4>
+                          <p>Design and implement scalable analysis software for market research analysis using <em>Python</em>, <em>Cython</em> <em>MongoDB</em>.<br />
+                            Development of an in-memory column-oriented DB to efficiently store and query tabular data.</p>
                         </div>
-                    </div><!--// .yui-gc -->
-                </div><!--// hd -->
 
-                <div id="bd">
-                    <div id="yui-main">
-                        <div class="yui-b">
+                        <div class="job">
+                          <h2><a href="http://www.companiesintheuk.co.uk/ltd/raid-research-services-llp">RAID Research Services LLP</a></h2>
+                          <h3>Senior Software Architect</h3>
+                          <h4>May 2012 - Aug 2013</h4>
+                          <p>Design and implement scalable analysis software for finance using mainly <em>Python</em>, <em>Pandas</em> <em>MySQL</em> and <em>ExtJS</em>.<br />
+                            Implementation of an in-memory DB to efficiently query tabular data.<br />
+                            Parsing of unstructured data sources and categorization using simple machine learning techniques.</p>
+                        </div>
 
-                            <div class="yui-gf">
-                                <div class="yui-u first">
-                                    <h2>Profile</h2>
-                                </div>
-                                <div class="yui-u">
-                                    <p class="enlarge">Software Engineer with background in Physics and a crush for hard (yet) unsolved problems.</p>
-                                    <p>Telecommunication Engineer with a strong
-                                    mathematical and physical background,
-                                    specifically in the field of classical
-                                    optics and telecommunications.</p>
+                        <div class="job">
+                          <h2><a href="http://www.artirix.com">Artirix Ltd</a></h2>
+                          <h3>Senior Software Engineer</h3>
+                          <h4>April 2012 - May 2012</h4>
+                          <p>Design and implementation of highly scalable web search crawlers using <em>Python</em> and <em>Twisted</em>.</p>
+                        </div>
 
-                                    <p>Doctorate on Numerical Methods and proved
-                                    abilities to develop complex algorithms
-                                    efficiently, in both academic and business
-                                    environments.</p>
+                        <div class="job">
+                          <h2><a href="http://www.zugo.com">Zugo Ltd</a></h2>
+                          <h3>Senior Python Developer</h3>
+                          <h4>April 2011 - April 2012</h4>
+                          <p>Develop massively scalable web applications (using <em>Tornado</em>, <em>MySQL</em>, <em>MongoDB</em>, <em>nginx</em> on the back-end and <em>HTML</em>, <em>Javascript</em>, <em>CSS</em> on the front-end).<br />
+                            Experience in distributed data analysis using <em>MapReduce</em> frameworks (mainly <em>Disco</em>), <em>NoSQL</em> data stores (mainly <em>MongoDB</em>) and <em>AWS</em> solutions.<br />
+                            Some experience in browser extension implementation (<em>Firefox</em> and <em>Chrome</em>).</p>
+                        </div>
 
-                                    <p>5+ years of experience in software design:
-                                    highly scalable web applications, numerical
-                                    intensive simulations and massively
-                                    parallel data analysis.</p>
+                        <div class="job">
+                          <h2><a href="http://www.geneity.co.uk">Geneity Ltd</a></h2>
+                          <h3>Software Engineer</h3>
+                          <h4>August 2008 - April 2011</h4>
+                          <p>Software engineer of high-performance E-gaming web applications (mainly working with Betfair, Coral, Ladbrokes and others betting companies).<br />
+                            Focus on high performance fund transfers (maximizing the transaction per seconds supported by the systems), application reliability (maximizing uptime), third-party usability (implementing REST and SOAP access to web applications).<br />
+                            Programming languages used: <em>Python</em> (2.5, 2.6), <em>C</em>, <em>PL/SQL</em> (Oracle 10g-11) for the back-end; <em>HTML</em>/<em>Javascript</em> for the front-end.<br />
+                            OS used: <em>Linux</em> (Debian, Suse and ArchLinux distributions).</p>
+                        </div>
 
-                                    <p>Fluent in Python, Javascript, HTML, CSS,
-                                    C/C++ (using both STL and Boost libraries),
-                                    Fortran and Matlab.</p>
+                        <div class="job">
+                          <h2><a href="http://www.pirelli.com">Pirelli &amp; C SpA</a></h2>
+                          <h3>Optical Designer</h3>
+                          <h4>June 2005 - August 2008</h4>
+                          <p>R&amp;D in Photonic Integrated Circuits mainly based on Silicon-on-Insulator technology (SOI-PICs).<br />
+                            Responsible for the design of optical components for metro and access networks, with a focus on innovative solutions.<br />
+                            Excellent problem solving capabilities, lateral thinking and self management.<br />
+                            Deep experience on efficient numerical and parallel programming (SGI Altix hardware), using <em>C/C++</em>, <em>Fortran</em>, <em>Matlab</em>, <em>Python</em> languages and <em>OpenMP</em>, <em>MPI</em>, <em>STL</em> and <em>Boost</em> libraries.<br />
+                            Experience in patenting.</p>
+                        </div>
 
-                                    <p>Interested in other programming languages,
-                                    like Haskell, Lisp and Go.</p>
+                        <div class="job">
+                          <h2><a href="http://www.telesystem.it">TELE System Electronic Srl</a></h2>
+                          <h3>Software Engineer</h3>
+                          <h4>March 2005 - June 2005</h4>
+                          <p>Consultant on hardware and software design for digital television broadcasting, including theory on transmission algorithms and computer simulations of the complete system.<br />
+                            Experience in programming applications for set-top-boxes, in <em>JAVA</em>.</p>
+                        </div>
 
-                                    <p>Experienced with many different libraries
-                                    and frameworks: Tornado, Pandas, Disco,
-                                    JQuery, ExtJS, git, MySQL, sqlite, MongoDB,
-                                    nginx, and many more.</p>
+                        <div class="job">
+                          <h2><a href="http://www.photond.com">Photon Design Ltd</a></h2>
+                          <h3>Software Engineer</h3>
+                          <h4>April 2003 - April 2004</h4>
+                          <p>R&amp;D on numerical algorithms applied to the solution of electromagnetic problems.<br />
+                            Very deep focus on algorithms' efficiency for computationally intensive simulations. Theoretical studies on linear algebra problems, finite difference and finite elements algorithms, modal expansion techniques.<br />
+                            Deep experience in <em>C/C++</em> programming, both with <em>VC++</em> and <em>Borland</em> suites (along with <em>STL</em> and <em>Boost</em> libraries) and <em>Python</em> as scripting language. Basics of GUI programming.</p>
+                        </div>
 
-                                    <p>Familiar with UNIX-like (mainly Linux) and
-                                    Windows OSes.</p>
+                        <div class="job last">
+                          <h2><a href="http://www.progettomantegna.it/">Progetto Mantegna</a></h2>
+                          <h3>Technical Support</h3>
+                          <h4>May 2001 - April 2003</h4>
+                          <p>Technical assistance in the virtual reconstruction of Mantegna's paintings in the Ovetari's Chapel, Padua Italy.<br />
+                            Basics of image analysis and manipulation.</p>
+                        </div>
 
-                                    <p>Logical thinker, able to provide effective
-                                    solutions to solve difficult problems.</p>
+                      </div><!--// .yui-u -->
+                    </div><!--// .yui-gf -->
 
-                                    <p>Great team-player &amp; fun attitude, competent
-                                    time manager, very dependable under
-                                    pressure and passionately dedicated to the
-                                    task.</p>
-                                </div>
-                            </div><!--// .yui-gf -->
+                    <div class="yui-gf">
+                      <div class="yui-u first">
+                        <h2>Education</h2>
+                      </div>
 
-                            <div class="yui-gf">
-                                <div class="yui-u first">
-                                    <h2>Skills</h2>
-                                </div>
-                                <div class="yui-u">
+                      <div class="yui-u">
+                        <div class="job">
+                          <h2>University of Udine - Italy</h2>
+                          <h3>PhD</h3>
+                          <h4>November 2002 - November 2005</h4>
+                          <p><a href="http://www.scribd.com/doc/19603116/LorenzoBollaPhDthesis">Thesis</a> on the numerical solution Maxwell equations in periodic dielectric devices.</p>
+                        </div>
 
-                                    <div class="talent">
-                                        <h2>Software<br />Architecture</h2>
-                                        <p>Proved experience in designing, implementing and deploying highly scalable software systems.</p>
-                                    </div>
+                        <div class="job">
+                          <h2>European Project</h2>
+                          <h3>FUNFOX (Project No. 004582)</h3>
+                          <h4>September 2004 - June 2005</h4>
+                          <p>Research on semiconductor optoelectronic devices for metro core and access segments in optical networks.</p>
+                        </div>
 
-                                    <div class="talent">
-                                        <h2>Software<br />Development</h2>
-                                        <p>
-                                        Years of experience in <a href="http://stackoverflow.com/search?q=user:1063605+[python]">Python</a> development, using
-                                        <a href="http://stackoverflow.com/search?q=user:1063605+[tornado]">Tornado</a>,
-                                        <a href="http://stackoverflow.com/search?q=user:1063605+[pandas]">Pandas</a>,
-                                        <a href="http://stackoverflow.com/search?q=user:1063605+[sql]">MySQL</a>,
-                                        <a href="http://stackoverflow.com/search?q=user:1063605+[mongodb]">MongoDB</a>
-                                        and many other tools.
-                                        Very interested in functional programming, especially <a href="http://stackoverflow.com/search?q=user:1063605+[haskell]">Haskell</a>.
-                                        </p>
-                                    </div>
+                        <div class="job">
+                          <h2>European Project</h2>
+                          <h3>PICCO (IST-1999-10361)</h3>
+                          <h4>November 2002 - April 2003</h4>
+                          <p>Research in Optical integrated circuits, photonic crystal planar waveguides and wavelength dependent devices.</p>
+                        </div>
 
-                                    <div class="talent">
-                                        <h2>More<br />&nbsp;</h2>
-                                        <ul>
-                                            <li><a href="https://github.com/lbolla/">Github</a>
-                                            <li><a href="http://stackoverflow.com/users/1063605/lbolla">StackOverflow</a>
-                                            <li><a href="http://www.linkedin.com/profile/view?id=16061503&trk=tab_pro">LinkedIn</a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div><!--// .yui-gf -->
+                        <div class="job last">
+                          <h2>University of Padova - Italy</h2>
+                          <h3>Laurea in Telecommunication Engineer</h3>
+                          <h4>September 1996 - March 2002</h4>
+                        </div>
+                      </div>
 
-                            <div class="yui-gf">
-                                <div class="yui-u first">
-                                    <h2>Technical</h2>
-                                </div>
-                                <div class="yui-u">
-                                    <ul class="talent">
-                                        <li>Python</li>
-                                        <li>Haskell</li>
-                                        <li>Go</li>
-                                        <li class="last">C/C++</li>
-                                    </ul>
+                    </div><!--// .yui-gf -->
 
-                                    <ul class="talent">
-                                        <li>Javascript</li>
-                                        <li>JQuery</li>
-                                        <li>HTML/CSS</li>
-                                        <li class="last">ExtJS</li>
-                                    </ul>
+                    <div class="yui-gf last">
+                      <div class="yui-u first">
+                        <h2>Publications</h2>
+                      </div>
 
-                                    <ul class="talent">
-                                        <li>MySQL</li>
-                                        <li>SQlite</li>
-                                        <li>MongoDB</li>
-                                        <li class="last">Memcache</li>
-                                    </ul>
-                                </div>
-                            </div><!--// .yui-gf-->
+                      <div class="yui-u">
+                        <div class="job">
+                          <h2>Books</h2>
+                          <div class="article"><a href="https://www.scholars-press.com/catalog/details/store/de/book/978-3-639-51669-2/numerical-methods-for-integrated-optics?search=numerical%20methods">'Numerical Methods for Integrated Optics'</a>, Lorenzo Bolla, Scholar's Press, 2013, ISBN 978-3-639-51669-2</div>
+                          <div class="article">Technical reviewer for <a href="http://www.packtpub.com/numpy-1-5-using-real-world-examples-beginners-guide/book">'Numpy 1.5 Beginners Guide'</a>, PacktPub, ISBN 1849515301</div>
+                          <div class="article">Technical reviewer for <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">'Learning Scipy for Numerical and Scientific Computing'</a>, PacktPub, ISBN 1782161627</div>
+                          <div class="article">Technical reviewer for <a href="http://www.packtpub.com/haskell-data-analysis-cookbook/book">'Haskell Data Analysis Cookbook'</a>, PacktPub, ISBN 1783286334</div>
+                        </div>
+                        <div class="job">
+                          <h2>Articles</h2>
+                          <div class="article">V. Sorianello, M. Balbi, L. Colace, G. Assanto, L. Socci, <b>L. Bolla</b>, G. Mutinati, M. Romagnoli, 'Guided-wave photodetectors in Germanium on SOI optical chips', Physica E: Low-dimensional Systems and Nanostructures,  <a href="http://dx.doi.org/10.1016/j.physe.2008.08.038">abstract</a></div>
 
-                            <div class="yui-gf">
+                          <div class="article">M. Romagnoli, L. Socci, <b>L. Bolla</b>, et al., 'Silicon Photonics in Pirelli' (invited), <em>Proc. SPIE 2008</em>,  <a href="http://spie.org/app/program/index.cfm?fuseaction=addconfevent&amp;startrow=1&amp;date=12/31/1969&amp;eventid=848935#848935">website</a></div>
+                          <div class="article">T. P. Felici, D. F. G. Gallagher, <b>L. Bolla</b>, 'Automatic design and optimisation of Si nanophotonics devices using finite element frequency domain solvers', <em>Proc. SPIE Vol. 6475, 64750L, Integrated Optics: Devices, Materials, and Technologies XI</em>, 2007,  <a href="http://spie.org/x648.html?product_id=717509">abstract</a></div>
+                          <div class="article">M. Kotlyar, <b>L. Bolla</b>, M. Midrio, L. O'Faolain, and T. Krauss, 'Ultra-short InP-based polarisation rotator', <em>PECS-VI International Symposium on Photonics and Electromagnetic Crystal Structures</em>, 2005,  <a href="http://www.cmpgroup.ameslab.gov/PECSVI/">website</a></div>
+                          <div class="article">M. Kotlyar, <b>L. Bolla</b>, M. Midrio, L. O'Faolain, and T. Krauss, 'Photonic Crystals for Polarisation Diversity Circuits', <em>Frontier in Optics (the 89th OSA Annual Meeting)</em>, Tucson (Arizona), 2005,  <a href="http://www.osa.org/en-us/meetings/osa_meeting_archives/">website</a></div>
+                          <div class="article">M. Kotlyar, <b>L. Bolla</b>, M. Midrio, L. O'Faolain, and T. Krauss, 'Compact polarization converter in InP-based material', <em>Opt. Express 13, 5040-5045</em>, 2005,  <a href="http://www.opticsinfobase.org/abstract.cfm?URI=oe-13-13-5040">abstract</a></div>
+                          <div class="article"><b>L. Bolla</b>, 'Polarization Rotators', <em>Technical Report</em>, <em>FUNFOX Project</em>, Lausanne, Switzerland, 2005,  <a href="http://www.iota.u-psud.fr/~funfox/">website</a></div>
+                          <div class="article"><b>L. Bolla</b>, M. Midrio, and C. G. Someda, 'Energy flow in negative index materials', <em>Chin. Opt. Lett. 2, 428-430</em>, 2004,  <a href="http://www.opticsinfobase.org/abstract.cfm?URI=col-2-7-428">abstract</a></div>
+                          <div class="article"><b>L. Bolla</b>, and T. Felici, 'New discretisation scheme for frequency domain electromagnetics', <em>PIERS 2004 Proceedings</em>, Pisa, Italy, 2004,  <a href="http://sun8.dsea.unipi.it/piers04_v3/">website</a></div>
+                          <div class="article"><b>L. Bolla</b>, 'Planar Generalized Yee Algorithm', <em>Technical Report</em>, <em>PICCO Project</em>, Padua, Italy, 2002,  <a href="http://intecweb.intec.ugent.be/picco/">website</a></div>
+                        </div>
+                        <div class="job">
+                          <h2>Patents</h2>
+                          <div>Author or Co-author of <a href="https://www.google.com/?tbm=pts&hl=en#sclient=psy-ab&hl=en&site=&tbm=pts&source=hp&q=lorenzo+bolla&oq=lorenzo+bolla&gs_l=hp.3..0j0i10i30j0i30l2.1702.2984.0.3102.13.11.0.1.1.0.129.763.9j2.11.0...0.0.ABApNeaWOfs&pbx=1&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=14d568fa9404c2ae&biw=1278&bih=945">10 international patents</a> in the field of integrated optics.</div>
+                        </div>
+                        <div class="job last">
+                          <h2>Citations</h2>
+                          <div><a href="http://scholar.google.co.uk/citations?hl=en&user=mHfVbDwAAAAJ">List of citations from Google Scholar</a>.</div>
+                        </div>
+                      </div>
 
-                                <div class="yui-u first">
-                                    <h2>Experience</h2>
-                                </div><!--// .yui-u -->
+                    </div><!--// .yui-gf -->
 
-                                <div class="yui-u">
+                  </div><!--// .yui-b -->
+                </div><!--// yui-main -->
+              </div><!--// bd -->
 
-                                    <div class="job">
-                                        <h2><a href="https://yougov.com/">YouGov</a></h2>
-                                        <h3>Lead Python Developer</h3>
-                                        <h4>Aug 2013 - now</h4>
-                                        <p>Design and implement scalable analysis software for market research analysis using <em>Python</em>, <em>Cython</em> <em>MongoDB</em>.<br />
-                                        Development of an in-memory column-oriented DB to efficiently store and query tabular data.<br />
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.companiesintheuk.co.uk/ltd/raid-research-services-llp">RAID Research Services LLP</a></h2>
-                                        <h3>Senior Software Architect</h3>
-                                        <h4>May 2012 - Aug 2013</h4>
-                                        <p>Design and implement scalable analysis software for finance using mainly <em>Python</em>, <em>Pandas</em> <em>MySQL</em> and <em>ExtJS</em>.<br />
-                                        Implementation of an in-memory DB to efficiently query tabular data.<br />
-                                        Parsing of unstructured data sources and categorization using simple machine learning techniques.</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.artirix.com">Artirix Ltd</a></h2>
-                                        <h3>Senior Software Engineer</h3>
-                                        <h4>April 2012 - May 2012</h4>
-                                        <p>Design and implementation of highly scalable web search crawlers using <em>Python</em> and <em>Twisted</em>.</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.zugo.com">Zugo Ltd</a></h2>
-                                        <h3>Senior Python Developer</h3>
-                                        <h4>April 2011 - April 2012</h4>
-                                        <p>Develop massively scalable web applications (using <em>Tornado</em>, <em>MySQL</em>, <em>MongoDB</em>, <em>nginx</em> on the back-end and <em>HTML</em>, <em>Javascript</em>, <em>CSS</em> on the front-end).<br />
-                                        Experience in distributed data analysis using <em>MapReduce</em> frameworks (mainly <em>Disco</em>), <em>NoSQL</em> data stores (mainly <em>MongoDB</em>) and <em>AWS</em> solutions.<br />
-                                        Some experience in browser extension implementation (<em>Firefox</em> and <em>Chrome</em>).</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.geneity.co.uk">Geneity Ltd</a></h2>
-                                        <h3>Software Engineer</h3>
-                                        <h4>August 2008 - April 2011</h4>
-                                        <p>Software engineer of high-performance E-gaming web applications (mainly working with Betfair, Coral, Ladbrokes and others betting companies).<br />
-                                        Focus on high performance fund transfers (maximizing the transaction per seconds supported by the systems), application reliability (maximizing uptime), third-party usability (implementing REST and SOAP access to web applications).<br />
-                                        Programming languages used: <em>Python</em> (2.5, 2.6), <em>C</em>, <em>PL/SQL</em> (Oracle 10g-11) for the back-end; <em>HTML</em>/<em>Javascript</em> for the front-end.<br />
-                                        OS used: <em>Linux</em> (Debian, Suse and ArchLinux distributions).</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.pirelli.com">Pirelli &amp; C SpA</a></h2>
-                                        <h3>Optical Designer</h3>
-                                        <h4>June 2005 - August 2008</h4>
-                                        <p>R&amp;D in Photonic Integrated Circuits mainly based on Silicon-on-Insulator technology (SOI-PICs).<br />
-                                        Responsible for the design of optical components for metro and access networks, with a focus on innovative solutions.<br />
-                                        Excellent problem solving capabilities, lateral thinking and self management.<br />
-                                        Deep experience on efficient numerical and parallel programming (SGI Altix hardware), using <em>C/C++</em>, <em>Fortran</em>, <em>Matlab</em>, <em>Python</em> languages and <em>OpenMP</em>, <em>MPI</em>, <em>STL</em> and <em>Boost</em> libraries.<br />
-                                        Experience in patenting.</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.telesystem.it">TELE System Electronic Srl</a></h2>
-                                        <h3>Software Engineer</h3>
-                                        <h4>March 2005 - June 2005</h4>
-                                        <p>Consultant on hardware and software design for digital television broadcasting, including theory on transmission algorithms and computer simulations of the complete system.<br />
-                                        Experience in programming applications for set-top-boxes, in <em>JAVA</em>.</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2><a href="http://www.photond.com">Photon Design Ltd</a></h2>
-                                        <h3>Software Engineer</h3>
-                                        <h4>April 2003 - April 2004</h4>
-                                        <p>R&amp;D on numerical algorithms applied to the solution of electromagnetic problems.<br />
-                                        Very deep focus on algorithms' efficiency for computationally intensive simulations. Theoretical studies on linear algebra problems, finite difference and finite elements algorithms, modal expansion techniques.<br />
-                                        Deep experience in <em>C/C++</em> programming, both with <em>VC++</em> and <em>Borland</em> suites (along with <em>STL</em> and <em>Boost</em> libraries) and <em>Python</em> as scripting language. Basics of GUI programming.</p>
-                                    </div>
-
-                                    <div class="job last">
-                                        <h2><a href="http://www.progettomantegna.it/">Progetto Mantegna</a></h2>
-                                        <h3>Technical Support</h3>
-                                        <h4>May 2001 - April 2003</h4>
-                                        <p>Technical assistance in the virtual reconstruction of Mantegna's paintings in the Ovetari's Chapel, Padua Italy.<br />
-                                        Basics of image analysis and manipulation.</p>
-                                    </div>
-
-                                </div><!--// .yui-u -->
-                            </div><!--// .yui-gf -->
-
-                            <div class="yui-gf">
-                                <div class="yui-u first">
-                                    <h2>Education</h2>
-                                </div>
-
-                                <div class="yui-u">
-                                    <div class="job">
-                                        <h2>University of Udine - Italy</h2>
-                                        <h3>PhD</h3>
-                                        <h4>November 2002 - November 2005</h4>
-                                        <p><a href="http://www.scribd.com/doc/19603116/LorenzoBollaPhDthesis">Thesis</a> on the numerical solution Maxwell equations in periodic dielectric devices.</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2>European Project</h2>
-                                        <h3>FUNFOX (Project No. 004582)</h3>
-                                        <h4>September 2004 - June 2005</h4>
-                                        <p>Research on semiconductor optoelectronic devices for metro core and access segments in optical networks.</p>
-                                    </div>
-
-                                    <div class="job">
-                                        <h2>European Project</h2>
-                                        <h3>PICCO (IST-1999-10361)</h3>
-                                        <h4>November 2002 - April 2003</h4>
-                                        <p>Research in Optical integrated circuits, photonic crystal planar waveguides and wavelength dependent devices.</p>
-                                    </div>
-
-                                    <div class="job last">
-                                        <h2>University of Padova - Italy</h2>
-                                        <h3>Laurea in Telecommunication Engineer</h3>
-                                        <h4>September 1996 - March 2002</h4>
-                                    </div>
-                                </div>
-
-                            </div><!--// .yui-gf -->
-
-                            <div class="yui-gf last">
-                                <div class="yui-u first">
-                                    <h2>Publications</h2>
-                                </div>
-
-                                <div class="yui-u">
-                                    <div class="job">
-                                        <h2>Books</h2>
-                                        <div class="article"><a href="https://www.scholars-press.com/catalog/details/store/de/book/978-3-639-51669-2/numerical-methods-for-integrated-optics?search=numerical%20methods">'Numerical Methods for Integrated Optics'</a>, Lorenzo Bolla, Scholar's Press, 2013, ISBN 978-3-639-51669-2</div>
-                                        <div class="article">Technical reviewer for <a href="http://www.packtpub.com/numpy-1-5-using-real-world-examples-beginners-guide/book">'Numpy 1.5 Beginners Guide'</a>, PacktPub, ISBN 1849515301</div>
-                                        <div class="article">Technical reviewer for <a href="http://www.packtpub.com/learning-scipy-for-numerical-and-scientific-computing/book">'Learning Scipy for Numerical and Scientific Computing'</a>, PacktPub, ISBN 1782161627</div>
-                                        <div class="article">Technical reviewer for <a href="http://www.packtpub.com/haskell-data-analysis-cookbook/book">'Haskell Data Analysis Cookbook'</a>, PacktPub, ISBN 1783286334</div>
-                                    </div>
-                                    <div class="job">
-                                        <h2>Articles</h2>
-                                        <div class="article">V. Sorianello, M. Balbi, L. Colace, G. Assanto, L. Socci, <b>L. Bolla</b>, G. Mutinati, M. Romagnoli, 'Guided-wave photodetectors in Germanium on SOI optical chips', Physica E: Low-dimensional Systems and Nanostructures,  <a href="http://dx.doi.org/10.1016/j.physe.2008.08.038">abstract</a></div>
-
-                                        <div class="article">M. Romagnoli, L. Socci, <b>L. Bolla</b>, et al., 'Silicon Photonics in Pirelli' (invited), <em>Proc. SPIE 2008</em>,  <a href="http://spie.org/app/program/index.cfm?fuseaction=addconfevent&amp;startrow=1&amp;date=12/31/1969&amp;eventid=848935#848935">website</a></div>
-                                        <div class="article">T. P. Felici, D. F. G. Gallagher, <b>L. Bolla</b>, 'Automatic design and optimisation of Si nanophotonics devices using finite element frequency domain solvers', <em>Proc. SPIE Vol. 6475, 64750L, Integrated Optics: Devices, Materials, and Technologies XI</em>, 2007,  <a href="http://spie.org/x648.html?product_id=717509">abstract</a></div>
-                                        <div class="article">M. Kotlyar, <b>L. Bolla</b>, M. Midrio, L. O'Faolain, and T. Krauss, 'Ultra-short InP-based polarisation rotator', <em>PECS-VI International Symposium on Photonics and Electromagnetic Crystal Structures</em>, 2005,  <a href="http://www.cmpgroup.ameslab.gov/PECSVI/">website</a></div>
-                                        <div class="article">M. Kotlyar, <b>L. Bolla</b>, M. Midrio, L. O'Faolain, and T. Krauss, 'Photonic Crystals for Polarisation Diversity Circuits', <em>Frontier in Optics (the 89th OSA Annual Meeting)</em>, Tucson (Arizona), 2005,  <a href="http://www.osa.org/en-us/meetings/osa_meeting_archives/">website</a></div>
-                                        <div class="article">M. Kotlyar, <b>L. Bolla</b>, M. Midrio, L. O'Faolain, and T. Krauss, 'Compact polarization converter in InP-based material', <em>Opt. Express 13, 5040-5045</em>, 2005,  <a href="http://www.opticsinfobase.org/abstract.cfm?URI=oe-13-13-5040">abstract</a></div>
-                                        <div class="article"><b>L. Bolla</b>, 'Polarization Rotators', <em>Technical Report</em>, <em>FUNFOX Project</em>, Lausanne, Switzerland, 2005,  <a href="http://www.iota.u-psud.fr/~funfox/">website</a></div>
-                                        <div class="article"><b>L. Bolla</b>, M. Midrio, and C. G. Someda, 'Energy flow in negative index materials', <em>Chin. Opt. Lett. 2, 428-430</em>, 2004,  <a href="http://www.opticsinfobase.org/abstract.cfm?URI=col-2-7-428">abstract</a></div>
-                                        <div class="article"><b>L. Bolla</b>, and T. Felici, 'New discretisation scheme for frequency domain electromagnetics', <em>PIERS 2004 Proceedings</em>, Pisa, Italy, 2004,  <a href="http://sun8.dsea.unipi.it/piers04_v3/">website</a></div>
-                                        <div class="article"><b>L. Bolla</b>, 'Planar Generalized Yee Algorithm', <em>Technical Report</em>, <em>PICCO Project</em>, Padua, Italy, 2002,  <a href="http://intecweb.intec.ugent.be/picco/">website</a></div>
-                                    </div>
-                                    <div class="job">
-                                        <h2>Patents</h2>
-                                        <div>Author or Co-author of <a href="https://www.google.com/?tbm=pts&hl=en#sclient=psy-ab&hl=en&site=&tbm=pts&source=hp&q=lorenzo+bolla&oq=lorenzo+bolla&gs_l=hp.3..0j0i10i30j0i30l2.1702.2984.0.3102.13.11.0.1.1.0.129.763.9j2.11.0...0.0.ABApNeaWOfs&pbx=1&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=14d568fa9404c2ae&biw=1278&bih=945">10 international patents</a> in the field of integrated optics.</div>
-                                    </div>
-                                    <div class="job last">
-                                        <h2>Citations</h2>
-                                        <div><a href="http://scholar.google.co.uk/citations?hl=en&user=mHfVbDwAAAAJ">List of citations from Google Scholar</a>.</div>
-                                    </div>
-                                </div>
-
-                            </div><!--// .yui-gf -->
-
-                        </div><!--// .yui-b -->
-                    </div><!--// yui-main -->
-                </div><!--// bd -->
-
-                <div id="ft">
-                    <p>Lorenzo Bolla &mdash; <a href="mailto:lbolla@gmail.com">lbolla@gmail.com</a> &mdash; +44 (0)7789 189 180</p>
-                </div><!--// footer -->
+              <div id="ft">
+                <p>Lorenzo Bolla &mdash; <a href="mailto:lbolla@gmail.com">lbolla@gmail.com</a> &mdash; +44 (0)7789 189 180</p>
+              </div><!--// footer -->
 
             </div><!-- // inner -->
 
-        </div><!--// doc -->
+          </div><!--// doc -->
 
-    </body>
-</html>
+        </body>
+      </html>
 
