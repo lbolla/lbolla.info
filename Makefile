@@ -10,4 +10,4 @@ clean:
 	rm -rf public/
 
 push: build
-	rsync -av --delete public/ lbolla.info:public/
+	rsync -acv --delete public/ lbolla.info:public/
