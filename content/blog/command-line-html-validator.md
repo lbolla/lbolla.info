@@ -1,7 +1,7 @@
 ---
 categories:
   - "programming"
-date: "2009-01-31"
+date: "2009-01-30"
 description: "Command line HTML validator"
 tags:
   - "html"

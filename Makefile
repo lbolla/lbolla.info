@@ -3,7 +3,7 @@ HUGO=${GOPATH}/bin/hugo
 run: clean
 	${HUGO} server -w -s .
 
-build: clean
+build:
 	${HUGO} -s .
 
 clean:

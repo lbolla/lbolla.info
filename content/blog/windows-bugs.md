@@ -1,7 +1,7 @@
 ---
 categories:
   - "nice-words"
-date: "2009-05-01"
+date: "2009-05-02"
 description: "None"
 tags:
 title: "Windows' bugs"

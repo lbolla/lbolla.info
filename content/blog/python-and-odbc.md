@@ -1,7 +1,7 @@
 ---
 categories:
   - "programming"
-date: "2013-08-28"
+date: "2013-08-29"
 description: "Reminder on how to connect to MSSQL servers from Python"
 tags:
   - "python"

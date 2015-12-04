@@ -1,7 +1,7 @@
 ---
 categories:
   - "programming"
-date: "2010-10-23"
+date: "2010-10-24"
 description: "Script to find hyperlinks in an HTML page"
 tags:
   - "lisp"
