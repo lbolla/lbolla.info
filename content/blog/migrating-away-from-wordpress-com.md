@@ -42,7 +42,7 @@ you, [this guide][7] might help you):
 All the procedure took no more than 15 minutes. Brilliant.
 
    [1]: http://lbolla.wordpress.com
-   [2]: http://lbolla.info/blog
+   [2]: https://lbolla.info/blog
    [3]: http://en.forums.wordpress.com/topic/adding-plugins?replies=8
    [4]: http://wordpress.org/support/topic/adding-javascript-to-page
    [5]: http://63222hljwcjlds6no5lczchgsg.hop.clickbank.net/
