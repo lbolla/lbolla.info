@@ -56,9 +56,9 @@ thread.
 
 For example, this is a _wrong_ way of using `IOLoop`:
 
-<script src="https://gist.github.com/3826189.js?file=async_generic.py"></script>
+<script src="https://gist.github.com/3826189.js?file=blocking.py"></script>
 
-Note that `blocking_call` is called correctly, but, being
+Note that `blocking_func` is called correctly, but, being
 blocking (`time.sleep` blocks!), it will prevent the execution of the following
 task (the second call to the same function). Only when the first call will end,
 the second will be called by `IOLoop`. Therefore, the output in console is
