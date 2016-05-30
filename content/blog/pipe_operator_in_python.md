@@ -17,7 +17,7 @@ title: "Elixir's pipe operator in Python"
 Or:
 
     iex> inc = fn x -> x + 1 end
-    iex> dec = fn x -> x + 1 end
+    iex> dec = fn x -> x - 1 end
     iex> square = fn x -> x * x end
     iex> 5 |> inc.() |> dec.() |> square.()
     25
