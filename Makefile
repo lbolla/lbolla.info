@@ -8,6 +8,9 @@ run: clean
 build:
 	${HUGO} -s .
 
+hugo:
+	go get -u -v github.com/spf13/hugo
+
 clean:
 	rm -rf public/
 
