@@ -1,0 +1,21 @@
+#+TITLE: Trivial terminal speed benchmark
+
+#+DATE: <2010-04-29>
+
+Today, while playing with [[http://st.suckless.org][st]], I tried a very simple benchmark. Here it is:
+
+#+BEGIN_SRC shell
+        $> time seq -f 'teeeeeeeeeeeeeeeeeeeeeeeeeeeeeest %g' 999999
+#+END_SRC
+
+Here are the results:
+
+#+BEGIN_SRC shell
+        xterm: 0m28.508s
+        rxvt: 0m8.568s
+        st: 0m12.082s
+#+END_SRC
+
+All the terminals shared the same fonts, but [[http://invisible-island.net/xterm/][xterm]] and [[http://sourceforge.net/projects/rxvt/][rxvt]] had =saveLines=1024= set for scrolling purposes, feature that [[http://st.suckless.org][st]] lacks.
+
+Being [[http://st.suckless.org][st]] at such an early stage of development, I think this is a good result.

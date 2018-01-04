@@ -1,0 +1,34 @@
+#+TITLE: Useful scripts - c+/c-
+
+#+DATE: <2012-11-09>
+
+This is the second post of a series describing simple scripts that I wrote to ease my life as a programmer.
+
+They are [[https://github.com/lbolla/cmd][available on github]]: fork & hack at will!
+
+** c+/c-
+
+In this post I'll describe a very simple script, [[https://github.com/lbolla/cmd/blob/master/c%2B][=c+=]], and its counterpart [[https://github.com/lbolla/cmd/blob/master/c-][=c-=]].
+
+=c+= prepends every line of =stdin= with =#=. =c-= strips =#= from the beginning of each line of =stdin=. I use these scripts to comment/uncomment lines in Python scripts when using [[http://acme.cat-v.org/][=acme=]].
+
+#+CAPTION: c+/c- in acme
+[[./img/cc_acme.png]]
+
+Here is the code:
+
+*** c+
+
+#+BEGIN_SRC shell
+#!/usr/bin/env rc
+
+sed 's/^/#/'
+#+END_SRC
+
+*** c-
+
+#+BEGIN_SRC shell
+#!/usr/bin/env rc
+
+sed 's/^#//'
+#+END_SRC

@@ -1,0 +1,55 @@
+#+TITLE: git pre-commit hook for Python and Javascript
+
+#+DATE: <2011-11-17>
+
+Following a [[http://news.ycombinator.com/item?id=3244475][recent discussion on HN]], I decided to share my own [[http://book.git-scm.com/5_git_hooks.html][git pre-commit hook]].
+
+#+BEGIN_SRC python
+    #!/usr/bin/python
+
+    import os
+    import sys
+    import re
+    import subprocess
+
+
+    devnull = open(os.devnull, 'w')
+
+
+    def call(cmd):
+        p = subprocess.Popen(cmd.split(),
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
+        out, err = p.communicate()
+        return out.decode('utf-8'), err.decode('utf-8'), p.returncode
+
+
+    def execute(cmd, silent=False):
+        if silent:
+            params = {
+                    'stdout': devnull,
+                    'stderr': devnull,
+                    }
+        else:
+            params = {}
+
+        retcode = subprocess.call(cmd.split(), **params)
+        return retcode
+
+
+    def exists(cmd):
+        return execute('which %s' % cmd, silent=True) == 0
+
+
+    def get_modified(ext):
+        modified = re.compile('^(?:M|A).(?P<name>.*\.%s)' % ext)
+        out, _, _ = call('git status --porcelain')
+        modifieds = []
+        for line in out.splitlines():
+            match = modified.match(line.strip())
+            if (match):
+                modifieds.append(match.group('name'))
+        return modifieds
+#+END_SRC
+
+It's a work-in-progress, so you can find the [[https://github.com/lbolla/dotfiles/blob/master/githooks/pre-commit][most updated version here]]. To use it, just drop it in your =.git/hooks= directory. At every =git commit=, it will run =[pep8][4]= and =[pyflakes][5]= on =.py= files, and =[gjslint][6]= on =.js= files.

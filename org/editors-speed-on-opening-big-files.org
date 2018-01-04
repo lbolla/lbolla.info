@@ -1,0 +1,216 @@
+#+TITLE: Editors' speed on opening big files
+
+#+DATE: <2010-05-17>
+
+While playing with different editors (namely [[http://www.vim.org][vim]] and [[http://sam.cat-v.org/][sam]]) I tried to time how long some common editors take to open a big file (~140Mb).
+
+Here are the results:
+
+#+BEGIN_EXPORT html
+  <table>
+  <tr>
+  <th>
+#+END_EXPORT
+
+editor
+
+#+BEGIN_EXPORT html
+  </th>
+  <th>
+#+END_EXPORT
+
+real
+
+#+BEGIN_EXPORT html
+  </th>
+  <th>
+#+END_EXPORT
+
+user
+
+#+BEGIN_EXPORT html
+  </th>
+  <th>
+#+END_EXPORT
+
+sys
+
+#+BEGIN_EXPORT html
+  </th>
+  </tr>
+  <tr>
+  <td>
+#+END_EXPORT
+
+=ed=
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+4.866s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+3.440s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+3.440s
+
+#+BEGIN_EXPORT html
+  </td>
+  </tr>
+  <tr>
+  <td>
+#+END_EXPORT
+
+=vim=
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+2.086s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.836s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.232s
+
+#+BEGIN_EXPORT html
+  </td>
+  </tr>
+  <tr>
+  <td>
+#+END_EXPORT
+
+=nano=
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+16.264s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+15.361s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.172s
+
+#+BEGIN_EXPORT html
+  </td>
+  </tr>
+  <tr>
+  <td>
+#+END_EXPORT
+
+=sam=
+
+#+BEGIN_EXPORT html
+  </td>
+  <td colspan="3">
+#+END_EXPORT
+
+way too long
+
+#+BEGIN_EXPORT html
+  </td>
+  </tr>
+  </table>
+#+END_EXPORT
+
+Then, for curiosity, I timed =less= with and without (=-n=) line numbering:
+
+#+BEGIN_EXPORT html
+  <table>
+  <tr>
+  <td>
+#+END_EXPORT
+
+=less=
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+3.552s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.200s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.072s
+
+#+BEGIN_EXPORT html
+  </td>
+  </tr>
+  <tr>
+  <td>
+#+END_EXPORT
+
+=less -n=
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.182s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.016s
+
+#+BEGIN_EXPORT html
+  </td>
+  <td>
+#+END_EXPORT
+
+0.016s
+
+#+BEGIN_EXPORT html
+  </td>
+  </table>
+#+END_EXPORT
+
+Not sure what to do with these numbers, yet...

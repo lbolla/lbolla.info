@@ -1,0 +1,7 @@
+#+TITLE: wordpress.com and text based web browsers
+
+#+DATE: <2009-01-31>
+
+Today, I was appreciating how well wordpress.com renders on text based web browsers (using [[http://elinks.or.cz/][elinks]]). Unfortunately, even if reading posts looks great, posting does not. Actually, I've been able to delete one of my posts, while searching to edit it. Completely wiped out.
+
+Luckily, [[http://www.googleguide.com/cached_pages.html][google cache]] saved my time and promptly found an older copy. Beware!

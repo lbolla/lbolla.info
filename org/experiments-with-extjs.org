@@ -1,0 +1,10 @@
+#+TITLE: Experiments with ExtJS
+
+#+DATE: <2012-09-20>
+
+For a non-designer, [[http://www.sencha.com/products/extjs/][Ext JS]] is kind-of a blessing. It is a self-contained fully-fledged Javascript framework, with loads of fancy re-usable browser-compatible professionally-looking widgets. It's only lacking in documentation: finding your way through the [[http://docs.sencha.com/ext-js/4-1/][API documentation]] is daunting at best.
+
+So, I bought [[http://www.amazon.co.uk/Ext-Web-Application-Development-Cookbook/dp/1849516863/ref=sr_1_1?s=books&ie=UTF8&qid=1348157999&sr=1-1][this]], and while working my way through it, I decided to share some experiments. You can find them [[http://lbolla.github.com/extjs-experiments/][here]]. These are the ones I prefer:
+
+-  [[http://lbolla.github.com/extjs-experiments/cookbook/p107a/]]
+-  [[http://lbolla.github.com/extjs-experiments/cookbook/p120/]]

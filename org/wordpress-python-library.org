@@ -1,0 +1,7 @@
+#+TITLE: Wordpress Python library
+
+#+DATE: <2010-06-06>
+
+Today, I found [[http://www.blackbirdblog.it/programmazione/progetti/28][this]]. It's a wonderfully simple Python library to manage your Wordpress blog via [[http://www.xmlrpc.com][XML-RPC]].
+
+Enjoy!

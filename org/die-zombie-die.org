@@ -1,0 +1,35 @@
+#+TITLE: Die zombie, die!
+
+#+DATE: <2014-01-23>
+
+The [[http://docs.python.org/2/library/subprocess.html][=subprocess=]] module in Python standard library allows you to spanw processes to do some tasks. The parent process should [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait][=wait=]] on its children processes in order get the return value of the process and [[http://stackoverflow.com/questions/320232/ensuring-subprocesses-are-dead-on-exiting-python-program][avoid]] [[http://stackoverflow.com/questions/2760652/how-to-kill-or-avoid-zombie-processes-with-subprocess-module][zombies]].
+
+Sometimes, though, processes are particularly hard to kill and even after a [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait][=wait=]], a [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.terminate][=terminate=]] or a [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.kill][=kill=]] they refuse to die: they become [[http://en.wikipedia.org/wiki/Zombie_process][zombies]].
+
+In theory, Python should take care of reaping zombies for you once the zombie process gets garbage collected. In practice, it does not seem to work reliably and bigger weapons are needed.
+
+Take for example the following script:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/8576490.js?file=zombies.py"></script>
+#+END_EXPORT
+
+Here I create 3 processes, without holding any references to them, wait for them to finish, and I would expect the GC to kick in and reap them when done. Instead, they are left as zombies until the parent process exits.
+
+Forcing GC does not work either:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/8576490.js?file=zombies_gc.py"></script>
+#+END_EXPORT
+
+One way is to explicitely =del= them:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/8576490.js?file=zombies_gc_refs.py"></script>
+#+END_EXPORT
+
+Another way is to explicitly cycle over all the children of the main process and =os.waitpid= on them: this has the effect of removing the zombies from the process table:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/8576490.js?file=zombies_sweep.py"></script>
+#+END_EXPORT

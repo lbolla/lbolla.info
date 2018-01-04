@@ -1,0 +1,25 @@
+#+TITLE: The List and the Truth
+
+#+DATE: <2009-09-13>
+
+#+BEGIN_QUOTE
+  /Spoon Boy/: Do not try and bend the list. That's impossible. Instead... Only try to realize the truth.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  /Neo/: What truth?
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  /Spoon Boy/: There is no list.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  /Neo/: There is no list?
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  /Spoon Boy/: Then you'll see that it is not the list that bends; it is only yourself.
+#+END_QUOTE
+
+From "[[http://gigamonkeys.com/book/they-called-it-lisp-for-a-reason-list-processing.html][Practical Common Lisp]]"

@@ -1,0 +1,10 @@
+#+TITLE: py2dot
+
+#+DATE: <2008-10-05>
+
+#+CAPTION: py2dot example
+[[./img/complicated.png]]
+
+=py2dot= is a Python script to generate graphs from a  python program. It interprets a Python program as a graphs of function calls. It can represent classes and imported modules.
+
+[[http://pypi.python.org/pypi/py2dot/][py2dot is available from pypi]]. More information are available [[http://packages.python.org/py2dot/][here]].

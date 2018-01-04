@@ -1,0 +1,43 @@
+#+TITLE: Numerical computing: Matlab vs Python + numpy + weave
+
+#+DATE: <2007-04-11>
+
+Recently, I've discovered the power of Python for numerical computing. Being a slave of Matlab for many years, I've decided to give Python (and it's numerical module =numpy=) a try, comparing its number crunching capabilities versus Matlab's.
+
+The tests are heavily inspired by [[http://www.scipy.org/PerformancePython][Prabhu Ramachandran]]. I've only added Matlab to complete his comparisons.
+
+Here is a short description of the test, taken from [[http://www.scipy.org/PerformancePython][here]]:
+
+#+BEGIN_QUOTE
+  The example we will consider is a very simple (read, trivial) case of solving the 2D Laplace equation using an iterative finite difference scheme (four point averaging, Gauss-Seidel or Gauss-Jordan). The formal specification of the problem is as follows.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  We are required to solve for some unknown function =u(x,y)= such that =nabla^2 u = 0= with a boundary condition specified. For convenience the domain of interest is considered to be a rectangle and the boundary values at the sides of this rectangle are given.
+#+END_QUOTE
+
+All the tests have been run on a Pentium IV Xeon 2GHz, with 1Gb of RAM. Here is the Matlab script I used [[./img/laplacem.doc][laplace.m]] (it's a doc file: sorry for that, but I'm only allowed to upload docs and images on this blog).
+
+#+CAPTION: time spent by different solvers
+[[./img/time.png]]
+
+-  Matlab and =numpy= have pretty much the same performances.
+-  Any form of optimization on Python code does better than Matlab.
+-  Only the simple Python (without =numpy=) is slower than Matlab (note the logarithmic =y= scale to fit also the "slow" algorithm).
+
+#+CAPTION: speed factor with respect to matlab
+[[./img/factor.png]]
+
+=blitz= is roughly twice as fast as Matlab. =inline=, =fastinline=, =fortran= and =pyrex= only differ appreciably for small grids: for 500x500 grids they are around 10x faster than Matlab.
+
+Here is some other digits, not included in the graphs:
+
+-  =numpy= with =psyco= runs 5% faster than =numpy= alone;
+-  =weave= and =psyco= (=blitz=, =inline= and =fastinline=) fails with following polite error: "local variables of functions run by Psyco cannot be accessed in any way, sorry;"
+-  =octave= runs twice as slow as =numpy= and Matlab.
+
+Pretty amazing, if you think that optimizing Python, most of the time, is really trivial. Moreover, Python is free and easily parallelizable with [[http://mpi4py.scipy.org/][MPI]] (I'll show some performances in a future post).
+
+Tests have been run also on an SGI Altix with Itanium2 processors, on a single CPU. The graphs are reported in the following thumbnails.
+
+[[./img/pico_time.png]] [[./img/pico_factor.png]]

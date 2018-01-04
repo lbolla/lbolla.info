@@ -1,0 +1,13 @@
+#+TITLE: Sudoku solver in Haskell
+
+#+DATE: <2012-02-27>
+
+Recently, I've been challenged to write a [[http://en.wikipedia.org/wiki/Sudoku][Sudoku]] solver. Not knowing the rules and with only 30 minutes, I needed some help...
+
+So, in case someone asks me again, I've implemented the same algorithm in Haskell.
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/1925630.js"> </script>
+#+END_EXPORT
+
+I know that [[http://www.haskell.org/haskellwiki/Sudoku][there are already a lot of other solutions]], but, hey, it was fun!

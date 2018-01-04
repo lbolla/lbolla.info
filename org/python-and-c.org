@@ -1,0 +1,29 @@
+#+TITLE: Python and C with ctypes
+
+#+DATE: <2013-08-28>
+
+Calling C code from Python is very simple using [[http://docs.python.org/2/library/ctypes.html][ctypes]]. Here is a very simple example to get you started and to serve as a reminder for me!
+
+Let's say you have this C file, defining 3 functions:
+
+-  =foo= which prints something to =stdout=;
+-  =bar= which returns and =int=;
+-  =baz= which takes a parameter and returns a value.
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/6363780.js?file=go.c"></script>
+#+END_EXPORT
+
+First, you want to compile this C file into a shared object. Here is a =Makefile= to do just this: simple type =make all= and you're done.
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/6363780.js?file=Makefile"></script>
+#+END_EXPORT
+
+Finally, you can call these C functions from Python using [[http://docs.python.org/2/library/ctypes.html][ctypes]]:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/6363780.js?file=go.py"></script>
+#+END_EXPORT
+
+Obviously, there is much more to it and things get more complicated soon, but, as you can see, for simple tasks like this using [[http://docs.python.org/2/library/ctypes.html][ctypes]] is pretty straitforward.

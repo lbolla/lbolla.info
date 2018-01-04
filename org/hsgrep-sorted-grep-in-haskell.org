@@ -1,0 +1,17 @@
+#+TITLE: HSGrep: Sorted grep in Haskell
+
+#+DATE: <2011-11-27>
+
+As an exercise to learn [[http://haskell.org/haskellwiki/Haskell][Haskell]], I wrote a specialized =grep= to work on sorted files. It uses [[http://en.wikipedia.org/wiki/Binary_search_algorithm][binary search]] to scan a text file and print all the (consecutive) lines that start with a user defined string.
+
+My program is a rewrite of [[http://sourceforge.net/projects/sgrep/][=sgrep=]] in [[http://haskell.org/haskellwiki/Haskell][Haskell]]: I called it [[https://github.com/lbolla/HSGrep][HSGrep]]. Code is available on [[https://github.com/lbolla/HSGrep][github]].
+
+Thanks a lot for [[http://codereview.stackexchange.com/q/6318/8638][all your useful suggestions]]! As soon as possible, I'll post some benchmarking [[./hsgrep-benchmarking][here]]. (EDIT: [[./hsgrep-benchmarking.org][benchmarks now available!]])
+
+After downloading the [[https://github.com/lbolla/HSGrep][source code]], build install and run it with:
+
+#+BEGIN_SRC sh
+$> cabal build
+$> cabal install
+$> hsgrep <string> <filename>
+#+END_SRC

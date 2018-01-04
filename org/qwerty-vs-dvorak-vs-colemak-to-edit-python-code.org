@@ -1,0 +1,4373 @@
+#+TITLE: qwerty vs dvorak vs colemak to edit Python code
+
+#+DATE: <2009-02-02>
+
+Yesterday, I was intrigued by the idea of choosing a more efficient keyboard layout to work with everyday. As long as I type Python code 90% of my time, I decided to evaluate the efficiency of the first 3 most widespread keyboard layouts: [[http://en.wikipedia.org/wiki/QWERTY][QWERTY]], [[http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard][Dvorak]] and [[http://en.wikipedia.org/wiki/Colemak][Colemak]]. I used [[http://www.codeaxe.co.uk/dvorak/][this excellent tool]] to compare the three layouts over the first 50000 characters of the [[http://webpy.org/][webpy]] source code. Here are the results:
+
+#+BEGIN_EXPORT html
+  <div id="page">
+  <div id="text">
+  <h1>
+The Qwerty Keyboard Layout Vs The Dvorak Keyboard Layout
+  </h1>
+  <h2 style="font-size: 90%;">
+:: UP ::Overall effort
+  </h2>
+  <table>
+  <thead class="small">
+  <tr>
+  <td class="a1">
+Layout
+  </td>
+  <td class="a0">
+Effort
+  </td>
+  <td class="a1">
+
+
+% improvement over worst layout
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="a1">
+
+
+Qwerty
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+306,509.6
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Dvorak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+283,868.7
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+7.4 %
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Colemak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+275,347.6
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+10.2 %
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Keys for each finger (stronger fingers should be used more often)
+
+
+  </h2>
+  <table>
+  <thead class="small">
+  <tr>
+  <td class="a1">
+
+
+Layout
+
+
+  </td>
+  <td class="a0">
+
+
+Thumbs
+
+
+  </td>
+  <td class="a1">
+
+
+LPinky
+
+
+  </td>
+  <td class="a0">
+
+
+LRing
+
+
+  </td>
+  <td class="a1">
+
+
+LMiddle
+
+
+  </td>
+  <td class="a0">
+
+
+LIndex
+
+
+  </td>
+  <td class="a1">
+
+
+RIndex
+
+
+  </td>
+  <td class="a0">
+
+
+RMiddle
+
+
+  </td>
+  <td class="a1">
+
+
+RRing
+
+
+  </td>
+  <td class="a0">
+
+
+RPinky
+
+
+  </td>
+  <td class="a1">
+
+
+Total
+
+
+  </td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="a1">
+
+
+Qwerty
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+25.9 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+12.4 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+5.3 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+9.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+11.6 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+7.6 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+5.6 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+8.9 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+13.2 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+54,237.0 keys
+
+
+  </td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Dvorak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+25.9 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+13.0 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+5.2 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+8.1 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+7.3 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+7.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+7.5 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+8.2 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+17.3 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+54,237.0 keys
+
+
+  </td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Colemak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+25.9 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+12.7 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+4.8 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+7.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+9.5 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+8.4 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+10.1 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+6.6 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+14.5 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+54,237.0 keys
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <table>
+  <thead class="small">
+  <tr>
+  <td class="a1">
+
+
+Layout
+
+
+  </td>
+  <td class="a0">
+
+
+Thumbs
+
+
+  </td>
+  <td class="a1">
+
+
+Left hand
+
+
+  </td>
+  <td class="a0">
+
+
+Right hand
+
+
+  </td>
+  <td class="a1">
+
+
+Total
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="a1">
+
+
+Qwerty
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+25.9 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+38.8 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+35.2 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+54,237.0 keys
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Dvorak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+25.9 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+33.6 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+40.5 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+54,237.0 keys
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Colemak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+25.9 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+34.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+39.6 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+54,237.0 keys
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Finger Travel Distance (only the horizontal)
+
+
+  </h2>
+  <table>
+  <thead class="small">
+  <tr>
+  <td class="a1">
+
+
+Layout
+
+
+  </td>
+  <td class="a0">
+
+
+Thumbs
+
+
+  </td>
+  <td class="a1">
+
+
+LPinky
+
+
+  </td>
+  <td class="a0">
+
+
+LRing
+
+
+  </td>
+  <td class="a1">
+
+
+LMiddle
+
+
+  </td>
+  <td class="a0">
+
+
+LIndex
+
+
+  </td>
+  <td class="a1">
+
+
+RIndex
+
+
+  </td>
+  <td class="a0">
+
+
+RMiddle
+
+
+  </td>
+  <td class="a1">
+
+
+RRing
+
+
+  </td>
+  <td class="a0">
+
+
+RPinky
+
+
+  </td>
+  <td class="a1">
+
+
+Total
+
+
+  </td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="a1">
+
+
+Qwerty
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+18.1 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+2.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+10.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+15.5 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+12.1 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+8.6 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+9.9 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+23.4 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+1,441.5 m
+
+
+  </td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Dvorak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+21.1 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+4.1 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+3.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+10.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+12.5 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+7.6 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+10.8 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+30.4 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+1,210.3 m
+
+
+  </td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Colemak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+23.7 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+2.5 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+6.1 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+10.2 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+10.2 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+9.3 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+9.3 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+28.6 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+1,131.2 m
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <table>
+  <thead class="small">
+  <tr>
+  <td class="a1">
+
+
+Layout
+
+
+  </td>
+  <td class="a0">
+
+
+Thumbs
+
+
+  </td>
+  <td class="a1">
+
+
+Left hand
+
+
+  </td>
+  <td class="a0">
+
+
+Right hand
+
+
+  </td>
+  <td class="a1">
+
+
+Total
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td class="a1">
+
+
+Qwerty
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+46.0 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+54.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+1,441.5 m
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Dvorak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+38.8 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+61.2 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+1,210.3 m
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  <tr>
+  <td class="a1">
+
+
+Colemak
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+0.0 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+42.6 %
+
+
+  </td>
+  <td class="a0" style="text-align: right;">
+
+
+57.4 %
+
+
+  </td>
+  <td class="a1" style="text-align: right;">
+
+
+1,131.2 m
+
+
+  </td>
+  <td class="a0"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::% home keys (out of all character keys plus SHIFT and ENTER, but excluding keys operated by thumbs)
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+Qwerty
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+20.4 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Dvorak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+33.7 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Colemak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+38.7 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::% keys typed with the same finger as the previous key (excluding repeating keys like ss)
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+Qwerty
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+4.5 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Dvorak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+3.8 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Colemak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+3.6 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::% keys typed with the same hand as the previous key (ex: in Qwerty sd or ss are included, but s s is not since you type the space with the other hand)
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+Qwerty
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+26.8 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Dvorak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+20.0 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Colemak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+24.6 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::% keys typed with the same hand as the previous key and jumping a row (ex: in Qwerty ev is a row jump -- you jump over the middle row -- and it's awkward to type; ef is not a row jump)
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+Qwerty
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+10.3 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Dvorak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+5.7 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Colemak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+4.1 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::% keys typed with the same hand as the previous key and in reverse order (ex: in Qwerty df or kj are typed in the easier order pinky-ring-middle-index, whereas fd and jk are in reverse order index-middle-ring-pinky, and harder to type)
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+Qwerty
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+15.4 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Dvorak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+11.9 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Colemak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+15.2 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::% keys that need the SHIFT modifier
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+Qwerty
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+14.3 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Dvorak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+14.3 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  <tr>
+  <td>
+
+
+Colemak
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+14.3 %
+
+
+  </td>
+  <td class="bar"></td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Pairs of consecutive keys typed with the same finger in Qwerty
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+:/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+253 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.47 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+de
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+200 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.37 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+tr
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+158 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.29 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+rt
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+102 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.19 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+ol
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+99 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.18 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+un
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+98 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.18 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+q\_LeftShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+87 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.16 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+ce
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+86 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.16 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+“/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+81 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+ed
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+80 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+}/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+62 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.11 %
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Pairs of consecutive keys typed with the same finger in Dvorak
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+ct
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+196 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.36 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+s\_RightShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+169 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.31 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+db
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+152 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.28 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+l\_RightShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+137 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.25 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+‘/LeftShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+133 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.25 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+rn
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+115 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.21 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+ls
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+100 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.18 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+}/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+62 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.11 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+=/RightShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+59 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.11 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+“/LeftShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+58 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.11 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+e.
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+58 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.11 %
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Pairs of consecutive keys typed with the same finger in Colemak
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+:/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+253 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.47 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+ue
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+237 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.44 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+db
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+152 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.28 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+e,
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+89 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.16 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+q\_LeftShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+87 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.16 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+“/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+81 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+}/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+62 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.11 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+]/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+46 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.08 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+pt
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+44 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.08 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+‘/RightShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+41 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.08 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+“/RightShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+41 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.08 %
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Key frequency in your text
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+/Space/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+14067 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+25.94 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/LeftShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+4391 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+8.10 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+e
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+3239 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+5.97 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+t
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2184 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+4.03 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+s
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2170 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+4.00 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+r
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1890 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+3.48 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+a
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1619 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.99 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+o
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1557 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.87 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+l
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1530 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.82 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+n
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1519 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.80 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1511 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.79 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+i
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1372 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.53 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/RightShift/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1357 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.50 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+d
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1014 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.87 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+f
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+971 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.79 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+c
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+855 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.58 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+u
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+851 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.57 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+m
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+716 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.32 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+p
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+715 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.32 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+(
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+674 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.24 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+)
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+673 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.24 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+.
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+658 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.21 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+‘
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+623 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+,
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+573 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.06 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+b
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+571 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.05 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+“
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+563 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.04 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+554 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.02 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+=
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+518 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.96 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+:
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+490 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.90 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+q
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+463 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.85 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+y
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+423 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.78 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+h
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+416 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.77 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+w
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+352 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.65 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+>
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+348 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.64 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+g
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+304 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.56 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+v
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+257 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.47 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+x
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+253 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.47 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+k
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+231 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.43 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+<
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+154 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.28 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+125 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.23 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+[]
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+119 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.22 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+;
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+113 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.21 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+0
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+86 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.16 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+`
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+85 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.16 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
++
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+84 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+1
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+81 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+{
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+80 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+}
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+79 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.15 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+-
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+78 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.14 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+j
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+76 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.14 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+*
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+72 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.13 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+#
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+69 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.13 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+2
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+67 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.12 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+%
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+55 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.10 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+$
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+52 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.10 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+3
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+31 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.06 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+6
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+29 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.05 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+8
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+18 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.03 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+@
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+17 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.03 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td></td>
+  <td style="text-align: right;">
+
+
+14 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.03 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+z
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+13 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.02 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+5
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+13 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.02 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+4
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+8 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.01 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+?
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+8 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.01 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+9
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+7 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.01 %
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <hr />
+  <h2 style="font-size: 90%;">
+
+
+:: UP ::Frequent pairs of keys in your text
+
+
+  </h2>
+  <table>
+  <tbody>
+  <tr>
+  <td>
+
+
+\_Space\_\_Space\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+9243 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+17.04 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+\_NewLine\_\_Space\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1233 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+2.27 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+\_Space\_\_LeftShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+805 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.48 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/LeftShift/(
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+674 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.24 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/LeftShift/)
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+673 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.24 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/LeftShift/”
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+563 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.04 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+\_LeftShift\_\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+554 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.02 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+se
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+549 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.01 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+,/Space/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+543 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+1.00 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/LeftShift/:
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+490 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.90 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+el
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+405 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.75 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+er
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+377 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.70 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+in
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+364 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.67 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+\_Space\_\_RightShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+362 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.67 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+or
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+352 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.65 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/LeftShift/>
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+348 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.64 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/Space/i
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+344 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.63 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/Space/s
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+341 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.63 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+te
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+340 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.63 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+e\_LeftShift\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+338 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.62 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+=/Space/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+332 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.61 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+/Space/=
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+321 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.59 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+re
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+306 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.56 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+lf
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+294 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.54 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+)/NewLine/
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+281 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.52 %
+
+
+  </td>
+  </tr>
+  <tr>
+  <td>
+
+
+e\_Space\_
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+281 times
+
+
+  </td>
+  <td style="text-align: right;">
+
+
+0.52 %
+
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+#+END_EXPORT
+
+Actually, I was disappointed: there seem to be no clear advantage of Dvorak or Colemak, wrt QWERTY and, given the popularity of the latter, switching does not seem to be a good idea...

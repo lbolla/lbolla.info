@@ -1,0 +1,9 @@
+#+TITLE: Blog post with Charm
+
+#+DATE: <2009-04-07>
+
+This is a test blog entry, posted with [[http://ljcharm.sourceforge.net/][Charm]]! [[http://ljcharm.sourceforge.net/][Charm]] is a text-based client which uses the MetaWeblog API to post entries to Wordpress powered blogs. It also implements other APIs.
+
+I'm wondering if simple ASCII entries like this one will be properly formatted by the Wordpress' [[http://wordpress.org/about/features/][Intelligent Text Formatting]] feature. It would be nice to use =vim= to edit it...
+
+Enjoy!

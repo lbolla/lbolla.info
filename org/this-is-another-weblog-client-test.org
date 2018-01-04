@@ -1,0 +1,7 @@
+#+TITLE: This is another weblog client test
+
+#+DATE: <2009-02-01>
+
+...and this is using [[http://blogtk.sourceforge.net/][BloGTK]], which seems a little bit better. It support tags, too!
+
+Better...

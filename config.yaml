@@ -1,7 +1,0 @@
----
-baseurl: "https://lbolla.info/"
-title: "Lorenzo Bolla"
-canonifyurls: false
-permalinks:
-  blog: "/blog/:year/:month/:day/:filename"
----

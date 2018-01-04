@@ -1,0 +1,18 @@
+#+TITLE: sleepsort
+
+#+DATE: <2011-06-17>
+
+To honor [[http://dis.4chan.org/read/prog/1295544154][the funniest thread in months]], here is a lisp implementation of [[http://en.wikipedia.org/wiki/Sleep_sort][sleepsort]]!
+
+#+BEGIN_SRC lisp
+(use-package :sb-thread)
+
+(defun show (item)
+    (sleep item)
+    (format t "~S~%" item))
+    
+(defun sleep-sort (lst)
+    (mapcar
+    #'(lambda (item) (make-thread #'(lambda () (show item))))
+    lst))
+#+END_SRC

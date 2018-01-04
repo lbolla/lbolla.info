@@ -1,0 +1,17 @@
+#+TITLE: Flycheck checker for Erlang dialyzer
+
+#+DATE: <2015-05-09>
+
+Emacs Erlang mode misses the definition of a [[http://flycheck.readthedocs.org/en/latest/][flycheck]] checker using [[http://www.erlang.org/doc/man/dialyzer.html][dialyzer]]. Just add these lines to your =.emacs= to enable it:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/c989096bbc0ba31bb834.js"></script>
+#+END_EXPORT
+
+I prefer to use it /after/ the normal Erlang checker, so I define the following, too:
+
+#+BEGIN_SRC emacs-lisp
+      (flycheck-add-next-checker 'erlang 'erlang-dialyzer)
+#+END_SRC
+
+Enjoy!

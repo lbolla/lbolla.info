@@ -1,0 +1,9 @@
+#+TITLE: Charm, Markdown and Wordpress
+
+#+DATE: <2010-04-28>
+
+Following my [[./blog-post-with-charm.html][previous post]], a nice enhancement is using [[http://daringfireball.net/projects/markdown/][Markdown]] to filter your post before submitting it to [[http://wordpress.org/.org][Wordpress]].
+
+You can either filter it in your preferred editor ([[http://www.vim.org/][vim]] uses the =!= command) or invoke the formatter (for example, =markdown=) from [[http://ljcharm.sourceforge.net/][charm]]: command =x=.
+
+Nice!

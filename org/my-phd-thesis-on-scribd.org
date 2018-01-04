@@ -1,0 +1,5 @@
+#+TITLE: My PhD thesis on Scribd
+
+#+DATE: <2009-09-10>
+
+As per title. [[http://www.scribd.com/doc/19603116/LorenzoBollaPhDthesis][Lorenzo\_Bolla\_PhDthesis]]

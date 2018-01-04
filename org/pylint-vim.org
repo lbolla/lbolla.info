@@ -1,0 +1,30 @@
+#+TITLE: pylint.vim
+
+#+DATE: <2011-08-25>
+
+=vim= + Python + [[http://www.logilab.org/857][=pylint=]] is a powerful combination, especially when using this [[http://www.vim.org/scripts/script.php?script_id=891][=vim= plugin]]. Unfortunately, the script stopped working after a =pylint= upgrade:
+
+#+BEGIN_SRC shell
+    $ pylint --version
+    pylint 0.24.0,
+    astng 0.22.0, common 0.56.0
+    Python 2.7.2 (default, Jun 29 2011, 11:10:00)
+    [GCC 4.6.1]
+#+END_SRC
+
+You can download the [[https://gist.github.com/1170413][fixed version here]]!
+
+If interested, the patch looks like this:
+
+#+BEGIN_SRC vimscript
+    diff pylint.vim.orig pylint.vim
+    69c69
+    < CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ %)
+    ---
+    > CompilerSet makeprg=(echo\ '[%]';\ pylint\ -r\ y\ --output-format=parseable\
+    > %)
+    74c74
+    < CompilerSet efm=%+P[%f],%t:\ %#%l:%m,%Z,%+IYour\ code%m,%Z,%-G%.%#
+    ---
+    > CompilerSet efm=%f:%l:\ [%t]%m,%f:%l:%m
+#+END_SRC

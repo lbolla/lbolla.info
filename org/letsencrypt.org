@@ -1,0 +1,9 @@
+#+TITLE: lbolla.info is using HTTPS
+
+#+DATE: <2015-12-04>
+
+Today I have enabled =https= on this website. I am using certificates issued by [[https://letsencrypt.org/][Let's Encrypt]], which is a new free, automated and open certificate authority.
+
+To manage the certificates, I am using [[https://github.com/kuba/simp_le/][simp\_le]], a simple command line client to issue and renew certificates using [[https://letsencrypt.org/][Let's Encrypt]] API.
+
+All working fine, so far!

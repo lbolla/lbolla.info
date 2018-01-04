@@ -1,0 +1,17 @@
+#+TITLE: EMpy
+
+#+DATE: <2007-09-27>
+
+[[http://empy.sourceforge.net][EMpy]] is out! Here is the release note:
+
+#+BEGIN_QUOTE
+  I'm very pleased to announce the release of EMpy (Electromagnetic Python), a suite of numerical algorithms widely used in electromagnetism.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  The package, in its very-alpha stage by now, only contains the transfer matrix and the rigorous coupled wave analysis algorithms, and some handy functions and classes (to model materials, for examples). The idea is to expand it in the near future with new algorithms and interfaces to existent software. The package is based on Numpy/Scipy and its homepage: [[http://empy.sourceforge.net/][http://empy.sourceforge.net]].
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+  Anyone interested in contributing, please contact me: [[mailto:lbolla@users.sourceforge.net][lbolla@users.sourceforge.net]].
+#+END_QUOTE

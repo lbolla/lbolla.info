@@ -1,0 +1,27 @@
+#+TITLE: CVS behind a firewall through an http proxy
+
+#+DATE: <2008-04-21>
+
+If you work in a company with a too restrictive firewall, but you still need to access a CVS repository like [[http://www.sourceforge.net][Sourceforge]], you can bypass it using the program [[http://www.meadowy.org/~gotoh/projects/connect][connect.c]].
+
+From [[http://www.meadowy.org/~gotoh/projects/connect][here]]:
+
+#+BEGIN_QUOTE
+  connect.c is the simple relaying command to make network connection via SOCKS and https proxy. It is mainly intended to be used as proxy command of OpenSSH.
+#+END_QUOTE
+
+Just download it and compile it (for windows users there is a precompiled =connect.exe=). Then, if you want to use the SOCKS server =socks.local.net= to access the internet, add these two lines to your =.ssh/config=:
+
+#+BEGIN_EXAMPLE
+    Host remote.outside.net
+    ProxyCommand connect -S socks.local.net %h %p
+#+END_EXAMPLE
+
+In my case, I use an http proxy to access the internet, instead of the SOCSK, and I do not want to use =connect.exe= for internal repositories. Hence, my =.ssh/config= contains:
+
+#+BEGIN_EXAMPLE
+    Host empy.cvs.sourceforge.net
+    ProxyCommand connect -H proxy.company.net:80 %h %p
+#+END_EXAMPLE
+
+Enjoy!

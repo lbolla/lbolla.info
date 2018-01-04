@@ -1,0 +1,15 @@
+#+TITLE: They broke delicious
+
+#+DATE: <2011-09-30>
+
+The new redesign of [[http://www.delicious.com][delicious.com]] broke so many things, that I thought I had to take notes:
+
+-  [[http://www.delicious.com/help/bookmarklets][bookmarklet]] in Chrome can't be drag-n-dropped to the toolbar. Its Javascript code is also hard to copy and paste to create the bookmarklet "manually".
+-  install links for the [[http://www.delicious.com/help/quicktour/chrome][chrome]] and [[http://www.delicious.com/help/quicktour/firefox][Firefox]] extensions redirect to [[http://www.delicious.com/help/installff][empty pages]].
+-  [[http://www.delicious.com/help/tools][documentation for developer]] is coming soon (!)
+-  the [[http://www.delicious.com/][top-right menu]] with the logged-in username and stuff is the most horrible I've ever seen: it changes its width on hover, the corners look interrupted (in Chrome, at least -- I'm not bothered trying with other browsers)
+-  what the hell are [[http://www.delicious.com/stacks/lbolla][stacks]]? Grouping can be done with tags, already, and I don't want that much space in the page taken by a "social" feature! Who needs it?
+-  the list of links in the main personal page only shows 8 links on my screen... 8 links?! There's way too much padding, too whitespaces, too much to scroll... It's a bookmarking services, it should show you bookmarks in the most friendly way!
+-  image: why should I use an image for myself? And if I don't use one, [[http://www.delicious.com/static/img/profile/keyboardcat.png][I got assigned one by default]]... Please...
+
+I'll add more to the list in the future.

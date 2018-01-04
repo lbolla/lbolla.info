@@ -1,0 +1,15 @@
+#+TITLE: 500 on YouTube on non-existing videos
+
+#+DATE: <2011-12-17>
+
+Now, [[http://www.youtube.com/watch?v=wtf][this is embarassing...]] It looks like requesting a non-existent video on YouTube causes a "500 Internal Server Error"!
+
+#+CAPTION: 500 on YouTube
+[[./img/capture.jpg]]
+
+For example:
+
+-  Valid url: [[http://www.youtube.com/watch?v=b5CeNunbHto]]
+-  Invalid url: [[http://www.youtube.com/watch?v=wtf]]
+
+Surely, a better response would be something like the one returned when the =videoId= is missing: [[http://www.youtube.com/watch?v=]]. It seems like [[http://www.youtube.com/watch?v=OxXc_fXxMoE][predictions became true]].

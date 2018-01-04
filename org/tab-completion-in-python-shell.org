@@ -1,0 +1,16 @@
+#+TITLE: Tab completion in Python shell
+
+#+DATE: <2008-06-25>
+
+Recently [[http://groups.google.com/group/comp.lang.python/browse_thread/thread/b1f19db3f69cd8ce#][I saw with this little piece of code]] to give the standard python shell tab completion capabilities:
+
+#+BEGIN_SRC python
+    # setup tab completion in python shell
+    import rlcompleter
+    import readline
+    readline.parse_and_bind("tab: complete")
+#+END_SRC
+
+Obviously, you can use the environmental variable =PYTHONSTART= to execute this few lines anytime you start your python shell.
+
+Enjoy!

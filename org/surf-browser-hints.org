@@ -1,0 +1,39 @@
+#+TITLE: surf browser hints
+
+#+DATE: <2009-08-24>
+
+[[http://surf.suckless.org][=surf=]] is a simple web browser based on [[http://en.wikipedia.org/wiki/Webkit][webkit]]/gtk+, the same web engine that powers [[http://www.google.co.uk/chrome][Google Chrome]]. Used with [[http://dwm.suckless.org][=dwm=]] and [[http://tools.suckless.org/dmenu][dmenu]], it's a very powerful, yet simple tool.
+
+Here is a patch to apply X geometry hints to =surf=, so that =surf= windows behave in =dwm.=
+
+#+BEGIN_SRC C
+    *** surf.c.orig 2009-08-24 16:41:31.000000000 +0100
+    --- surf.c  2009-08-24 16:35:02.000000000 +0100
+    ***************
+    *** 372,377 ****
+    --- 372,381 ----
+    gtk_container_add(GTK_CONTAINER(c->vbox), c->searchbar);
+    gtk_container_add(GTK_CONTAINER(c->vbox), c->urlbar);
+
+    + /* Hints */
+    + GdkGeometry hints = { 1, 1 };
+    + gtk_window_set_geometry_hints(GTK_WINDOW(c->win), NULL, &hints,
+      GDK_HINT_MIN_SIZE);
+    +
+    /* Setup */
+    gtk_box_set_child_packing(GTK_BOX(c->vbox), c->urlbar, FALSE, FALSE, 0,
+    GTK_PACK_START);
+    gtk_box_set_child_packing(GTK_BOX(c->vbox), c->searchbar, FALSE, FALSE, 0,
+    GTK_PACK_START);
+#+END_SRC
+
+Another hint is to create a script to feed =surf= with your favorite bookmarks.
+
+Here it is:
+
+#+BEGIN_SRC shell
+    #!/bin/sh
+    exe="surf -u `cat ~/.bookmarks | dmenu ${1+"$@"}`" && exec $exe
+#+END_SRC
+
+Enjoy!

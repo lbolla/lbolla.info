@@ -1,0 +1,19 @@
+#+TITLE: Flycheck checker for Flow
+
+#+DATE: <2014-11-19>
+
+[[https://code.prod.facebook.com/posts/1505962329687926/flow-a-new-static-type-checker-for-javascript/][Yesterday]] Facebook open sourced [[https://code.prod.facebook.com/posts/1505962329687926/flow-a-new-static-type-checker-for-javascript/][Flow]], a static type checker for Javascript. If you use [[http://www.gnu.org/software/emacs/][Emacs]], you can use [[http://flycheck.readthedocs.org/en/latest/][Flycheck]] to check your .js files on the fly using Flow.
+
+Here is the checker definition I use:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/476a030ff2fe06445918.js"></script>
+#+END_EXPORT
+
+I prefer to use Flow /after/ [[https://developers.google.com/closure/utilities/docs/linter_howto][gjslint]], so I define the following, too:
+
+#+BEGIN_SRC emacs-lisp
+    (flycheck-add-next-checker 'javascript-gjslint 'javascript-flow)
+#+END_SRC
+
+Enjoy!

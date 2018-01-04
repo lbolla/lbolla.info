@@ -1,0 +1,5 @@
+#+TITLE: EMpy has moved!
+
+#+DATE: <2012-06-25>
+
+EMpy has [[http://lbolla.github.com/EMpy/][moved to Github]]!

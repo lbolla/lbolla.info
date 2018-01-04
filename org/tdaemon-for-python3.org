@@ -1,0 +1,7 @@
+#+TITLE: tdaemon for Python3
+
+#+DATE: <2011-02-20>
+
+[[https://github.com/brunobord/tdaemon][tdaemon]] is a neat little utility to do [[http://weblog.patrice.ch/2009/02/07/continuous-testing-with-python.html][continuous testing]] in Python. Unfortunately, the original version only works with Python2. I've spent a little time to [[https://github.com/lbolla/tdaemon][make it work with Python3]].
+
+Enjoy!

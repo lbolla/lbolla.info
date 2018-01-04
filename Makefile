@@ -1,28 +1,20 @@
-HUGO=${GOPATH}/bin/hugo
-TEMPLATE=drafts/_template.md
-EDITOR=emacsclient -n
+all: html style push
 
-run: clean
-	${HUGO} server -w -s .
+html:
+	emacs --eval '(org-publish-project "lbolla.info" t)'
 
-build:
-	${HUGO} -s .
+style:
+	curl http://gongzhitaao.org/orgcss/org.css -o static/css/org.css
 
-hugo:
-	go get -u -v github.com/spf13/hugo
+push:
+	rsync -acvz html/ lbolla.info:public2/
+
+org:
+	mkdir -p org
+	bin/md2org.sh
+	sed -i 's/\[\[\/blog\//\[\[/g' org/*.org
 
 clean:
-	rm -rf public/
+	rm -rf html/
 
-push: build
-	rsync -acv --delete public/ lbolla.info:public/
-
-# Use as: make draft POST=some_title.md
-draft:
-	cp ${TEMPLATE} drafts/${POST}
-	${EDITOR} drafts/${POST}
-
-# Use as: make new POST=some_title.md
-new:
-	cp ${TEMPLATE} content/blog/${POST}
-	${EDITOR} content/blog/${POST}
+.PHONY: org clean

@@ -1,0 +1,9 @@
+#+TITLE: Trackback
+
+#+DATE: <2007-09-10>
+
+Today, I discovered a new cool feature of blogs: trackbacks!
+
+This is a test, to see if I got it right...
+
+[[http://www.optiniche.com/blog/117/wordpress-trackback-tutorial/trackback/][Here]] is a clear explanation of trackbacks.

@@ -1,0 +1,9 @@
+#+TITLE: Here is where I work!
+
+#+DATE: <2006-06-27>
+
+[[http://quikmaps.com/show/1066][pic]] [[http://www.digg.com][diggin']], I found another cool link I'd like to share with you: [[http://quikmaps.com][quikmaps]].
+
+Basically, you can draw on Google maps... cool!
+
+PS: unluckily, I've not been able to put the image directly on this page: press the link "pic" to see it! I'll work on that... mpf...

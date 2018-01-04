@@ -1,0 +1,15 @@
+#+TITLE: Command line HTML validator
+
+#+DATE: <2009-01-30>
+
+Valid HTML is something we should strive to achieve. [[http://validator.w3.org/][W3C Validator]] is an invaluable tool to do just that. Unfortunately, validating a local file you are working on can be annoying after the 100th time you've uploaded it to the [[http://validator.w3.org/][W3C website]].
+
+[[https://raw.github.com/lbolla/junk/master/utils/w3c_validate.py][Here]] you can find a [[https://raw.github.com/lbolla/junk/master/utils/w3c_validate.py][command line HTML validator]] that simply uploads anything passed to it from =stdin= to the [[http://validator.w3.org/][W3C Validator]]. The basic syntax is:
+
+#+BEGIN_SRC shell
+    $> python validate.py < file_to_validate.html
+#+END_SRC
+
+It requires [[http://www.aaronsw.com/2002/html2text/][html2text]] to print the detailed list of errors.
+
+Enjoy!

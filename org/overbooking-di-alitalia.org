@@ -1,0 +1,12 @@
+#+TITLE: Overbooking di Alitalia!
+
+#+DATE: <2007-11-28>
+
+#+CAPTION: alitalia
+[[./img/alitalia.jpg]]
+
+Questo weekend mi sono accorto di quanto sia messa male [[http://www.alitalia.it][Alitalia]].
+
+In mezzo a tutte le altre compagnie del mondo, a Malpensa, espone il cartello che ho furtivamente fotografato (avete mai provato a fotografare i banchi dei check-in in aeroporto?). OK, niente di nuovo, se si pensa che [[http://www.altroconsumo.it/map/src/73281.htm][tutte le compagnie aeree]] fanno [[http://it.wikipedia.org/wiki/Overbooking][overbooking]] da sempre e che [[http://www.alitalia.com.ar/footer/legalinfo/overbooking.htm][Alitalia avvisa i suoi clienti]] di questa possibilita'. Ma sembra esserci [[http://www.assoutenti.liguria.it/index.php?option=com_content&task=view&id=536&Itemid=2][chi non e' d'accordo]].
+
+Certo, rimane quantomeno fuorviante il messaggio: ti dovresti forse sentire premiato a restare a piedi?

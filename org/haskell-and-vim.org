@@ -1,0 +1,15 @@
+#+TITLE: Haskell and VIM
+
+#+DATE: <2011-10-15>
+
+I had to tinker quite a bit before finding a decent configuration for vim to edit Haskell files. Here are the packages and config files I use:
+
+-  [[http://projects.haskell.org/haskellmode-vim/][Haskell mode]]: interaction with [[http://www.haskell.org/haddock/][Haddock]], compiler integration, and other general settings.
+-  [[http://www.vim.org/scripts/script.php?script_id=1968][Indentation]]: proper source code indentation.
+-  More configs to enforce [[http://urchin.earth.li/~ian/style/haskell.html][good style]] (no tabs, tabstops, etc.):
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/1289349.js"> </script>
+#+END_EXPORT
+
+You can also have them [[./assets/haskell-vim-config.tar.gz][bundled all together]].

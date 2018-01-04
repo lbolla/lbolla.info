@@ -1,0 +1,15 @@
+#+TITLE: Boundary Value Problem
+
+#+DATE: <2008-04-14>
+
+For you, Python lover, who always needs Matlab functions: boundary value problems are not a problem anymore.
+
+Googling for a [[http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/ref/bvp4c.html&http://www.google.com/cse?cx=002683415331144861350%3Atsq8didf9x0&q=bvp4c&ie=utf-8&oe=utf-8&cof=FORID%3A1&sa=Search][bvp4c]] clone, I ended up [[http://www.elisanet.fi/ptvirtan/software/bvp/index.html][here]]:
+
+#+BEGIN_QUOTE
+  This is a Python wrapper for a [[http://www.elisanet.fi/ptvirtan/software/bvp/colnew.f.diff][modified]] version of the [[http://www.netlib.org/ode/colnew.f][COLNEW]] boundary value problem solver by U. Ascher and G. Bader. Modifications made include vectorization over mesh points and better compatibility with Python.
+#+END_QUOTE
+
+There are little differences in the usage, though. I tried to reproduce the examples in [[http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?ref=bvp_tutorial&objectId=3819&objectType=file][this tutorial]], to clarify things. You can download the first two examples [[http://www.box.net/shared/2akb4asoo0][here]].
+
+Enjoy!

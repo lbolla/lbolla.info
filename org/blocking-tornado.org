@@ -1,0 +1,96 @@
+#+TITLE: Blocking tasks in Tornado
+#+DATE: <2013-01-22>
+
+Every now and then a [[https://groups.google.com/d/topic/python-tornado/NVA5sTFIlPo/discussion][new discussion is raised on Tornado's mailling list about what is the best way to execute blocking tasks]]. It turns out that there are 3 feasible options, in order of increasing complexity:
+
+-  /Optimize blocking calls/. Often, a slow DB query, or an overly complicate template are the blocking bottleneck. Rather than complicating the webserver, the first thing to try is to speed them up. This is sufficient 99% of the time.
+-  /Execute the slow task in a separate thread or process/. This means off-loading the task to a different thread (or process) to the one running the =IOLoop=, which is then free to accept other requests.
+-  /Use an asynchronous driver/library to run the task/. For example, something like [[http://www.gevent.org/][gevent]], [[http://emptysquare.net/blog/introducing-motor-an-asynchronous-mongodb-driver-for-python-and-tornado/][motor]] and the like.
+
+This blog post is about the second option, in particular using Python's [[http://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures][=concurrent.futures=]] package.
+
+For example, consider this simple web server, with a blocking "SleepHandler" handler:
+
+#+BEGIN_SRC python
+import time
+
+import tornado.ioloop
+import tornado.web
+
+
+class MainHandler(tornado.web.RequestHandler):
+
+    def get(self):
+        self.write("Hello, world %s" % time.time())
+
+
+class SleepHandler(tornado.web.RequestHandler):
+
+    def get(self, n):
+        time.sleep(float(n))
+        self.write("Awake! %s" % time.time())
+
+
+application = tornado.web.Application([
+    (r"/", MainHandler),
+    (r"/sleep/(\d+)", SleepHandler),
+])
+
+
+if __name__ == "__main__":
+    application.listen(8888)
+    tornado.ioloop.IOLoop.instance().start()
+#+END_SRC
+
+Try to visit =http://localhost:8888/sleep/10= in one tab and =http://localhost:8888/= in another: you'll see that "Hello, world" is not printed in the second tab until the first one has finished, after 10 seconds. Effectively, the first call is blocking the IOLoop, who cannot serve the second tab.
+
+You can make the "SleepHandler" Tornado-friendly by executing it in another thread. Below is a decorator that can be used to "unblock" it:
+
+#+BEGIN_SRC python
+from concurrent.futures import ThreadPoolExecutor
+from functools import partial, wraps
+
+import tornado.ioloop
+import tornado.web
+
+
+EXECUTOR = ThreadPoolExecutor(max_workers=4)
+
+
+def unblock(f):
+
+    @tornado.web.asynchronous
+    @wraps(f)
+    def wrapper(*args, **kwargs):
+        self = args[0]
+
+        def callback(future):
+            self.write(future.result())
+            self.finish()
+
+        EXECUTOR.submit(
+            partial(f, *args, **kwargs)
+        ).add_done_callback(
+            lambda future: tornado.ioloop.IOLoop.instance().add_callback(
+                partial(callback, future)))
+
+    return wrapper
+
+
+class SleepHandler(tornado.web.RequestHandler):
+
+    @unblock
+    def get(self, n):
+        time.sleep(float(n))
+        return "Awake! %s" % time.time()
+#+END_SRC
+
+Very simply, the =unblock= decorator submits the decorated function to the thread pool, which returns a future; a callback is added to this future to return control to the IOLoop, by calling =add_callback=, which eventually will call =self.finish= and conclude the request.
+
+Note that the decorated function must be itself be decorated with =tornado.web.asynchronous=, in order to not call =self.finish= too soon! Moreover, =self.write= is not thread-safe (thanks mrjoes!) therefore it must be called in the main thread with the future's result as parameter.
+
+Full code is below, available on [[https://gist.github.com/4594879][gist]].
+
+#+BEGIN_EXPORT html
+#+HTML: <script src="https://gist.github.com/4594879.js"></script>
+#+END_EXPORT

@@ -1,0 +1,30 @@
+.org-src-container>pre.src-go:before {
+    content: 'Go';
+}
+.org-src-container>pre.src-vim:before {
+    content: 'VimScript';
+}
+
+
+
+.org-src-container>pre.src-C:before {
+    content: 'C';
+}
+.org-src-container>pre.src-python:before {
+    content: 'Python';
+}
+.org-src-container>pre.src-elixir:before {
+    content: 'Elixir';
+}
+.org-src-container>pre.src-rust:before {
+    content: 'Rust';
+}
+.org-src-container>pre.src-shell:before {
+    content: 'Shell';
+}
+.org-src-container>pre.src-lisp:before {
+    content: 'Lisp';
+}
+.org-src-container>pre.src-ipython:before {
+    content: 'iPython';
+}

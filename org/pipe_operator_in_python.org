@@ -1,0 +1,35 @@
+#+TITLE: Elixir's pipe operator in Python
+
+#+DATE: <2016-05-25>
+
+[[http://elixir-lang.org][Elixir]] implements lots of nice ideas, one of which is its [[http://elixir-lang.org/docs/stable/elixir/Kernel.html#%7C%3E/2][pipe operator]]. It allows you to write things like:
+
+#+BEGIN_SRC elixir
+iex> [1, [2], 3] |> List.flatten()
+[1, 2, 3]
+#+END_SRC
+
+Or:
+
+#+BEGIN_SRC elixir
+iex> inc = fn x -> x + 1 end
+iex> dec = fn x -> x - 1 end
+iex> square = fn x -> x * x end
+iex> 5 |> inc.() |> dec.() |> square.()
+25
+#+END_SRC
+
+Today, just for fun, I tried to implement something similar in Python. Here is the result:
+
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/e7396c77e63b4c168cce27002f588494.js"></script>
+#+END_EXPORT
+
+So, you can write something like:
+
+#+BEGIN_SRC python
+>>> 5 |P| inc |P| dec |P| square
+25
+#+END_SRC
+
+Obviously, this is just a toy: it does not implement all the features available in the Elixir's one, but it was fun!

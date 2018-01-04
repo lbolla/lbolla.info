@@ -1,0 +1,23 @@
+#+TITLE: Case sensitive Google search
+
+#+DATE: <2011-04-13>
+
+#+CAPTION: Case Sensitive Google Search
+[[./img/Screen-shot-2011-04-13-at-15.27.29-300x252.png]]
+
+Google does not support [[http://www.google.com/support/websearch/bin/answer.py?hl=en&answer=134479]["case sensitive" searches]] (and [[http://www.google.com/support/forum/p/Web+Search/thread?tid=282a99b488daa33f&hl=en][here]] and [[http://www.google.com/support/forum/p/Web%20Search/thread?tid=654360f674f696e7&hl=en][here]]). It does seem to return [[http://www.labnol.org/internet/search/case-sensitive-google-search/6279/][slightly different results]] depending on the case of the search query, but if you are only interested in the exact "case sensitive" matches you're on your own.
+
+To solve this problem, I've written a small Javascript snippet that shades results from Google searches if not exactly matching the case-sensitive search query.
+
+You can download it as:
+
+-  [[https://github.com/lbolla/junk/raw/master/cssearch/bin/cssearch.xpi][Case Sensitive Search Firefox Extension]]: it works with Firefox 3 and 4.
+-  Case Sensitive Search Bookmarklet: just create a bookmark using the following code as url and click it when on a Google search page.
+
+#+BEGIN_SRC js
+javascript:(function(){var s = document.createElement('script'); s.setAttribute('type', 'text/javascript'); s.setAttribute('src', 'https://lbolla.info/cssearch/js'); document.getElementsByTagName('head')[0].appendChild(s);})();
+#+END_SRC
+
+A demo is available [[/junk/case_sensitive_search/][here]].
+
+Let me know what you think!

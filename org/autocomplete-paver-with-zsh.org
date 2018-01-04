@@ -1,0 +1,16 @@
+#+TITLE: Autocomplete paver with zsh
+
+#+DATE: <2014-09-14>
+
+Here is a quick way to have autocompletion of [[http://paver.github.io/paver/][paver]] tasks on [[http://www.zsh.org/][zsh]]. Just add these lines to your =.zshrc= file:
+
+#+BEGIN_SRC shell
+    _paver_tasks () {
+        reply=( $(paver help | awk '/^  ([a-zA-Z_]+).+-/{print $1}') )
+    }
+    compctl -K _paver_tasks paver
+#+END_SRC
+
+Then, at a =zsh= prompt, if in a directory containing a =pavement.py= file, hitting =paver <TAB>= will list the available tasks.
+
+Enjoy!

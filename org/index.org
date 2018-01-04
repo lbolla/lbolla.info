@@ -1,0 +1,15 @@
+#+TITLE: Lorenzo Bolla
+
+#+AUTHOR:
+#+DATE:
+
+Hi! I'm Lorenzo Bolla, [[./cv][Software Developer]] in London, UK.
+
+When I'm not programming in [[https://www.python.org/][Python]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://golang.org/][Go]] or [[https://www.haskell.org/][Haskell]], I am playing
+either basketball, piano or chess.
+
+* Latest articles:
+
+#+INCLUDE: "sitemap.org" :lines "3-17"
+
+[[./articles.org][More]]
