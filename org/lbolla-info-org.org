@@ -1,5 +1,5 @@
 #+TITLE: org-based lbolla.info
-#+DATE: <2017-01-04>
+#+DATE: <2018-01-04>
 
 [[https://lbolla.info][lbolla.info]] is now written in [[http://orgmode.org/][Org]].
 
