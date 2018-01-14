@@ -1,5 +1,5 @@
 #+TITLE: Kubectl "outdated" plugin
-#+DATE: <2017-01-04>
+#+DATE: <2018-01-04>
 
 We use [[https://kubernetes.io/][Kubernetes]] at [[https://yougov.co.uk/][work]] and I am mostly responsible for making it
 run smoothly. This means staying on top of new releases, libraries and
