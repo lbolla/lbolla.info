@@ -2,9 +2,9 @@
 
 #+DATE: <2014-01-23>
 
-The [[http://docs.python.org/2/library/subprocess.html][=subprocess=]] module in Python standard library allows you to spanw processes to do some tasks. The parent process should [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait][=wait=]] on its children processes in order get the return value of the process and [[http://stackoverflow.com/questions/320232/ensuring-subprocesses-are-dead-on-exiting-python-program][avoid]] [[http://stackoverflow.com/questions/2760652/how-to-kill-or-avoid-zombie-processes-with-subprocess-module][zombies]].
+The [[https://docs.python.org/2/library/subprocess.html][=subprocess=]] module in Python standard library allows you to spanw processes to do some tasks. The parent process should [[https://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait][=wait=]] on its children processes in order get the return value of the process and [[http://stackoverflow.com/questions/320232/ensuring-subprocesses-are-dead-on-exiting-python-program][avoid]] [[http://stackoverflow.com/questions/2760652/how-to-kill-or-avoid-zombie-processes-with-subprocess-module][zombies]].
 
-Sometimes, though, processes are particularly hard to kill and even after a [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait][=wait=]], a [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.terminate][=terminate=]] or a [[http://docs.python.org/2/library/subprocess.html#subprocess.Popen.kill][=kill=]] they refuse to die: they become [[http://en.wikipedia.org/wiki/Zombie_process][zombies]].
+Sometimes, though, processes are particularly hard to kill and even after a [[https://docs.python.org/2/library/subprocess.html#subprocess.Popen.wait][=wait=]], a [[https://docs.python.org/2/library/subprocess.html#subprocess.Popen.terminate][=terminate=]] or a [[https://docs.python.org/2/library/subprocess.html#subprocess.Popen.kill][=kill=]] they refuse to die: they become [[http://en.wikipedia.org/wiki/Zombie_process][zombies]].
 
 In theory, Python should take care of reaping zombies for you once the zombie process gets garbage collected. In practice, it does not seem to work reliably and bigger weapons are needed.
 

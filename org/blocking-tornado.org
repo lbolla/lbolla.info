@@ -7,7 +7,7 @@ Every now and then a [[https://groups.google.com/d/topic/python-tornado/NVA5sTFI
 -  /Execute the slow task in a separate thread or process/. This means off-loading the task to a different thread (or process) to the one running the =IOLoop=, which is then free to accept other requests.
 -  /Use an asynchronous driver/library to run the task/. For example, something like [[http://www.gevent.org/][gevent]], [[http://emptysquare.net/blog/introducing-motor-an-asynchronous-mongodb-driver-for-python-and-tornado/][motor]] and the like.
 
-This blog post is about the second option, in particular using Python's [[http://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures][=concurrent.futures=]] package.
+This blog post is about the second option, in particular using Python's [[https://docs.python.org/3/library/concurrent.futures.html#module-concurrent.futures][=concurrent.futures=]] package.
 
 For example, consider this simple web server, with a blocking "SleepHandler" handler:
 
