@@ -1,0 +1,29 @@
+#+TITLE: Speeding up Oh-my-zsh
+
+#+DATE: <2018-05-20 Sun>
+
+Today I read a [[https://blog.jonlu.ca/posts/speeding-up-zsh][very interesting article]] about speeding up [[https://github.com/robbyrussell/oh-my-zsh][Oh-my-zsh]].
+So, I tried to profile my own startup times and I discovered that:
+
+- Zsh start time was about 500ms
+- Bash start time is less than 10ms
+- Zsh (without config) start time is less than 10ms
+   
+Most of startup time was spent loading 3 plugins that I regularly use:
+
+- `emacs`, which provides handy aliases to interact with Emacs daemon.
+  I was surprised this plugin was slow because it just defines a bunch
+  of aliases. It turns out that it was spending 50+ ms checking Emacs'
+  version (by starting up Emacs every time). I sped it up considerably
+  by instead checking `emacsclient` version. [[https://github.com/robbyrussell/oh-my-zsh/issues/6840][PR submitted]].
+- `kubectl`, which provides aliases and completion for `kubectl`. It
+  turns out that it was spending 200+ ms to generate the completion
+  script using `kubectl completion zsh` every single time. I sped it
+  up by caching the completoin script, that is not subject to change
+  very often. [[https://github.com/robbyrussell/oh-my-zsh/pull/6844][PR submitted]].
+- `virtualenvwrapper`, which sources `virtualenvwrapper.sh` and little
+  more. Virtualenvwrapper also supports a "lazy" version of its
+  script, so I sped up startup times by preferring the "lazy" script
+  to the "eager" one. [[https://github.com/robbyrussell/oh-my-zsh/pull/6842][PR submitted]].
+  
+I hope the above 3 PRs will be approved and merged!
