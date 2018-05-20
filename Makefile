@@ -9,11 +9,6 @@ style:
 push:
 	rsync -acvz html/ lbolla.info:public2/
 
-org:
-	mkdir -p org
-	bin/md2org.sh
-	sed -i 's/\[\[\/blog\//\[\[/g' org/*.org
-
 clean:
 	rm -rf html/
 
