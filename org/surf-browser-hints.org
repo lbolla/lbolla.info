@@ -31,9 +31,9 @@ Another hint is to create a script to feed =surf= with your favorite bookmarks.
 
 Here it is:
 
-#+BEGIN_SRC shell
-    #!/bin/sh
-    exe="surf -u `cat ~/.bookmarks | dmenu ${1+"$@"}`" && exec $exe
+#+BEGIN_SRC sh
+#!/bin/sh
+exe="surf -u `cat ~/.bookmarks | dmenu ${1+"$@"}`" && exec $exe
 #+END_SRC
 
 Enjoy!

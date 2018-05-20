@@ -4,7 +4,7 @@
 
 Here is a quick way to have autocompletion of [[http://paver.github.io/paver/][paver]] tasks on [[http://www.zsh.org/][zsh]]. Just add these lines to your =.zshrc= file:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     _paver_tasks () {
         reply=( $(paver help | awk '/^  ([a-zA-Z_]+).+-/{print $1}') )
     }

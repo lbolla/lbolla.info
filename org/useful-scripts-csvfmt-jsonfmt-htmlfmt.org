@@ -21,7 +21,7 @@ In this post, I'll describe 3 scripts to "pretty print" some common file types, 
 
 Output looks like this:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     % echo 'a,b,c
     1,2,3
     4,5,6
@@ -44,7 +44,7 @@ Output looks like this:
 
 For example:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     % echo '<a>a text<b>b text</b>more a text</a>' | xmlfmt
     a textb textmore a text
 #+END_SRC
@@ -63,7 +63,7 @@ For example:
 
 Try it out:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> curl 'http://search.twitter.com/search.json?q=lorenzo' | jsonfmt
     {u'completed_in': 0.035,
      u'max_id': 267982040698351617L,

@@ -26,7 +26,7 @@ To test these settings, I compared "vanilla" =cPickle.dumps=, with "highest\_pro
 
 Clone it and run it:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> git clone https://gist.github.com/1bec1b70ef9c8e254b57.git pickle_experiments
     $> cd pickle_experiments
     $> sh run.sh

@@ -19,7 +19,7 @@ Here is the code:
 
 *** c+
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 #!/usr/bin/env rc
 
 sed 's/^/#/'
@@ -27,7 +27,7 @@ sed 's/^/#/'
 
 *** c-
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 #!/usr/bin/env rc
 
 sed 's/^#//'

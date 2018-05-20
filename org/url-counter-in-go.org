@@ -118,7 +118,7 @@ The whole application is made of just one file =[counter.go=][[https://github.co
 
 Launch the application using the SDK; from go-count-urls directory type:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
      $> $GAE_PATH/dev_appserver.py . 
 #+END_SRC
 
@@ -128,7 +128,7 @@ Now visit [[http://localhost:8080/hello]]. Refresh. Refresh again. And again...
 
 Publishing the application on Google infrastructure is a matter of seconds:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
      $> $GAE_PATH/appcfg.py update . 
 #+END_SRC
 

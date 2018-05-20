@@ -36,7 +36,7 @@ Nonetheless, the results were very interesting. First of all, here is the code.
 
 And the results, obtained using httperf:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> httperf --hog --client=0/1 --server=localhost --port=8080 --uri=/ --rate=1000 --send-buffer=4096 --recv-buffer=16384 --num-conns=100 --num-calls=100 --burst-length=20
 #+END_SRC
 

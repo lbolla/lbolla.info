@@ -4,7 +4,7 @@
 
 Here is a simple shell script to change the engine of all the tables in a MySQL database:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     DBUSER=user
     DBPWD=password
     DBNAME=db

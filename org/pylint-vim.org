@@ -4,7 +4,7 @@
 
 =vim= + Python + [[http://www.logilab.org/857][=pylint=]] is a powerful combination, especially when using this [[http://www.vim.org/scripts/script.php?script_id=891][=vim= plugin]]. Unfortunately, the script stopped working after a =pylint= upgrade:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $ pylint --version
     pylint 0.24.0,
     astng 0.22.0, common 0.56.0

@@ -14,7 +14,7 @@ There are no new features to EMpy, but I have:
 
 You can try it out by simply:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> pip install ElectroMagneticPython
 #+END_SRC
 

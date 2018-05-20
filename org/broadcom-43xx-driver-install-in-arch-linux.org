@@ -21,7 +21,7 @@ and =lsmod | grep b43=:
 
 Finally, try to connect:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> pacman -S wifi-select
     $> wifi-select
 #+END_SRC

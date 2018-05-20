@@ -4,13 +4,13 @@
 
 Today, while playing with [[http://st.suckless.org][st]], I tried a very simple benchmark. Here it is:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
         $> time seq -f 'teeeeeeeeeeeeeeeeeeeeeeeeeeeeeest %g' 999999
 #+END_SRC
 
 Here are the results:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
         xterm: 0m28.508s
         rxvt: 0m8.568s
         st: 0m12.082s

@@ -27,7 +27,7 @@ The code is trivial: it uses [[http://swtch.com/plan9port/man/man1/sed.html][=se
 
 *** a+
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     # !/usr/bin/env rc  
 
     sed 's/^/ /'  
@@ -35,7 +35,7 @@ The code is trivial: it uses [[http://swtch.com/plan9port/man/man1/sed.html][=se
 
 *** a-
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     # !/usr/bin/env rc  
 
     sed 's/^ //'  

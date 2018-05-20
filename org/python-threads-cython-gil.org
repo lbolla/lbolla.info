@@ -29,7 +29,7 @@ As explained very well in Beazley's lesson, the threaded version suffers from a 
 
 In fact, a better behaviour is achievable forcing the OS to run the script using just one CPU, using =tasksel=. This takes as long as the serial version:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> time taskset -c 0 python par.py
     taskset -c 0 python par.py  6.64s user 0.01s system 99% cpu 6.662 total
 #+END_SRC
@@ -43,7 +43,7 @@ I've implemented the above example in Cython to show the effect of =nogil=. (Not
   <script src="https://gist.github.com/8098030.js?file=test_parpyx.py"></script>
 #+END_EXPORT
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $> python test_parpyx.py
     SEQ Elapsed: 10.1856
     PAR Elapsed: 5.4503

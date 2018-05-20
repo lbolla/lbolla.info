@@ -8,10 +8,10 @@ If you are using =rxvt= (or =urxvt=), and you want escape sequences to work as i
 
 Here are the codes I had to add to have =vim= working properly on =rxvt= (I use =alt-left_arrow= and =alt-right_arrow= to navigate through tabs):
 
-#+BEGIN_SRC shell
+#+BEGIN_QUOTE
 *Rxvt*meta8: false
 *Rxvt.keysym.C-Left: 033[1;5D
 *Rxvt.keysym.C-Right: 033[1;5C
 *Rxvt.keysym.M-Left: 033[1;3D
 *Rxvt.keysym.M-Right: 033[1;3C
-#+END_SRC
+#+END_QUOTE

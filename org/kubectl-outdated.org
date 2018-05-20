@@ -20,7 +20,7 @@ It works like this.
 
 E.g. running it on a testing cluster I setup gives this output:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 $> kubectl plugin outdated
 Deployment:gitlab-ci/gitlab-runner                                                     gitlab/gitlab-runner:alpine-v9.5.0 -> v10.3.0             
 Deployment:gitlab/gitlab-ce                                                                   gitlab/gitlab-ce:9.5.9-ce.0 -> 10.3.3-ce.0         

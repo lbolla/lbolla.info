@@ -6,7 +6,7 @@ In order not to forget again how to setup [[http://en.wikipedia.org/wiki/Basic_a
 
 For =HTTPS= follow [[http://dracoblue.net/dev/https-nginx-with-self-signed-ssl-certificate/188/][these steps]]:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     $ sudo -s
     # cd /etc/nginx
     # openssl req -new -x509 -nodes -out server.crt -keyout server.key
@@ -37,7 +37,7 @@ To setup basic authentication, add these lines to the same file:
 
 Finally, to generate =/etc/nginx/htpasswd=, use this one-liner:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
     echo -e "your-username:`perl -le 'print crypt("your-password","salt")'`" > /etc/nginx/htpasswd
 #+END_SRC
 

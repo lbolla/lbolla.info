@@ -12,7 +12,7 @@ In the past, I alleviated the problem with a simple Javascript bookmarklet: add
 
 But there's a better method: do it from command line, when pushing your local commits to Gerrit. Just add these lines to your =.git/config=:
 
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 pushurl = ssh://user@gerrit:29418/project
 push = HEAD:refs/for/master
 receivepack = git receive-pack --reviewer reviewer1 --reviewer reviewer2
