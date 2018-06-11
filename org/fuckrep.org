@@ -1,0 +1,12 @@
+#+TITLE: FuckRep
+#+DATE: <2018-06-11>
+
+[[https://rep.repubblica.it][Rep]] e' l'area di [[https://repubblica.it][Repubblica.it]] con contenuti a pagamento. Sembra pero'
+che Repubblica non sia molto interessata a proteggere i propri
+contenuti: aggirare il /paywall/ infatti e' banale.
+
+Ho creato un Add On Firefox, che ho chiamato con poca fantasia
+[[https://addons.mozilla.org/en-US/firefox/addon/fuckrep/][FuckRep]], che permette di aggirare il suddetto /paywall/. Basta
+installarlo in Firefox e si attiva automaticamente su /rep.repubblica.it/.
+
+Il codice sorgente e' /public domain/, disponibile [[https://github.com/lbolla/fuckrep][qui]].
