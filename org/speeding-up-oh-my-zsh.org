@@ -19,7 +19,7 @@ Most of startup time was spent loading 3 plugins that I regularly use:
 - =kubectl=, which provides aliases and completion for =kubectl=. It
   turns out that it was spending 200+ ms to generate the completion
   script using =kubectl completion zsh= every single time. I sped it
-  up by caching the completoin script, that is not subject to change
+  up by caching the completion script, that is not subject to change
   very often. [[https://github.com/robbyrussell/oh-my-zsh/pull/6844][PR submitted]].
 - =virtualenvwrapper=, which sources =virtualenvwrapper.sh= and little
   more. Virtualenvwrapper also supports a "lazy" version of its
