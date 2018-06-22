@@ -1,5 +1,7 @@
 #+TITLE: Sitemap
 
+- <2018-06-22 Fri> [[file:resolvconf.org][Docker, vpn and =/etc/resolv.conf=]]
+- <2018-06-11 Mon> [[file:fuckrep.org][FuckRep]]
 - <2018-05-20 Sun> [[file:speeding-up-oh-my-zsh.org][Speeding up Oh-my-zsh]]
 - <2018-01-14 Sun> [[file:kube-secret-editor.org][Edit Kubernetes secrets]]
 - <2018-01-04 Thu> [[file:lbolla-info-org.org][org-based lbolla.info]]
