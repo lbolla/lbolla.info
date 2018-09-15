@@ -19,7 +19,8 @@ algorithms efficiently, in both academic and business environments.
 
 10+ years of experience in software design: highly scalable web
 applications, numerical intensive simulations and massively parallel
-data analysis.
+data analysis. 2+ years of experience in DevOps, especially with
+Docker and Kubernetes.
 
 Fluent in [[https://www.python.org/][Python]], Javascript, HTML, CSS, C/C++ (using both STL and
 Boost libraries), Fortran and Matlab.
@@ -48,7 +49,8 @@ dependable under pressure and passionately dedicated to the task.
 - Software Development :: Years of experience in [[https://www.python.org/][Python]] development,
      using Tornado, Pandas, Postgres, MongoDB and many other
      tools. Very interested in other programming languages, especially
-     [[https://www.erlang.org/][Erlang]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]].
+     [[https://www.erlang.org/][Erlang]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]]. Expert in Docker and
+     Kubernetes automation.
 
 - More :: Check out my [[https://github.com/lbolla/][GitHub]], [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow,]] [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]].
 
@@ -56,7 +58,9 @@ dependable under pressure and passionately dedicated to the task.
 
 ** [[https://yougov.com/][YouGov]], Director of DevOps, Aug 2015 -- now
 
-Lead the DevOps team, to improve automation of development processes.
+Lead the DevOps team, to improve automation of development
+processes. Manage the migration from legacy to state-of-the-art
+infrastructure, based on GitLab CI, Docker and Kubernetes.
 Responsibilities include soliciting project ideas, setting priorities
 and scheduling projects.  25% time position dedicated to this role;
 remaining 75% Lead Python Developer.
