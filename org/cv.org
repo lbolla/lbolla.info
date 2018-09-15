@@ -17,21 +17,22 @@ telecommunications.
 Doctorate on Numerical Methods and proved abilities to develop complex
 algorithms efficiently, in both academic and business environments.
 
-5+ years of experience in software design: highly scalable web
+10+ years of experience in software design: highly scalable web
 applications, numerical intensive simulations and massively parallel
 data analysis.
 
 Fluent in [[https://www.python.org/][Python]], Javascript, HTML, CSS, C/C++ (using both STL and
 Boost libraries), Fortran and Matlab.
 
-Interested in other programming languages, like [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp
-and [[https://golang.org/][Go]].
+Interested in other programming languages, like [[https://www.erlang.org/][Erlang]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]],
+Lisp and [[https://golang.org/][Go]].
 
 Experienced with many different libraries and frameworks: Tornado,
-Pandas, Disco, JQuery, ExtJS, git, MySQL, sqlite, MongoDB, nginx, and
-many more.
+CherryPy, Numpy, Pandas, Disco, JQuery, ExtJS, git, MySQL, sqlite,
+MongoDB, nginx, and many more. Experience in database design,
+especially using [[https://www.postgresql.org/][Postgresql]].
 
-Familiar with UNIX-like (mainly Linux) and Windows OSes.
+Lifelong Linux user and open-source contributor.
 
 Logical thinker, able to provide effective solutions to solve
 difficult problems.
@@ -47,7 +48,7 @@ dependable under pressure and passionately dedicated to the task.
 - Software Development :: Years of experience in [[https://www.python.org/][Python]] development,
      using Tornado, Pandas, Postgres, MongoDB and many other
      tools. Very interested in other programming languages, especially
-     [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]].
+     [[https://www.erlang.org/][Erlang]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]].
 
 - More :: Check out my [[https://github.com/lbolla/][GitHub]], [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow,]] [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]].
 
