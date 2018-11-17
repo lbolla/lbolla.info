@@ -1,12 +1,19 @@
+a {
+    color: #044c7d !important;
+}
+.timestamp {
+    color: #5d5d5d !important;
+}
+ul li span.timestamp {
+    float: left;
+    width: 10em;
+}
 .org-src-container>pre.src-go:before {
     content: 'Go';
 }
 .org-src-container>pre.src-vim:before {
     content: 'VimScript';
 }
-
-
-
 .org-src-container>pre.src-C:before {
     content: 'C';
 }
