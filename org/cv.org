@@ -3,7 +3,7 @@
 #+DATE:
 #+OPTIONS: toc:nil
 
-[[mailto:lbolla@gmail.com][lbolla@gmail.com]] | [[https://github.com/lbolla/][GitHub]]
+[[mailto:contact@lbolla.info][EMail]] | [[https://github.com/lbolla/][GitHub]]
 
 * Profile
 
