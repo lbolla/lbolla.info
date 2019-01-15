@@ -1,3 +1,9 @@
+body {
+    font: 16px/1.9em Libre Baskerville, serif !important;
+    font-feature-settings: "liga" on, "dlig" on !important;
+    font-variant-ligatures: common-ligatures discretionary-ligatures !important;
+}
+
 a {
     color: #044c7d !important;
 }

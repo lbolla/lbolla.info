@@ -1,15 +1,22 @@
-all: html style push
+.PHONY: help html style push clean
 
-html:
-	emacs --eval '(org-publish-project "lbolla.info" t)'
+# Self-documenting Makefile
+# https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-style:
-	curl http://gongzhitaao.org/orgcss/org.css -o static/css/org.css
+html:  ## Generate html
+	emacsclient --eval '(org-publish-project "lbolla.info" t)'
 
-push:
+style:  ## Download stylesheets
+	curl -s https://gongzhitaao.org/orgcss/org.css -o static/css/org.css
+
+run:  ## Copy html to tmp, where local nginx expects them
+	cp -R html/ /tmp/
+	xdg-open http://localhost:81/
+
+push:  ## Publish
 	rsync -acvz html/ lbolla.info:public2/
 
-clean:
+clean:  ## Clean html
 	rm -rf html/
-
-.PHONY: org clean
