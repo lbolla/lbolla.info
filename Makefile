@@ -11,9 +11,8 @@ html:  ## Generate html
 style:  ## Download stylesheets
 	curl -s https://gongzhitaao.org/orgcss/org.css -o static/css/org.css
 
-run:  ## Copy html to tmp, where local nginx expects them
-	cp -R html/ /tmp/
-	xdg-open http://localhost:81/
+run:  ## Run a local server at port 8000
+	cd html && python3 -m http.server
 
 push:  ## Publish
 	rsync -acvz html/ lbolla.info:public2/
