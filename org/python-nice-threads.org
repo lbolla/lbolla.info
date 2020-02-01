@@ -21,7 +21,7 @@ problems, notably:
 
 In general, it's recommended to use multiprocessing, but if you are stuck with
 threads and you want to make sure certain threads are executed with higher
-priority, you can use the following trick.
+priority, you can you the following trick.
 
 Take a look at [[https://gist.github.com/lbolla/699c44601ac0bd50d1147bf08931d9f1][this script]]:
 #+BEGIN_EXPORT html
@@ -30,12 +30,51 @@ Take a look at [[https://gist.github.com/lbolla/699c44601ac0bd50d1147bf08931d9f1
 
 It spawns 4 threads, each of which executes some CPU intensive task
 (calculating the 26th Fibonacci number in a very inefficient way!). The whole
-process is pinned to a single CPU. Each thread is given a different priority by
-using [[https://linux.die.net/man/1/nice][nice]].
+process is pinned to a single CPU.
 
-The output looks like this:
+When all threads are given the same priority, the output is like this:
 
-#+begin_src 
+#+begin_src shell
+~ » python3 ~/src/yougov/brandindex/qq7/priv/nice_threads.py
+2020-02-01 17:26:18,668 WARNING [root] <nice_threads.py:pin_process_to_cpus:28> {14060-140417266833216} Pinning 14060 to cpus 7
+pid 14060's current affinity list: 0-7
+pid 14060's new affinity list: 7
+2020-02-01 17:26:18,671 INFO [root] <nice_threads.py:loop:39> {14060-140417225721600} Starting t0
+2020-02-01 17:26:18,691 INFO [root] <nice_threads.py:loop:39> {14060-140417217328896} Starting t1
+2020-02-01 17:26:18,739 INFO [root] <nice_threads.py:loop:39> {14060-140417208936192} Starting t2
+2020-02-01 17:26:18,783 INFO [root] <nice_threads.py:loop:39> {14060-140417200543488} Starting t3
+2020-02-01 17:26:31,931 INFO [root] <nice_threads.py:loop:44> {14060-140417217328896} Done t1 in 13.20
+2020-02-01 17:26:31,940 INFO [root] <nice_threads.py:loop:44> {14060-140417225721600} Done t0 in 13.27
+2020-02-01 17:26:31,967 INFO [root] <nice_threads.py:loop:44> {14060-140417200543488} Done t3 in 13.18
+2020-02-01 17:26:31,998 INFO [root] <nice_threads.py:loop:44> {14060-140417208936192} Done t2 in 13.26
+#+end_src
+
+All threads terminate at the same time (they are given the same amount of CPU
+time), but they all take 13 secs, to execute a task (=fib(26)=) that takes ~3
+secs to execute, because threads are stepping on each other's toes.
+
+It would be more efficient to execute the 4 tasks sequentially. See the output
+of a sequential run:
+
+#+begin_src shell
+~ » python3 ~/src/yougov/brandindex/qq7/priv/nice_threads.py
+2020-02-01 17:33:31,627 WARNING [root] <nice_threads.py:pin_process_to_cpus:28> {16673-140526022530880} Pinning 16673 to cpus 7
+pid 16673's current affinity list: 0-7
+pid 16673's new affinity list: 7
+2020-02-01 17:33:31,630 INFO [root] <nice_threads.py:loop:39> {16673-140526022530880} Starting seq-0 [None]
+2020-02-01 17:33:35,005 INFO [root] <nice_threads.py:loop:45> {16673-140526022530880} Done seq-0 [None] in 3.37
+2020-02-01 17:33:35,005 INFO [root] <nice_threads.py:loop:39> {16673-140526022530880} Starting seq-1 [None]
+2020-02-01 17:33:38,352 INFO [root] <nice_threads.py:loop:45> {16673-140526022530880} Done seq-1 [None] in 3.35
+2020-02-01 17:33:38,352 INFO [root] <nice_threads.py:loop:39> {16673-140526022530880} Starting seq-2 [None]
+2020-02-01 17:33:41,830 INFO [root] <nice_threads.py:loop:45> {16673-140526022530880} Done seq-2 [None] in 3.48
+2020-02-01 17:33:41,830 INFO [root] <nice_threads.py:loop:39> {16673-140526022530880} Starting seq-3 [None]
+2020-02-01 17:33:45,228 INFO [root] <nice_threads.py:loop:45> {16673-140526022530880} Done seq-3 [None] in 3.40
+#+end_src
+
+If instead each thread is given a different priority, things behave better. We
+can do that by using [[https://linux.die.net/man/1/nice][nice]]. The output looks like this:
+
+#+begin_src shell
 » python3 nice_threads.py
 2020-02-01 14:29:51,838 WARNING [root] <nice_threads.py:pin_process_to_cpus:28> {8957-139865220663104} Pinning 8957 to cpus 1
 pid 8957's current affinity list: 0-7
@@ -55,5 +94,5 @@ CPU-time to the high priority thread, which completed before the others.
 [[https://youtu.be/iVdYAY4mnr0][=htop= shows it in "real time"]], too:
 
 #+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iVdYAY4mnr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="900" height="506" src="https://www.youtube.com/embed/iVdYAY4mnr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
