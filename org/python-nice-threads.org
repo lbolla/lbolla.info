@@ -1,0 +1,59 @@
+#+TITLE: Nice threads in Python
+#+DATE: <2020-02-01 Sat>
+
+Python has two ways to execute code in parallel: processes and threads. Both
+have their strengths and weaknesses. In particular, threads are cheaper in
+terms of resources and are able to share memory, but besides the obvious
+pitfalls of multi-threaded programming, they suffer from some Python specific
+problems, notably:
+
+1. Because of the GIL, only one Python's thread is actually running at any one
+   time. So, very little parallelism is possible if the task is CPU bound. In
+   fact, more often than not, it's more efficient to execute multiple tasks
+   sequentially on a single thread (pinned to a single CPU), rather than
+   spawning multiple threads and having the Python interpreter context
+   switching too much and not being able to schedule the threads on all
+   available CPUs.
+
+2. [[https://docs.python.org/3/library/threading.html][Python's threads have no priority]], so a "less important" thread can starve
+   "more important" ones. I am not sure why [[http://man7.org/linux/man-pages/man3/pthread_setschedparam.3.html][setting the scheduling policy for a thread]]
+   is not possible in Python, given that it's in the POSIX standard.
+
+In general, it's recommended to use multiprocessing, but if you are stuck with
+threads and you want to make sure certain threads are executed with higher
+priority, you can use the following trick.
+
+Take a look at [[https://gist.github.com/lbolla/699c44601ac0bd50d1147bf08931d9f1][this script]]:
+#+BEGIN_EXPORT html
+  <script src="https://gist.github.com/lbolla/699c44601ac0bd50d1147bf08931d9f1.js"></script>
+#+END_EXPORT
+
+It spawns 4 threads, each of which executes some CPU intensive task
+(calculating the 26th Fibonacci number in a very inefficient way!). The whole
+process is pinned to a single CPU. Each thread is given a different priority by
+using [[https://linux.die.net/man/1/nice][nice]].
+
+The output looks like this:
+
+#+begin_src 
+» python3 nice_threads.py
+2020-02-01 14:29:51,838 WARNING [root] <nice_threads.py:pin_process_to_cpus:28> {8957-139865220663104} Pinning 8957 to cpus 1
+pid 8957's current affinity list: 0-7
+pid 8957's new affinity list: 1
+2020-02-01 14:29:51,840 INFO [root] <nice_threads.py:loop:39> {8957-139865179551488} Starting t0 [0]
+2020-02-01 14:29:51,859 INFO [root] <nice_threads.py:loop:39> {8957-139865171158784} Starting t1 [5]
+2020-02-01 14:29:51,893 INFO [root] <nice_threads.py:loop:39> {8957-139865162503936} Starting t2 [10]
+2020-02-01 14:29:51,955 INFO [root] <nice_threads.py:loop:39> {8957-139865154111232} Starting t3 [15]
+2020-02-01 14:29:57,266 INFO [root] <nice_threads.py:loop:44> {8957-139865179551488} Done t0 [0] in 5.43
+2020-02-01 14:30:03,568 INFO [root] <nice_threads.py:loop:44> {8957-139865171158784} Done t1 [5] in 11.71
+2020-02-01 14:30:05,315 INFO [root] <nice_threads.py:loop:44> {8957-139865162503936} Done t2 [10] in 13.42
+2020-02-01 14:30:05,423 INFO [root] <nice_threads.py:loop:44> {8957-139865154111232} Done t3 [15] in 13.47
+#+end_src
+
+Note that the threads terminate at different times: the OS scheduled more
+CPU-time to the high priority thread, which completed before the others.
+[[https://youtu.be/iVdYAY4mnr0][=htop= shows it in "real time"]], too:
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iVdYAY4mnr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT

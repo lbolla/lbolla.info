@@ -1,5 +1,6 @@
 #+TITLE: Sitemap
 
+- <2020-02-01 Sat>  [[file:python-nice-threads.org][Nice threads in Python]]
 - <2018-06-22 Fri>  [[file:resolvconf.org][Docker, vpn and =/etc/resolv.conf=]]
 - <2018-06-11 Mon>  [[file:fuckrep.org][FuckRep]]
 - <2018-05-20 Sun>  [[file:speeding-up-oh-my-zsh.org][Speeding up Oh-my-zsh]]
