@@ -1,5 +1,6 @@
 #+TITLE: Sitemap
 
+- <2020-04-11 Sat>  [[file:rust-specialization.org][Impl specialization in Rust]]
 - <2020-02-01 Sat>  [[file:python-nice-threads.org][Nice threads in Python]]
 - <2018-06-22 Fri>  [[file:resolvconf.org][Docker, vpn and =/etc/resolv.conf=]]
 - <2018-06-11 Mon>  [[file:fuckrep.org][FuckRep]]
