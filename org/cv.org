@@ -5,6 +5,19 @@
 
 [[mailto:contact@lbolla.info][EMail]] | [[https://github.com/lbolla/][GitHub]]
 
+* Skills
+
+- Software Architecture :: Proved experience in designing,
+     implementing and deploying highly scalable software systems.
+
+- Software Development :: Years of experience in [[https://www.python.org/][Python]] development,
+     using Tornado, Pandas, Postgres, MongoDB and many other
+     tools. Very interested in other programming languages, especially
+     [[https://www.erlang.org/][Erlang]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]]. Expert in [[https://www.docker.com/][Docker]] and
+     [[https://kubernetes.io/][Kubernetes]] automation.
+
+- More :: Check out my [[https://github.com/lbolla/][GitHub]], [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow,]] [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]].
+
 * Profile
 
 Software Engineer with background in Physics and a crush for hard
@@ -41,19 +54,6 @@ difficult problems.
 Great team-player & fun attitude, competent time manager, very
 dependable under pressure and passionately dedicated to the task.
 
-* Skills
-
-- Software Architecture :: Proved experience in designing,
-     implementing and deploying highly scalable software systems.
-     
-- Software Development :: Years of experience in [[https://www.python.org/][Python]] development,
-     using Tornado, Pandas, Postgres, MongoDB and many other
-     tools. Very interested in other programming languages, especially
-     [[https://www.erlang.org/][Erlang]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]]. Expert in [[https://www.docker.com/][Docker]] and
-     [[https://kubernetes.io/][Kubernetes]] automation.
-
-- More :: Check out my [[https://github.com/lbolla/][GitHub]], [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow,]] [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]].
-
 * Experience
 
 ** [[https://yougov.com/][YouGov]], Director of DevOps, Aug 2015 -- now
@@ -62,20 +62,20 @@ Lead the DevOps team, to improve automation of development
 processes. Manage the migration from legacy to state-of-the-art
 infrastructure, based on GitLab CI, Docker and Kubernetes.
 Responsibilities include soliciting project ideas, setting priorities
-and scheduling projects.  25% time position dedicated to this role;
+and scheduling projects. 25% time position dedicated to this role;
 remaining 75% Lead Python Developer.
 
 ** [[https://yougov.com/][YouGov]], Lead Python Developer, Aug 2013 -- now
 
 Design and implement scalable analysis software for market research
-analysis using Python, Cython MongoDB.  Development of an in-memory
+analysis using Python, Cython MongoDB. Development of an in-memory
 column-oriented DB to efficiently store and query tabular data.
 
 ** [[http://www.companiesintheuk.co.uk/ltd/raid-research-services-llp][RAID Research Services LLP]], Senior Software Architect, May 2012 -- Aug 2013
 
 Design and implement scalable analysis software for finance using
-mainly Python, Pandas MySQL and ExtJS.  Implementation of an in-memory
-DB to efficiently query tabular data.  Parsing of unstructured data
+mainly Python, Pandas, MySQL and ExtJS. Implementation of an in-memory
+DB to efficiently query tabular data. Parsing of unstructured data
 sources and categorization using simple machine learning techniques.
 
 ** [[http://www.artirix.com/][Artirix Ltd]], Senior Software Engineer, Apr 2012 -- May 2012
@@ -85,54 +85,71 @@ Python and Twisted.
 
 ** [[http://www.zugo.com/][Zugo Ltd]], Senior Python Developer, Apr 2011 -- Apr 2012
 
-Develop massively scalable web applications (using Tornado, MySQL, MongoDB, nginx on the back-end and HTML, Javascript, CSS on the front-end).
-Experience in distributed data analysis using MapReduce frameworks (mainly Disco), NoSQL data stores (mainly MongoDB) and AWS solutions.
-Some experience in browser extension implementation (Firefox and Chrome).
+Develop massively scalable web applications (using Tornado, MySQL, MongoDB,
+nginx on the back-end and HTML, Javascript, CSS on the front-end). Experience
+in distributed data analysis using MapReduce frameworks (mainly Disco), NoSQL
+data stores (mainly MongoDB) and AWS solutions. Some experience in browser
+extension implementation (Firefox and Chrome).
 
 ** [[http://www.geneity.co.uk/][Geneity Ltd]], Software Engineer, Aug 2008 -- Apr 2011
 
-Software engineer of high-performance E-gaming web applications (mainly working with Betfair, Coral, Ladbrokes and others betting companies).
-Focus on high performance fund transfers (maximizing the transaction per seconds supported by the systems), application reliability (maximizing uptime), third-party usability (implementing REST and SOAP access to web applications).
-Programming languages used: Python (2.5, 2.6), C, PL/SQL (Oracle 10g-11) for the back-end; HTML/Javascript for the front-end.
-OS used: Linux (Debian, Suse and ArchLinux distributions).
+Software engineer of high-performance E-gaming web applications (mainly working
+with Betfair, Coral, Ladbrokes and others betting companies). Focus on high
+performance fund transfers (maximizing the transaction per seconds supported by
+the systems), application reliability (maximizing uptime), third-party
+usability (implementing REST and SOAP access to web applications). Programming
+languages used: Python (2.5, 2.6), C, PL/SQL (Oracle 10g-11) for the back-end;
+HTML/Javascript for the front-end. OS used: Linux (Debian, Suse and ArchLinux
+distributions).
 
 ** [[http://www.pirelli.com/][Pirelli & C SpA]], Optical Designer, Jun 2005 -- Aug 2008
 
-R&D in Photonic Integrated Circuits mainly based on Silicon-on-Insulator technology (SOI-PICs).
-Responsible for the design of optical components for metro and access networks, with a focus on innovative solutions.
-Excellent problem solving capabilities, lateral thinking and self management.
-Deep experience on efficient numerical and parallel programming (SGI Altix hardware), using C/C++, Fortran, Matlab, Python languages and OpenMP, MPI, STL and Boost libraries.
-Experience in patenting.
+R&D in Photonic Integrated Circuits mainly based on Silicon-on-Insulator
+technology (SOI-PICs). Responsible for the design of optical components for
+metro and access networks, with a focus on innovative solutions. Excellent
+problem solving capabilities, lateral thinking and self management. Deep
+experience on efficient numerical and parallel programming (SGI Altix
+hardware), using C/C++, Fortran, Matlab, Python languages and OpenMP, MPI, STL
+and Boost libraries. Experience in patenting.
 
 ** [[http://www.telesystem.it/][TELE System Electronic Srl]], Software Engineer, Mar 2005 -- Jun 2005
 
-Consultant on hardware and software design for digital television broadcasting, including theory on transmission algorithms and computer simulations of the complete system.
-Experience in programming applications for set-top-boxes, in JAVA.
+Consultant on hardware and software design for digital television broadcasting,
+including theory on transmission algorithms and computer simulations of the
+complete system. Experience in programming applications for set-top-boxes, in
+JAVA.
 
 ** [[http://www.photond.com/][Photon Design Ltd]], Software Engineer, Apr 2003 -- Apr 2004
 
-R&D on numerical algorithms applied to the solution of electromagnetic problems.
-Very deep focus on algorithms' efficiency for computationally intensive simulations. Theoretical studies on linear algebra problems, finite difference and finite elements algorithms, modal expansion techniques.
-Deep experience in C/C++ programming, both with VC++ and Borland suites (along with STL and Boost libraries) and Python as scripting language. Basics of GUI programming.
+R&D on numerical algorithms applied to the solution of electromagnetic
+problems. Very deep focus on algorithms' efficiency for computationally
+intensive simulations. Theoretical studies on linear algebra problems, finite
+difference and finite elements algorithms, modal expansion techniques. Deep
+experience in C/C++ programming, both with VC++ and Borland suites (along with
+STL and Boost libraries) and Python as scripting language. Basics of GUI
+programming.
 
 ** [[http://www.progettomantegna.it/][Progetto Mantegna]], Technical Support, May 2001 -- Apr 2003
 
-Technical assistance in the virtual reconstruction of Mantegna's paintings in the Ovetari's Chapel, Padua Italy.
-Basics of image analysis and manipulation.
+Technical assistance in the virtual reconstruction of Mantegna's paintings in
+the Ovetari's Chapel, Padua Italy. Basics of image analysis and manipulation.
 
 * Education
 
 ** University of Udine - Italy, PhD, Nov 2002 -- Nov 2005
 
-[[http://www.scribd.com/doc/19603116/LorenzoBollaPhDthesis][Thesis]] on the numerical solution Maxwell equations in periodic dielectric devices.
+[[http://www.scribd.com/doc/19603116/LorenzoBollaPhDthesis][Thesis]] on the numerical solution Maxwell equations in periodic dielectric
+devices.
 
 ** European Project, FUNFOX (Project No. 004582), Sep 2004 - Jun 2005
 
-Research on semiconductor optoelectronic devices for metro core and access segments in optical networks.
+Research on semiconductor optoelectronic devices for metro core and access
+segments in optical networks.
 
 ** European Project, PICCO (IST-1999-10361), Nov 2002 - Apr 2003
 
-Research in Optical integrated circuits, photonic crystal planar waveguides and wavelength dependent devices.
+Research in Optical integrated circuits, photonic crystal planar waveguides and
+wavelength dependent devices.
 
 ** University of Padova - Italy, Telecommunication Engineering, Sep 1996 - Mar 2002
 
@@ -159,7 +176,8 @@ Research in Optical integrated circuits, photonic crystal planar waveguides and 
 - *L. Bolla*, "Planar Generalized Yee Algorithm", Technical Report, PICCO Project, Padua, Italy, 2002, [[http://intecweb.intec.ugent.be/picco/][website]]
 
 ** Patents
-Author or Co-author of [[https://www.google.com/?tbm=pts&hl=en#sclient=psy-ab&hl=en&site=&tbm=pts&source=hp&q=lorenzo+bolla&oq=lorenzo+bolla&gs_l=hp.3..0j0i10i30j0i30l2.1702.2984.0.3102.13.11.0.1.1.0.129.763.9j2.11.0...0.0.ABApNeaWOfs&pbx=1&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=14d568fa9404c2ae&biw=1278&bih=945][10 international patents]] in the field of integrated optics.
+Author or Co-author of [[https://www.google.com/?tbm=pts&hl=en#sclient=psy-ab&hl=en&site=&tbm=pts&source=hp&q=lorenzo+bolla&oq=lorenzo+bolla&gs_l=hp.3..0j0i10i30j0i30l2.1702.2984.0.3102.13.11.0.1.1.0.129.763.9j2.11.0...0.0.ABApNeaWOfs&pbx=1&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=14d568fa9404c2ae&biw=1278&bih=945][10 international patents]] in the field of integrated
+optics.
 
 ** Citations
 [[https://scholar.google.co.uk/citations?hl=en&user=mHfVbDwAAAAJ&scilu=&scisig=AMstHGQAAAAAW-GM4dJr8fj_Xcq8qdlmAXKozUEfhYLn&gmla=AJsN-F7PIh8oNRvySBFFGW8OPF_URY6Sq01Np2dU272500KgmQtdDRvXvSWEaiSdogqo3KFLOSL3GohfXcKoJuZAPcJp_1P0cEQLfDUfjWiCTbtafzA73sA&sciund=13977132764972751311][List of citations from Google Scholar]]
