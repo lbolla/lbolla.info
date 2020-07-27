@@ -5,6 +5,8 @@
 
 [[mailto:contact@lbolla.info][EMail]] | [[https://github.com/lbolla/][GitHub]] | [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow]] | [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]] | [[https://lbolla.info][Website]]
 
+/Less detailed CV available [[https://lbolla.info/cv-short][here]]./
+
 * _Profile_
 
 I am an experienced Software Engineer with a background in research Physics.
