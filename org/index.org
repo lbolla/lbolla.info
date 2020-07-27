@@ -3,9 +3,9 @@
 #+AUTHOR:
 #+DATE:
 
-Hi! I'm Lorenzo Bolla, [[./cv][Software Developer]] in London, UK.
+Hi! I'm Lorenzo Bolla, [[./cv][Software Developer]] in Zűrich, CH.
 
-When I'm not programming in [[https://www.python.org/][Python]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.erlang.org/][Erlang]], [[https://golang.org/][Go]] or [[https://www.haskell.org/][Haskell]], I am
+When I'm not programming in [[https://www.python.org/][Python]], [[https://www.rust-lang.org/en-US/][Rust]], [[https://www.erlang.org/][Erlang]], [[https://golang.org/][Go]], [[https://www.haskell.org/][Haskell]] or [[http://openjdk.java.net/][Java]] I am
 playing either basketball, piano or chess.
 
 * Latest articles:
