@@ -1,0 +1,73 @@
+#+TITLE: Lorenzo Bolla - Curriculum Vitæ
+#+AUTHOR:
+#+DATE:
+#+OPTIONS: toc:nil num:0
+
+[[mailto:contact@lbolla.info][EMail]] | [[https://github.com/lbolla/][GitHub]] | [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow]] | [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]] | [[https://lbolla.info][Website]]
+
+More detailed CV available [[https://lbolla.info/cv][here]].
+
+* _Experience_
+** [[https://yougov.com/][YouGov]], Lead Python Developer, Aug 2013 -- now
+
+Design and implement scalable analysis software for market research analysis
+using _Python_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an in-memory
+column-oriented DB to efficiently store and query tabular data. Lead junior
+developers, ensure best practices and code quality, automate deployments and
+continuous delivery.
+
+** [[https://yougov.com/][YouGov]], Director of DevOps, Aug 2015 -- Jun 2020
+
+Lead the DevOps team, to improve automation of development
+processes. Manage the migration from legacy to state-of-the-art
+infrastructure, based on _GitLabCI_, _Docker_ and _Kubernetes_.
+Responsibilities include soliciting project ideas, setting priorities
+and scheduling projects. 25% time position dedicated to this role;
+remaining 75% Lead Python Developer.
+
+** [[http://www.companiesintheuk.co.uk/ltd/raid-research-services-llp][RAID Research Services LLP]], Senior Software Architect, May 2012 -- Aug 2013
+
+Design and implement scalable analysis software for finance using
+mainly _Python_, _Pandas_, _MySQL_ and _ExtJS_. Implementation of an in-memory
+DB to efficiently query tabular data. Parsing of unstructured data
+sources and categorization using simple machine learning techniques.
+
+** [[http://www.artirix.com/][Artirix Ltd]], Senior Software Engineer, Apr 2012 -- May 2012
+
+Design and implementation of highly scalable web search crawlers using
+_Python_ and _Twisted_.
+
+** [[http://www.zugo.com/][Zugo Ltd]], Senior Python Developer, Apr 2011 -- Apr 2012
+
+Develop massively scalable web applications (using _Python_, _Tornado_, _MySQL_, _MongoDB_,
+_nginx_ on the back-end and _HTML_, _Javascript_, _CSS_ on the front-end). Experience
+in distributed data analysis using MapReduce frameworks (mainly Disco), NoSQL
+data stores (mainly _MongoDB_) and _AWS_ solutions.
+
+** [[http://www.geneity.co.uk/][Geneity Ltd]], Software Engineer, Aug 2008 -- Apr 2011
+
+Software engineer of high-performance E-gaming web applications (mainly working
+with Betfair, Coral, Ladbrokes and others betting companies). Focus on high
+performance fund transfers.
+
+** Previous jobs
+
+- [[http://www.pirelli.com/][Pirelli & C SpA]], Optical Designer, Jun 2005 -- Aug 2008
+- [[http://www.telesystem.it/][TELE System Electronic Srl]], Software Engineer, Mar 2005 -- Jun 2005
+- [[http://www.photond.com/][Photon Design Ltd]], Software Engineer, Apr 2003 -- Apr 2004
+- [[http://www.progettomantegna.it/][Progetto Mantegna]], Technical Support, May 2001 -- Apr 2003
+
+* Education
+** University of Udine - Italy, PhD, Nov 2002 -- Nov 2005
+
+[[http://www.scribd.com/doc/19603116/LorenzoBollaPhDthesis][Thesis]] on the numerical solution Maxwell equations in periodic dielectric
+devices.
+
+** University of Padova - Italy, Telecommunication Engineering, Sep 1996 - Mar 2002
+
+* Publications
+
+Author of [[https://www.scholars-press.com/catalog/details/store/de/book/978-3-639-51669-2/numerical-methods-for-integrated-optics?search=numerical%20methods]["Numerical Methods for Integrated Optics"]], ISBN 978-3-639-51669-2.\\
+Technical reviewer of 3 more books on computer programming.\\
+Author or Co-author of [[https://scholar.google.co.uk/citations?hl=en&user=mHfVbDwAAAAJ&scilu=&scisig=AMstHGQAAAAAW-GM4dJr8fj_Xcq8qdlmAXKozUEfhYLn&gmla=AJsN-F7PIh8oNRvySBFFGW8OPF_URY6Sq01Np2dU272500KgmQtdDRvXvSWEaiSdogqo3KFLOSL3GohfXcKoJuZAPcJp_1P0cEQLfDUfjWiCTbtafzA73sA&sciund=13977132764972751311][10+ articles on peer-reviewed journals]].\\
+Author or Co-author of [[https://www.google.com/?tbm=pts&hl=en#sclient=psy-ab&hl=en&site=&tbm=pts&source=hp&q=lorenzo+bolla&oq=lorenzo+bolla&gs_l=hp.3..0j0i10i30j0i30l2.1702.2984.0.3102.13.11.0.1.1.0.129.763.9j2.11.0...0.0.ABApNeaWOfs&pbx=1&bav=on.2,or.r_gc.r_pw.,cf.osb&fp=14d568fa9404c2ae&biw=1278&bih=945][10 international patents]] in the field of integrated optics.\\
