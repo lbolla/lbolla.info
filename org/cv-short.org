@@ -5,7 +5,7 @@
 
 [[mailto:contact@lbolla.info][EMail]] | [[https://github.com/lbolla/][GitHub]] | [[https://stackoverflow.com/users/1063605/lbolla][StackOverflow]] | [[https://www.linkedin.com/in/lorenzobolla][LinkedIn]] | [[https://lbolla.info][Website]]
 
-More detailed CV available [[https://lbolla.info/cv][here]].
+/More detailed CV available [[https://lbolla.info/cv][here]]./
 
 * _Experience_
 ** [[https://yougov.com/][YouGov]], Lead Python Developer, Aug 2013 -- now
