@@ -37,13 +37,13 @@ Great team-player & fun attitude, competent time manager, very dependable under
 pressure and passionately dedicated to the task. Experienced remote worker.
 
 * _Experience_
-** [[https://yougov.com/][YouGov]], Lead Python Developer, Aug 2013 -- now
+** [[https://yougov.com/][YouGov]], Senior Software Developer, Aug 2013 -- now
 
 Design and implement scalable analysis software for market research analysis
-using _Python_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an in-memory
-column-oriented DB to efficiently store and query tabular data. Lead junior
-developers, ensure best practices and code quality, automate deployments and
-continuous delivery.
+using _Python_, _Rust_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an
+in-memory column-oriented DB to efficiently store and query tabular data. Lead
+junior developers, ensure best practices and code quality, automate deployments
+and continuous delivery.
 
 ** [[https://yougov.com/][YouGov]], Director of DevOps, Aug 2015 -- Jun 2020
 
