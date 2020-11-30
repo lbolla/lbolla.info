@@ -17,8 +17,6 @@ Indeed, if I had looked at the source code, I would have seen that =Dec_0= was f
 From =/usr/lib/python2.5/decimal.py:5159=
 
 #+BEGIN_SRC python
-    ##### Useful Constants (internal use only) ################################
-
     # Reusable defaults
     Inf = Decimal('Inf')
     negInf = Decimal('-Inf')
