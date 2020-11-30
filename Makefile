@@ -14,8 +14,10 @@ style:  ## Download stylesheets
 run:  ## Run a local server at port 8000
 	cd html && python3 -m http.server
 
-push:  ## Publish
-	rsync -acvz html/ lbolla.info:public2/
+push:  ## Publish to AWS
+	aws --profile lbolla s3 sync html/ s3://lbolla.info/ --delete
 
 clean:  ## Clean html
 	rm -rf html/
+
+# (org-publish-project "lbolla.info" t nil)
