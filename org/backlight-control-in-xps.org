@@ -1,0 +1,27 @@
+#+TITLE: Backlight control on XPS
+#+DATE: <2020-12-09>
+
+This post is more of a reminder for myself on how I fixed an issue with
+[[https://www.dell.com/de-ch/shop/notebooks/xps-15/spd/xps-15-7590-laptop/][Dell XPS 15]].
+
+The issue is that the =Fn= key to control screen brightness (using =F11= and
+=F12=) doesn't work and results in this error in the logs:
+
+#+begin_quote
+[42134.228185] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.PEG0.PEGP.BRT6.LCD], AE_NOT_FOUND (20190816/psargs-330)
+[42134.228216] No Local Variables are initialized for Method [BRT6]
+[42134.228220] Initialized Arguments for Method [BRT6]:  (2 arguments defined for method invocation)
+[42134.228222]   Arg0:   000000008e36102a <Obj>           Integer 0000000000000002
+[42134.228232]   Arg1:   00000000cd43b166 <Obj>           Integer 0000000000000000
+[42134.228247] ACPI Error: Aborting method \_SB.PCI0.PEG0.PEGP.BRT6 due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
+[42134.228692] ACPI Error: Aborting method \EV5 due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
+[42134.229069] ACPI Error: Aborting method \SMEE due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
+[42134.229455] ACPI Error: Aborting method \SMIE due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
+[42134.229734] ACPI Error: Aborting method \NEVT due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
+[42134.229999] ACPI Error: Aborting method \_SB.PCI0.LPCB.ECDV._Q66 due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
+#+end_quote
+
+The error has been reported [[https://bugs.freedesktop.org/show_bug.cgi?id=97883][many]] [[https://www.dell.com/community/Precision-Mobile-Workstations/ACPI-errors-with-new-bios-in-Dell-Precision-7540/td-p/7390895][times]] in the last year.
+
+The only thing that worked for me was using this: [[https://github.com/udifuchs/icc-brightness][icc-brightness]]. It is
+basically a workaround the BIOS/Kernel issue, but it works very well.

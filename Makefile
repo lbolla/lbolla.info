@@ -19,5 +19,3 @@ push:  ## Publish to AWS
 
 clean:  ## Clean html
 	rm -rf html/
-
-# (org-publish-project "lbolla.info" t nil)
