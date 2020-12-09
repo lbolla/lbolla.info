@@ -15,7 +15,11 @@ run:  ## Run a local server at port 8000
 	cd html && python3 -m http.server
 
 push:  ## Publish to AWS
-	aws --profile lbolla s3 sync html/ s3://lbolla.info/ --delete
+	# aws --profile lbolla s3 sync html/ s3://lbolla.info/ --delete
+	rclone sync html/ s3:lbolla.info/ --verbose
+
+invalidate-index:  ## Invalidate Cloudfront index.html
+	aws --profile lbolla cloudfront create-invalidation --distribution-id E3S8T9I0ZL4518 --paths "/index.html"
 
 clean:  ## Clean html
 	rm -rf html/
