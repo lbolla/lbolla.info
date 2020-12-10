@@ -7,7 +7,7 @@ This post is more of a reminder for myself on how I fixed an issue with
 The issue is that the =Fn= key to control screen brightness (using =F11= and
 =F12=) doesn't work and results in this error in the logs:
 
-#+begin_quote
+#+begin_example
 [42134.228185] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.PEG0.PEGP.BRT6.LCD], AE_NOT_FOUND (20190816/psargs-330)
 [42134.228216] No Local Variables are initialized for Method [BRT6]
 [42134.228220] Initialized Arguments for Method [BRT6]:  (2 arguments defined for method invocation)
@@ -19,7 +19,7 @@ The issue is that the =Fn= key to control screen brightness (using =F11= and
 [42134.229455] ACPI Error: Aborting method \SMIE due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
 [42134.229734] ACPI Error: Aborting method \NEVT due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
 [42134.229999] ACPI Error: Aborting method \_SB.PCI0.LPCB.ECDV._Q66 due to previous error (AE_NOT_FOUND) (20190816/psparse-529)
-#+end_quote
+#+end_example
 
 The error has been reported [[https://bugs.freedesktop.org/show_bug.cgi?id=97883][many]] [[https://www.dell.com/community/Precision-Mobile-Workstations/ACPI-errors-with-new-bios-in-Dell-Precision-7540/td-p/7390895][times]] in the last year.
 
