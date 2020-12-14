@@ -74,3 +74,13 @@ ul li span.timestamp {
 .org-src-container>pre.src-ipython:before {
     content: 'iPython';
 }
+
+pre.example {
+    background-color: #efe !important;
+    overflow-y: auto;
+}
+
+code {
+    background-color: #efe !important;
+    overflow-y: auto;
+}

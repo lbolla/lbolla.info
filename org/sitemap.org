@@ -1,5 +1,6 @@
 #+TITLE: Sitemap
 
+- <2020-12-14 Mon>  [[file:gio-in-cronjob.org][gio in cronjob]]
 - <2020-12-11 Fri>  [[file:goodbye-linode-welcome-aws.org][Goodbye Linode, welcome AWS!]]
 - <2020-12-09 Wed>  [[file:backlight-control-in-xps.org][Backlight control on XPS]]
 - <2020-04-11 Sat>  [[file:rust-specialization.org][Impl specialization in Rust]]
