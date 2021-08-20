@@ -37,7 +37,14 @@ Great team-player & fun attitude, competent time manager, very dependable under
 pressure and passionately dedicated to the task. Experienced remote worker.
 
 * _Experience_
-** [[https://yougov.com/][YouGov]], Senior Software Developer, Aug 2013 -- now
+** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Dec 2020 -- now
+
+Design and implement operating system and infrastructure for diagnostic medical
+instruments. Deep experience with Debian-based operating system, packaging and
+software practices. Broad experience with DevOps practices, writing CI
+pipelines, testing across various hardware, etc.
+
+** [[https://yougov.com/][YouGov]], Senior Software Developer, Aug 2013 -- Dec 2020
 
 Design and implement scalable analysis software for market research analysis
 using _Python_, _Rust_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an
