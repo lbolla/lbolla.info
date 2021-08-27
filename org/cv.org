@@ -37,14 +37,14 @@ Great team-player & fun attitude, competent time manager, very dependable under
 pressure and passionately dedicated to the task. Experienced remote worker.
 
 * _Experience_
-** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Dec 2020 -- now
+** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Zurich CH, Dec 2020 -- now
 
 Design and implement operating system and infrastructure for diagnostic medical
 instruments. Deep experience with Debian-based operating system, packaging and
 software practices. Broad experience with DevOps practices, writing CI
 pipelines, testing across various hardware, etc.
 
-** [[https://yougov.com/][YouGov]], Senior Software Developer, Aug 2013 -- Dec 2020
+** [[https://yougov.com/][YouGov]], Senior Software Developer, London UK, Aug 2013 -- Dec 2020
 
 Design and implement scalable analysis software for market research analysis
 using _Python_, _Rust_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an
@@ -52,7 +52,7 @@ in-memory column-oriented DB to efficiently store and query tabular data. Lead
 junior developers, ensure best practices and code quality, automate deployments
 and continuous delivery.
 
-** [[https://yougov.com/][YouGov]], Director of DevOps, Aug 2015 -- Jun 2020
+** [[https://yougov.com/][YouGov]], Director of DevOps, London UK, Aug 2015 -- Jun 2020
 
 Lead the DevOps team, to improve automation of development
 processes. Manage the migration from legacy to state-of-the-art
@@ -61,19 +61,19 @@ Responsibilities include soliciting project ideas, setting priorities
 and scheduling projects. 25% time position dedicated to this role;
 remaining 75% Lead Python Developer.
 
-** [[http://www.companiesintheuk.co.uk/ltd/raid-research-services-llp][RAID Research Services LLP]], Senior Software Architect, May 2012 -- Aug 2013
+** [[http://www.companiesintheuk.co.uk/ltd/raid-research-services-llp][RAID Research Services LLP]], Senior Software Architect, London UK, May 2012 -- Aug 2013
 
 Design and implement scalable analysis software for finance using
 mainly _Python_, _Pandas_, _MySQL_ and _ExtJS_. Implementation of an in-memory
 DB to efficiently query tabular data. Parsing of unstructured data
 sources and categorization using simple machine learning techniques.
 
-** [[http://www.artirix.com/][Artirix Ltd]], Senior Software Engineer, Apr 2012 -- May 2012
+** [[http://www.artirix.com/][Artirix Ltd]], Senior Software Engineer, London UK, Apr 2012 -- May 2012
 
 Design and implementation of highly scalable web search crawlers using
 _Python_ and _Twisted_.
 
-** [[http://www.zugo.com/][Zugo Ltd]], Senior Python Developer, Apr 2011 -- Apr 2012
+** [[http://www.zugo.com/][Zugo Ltd]], Senior Python Developer, London UK, Apr 2011 -- Apr 2012
 
 Develop massively scalable web applications (using _Python_, _Tornado_, _MySQL_, _MongoDB_,
 _nginx_ on the back-end and _HTML_, _Javascript_, _CSS_ on the front-end). Experience
@@ -81,7 +81,7 @@ in distributed data analysis using MapReduce frameworks (mainly Disco), NoSQL
 data stores (mainly _MongoDB_) and _AWS_ solutions. Some experience in browser
 extension implementation (Firefox and Chrome).
 
-** [[http://www.geneity.co.uk/][Geneity Ltd]], Software Engineer, Aug 2008 -- Apr 2011
+** [[http://www.geneity.co.uk/][Geneity Ltd]], Software Engineer, London UK, Aug 2008 -- Apr 2011
 
 Software engineer of high-performance E-gaming web applications (mainly working
 with Betfair, Coral, Ladbrokes and others betting companies). Focus on high
@@ -92,7 +92,7 @@ languages used: _Python_ (2.5, 2.6), _C,_ PL/SQL (Oracle 10g-11) for the back-en
 _HTML_/_Javascript_ for the front-end. OS used: Linux (Debian, Suse and ArchLinux
 distributions).
 
-** [[http://www.pirelli.com/][Pirelli & C SpA]], Optical Designer, Jun 2005 -- Aug 2008
+** [[http://www.pirelli.com/][Pirelli & C SpA]], Optical Designer, Milano IT, Jun 2005 -- Aug 2008
 
 R&D in Photonic Integrated Circuits mainly based on Silicon-on-Insulator
 technology (SOI-PICs). Responsible for the design of optical components for
@@ -102,14 +102,14 @@ experience on efficient numerical and parallel programming (SGI Altix
 hardware), using _C/C++_, _Fortran_, _Matlab_, _Python_ languages and _OpenMP_,
 _MPI_, _STL_ and _Boost_ libraries. Experience in patenting.
 
-** [[http://www.telesystem.it/][TELE System Electronic Srl]], Software Engineer, Mar 2005 -- Jun 2005
+** [[http://www.telesystem.it/][TELE System Electronic Srl]], Software Engineer, Vicenza IT, Mar 2005 -- Jun 2005
 
 Consultant on hardware and software design for digital television broadcasting,
 including theory on transmission algorithms and computer simulations of the
 complete system. Experience in programming applications for set-top-boxes, in
 _Java_.
 
-** [[http://www.photond.com/][Photon Design Ltd]], Software Engineer, Apr 2003 -- Apr 2004
+** [[http://www.photond.com/][Photon Design Ltd]], Software Engineer, Oxford UK, Apr 2003 -- Apr 2004
 
 R&D on numerical algorithms applied to the solution of electromagnetic
 problems. Very deep focus on algorithms' efficiency for computationally
@@ -119,7 +119,7 @@ experience in _C/C++_ programming, both with VC++ and Borland suites (along with
 STL and Boost libraries) and _Python_ as scripting language. Basics of GUI
 programming.
 
-** [[http://www.progettomantegna.it/][Progetto Mantegna]], Technical Support, May 2001 -- Apr 2003
+** [[http://www.progettomantegna.it/][Progetto Mantegna]], Technical Support, Padova IT, May 2001 -- Apr 2003
 
 Technical assistance in the virtual reconstruction of Mantegna's paintings in
 the Ovetari's Chapel, Padua Italy. Basics of image analysis and manipulation.
