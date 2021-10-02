@@ -18,17 +18,17 @@ Methods applied to Physical problems.
 I have 15+ years of experience in software engineering. I worked on projects
 spanning highly scalable web applications, numerical intensive simulations and
 massively parallel data analysis. I have 3+ years of experience in DevOps,
-especially with [[https://www.docker.com/][Docker]] and [[https://kubernetes.io/][Kubernetes]].
+especially with [[https://docs.gitlab.com/ee/ci/][GitLab CI/CD]], [[https://www.docker.com/][Docker]] and [[https://kubernetes.io/][Kubernetes]].
 
 Fluent in [[https://www.python.org/][Python]], [[https://www.rust-lang.org/en-US/][Rust]], Javascript, HTML, CSS. Familiar with C/C++ (using both
-STL and Boost libraries), Java, Fortran and Matlab. Interested in other
-programming languages, like [[https://www.erlang.org/][Erlang]], [[https://www.haskell.org/][Haskell]], Lisp and [[https://golang.org/][Go]].
+STL and Boost libraries),  [[https://golang.org/][Go]], Java, Fortran and Matlab. Interested in other
+programming languages, like [[https://www.erlang.org/][Erlang]], [[https://www.haskell.org/][Haskell]], Lisp.
 
-Experienced with many different libraries and frameworks: Tornado, CherryPy,
-Numpy, Pandas, Disco, JQuery, ExtJS, git, MySQL, sqlite, MongoDB, nginx, and
-many more. Experience in database design, especially using [[https://www.postgresql.org/][Postgresql]].
+Experienced with many different libraries and frameworks: Tornado, FastAPI,
+CherryPy, Numpy, Pandas, JQuery, git, MySQL, sqlite, MongoDB, nginx, and many
+more. Experience in database design, especially using [[https://www.postgresql.org/][Postgresql]].
 
-Lifelong Linux user and open-source contributor.
+Lifelong Linux user and [[https://github.com/lbolla/][open-source contributor]].
 
 Logical thinker, able to provide effective solutions to solve difficult
 problems.
@@ -39,18 +39,20 @@ pressure and passionately dedicated to the task. Experienced remote worker.
 * _Experience_
 ** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Zurich CH, Dec 2020 -- now
 
-Design and implement operating system and infrastructure for diagnostic medical
-instruments. Deep experience with Debian-based operating system, packaging and
+Design, implement and maintain Debian-based operating system and infrastructure
+for diagnostic medical instruments. Involved in all stages of software
+development, from feasibility through design, development, testing, to
+maintenance. Deep experience with Debian-based operating system, packaging and
 software practices. Broad experience with DevOps practices, writing CI
-pipelines, testing across various hardware, etc.
+pipelines, testing across various hardware. Maintainer of [[https://github.com/aptly-dev/aptly/][Aptly]].
 
 ** [[https://yougov.com/][YouGov]], Senior Software Developer, London UK, Aug 2013 -- Dec 2020
 
 Design and implement scalable analysis software for market research analysis
 using _Python_, _Rust_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an
-in-memory column-oriented DB to efficiently store and query tabular data. Lead
-junior developers, ensure best practices and code quality, automate deployments
-and continuous delivery.
+in-memory column-oriented distributed DB to efficiently store and query tabular
+data. Lead junior developers, ensure best practices and code quality, automate
+deployments and continuous delivery.
 
 ** [[https://yougov.com/][YouGov]], Director of DevOps, London UK, Aug 2015 -- Jun 2020
 

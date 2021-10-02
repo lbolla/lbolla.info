@@ -10,18 +10,20 @@
 * _Experience_
 ** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Zurich CH, Dec 2020 -- now
 
-Design and implement operating system and infrastructure for diagnostic medical
-instruments. Deep experience with Debian-based operating system, packaging and
+Design, implement and maintain Debian-based operating system and infrastructure
+for diagnostic medical instruments. Involved in all stages of software
+development, from feasibility through design, development, testing, to
+maintenance. Deep experience with Debian-based operating system, packaging and
 software practices. Broad experience with DevOps practices, writing CI
-pipelines, testing across various hardware, etc.
+pipelines, testing across various hardware. Maintainer of [[https://github.com/aptly-dev/aptly/][Aptly]].
 
 ** [[https://yougov.com/][YouGov]], Senior Software Developer, London UK, Aug 2013 -- Dec 2020
 
 Design and implement scalable analysis software for market research analysis
 using _Python_, _Rust_, _Cython_, _MongoDB_, _PostgreSQL_. Development of an
-in-memory column-oriented DB to efficiently store and query tabular data. Lead
-junior developers, ensure best practices and code quality, automate deployments
-and continuous delivery.
+in-memory column-oriented distributed DB to efficiently store and query tabular
+data. Lead junior developers, ensure best practices and code quality, automate
+deployments and continuous delivery.
 
 ** [[https://yougov.com/][YouGov]], Director of DevOps, London UK, Aug 2015 -- Jun 2020
 
