@@ -45,7 +45,7 @@ a {
 }
 ul li span.timestamp {
     float: left;
-    width: 10em;
+    width: 11em;
 }
 .org-src-container>pre.src-go:before {
     content: 'Go';
