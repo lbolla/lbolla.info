@@ -37,7 +37,11 @@ Great team-player & fun attitude, competent time manager, very dependable under
 pressure and passionately dedicated to the task. Experienced remote worker.
 
 * _Experience_
-** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Zurich CH, Dec 2020 -- now
+** [[https://www.google.com][Google]], SRE, Zurich CH, Mar 2022 -- now
+
+Automating myself out of a job.
+
+** [[https://www.roche.com/][Roche]], Linux Software and Hardware Expert, Zurich CH, Dec 2020 -- Feb 2022
 
 Design, implement and maintain Debian-based operating system and infrastructure
 for diagnostic medical instruments. Involved in all stages of software
