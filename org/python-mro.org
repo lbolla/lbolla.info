@@ -1,0 +1,128 @@
+#+TITLE: Python's MRO surprises
+#+DATE: <2022-12-02 Fri>
+
+Consider a script like this:
+
+#+BEGIN_SRC python :results output
+  class A:
+      def __init__(self):
+          print('a')
+
+  class B:
+      def __init__(self):
+          print('b')
+
+  class C(A, B):
+      def __init__(self):
+          super().__init__()
+          print('c')
+
+  C()
+#+END_SRC
+
+#+RESULTS:
+: a
+: c
+
+What will it output? If you are like me, you would answer, without much
+thought, that it prints:
+
+#+begin_example
+a
+c
+#+end_example
+
+To work it out you need to know about Python's MRO
+(Method Resolution Order): [[https://medium.com/@__hungrywolf/mro-in-python-3-e2bcd2bd6851][this article]] provides a clear explanation of how it
+works. In this case, we have:
+
+#+begin_example
+>>> C.mro()
+[<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>]
+#+end_example
+
+Now try this other snippet. The only change is a call to =super().__init__()=
+in class =A=.
+
+#+BEGIN_SRC python :results output
+  class A:
+      def __init__(self):
+          super().__init__()
+          print('a')
+
+  class B:
+      def __init__(self):
+          print('b')
+
+  class C(A, B):
+      def __init__(self):
+          super().__init__()
+          print('c')
+
+  C()
+#+END_SRC
+
+#+RESULTS:
+: b
+: a
+: c
+
+What will it print? Again, if you are like me you will expect to print the
+same. But it doesn't. It prints
+
+#+begin_example
+b
+a
+c
+#+end_example
+
+I find it surprising in many ways. First of all, I am surprised that MRO is
+affected by the body of =__init__()=: I would have thought it is statically
+determined by the class hierarchy. Secondly, I would have thought to see 'a b
+c' printed, not 'b a c'. Note that if you swap the two lines of =A.__init__=,
+so that =super()= is the last statement, it indeed prints 'a b c'.
+
+Finally, consider this script:
+
+#+BEGIN_SRC python :results output
+class A:
+    def __init__(self):
+        print('a')
+
+class B:
+    def __init__(self):
+        super().__init__()
+        print('b')
+
+class C(A, B):
+    def __init__(self):
+        super().__init__()
+        print('c')
+
+C()
+#+END_SRC
+
+#+RESULTS:
+: a
+: c
+
+What will it print? I guessed right this time:
+
+#+begin_example
+a
+c
+#+end_example
+
+I found a nice [[https://gaopinghuang0.github.io/2018/12/29/dig-into-python-super-and-mro][explanation in this blog post]], so please read it for details.
+The way I think about it is that MRO uses a kind-of [[https://en.wikipedia.org/wiki/Breadth-first_search][BFS]] to linearise the
+inheritance graph of =C=: first it looks at =A=, but as soon as =A.__init__= is
+called, it finds a call to =super()= which causes to temporarily stop the
+search there and visit the sibling of =A=, which is =B=. At this point, 'b' is
+printed and execution of =A.__init__= is "resumed", so 'a' is printed and
+finally 'c'.
+
+It's a complicated algorithm to fit in one's mind, I reckon. And the result
+depends on the implementation of =__init__=, which may not be readily
+available to read: so how will one know what will happen? The recommendation I
+got from various sources is: "Avoid multiple inheritance, especially in
+Python". It seems like good advice.
