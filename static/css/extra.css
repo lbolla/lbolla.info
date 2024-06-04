@@ -39,6 +39,7 @@
 
 body, h1, h2, h3, h4, h5, h6 {
     font-family: Gloria Hallelujah, cursive !important;
+    line-height: 2em;
 }
 
 a {
@@ -85,9 +86,11 @@ ul li span.timestamp {
 pre.example {
     background-color: #efe !important;
     overflow-y: auto;
+    font-size: 80%;
 }
 
 code {
     background-color: #efe !important;
     overflow-y: auto;
+    font-size: 80%;
 }
