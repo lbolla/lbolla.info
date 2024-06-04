@@ -17,8 +17,8 @@ run:  ## Run a local server at port 8000
 push:  ## Publish to AWS
 	RCLONE_PASSWORD_COMMAND="pass Backups/Rclone" rclone sync html/ s3:lbolla.info/ --checksum -v
 
-invalidate-index:  ## Invalidate Cloudfront index.html
-	aws --profile lbolla cloudfront create-invalidation --distribution-id E3S8T9I0ZL4518 --paths "/index.html"
+invalidate:  ## Invalidate Cloudfront cache
+	aws --profile lbolla cloudfront create-invalidation --distribution-id E3S8T9I0ZL4518 --paths "/*"
 
 clean:  ## Clean html
 	rm -rf html/
