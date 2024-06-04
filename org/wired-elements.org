@@ -1,0 +1,8 @@
+#+TITLE: Wired elements
+#+DATE: <2024-06-04>
+
+Recently, [[https://news.ycombinator.com/item?id=17146451][a cool project appeared on the front page of HN reported]]:
+[[https://wiredjs.com/][Wired Elements]].
+
+I love the font, so, although I am not using the UI elements in this site, I
+wanted to give the font a try. It fits very well the spirit of these personal "notes".
