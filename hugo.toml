@@ -8,3 +8,6 @@ unsafe = true
 
 [caches.images]
 dir = ':cacheDir/images'
+
+[params]
+favicon = "favicon.ico"

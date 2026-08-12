@@ -8,16 +8,19 @@ tags:
 - book
 url: null
 ---
-# Why
+
+{{< book-header >}}
+
+## Why
 I watched the [TV series](https://www.imdb.com/title/tt5834204), so I knew the story. But when I grabbed the book in the bookstore and started reading, I was immediately captivated by the writing style: [#Quotes]({{< relref "blog/#Quotes.md" >}}) below show some examples. I will definitely read more from Margaret Atwood.
 
-# What I liked
+## What I liked
 Writing style is stunning: dry and shocking like a punch, at times; slow and moving, the next page. It keeps you reading and shocks you. Ah, the story is also very entertaining.
 
-# What I disliked
+## What I disliked
 Nothing really. Maybe having watched the TV show in advanced detracted from the novelty of the story (but definitely allowed me to concentrate more on other aspects).
 
-# Quotes
+## Quotes
 - I stand on the corner, pretending I am a tree.
 - Luke wasn't a doctor. Isn't.
 - We lived in the gaps between the stories.

@@ -1,0 +1,18 @@
+{{/* Extract values from shortcode args or fallback to page front matter */}}
+{{ $title := .Get "title" | default .Page.Title }}
+{{ $author := .Get "author" | default (.Page.Params.author | default "Unknown Author") }}
+{{ $year := .Get "year" | default (index .Page.Params "publication-date" | default .Page.Params.year) }}
+
+<div class="book-header-card">
+  <div class="book-details">
+    <h1 class="book-title">{{ $title }}</h1>
+    <div class="book-meta">
+      <span class="book-author">by <strong>{{ $author }}</strong></span>
+      {{ with $year }}
+      <span class="book-separator">•</span>
+      <span class="book-year">{{ . }}</span>
+      {{ end }}
+    </div>
+    <img src='{{ .Get "image" | default .Page.Params.image }}' alt="Book Cover" class="book-cover" />
+  </div>
+</div>

@@ -9,9 +9,12 @@ tags:
 image: https://crystalbooks.ai/mentality/cover800.png
 external_url: https://crystalbooks.ai/
 ---
-# Why
+
+{{< book-header >}}
+
+## Why
 Second volume of The Crystal trilogy. First book is [Crystal Society]({{< relref "reading/Crystal Society.md" >}}).
 
-# What I liked
+## What I liked
 
-# What I disliked
+## What I disliked
