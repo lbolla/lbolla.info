@@ -1,0 +1,9 @@
+---
+title: V-day
+date: 2007-07-16
+tags:
+- italiano
+---
+![](http://www.beppegrillo.it/vaffanculoday/immagini/banner_vday.gif) Dal sito di [Beppe Grillo](http://www.beppegrillo.it/vaffanculoday/):
+
+> L\'8 settembre sarà il giorno del Vaffanculo day, o V-Day. Una via di mezzo tra il D-Day dello sbarco in Normandia e V come Vendetta. Si terrà sabato otto settembre nelle piazze d\'Italia, per ricordare che dal 1943 non è cambiato niente. Ieri il re in fuga e la Nazione allo sbando, oggi politici blindati nei palazzi immersi in problemi "culturali". Il V-Day sarà un giorno di informazione e di partecipazione popolare. Beppe Grillo

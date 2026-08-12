@@ -1,0 +1,7 @@
+{{- $tag := .Get 0 | strings.TrimPrefix "#" -}}
+{{- $page := site.GetPage (printf "tags/%s" ($tag | urlize)) -}}
+{{- if $page -}}
+<a href="{{ $page.RelPermalink }}" class="hashtag">#{{ $tag }}</a>
+{{- else -}}
+<a href="{{ printf " /tags/%s/" ($tag | urlize) }}" class="hashtag">#{{ $tag }}</a>
+{{- end -}}

@@ -1,0 +1,7 @@
+baseURL = 'https://lbolla.info/'
+locale = 'en-us'
+title = 'Lorenzo Bolla'
+theme = ['hugo-bearblog']
+
+[markup.goldmark.renderer]
+unsafe = true

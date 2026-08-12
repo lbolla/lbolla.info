@@ -1,0 +1,16 @@
+---
+title: Nature
+date: 2006-08-12
+---
+![Venus Flower Basket glass sponge](http://upload.wikimedia.org/wikipedia/commons/c/c9/Venus_Flower_Basket.jpg)
+
+[TRN](http://www.trnmag.com/Stories/2003/091003/Sponges_grow_sturdy_optical_fiber_091003.html), [Bell Labs](http://www.lucent.com/press/0705/050707.cob.html) and [USA Today](http://www.usatoday.com/tech/news/techinnovations/2003-08-20-sponge-fibers_x.htm) report an amazing news (well, not very new to be honest, but it is for me!). Apparently, Nature has invented what I\'m studying ways before humans... This silicon-based little sponge produces (god knows how...) silicon filaments, very similar to optical fibers used in the telecommunication industry.
+
+Two things are particularly amazing:
+
+1.  The little thing is made of silicon, not carbon! It reminds me of an [x-files episode](http://www.generationterrorists.com/cgi-bin/x-files.cgi?ep=2x09)...
+2.  The filament is produced at \"room temperature\" (where \"room\" means the bottom of the mediterranean sea), not at high temperature like human-made optical fibers. This means that other substances, which would help light to propagate, but dislike high temperature, can be used by the little sponge... and, indeed, they do! The resulting fiber is stronger and potentially more efficient
+
+The Mediterranean sea is naturally wired.
+
+Edit: As of \<2021-08-25 Wed\> <https://lucent.com> is no longer available. See [here](https://www.icrfq.com/blog/what-happened-to-lucent-com.html) for more details.

@@ -1,0 +1,34 @@
+---
+title: Missing `Dec_0` and friends from Python Decimal
+date: 2010-07-29
+tags:
+- programming
+- python
+---
+This fails in `py2.4`, `py2.5.1` and `py2.6`:
+
+``` python
+from decimal import Dec_0
+```
+
+But it works in all the other `py2.5` subversions!
+
+It seems that exposing `Dec_0` (and other similar constants) was considered a [bug](http://bugs.python.org/issue4812) and \"fixed\" on Jan 3rd 2009 by renaming it `_Dec_0`.
+
+Indeed, if I had looked at the source code, I would have seen that `Dec_0` was for \"internal use only\".
+
+From `/usr/lib/python2.5/decimal.py:5159`
+
+``` python
+# Reusable defaults
+Inf = Decimal('Inf')
+negInf = Decimal('-Inf')
+NaN = Decimal('NaN')
+Dec_0 = Decimal(0)
+Dec_p1 = Decimal(1)
+Dec_n1 = Decimal(-1)
+```
+
+Those definitions are missing in `py2.4` and `py2.5.1`, and renamed in `py2.6`.
+
+Damn: never use undocumented features!

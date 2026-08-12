@@ -1,5 +1,0 @@
-#+TITLE: Articles
-#+AUTHOR:
-#+DATE:
-
-#+INCLUDE: "sitemap.org" :lines "3-"

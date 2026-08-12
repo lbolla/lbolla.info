@@ -1,0 +1,25 @@
+{{ $tag := .Get "tag" | default "books" }}
+{{ $taxonomy := index site.Taxonomies.tags ($tag | urlize) }}
+
+{{ if $taxonomy }}
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $taxonomy.Pages.ByDate.Reverse }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+      <td>{{ .Params.author | default "—" }}</td>
+      <td>{{ .Params.year | default "—" }}</td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ else }}
+<p>No posts found with tag "{{ $tag }}".</p>
+{{ end }}
