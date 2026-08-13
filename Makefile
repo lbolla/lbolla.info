@@ -9,6 +9,10 @@ book:  ## Create a new book
 	@read -p "Enter book title (slug format, e.g., dune): " SLUG; \
 	hugo new --kind book "reading/$$SLUG.md"
 
+article:  ## Create a new article
+	@read -p "Enter article title (slug format, e.g., dune): " SLUG; \
+	hugo new --kind article "reading/$$SLUG.md"
+
 serve:  ## Serve
 	hugo server -D
 

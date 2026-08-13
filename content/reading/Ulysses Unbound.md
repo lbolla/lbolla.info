@@ -6,7 +6,7 @@ year: '2018'
 tags:
 - book
 image: https://m.media-amazon.com/images/I/61UN6TzCGsL._SL1200_.jpg
-url: null
+rating: 4
 ---
 
 {{< book-header >}}

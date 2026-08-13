@@ -1,0 +1,12 @@
+{{/* Extract score from positional argument (0) or named parameter "score" */}}
+{{ $score := int (.Get 0 | default (.Get "score" | default 0)) }}
+
+<span class="book-rating" title="{{ $score }}/5 stars">
+  {{ range seq 1 5 }}
+  {{ if le . $score }}
+  <span class="star filled">★</span>
+  {{ else }}
+  <span class="star empty">☆</span>
+  {{ end }}
+  {{ end }}
+</span>

@@ -1,4 +1,4 @@
-{{ $tag := .Get "tag" | default "books" }}
+{{ $tag := .Get "tag" | default "article" }}
 {{ $taxonomy := index site.Taxonomies.tags ($tag | urlize) }}
 
 {{ if $taxonomy }}
@@ -21,5 +21,5 @@
   </tbody>
 </table>
 {{ else }}
-<p>No posts found with tag "{{ $tag }}".</p>
+<p>No articles found with tag "{{ $tag }}".</p>
 {{ end }}

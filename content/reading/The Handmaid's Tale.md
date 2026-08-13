@@ -6,13 +6,13 @@ year: '1996'
 image: https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1651677426i/50885244.jpg
 tags:
 - book
-url: null
+rating: 4
 ---
 
 {{< book-header >}}
 
 ## Why
-I watched the [TV series](https://www.imdb.com/title/tt5834204), so I knew the story. But when I grabbed the book in the bookstore and started reading, I was immediately captivated by the writing style: [#Quotes]({{< relref "blog/#Quotes.md" >}}) below show some examples. I will definitely read more from Margaret Atwood.
+I watched the [TV series](https://www.imdb.com/title/tt5834204), so I knew the story. But when I grabbed the book in the bookstore and started reading, I was immediately captivated by the writing style: [Quotes](#Quotes) below show some examples. I will definitely read more from Margaret Atwood.
 
 ## What I liked
 Writing style is stunning: dry and shocking like a punch, at times; slow and moving, the next page. It keeps you reading and shocks you. Ah, the story is also very entertaining.

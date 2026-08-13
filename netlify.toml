@@ -8,5 +8,5 @@ TZ = "Europe/Rome"
 publish = "public"
 command = """\
   git config --global core.quotepath false && \
-  hugo build --gc --minify --baseURL "${URL}"
+  hugo build --gc --minify
   """

@@ -8,7 +8,7 @@ author: ""
 publication-date: ""
 rating: ""
 image: ""
-url: ""
+external_url: ""
 ---
 
 {{< book-header >}}

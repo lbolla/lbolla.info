@@ -7,7 +7,7 @@ tags:
 - reading
 - book
 image: https://cdn2.penguin.com.au/covers/original/9781784742324.jpg
-url: null
+rating: 2
 ---
 
 {{< book-header >}}

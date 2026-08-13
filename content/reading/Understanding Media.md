@@ -8,7 +8,7 @@ tags:
 - book
 - AI
 image: https://m.media-amazon.com/images/I/913EKdIawvL._SL1500_.jpg
-url: null
+rating: 3
 ---
 
 {{< book-header >}}

@@ -8,6 +8,7 @@ tags:
 - book
 image: https://crystalbooks.ai/mentality/cover800.png
 external_url: https://crystalbooks.ai/
+rating: 2
 ---
 
 {{< book-header >}}

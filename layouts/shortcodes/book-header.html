@@ -1,7 +1,7 @@
-{{/* Extract values from shortcode args or fallback to page front matter */}}
 {{ $title := .Get "title" | default .Page.Title }}
 {{ $author := .Get "author" | default (.Page.Params.author | default "Unknown Author") }}
 {{ $year := .Get "year" | default (index .Page.Params "publication-date" | default .Page.Params.year) }}
+{{ $rating := .Get "rating" | default .Page.Params.rating }}
 
 <div class="book-header-card">
   <div class="book-details">
@@ -12,7 +12,14 @@
       <span class="book-separator">•</span>
       <span class="book-year">{{ . }}</span>
       {{ end }}
+      {{ with $rating }}
+      <span class="book-separator">•</span>
+      {{ $.Page.RenderString (printf `{{< rating %v>}}` .) }}
+        {{ end }}
     </div>
-    <img src='{{ .Get "image" | default .Page.Params.image }}' alt="Book Cover" class="book-cover" />
+    <a href='{{ .Get "external_url" | default .Page.Params.external_url }}' class="book-external-link" target="_blank"
+      rel="noopener noreferrer">
+      <img src='{{ .Get "image" | default .Page.Params.image }}' alt="Book Cover" class="book-cover" />
+    </a>
   </div>
 </div>

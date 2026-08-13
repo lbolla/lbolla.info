@@ -8,6 +8,7 @@ tags:
 - book
 image: https://crystalbooks.ai/society/cover800.png
 external_url: https://crystalbooks.ai/
+rating: 3
 ---
 
 {{< book-header >}}

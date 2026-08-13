@@ -2,10 +2,11 @@
 title: Ulysses
 date: 2026-04-03
 author: James Joyce
-year: '1922'
+year: 1922
 image: https://upload.wikimedia.org/wikipedia/commons/a/ab/JoyceUlysses2.jpg
 tags:
 - book
+rating: 5
 external_url: https://en.wikipedia.org/wiki/Ulysses_(novel)
 ---
 

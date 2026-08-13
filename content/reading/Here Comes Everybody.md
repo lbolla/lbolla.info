@@ -6,6 +6,7 @@ year: '2019'
 tags:
 - book
 image: https://m.media-amazon.com/images/I/71TqnpKg7yL._SL1500_.jpg
+rating: 4
 ---
 
 {{< book-header >}}

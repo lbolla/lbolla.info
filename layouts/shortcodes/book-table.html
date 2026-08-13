@@ -1,0 +1,33 @@
+{{ $tag := .Get "tag" | default "book" }}
+{{ $taxonomy := index site.Taxonomies.tags ($tag | urlize) }}
+
+{{ if $taxonomy }}
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Year</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{ range where $taxonomy.Pages.ByDate.Reverse "Draft" false }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+      <td>{{ .Params.author | default "—" }}</td>
+      <td>{{ .Params.year | default "—" }}</td>
+      <td>
+        {{ with .Params.rating }}
+        {{ $.Page.RenderString (printf `{{< rating %v>}}` .) }}
+          {{ else }}
+          —
+          {{ end }}
+      </td>
+    </tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ else }}
+<p>No books found with tag "{{ $tag }}".</p>
+{{ end }}
