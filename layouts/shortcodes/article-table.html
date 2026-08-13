@@ -15,7 +15,7 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
       <td>{{ .Params.author | default "—" }}</td>
-      <td>{{ .Params.year | default "—" }}</td>
+      <td>{{ .Params.year | default (index .Params "publication-date" | default "—") }}</td>
     </tr>
     {{ end }}
   </tbody>
