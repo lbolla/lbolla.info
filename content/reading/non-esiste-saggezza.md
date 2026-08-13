@@ -1,7 +1,6 @@
 ---
 title: "Non Esiste Saggezza"
 date: 2026-08-12T18:57:43+02:00
-draft: true
 tags:
 - book
 - italiano
@@ -16,8 +15,6 @@ external_url: "https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativ
 
 ## Why
 
-## What I liked
+Ho letto vari libri di [Carofiglio](https://it.wikipedia.org/wiki/Gianrico_Carofiglio) di recente: _Le tre del mattino_ (durante noiose attese in un ospedale), _La versione di Fenoglio_, forse anche dell'altro.
 
-## What I disliked
-
-## Quotes
+Non avevo mai letto una serie di racconti dell'autore. Sono meravigliosi. _Non esiste saggezza_ raccoglie vari racconti con lo stesso sottile filo conduttore. L'ultimo racconto, _La forma delle nuvole_, e' la chiusura perfetta per la serie di racconti. _Il maestro di bastone_ e' forse il mio preferito, ma e' difficile scegliere.
