@@ -1,1 +1,13 @@
 <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+{{/* Inject custom page-level head elements safely */}}
+{{ with .Params.custom_head_tags }}
+  {{ . | safeHTML }}
+{{ end }}
+
+{{/* Inject page-specific CSS rules from front matter */}}
+{{ with .Params.custom_css }}
+  <style>
+    {{ . | safeCSS }}
+  </style>
+{{ end }}
