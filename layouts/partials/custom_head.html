@@ -1,13 +1,18 @@
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+<link rel="stylesheet" href="{{ " css/custom.css" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ " apple-touch-icon.png" | relURL }}">
 
 {{/* Inject custom page-level head elements safely */}}
 {{ with .Params.custom_head_tags }}
-  {{ . | safeHTML }}
+{{ . | safeHTML }}
 {{ end }}
 
 {{/* Inject page-specific CSS rules from front matter */}}
 {{ with .Params.custom_css }}
-  <style>
-    {{ . | safeCSS }}
-  </style>
+<style>
+    {
+            {
+            . | safeCSS
+        }
+    }
+</style>
 {{ end }}
