@@ -17,4 +17,26 @@ external_url: "https://www.einaudi.it/catalogo-libri/narrativa-italiana/narrativ
 
 Ho letto vari libri di [Carofiglio](https://it.wikipedia.org/wiki/Gianrico_Carofiglio) di recente: _Le tre del mattino_ (durante noiose attese in un ospedale), _La versione di Fenoglio_, forse anche dell'altro.
 
-Non avevo mai letto una serie di racconti dell'autore. Sono meravigliosi. _Non esiste saggezza_ raccoglie vari racconti con lo stesso sottile filo conduttore. L'ultimo racconto, _La forma delle nuvole_, e' la chiusura perfetta per la serie di racconti. _Il maestro di bastone_ e' forse il mio preferito, ma e' difficile scegliere.
+Non avevo mai letto una serie di racconti dell'autore. Sono meravigliosi. _Non esiste saggezza_ raccoglie vari racconti con lo stesso sottile filo conduttore. Eccone alcuni che mi hanno particolarmente colpito.
+
+Sicuramente un libro da leggere e rileggere.
+
+### Non esiste saggezza
+
+Primo racconto della raccolta, racchiude in se tutti gli altri. La protagonista, le atmosfere, i colpi di scena, la perdita e il ritrovamento.
+
+### Il meastro di bastone
+
+Storia non originalissima, ma scritta con grande maestria. Uno dei pochi racconti dove il protagonista non e' una donna. Fondamentale racconto, ripreso anche ne "La forma delle nuvole".
+
+### La velocita' dell'angelo
+
+Storia avvincente e poetica: una combinazione rara.
+
+### La doppia vita di Natalia Blum
+
+Forse il racconto tecnicamente piu' riuscito. In poche pagine, lo scrittore riesce a fare affezionare il lettore alla protagonista. La conclusione non fa che raddoppiare l'attaccamento emotivo.
+
+### La forma delle nuvole
+
+Sorprendente racconto di chiusura, sicuramente autobiografico.
