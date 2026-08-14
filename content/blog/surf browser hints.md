@@ -8,7 +8,7 @@ tags:
 
 Here is a patch to apply X geometry hints to `surf`, so that `surf` windows behave in `dwm.`
 
-``` {.c org-language="C"}
+```c
 *** surf.c.orig 2009-08-24 16:41:31.000000000 +0100
 --- surf.c  2009-08-24 16:35:02.000000000 +0100
 ***************
@@ -33,7 +33,7 @@ Another hint is to create a script to feed `surf` with your favorite bookmarks.
 
 Here it is:
 
-``` shell
+```sh
 #!/bin/sh
 exe="surf -u `cat ~/.bookmarks | dmenu ${1+"$@"}`" && exec $exe
 ```

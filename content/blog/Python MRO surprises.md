@@ -40,7 +40,7 @@ To work it out you need to know about Python\'s MRO (Method Resolution Order): [
 
 Now try this other snippet. The only change is a call to `super().__init__()` in class `A`.
 
-``` {.python results="output"}
+```python
 class A:
     def __init__(self):
         super().__init__()
@@ -70,7 +70,7 @@ I find it surprising in many ways. First of all, I am surprised that MRO is affe
 
 Finally, consider this script:
 
-``` {.python results="output"}
+```python
 class A:
     def __init__(self):
         print('a')

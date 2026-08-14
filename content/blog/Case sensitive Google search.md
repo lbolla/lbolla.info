@@ -13,7 +13,7 @@ You can download it as:
 -   [Case Sensitive Search Firefox Extension](https://github.com/lbolla/junk/raw/master/cssearch/bin/cssearch.xpi): it works with Firefox 3 and 4.
 -   Case Sensitive Search Bookmarklet: just create a bookmark using the following code as url and click it when on a Google search page.
 
-``` {.javascript org-language="js"}
+```js
 javascript:(function(){var s = document.createElement('script'); s.setAttribute('type', 'text/javascript'); s.setAttribute('src', 'https://lbolla.info/cssearch/js'); document.getElementsByTagName('head')[0].appendChild(s);})();
 ```
 

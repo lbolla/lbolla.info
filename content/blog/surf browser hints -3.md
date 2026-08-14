@@ -12,7 +12,7 @@ Moreover bookmarking is a pain as it relies on external shell scripts. Or does i
 
 In `config.h` put these lines, right before the definition of `keys[]`:
 
-``` {.c org-language="C"}
+```c
 #define BM_PICK { .v = (char *[]){ "/bin/sh", "-c",
 "xprop -id $0 -f _SURF_URI 8s -set _SURF_URI `cat ~/.surf/bookmarks | dmenu ||
 exit 0`",
@@ -26,7 +26,7 @@ winid, NULL } }
 
 Then inside `keys[]` definition, add:
 
-``` {.c org-language="C"}
+```c
 { MODKEY, GDK_b, spawn, BM_PICK }, { MODKEY|GDK_SHIFT_MASK,GDK_b, spawn, BM_ADD }
 ```
 

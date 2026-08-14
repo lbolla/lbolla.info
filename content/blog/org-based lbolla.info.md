@@ -17,7 +17,7 @@ It was annoying to have to switch to another markdown language for blogging. So,
 
 My `org-publish-project-alist` now contains these entries:
 
-``` {.commonlisp org-language="emacs-lisp"}
+```lisp
 ("lbolla.info"
  :components ("lbolla.info-html" "lbolla.info-static" "lbolla.info-cv"))
 ("lbolla.info-static"

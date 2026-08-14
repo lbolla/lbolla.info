@@ -8,4 +8,4 @@ I discussed [The Abstraction Fallacy]({{< relref "reading/The Abstraction Fallac
 
 Harsha distilled our dissatisfaction in a paper: https://philpapers.org/rec/PEROTN.
 
-PhilPapers is a treasure trove of great articles. I'm reading [Why You Can'T Make A Computer That Feels Pain]({{< relref "reading/Why you can't make a computer that feels pain.md" >}}) now!
+PhilPapers is a treasure trove of great articles. I'm reading [Why You Can't Make A Computer That Feels Pain]({{< relref "reading/Why you can't make a computer that feels pain.md" >}}) now!

@@ -8,7 +8,7 @@ Today I wanted to experiment with threads in lisp ([sbcl](http://www.sbcl.org/),
 
 Here is a trivial example of how to access a shared resource (a closure, keeping a list of integers), from a set of `*nt*` threads.
 
-``` {.commonlisp org-language="lisp"}
+```lisp
 (use-package :sb-thread)
 
 ;; number of threads
@@ -34,7 +34,7 @@ Here is a trivial example of how to access a shared resource (a closure, keeping
 ;; wait for all the threads to return
 (mapcar #'join-thread
         ;; run the threads
-        (loop :for i :below *nt*   
+        (loop :for i :below *nt*
               ;; bind i to x so it is local to the thread
               :collect (let ((x i))
                         (make-thread #'(lambda ()

@@ -8,15 +8,15 @@ I like old things, therefore I started to learn Lisp.
 
 There isn\'t a better way to learn than by doing, so I tried to implement a client for the [wordpress api](http://codex.wordpress.org/XML-RPC_Support). the result, even if not complete yet, it\'s so elegant that I\'d like to [share it](http://github.com/lbolla/junk/blob/master/lisp/wordpress.lisp).
 
-``` {.commonlisp org-language="lisp"}
+```lisp
 (require 's-xml-rpc)
 
-(defpackage :wp 
+(defpackage :wp
   (:use :cl :cl-user :s-xml-rpc))
 
 (in-package :wp)
 
-(defparameter +interfaces+ 
+(defparameter +interfaces+
   '((get-blogs "wp.getUsersBlogs" username password)
     (get-tags "wp.getTags" blog-id username password)
     (get-comment-count "wp.getCommentCount" blog-id username password post-id)
@@ -37,11 +37,11 @@ There isn\'t a better way to learn than by doing, so I tried to implement a clie
     (get-comment "wp.getComment" blog-id username password comment-id))
   "Interface definition to WP services")
 
-(defun defunwp (params) 
+(defun defunwp (params)
   (destructuring-bind (name service &rest rest) params
-    (setf (fdefinition name) (compile nil `(lambda (host ,@rest &optional (url "/xmlrpc.php")) 
-                                             (block ,name 
-                                                    (xml-rpc-call 
+    (setf (fdefinition name) (compile nil `(lambda (host ,@rest &optional (url "/xmlrpc.php"))
+                                             (block ,name
+                                                    (xml-rpc-call
                                                       (encode-xml-rpc-call ,service ,@rest)
                                                       :host host
                                                       :url url)))))
@@ -54,7 +54,7 @@ It uses the [s-xml-rpc](http://common-lisp.net/project/s-xml-rpc/) package and I
 
 Example usage is as follows:
 
-``` {.commonlisp org-language="lisp"}
+```lisp
 (wp:get-blogs "username.wordpress.com" "your-username" "your-password") ; returns the list of blogs for the user
 (wp:get-pages "username.wordpress.com" your-blog-id "your-username" "your-password") ; returns the list of pages
 ```
