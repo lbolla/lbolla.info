@@ -1,0 +1,63 @@
+<div class="graph-wrapper">
+    <div class="graph-header">
+    </div>
+    <div id="link-graph" class="graph-canvas"></div>
+</div>
+
+<script src="https://unpkg.com/force-graph"></script>
+<script>
+    (function () {
+        const currentPath = "{{ .RelPermalink }}";
+        const container = document.getElementById('link-graph');
+
+        fetch("{{ "index.json" | relURL }}")
+            .then(res => res.json())
+            .then(data => {
+                const neighbors = new Set();
+                data.links.forEach(link => {
+                    const src = typeof link.source === 'object' ? link.source.id : link.source;
+                    const tgt = typeof link.target === 'object' ? link.target.id : link.target;
+                    if (src === currentPath) neighbors.add(tgt);
+                    if (tgt === currentPath) neighbors.add(src);
+                });
+                neighbors.add(currentPath);
+
+                const localNodes = data.nodes.filter(n => neighbors.has(n.id));
+                const localLinks = data.links.filter(l => neighbors.has(l.source) && neighbors.has(l.target));
+
+                if (localNodes.length <= 1) {
+                    container.parentElement.style.display = 'none';
+                    return;
+                }
+
+                const width = container.clientWidth;
+                const height = 260;
+
+                // Color Palette
+                const COLOR_CURRENT = "#2563eb"; // Accent Blue (Active Post)
+                const COLOR_POST = "#64748b"; // Muted Slate (Connected Post)
+                const COLOR_TAG = "#d97706"; // Amber Gold (Tag Node)
+                const COLOR_LINK = "#e2e8f0"; // Soft Border Grey
+
+                ForceGraph()(container)
+                    .width(width)
+                    .height(height)
+                    .graphData({ nodes: localNodes, links: localLinks })
+                    .nodeId('id')
+                    .nodeLabel('title')
+                    .nodeRelSize(4)
+                    .nodeColor(node => {
+                        if (node.id === currentPath) return COLOR_CURRENT;
+                        return node.type === 'tag' ? COLOR_TAG : COLOR_POST;
+                    })
+                    .linkColor(() => COLOR_LINK)
+                    .linkWidth(1)
+                    .backgroundColor('transparent')
+                    .onNodeClick(node => {
+                        if (node.id !== currentPath) {
+                            window.location.href = node.url;
+                        }
+                    });
+            });
+    })();
+</script>

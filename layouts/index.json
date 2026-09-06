@@ -1,0 +1,62 @@
+{{- $pages := .Site.RegularPages -}}
+{{- $allTags := .Site.Taxonomies.tags -}}
+
+{
+  "nodes": [
+    {{- $first := true -}}
+    {{- /* 1. Regular Page Nodes */ -}}
+    {{- range $p := $pages -}}
+      {{- if not $first }},{{ end -}}
+      {
+        "id": {{- $p.RelPermalink | jsonify -}},
+        "title": {{- $p.Title | jsonify -}},
+        "url": {{- $p.RelPermalink | jsonify -}},
+        "type": "post"
+      }
+      {{- $first = false -}}
+    {{- end -}}
+
+    {{- /* 2. Tag Nodes */ -}}
+    {{- range $name, $taxonomy := $allTags -}}
+      {{- $tagPage := $taxonomy.Page -}}
+      {{- if not $first }},{{ end -}}
+      {
+        "id": {{- $tagPage.RelPermalink | jsonify -}},
+        "title": {{- (printf "#%s" $name) | jsonify -}},
+        "url": {{- $tagPage.RelPermalink | jsonify -}},
+        "type": "tag"
+      }
+      {{- $first = false -}}
+    {{- end -}}
+  ],
+  "links": [
+    {{- $links := slice -}}
+
+    {{- /* 1. Content Internal Links */ -}}
+    {{- range $p := $pages -}}
+      {{- $src := $p.RelPermalink -}}
+      {{- $rawHrefs := findRE `href="([^"]+)"` $p.Content -}}
+      {{- range $href := $rawHrefs -}}
+        {{- $target := replaceRE `href="([^"]+)"` "$1" $href -}}
+        {{- if and (hasPrefix $target "/") (not (hasPrefix $target "//")) -}}
+          {{- $links = $links | append (dict "source" $src "target" $target) -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- /* 2. Page-to-Tag Links */ -}}
+      {{- range $p.Params.tags -}}
+        {{- $tagSlug := . | urlize -}}
+        {{- $tagUrl := printf "/tags/%s/" $tagSlug -}}
+        {{- $links = $links | append (dict "source" $src "target" $tagUrl) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- range $i, $link := $links -}}
+      {{- if $i }},{{ end -}}
+      {
+        "source": {{- $link.source | jsonify -}},
+        "target": {{- $link.target | jsonify -}}
+      }
+    {{- end -}}
+  ]
+}

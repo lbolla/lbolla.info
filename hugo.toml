@@ -11,3 +11,7 @@ dir = ':cacheDir/images'
 
 [params]
 favicon = "favicon.ico"
+hideMadeWithLine = true
+
+[outputs]
+home = ["HTML", "JSON"]
