@@ -2,7 +2,7 @@
 title: Case sensitive Google search
 date: 2011-04-13
 ---
-![Case Sensitive Google Search](Screen-shot-2011-04-13-at-15.27.29-300x252.png)
+![Case Sensitive Google Search](/img/Screen-shot-2011-04-13-at-15.27.29-300x252.png)
 
 Google does not support [\"case sensitive\" searches](http://www.google.com/support/websearch/bin/answer.py?hl=en&answer=134479) (and [here](http://www.google.com/support/forum/p/Web+Search/thread?tid=282a99b488daa33f&hl=en) and [here](http://www.google.com/support/forum/p/Web%20Search/thread?tid=654360f674f696e7&hl=en)). It does seem to return [slightly different results](http://www.labnol.org/internet/search/case-sensitive-google-search/6279/) depending on the case of the search query, but if you are only interested in the exact \"case sensitive\" matches you\'re on your own.
 

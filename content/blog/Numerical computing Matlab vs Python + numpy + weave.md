@@ -17,13 +17,13 @@ Here is a short description of the test, taken from [here](http://www.scipy.org/
 
 All the tests have been run on a Pentium IV Xeon 2GHz, with 1Gb of RAM. Here is the Matlab script I used [laplace.m](./img/laplacem.doc) (it\'s a doc file: sorry for that, but I\'m only allowed to upload docs and images on this blog).
 
-![time spent by different solvers](time.png)
+![time spent by different solvers](/img/time.png)
 
 -   Matlab and `numpy` have pretty much the same performances.
 -   Any form of optimization on Python code does better than Matlab.
 -   Only the simple Python (without `numpy`) is slower than Matlab (note the logarithmic `y` scale to fit also the \"slow\" algorithm).
 
-![speed factor with respect to matlab](factor.png)
+![speed factor with respect to matlab](/img/factor.png)
 
 `blitz` is roughly twice as fast as Matlab. `inline`, `fastinline`, `fortran` and `pyrex` only differ appreciably for small grids: for 500x500 grids they are around 10x faster than Matlab.
 
@@ -37,4 +37,4 @@ Pretty amazing, if you think that optimizing Python, most of the time, is really
 
 Tests have been run also on an SGI Altix with Itanium2 processors, on a single CPU. The graphs are reported in the following thumbnails.
 
-![](pico_time.png) ![](pico_factor.png)
+![](pico_time.png) ![](/img/pico_factor.png)

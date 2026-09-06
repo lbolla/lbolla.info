@@ -11,7 +11,7 @@ They are [available on github](https://github.com/lbolla/cmd): fork & hack at wi
 
 [`Watch`](https://github.com/lbolla/cmd/blob/master/Watch) reacts to changes in a directory executing a command provided by the user. It can be used, for example, to monitor a directory and run some unittests as soon as files in it change. This is exactly how I am using `Watch` in [`acme`](http://acme.cat-v.org/).
 
-![Watch in acme](watch_acme.png)
+![Watch in acme](/img/watch_acme.png)
 
 `Watch` is based on the [`pyinotify`](https://github.com/seb-m/pyinotify) library, a very slim, one file library that I included [my repo](https://github.com/lbolla/cmd) for simplicity. Basically, `pyinotify` relies on `inotify`, an event-driven notifier merged in the Linux kernel since version 2.6.13: given a directory to watch, it raises events that users can process defining handlers in the `ProcessEvent` class.
 
