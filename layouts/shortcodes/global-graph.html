@@ -1,0 +1,65 @@
+<div class="graph-wrapper full-site-graph">
+    <div class="graph-header">
+    </div>
+    <div id="global-graph" class="graph-canvas"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://unpkg.com/force-graph"></script>
+<script>
+    (function () {
+        const container = document.getElementById('global-graph');
+
+        fetch("{{ "index.json" | relURL }}")
+            .then(res => res.json())
+            .then(data => {
+                const width = container.clientWidth;
+                const height = 500;
+
+                // Change in graph.html, too
+                const COLOR_POST = "#64748b"; // 1st-degree Post (Slate)
+                const COLOR_TAG = "#2563eb"; // Tag Node (Bright Blue)
+                const COLOR_LINK = "#e2e8f0"; // Soft Border Grey
+
+                ForceGraph()(container)
+                    .width(width)
+                    .height(height)
+                    .graphData(data)
+                    .nodeId('id')
+                    .nodeLabel('title')
+                    .nodeRelSize(4)
+                    .nodeColor(node => node.type === 'tag' ? COLOR_TAG : COLOR_POST)
+                    .linkColor(() => COLOR_LINK)
+                    .linkWidth(1)
+
+                    // --- TIGHT & COMPACT LAYOUT CONFIGURATION ---
+                    // 1. Weak repulsion so nodes stay close
+                    .d3Force('charge', d3.forceManyBody().strength(-25))
+
+                    // 2. Short link distances
+                    .d3Force('link', d3.forceLink().distance(35))
+
+                    // 3. Strong centering gravity (pulls stray nodes back)
+                    .d3Force('x', d3.forceX(width).strength(0.05))
+                    .d3Force('y', d3.forceY(height).strength(0.05))
+
+                    // // 4. Radial force pulling everything toward a small center radius
+                    // .d3Force('radial', d3.forceRadial(0, width / 2, height / 2).strength(0.2))
+
+                    // // 5. Collision detection so packed nodes don't overlap
+                    // .d3Force('collide', d3.forceCollide().radius(12))
+
+                    // 6. Auto-zoom to fit all nodes neatly inside the canvas frame
+                    // .cooldownTicks(100)
+                    // .onEngineStop(() => {
+                    //     container.__graphObj?.zoomToFit(400, 20); // Smooth zoom to fit all nodes
+                    // })
+
+                    .backgroundColor('transparent')
+                    .onNodeClick(node => {
+                        window.location.href = node.url;
+                        // console.log(`Navigating to: ${node.url}`);
+                    });
+            });
+    })();
+</script>
