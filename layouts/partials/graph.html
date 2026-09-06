@@ -13,17 +13,36 @@
         fetch("{{ "index.json" | relURL }}")
             .then(res => res.json())
             .then(data => {
-                const neighbors = new Set();
+                // --- 2-LEVEL TRAVERSAL (Depth 2 BFS) ---
+                const level1 = new Set();
+                const level2 = new Set();
+
+                // Pass 1: Find 1st-degree neighbors directly connected to currentPath
                 data.links.forEach(link => {
                     const src = typeof link.source === 'object' ? link.source.id : link.source;
                     const tgt = typeof link.target === 'object' ? link.target.id : link.target;
-                    if (src === currentPath) neighbors.add(tgt);
-                    if (tgt === currentPath) neighbors.add(src);
+                    if (src === currentPath) level1.add(tgt);
+                    if (tgt === currentPath) level1.add(src);
                 });
-                neighbors.add(currentPath);
 
-                const localNodes = data.nodes.filter(n => neighbors.has(n.id));
-                const localLinks = data.links.filter(l => neighbors.has(l.source) && neighbors.has(l.target));
+                // Pass 2: Find 2nd-degree neighbors connected to any 1st-degree node
+                data.links.forEach(link => {
+                    const src = typeof link.source === 'object' ? link.source.id : link.source;
+                    const tgt = typeof link.target === 'object' ? link.target.id : link.target;
+
+                    if (level1.has(src)) level2.add(tgt);
+                    if (level1.has(tgt)) level2.add(src);
+                });
+
+                // Combine current note, 1st-degree, and 2nd-degree nodes
+                const allNeighbors = new Set([currentPath, ...level1, ...level2]);
+
+                const localNodes = data.nodes.filter(n => allNeighbors.has(n.id));
+                const localLinks = data.links.filter(l => {
+                    const src = typeof l.source === 'object' ? l.source.id : l.source;
+                    const tgt = typeof l.target === 'object' ? l.target.id : l.target;
+                    return allNeighbors.has(src) && allNeighbors.has(tgt);
+                });
 
                 if (localNodes.length <= 1) {
                     container.parentElement.style.display = 'none';
@@ -31,12 +50,13 @@
                 }
 
                 const width = container.clientWidth;
-                const height = 260;
+                const height = 300; // Slightly taller to accommodate more nodes cleanly
 
-                // Color Palette
-                const COLOR_CURRENT = "#2563eb"; // Accent Blue (Active Post)
-                const COLOR_POST = "#64748b"; // Muted Slate (Connected Post)
-                const COLOR_TAG = "#d97706"; // Amber Gold (Tag Node)
+                // Subtle Palette with opacity dimming for 2nd-degree nodes
+                const COLOR_CURRENT = "#000000"; // Active Post (Black)
+                const COLOR_POST = "#64748b"; // 1st-degree Post (Slate)
+                const COLOR_POST_L2 = "#94a3b8"; // 2nd-degree Post (Lighter Slate)
+                const COLOR_TAG = "#2563eb"; // Tag Node (Bright Blue)
                 const COLOR_LINK = "#e2e8f0"; // Soft Border Grey
 
                 ForceGraph()(container)
@@ -48,7 +68,9 @@
                     .nodeRelSize(4)
                     .nodeColor(node => {
                         if (node.id === currentPath) return COLOR_CURRENT;
-                        return node.type === 'tag' ? COLOR_TAG : COLOR_POST;
+                        if (node.type === 'tag') return COLOR_TAG;
+                        // Distinguish 1st-degree vs 2nd-degree nodes visually
+                        return level1.has(node.id) ? COLOR_POST : COLOR_POST_L2;
                     })
                     .linkColor(() => COLOR_LINK)
                     .linkWidth(1)
