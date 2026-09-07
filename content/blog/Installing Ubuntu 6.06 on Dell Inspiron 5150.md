@@ -3,6 +3,7 @@ title: Installing Ubuntu 6.06 on Dell Inspiron 5150
 date: 2006-06-05
 tags:
 - go
+- linux
 ---
 I decided to switch to Ubuntu, at last. And I\'m definitely happy for the choice: smooth looking feel, decent speed and big selection of applications.
 

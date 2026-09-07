@@ -1,6 +1,8 @@
 ---
 title: Secure GMail Notifier
 date: 2007-10-15
+tags:
+- google
 ---
 As you might have noticed, [GMail Notifier](http://toolbar.google.com/gmail-helper/notifier_windows.html) uses the url <http://mail.google.com/mail> to access your personal mailbox. This is quite annoying for who cares about security. Here is a simple hack to make it use the secure url <https://mail.google.com/mail>. (It works for the Windows version - for the Mac version there is already a [solution](http://www.macosxhints.com/article.php?story=200707030100345)).
 

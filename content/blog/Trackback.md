@@ -1,7 +1,8 @@
 ---
 title: Trackback
 date: 2007-09-10
-tags: null
+tags:
+- web
 ---
 Today, I discovered a new cool feature of blogs: trackbacks!
 

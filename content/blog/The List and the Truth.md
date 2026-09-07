@@ -1,6 +1,9 @@
 ---
 title: The List and the Truth
 date: 2009-09-13
+tags:
+- programming
+- lisp
 ---
 > *Spoon Boy*: Do not try and bend the list. That\'s impossible. Instead... Only try to realize the truth.
 

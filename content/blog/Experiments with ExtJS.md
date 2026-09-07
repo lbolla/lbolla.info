@@ -1,6 +1,8 @@
 ---
 title: Experiments with ExtJS
 date: 2012-09-20
+tags:
+- programming
 ---
 For a non-designer, [Ext JS](http://www.sencha.com/products/extjs/) is kind-of a blessing. It is a self-contained fully-fledged Javascript framework, with loads of fancy re-usable browser-compatible professionally-looking widgets. It\'s only lacking in documentation: finding your way through the [API documentation](http://docs.sencha.com/ext-js/4-1/) is daunting at best.
 

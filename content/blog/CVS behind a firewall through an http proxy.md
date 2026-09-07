@@ -1,6 +1,8 @@
 ---
 title: CVS behind a firewall through an http proxy
 date: 2008-04-21
+tags:
+- linux
 ---
 If you work in a company with a too restrictive firewall, but you still need to access a CVS repository like [Sourceforge](http://www.sourceforge.net), you can bypass it using the program [connect.c](http://www.meadowy.org/~gotoh/projects/connect).
 

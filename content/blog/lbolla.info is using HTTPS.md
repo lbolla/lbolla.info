@@ -1,7 +1,8 @@
 ---
 title: lbolla.info is using HTTPS
 date: 2015-12-04
-tags: null
+tags:
+- web
 ---
 Today I have enabled `https` on this website. I am using certificates issued by [Let\'s Encrypt](https://letsencrypt.org/), which is a new free, automated and open certificate authority.
 

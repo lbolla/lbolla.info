@@ -1,7 +1,8 @@
 ---
 title: Docker, vpn and `-etc-resolv.conf`
 date: 2018-06-22
-tags: null
+tags:
+- linux
 ---
 Today I encounter a strange issue with `/etc/resolv.conf`, while working with Docker on my company\'s VPN.
 

@@ -1,6 +1,9 @@
 ---
 title: Scappatella con Ryanair
 date: 2011-06-03
+tags:
+- italiano
+- humor
 ---
 ![](/img/Screen-shot-2011-06-03-at-10.13.09-300x166.png)
 

@@ -3,6 +3,7 @@ title: org-based lbolla.info
 date: 2018-01-04
 tags:
 - programming
+- web
 ---
 [lbolla.info](https://lbolla.info) is now written in [Org](http://orgmode.org/).
 

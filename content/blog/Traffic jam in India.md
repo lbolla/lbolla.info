@@ -1,7 +1,8 @@
 ---
 title: Traffic jam in India
 date: 2006-07-07
-tags: null
+tags:
+- travel
 ---
 A friend of mine sent me [this](http://www.youtube.com/watch?v=UmR9YpHOYEE). It reminded me of my trip in India just 4 months ago...
 

@@ -1,6 +1,8 @@
 ---
 title: Backlight control on XPS
 date: 2020-12-09
+tags:
+- linux
 ---
 This post is more of a reminder for myself on how I fixed an issue with [Dell XPS 15](https://www.dell.com/de-ch/shop/notebooks/xps-15/spd/xps-15-7590-laptop/).
 

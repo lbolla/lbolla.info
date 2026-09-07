@@ -1,6 +1,8 @@
 ---
 title: Case sensitive Google search
 date: 2011-04-13
+tags:
+- google
 ---
 ![Case Sensitive Google Search](/img/Screen-shot-2011-04-13-at-15.27.29-300x252.png)
 

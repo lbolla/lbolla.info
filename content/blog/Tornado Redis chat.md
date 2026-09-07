@@ -1,6 +1,9 @@
 ---
 title: Tornado Redis chat
 date: 2013-12-02
+tags:
+- programming
+- python
 ---
 [redis](http://redis.io/) is often described as an \"in-memory persistent key-value store\", but [it\'s much more than that](http://openmymind.net/2012/1/23/The-Little-Redis-Book/). One of its nicest features is its support for the [`Publish/Subscribe messaging paradigm`](http://redis.io/topics/pubsub), which makes it easy to implement, for example, a chat server.
 

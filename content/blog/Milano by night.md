@@ -1,7 +1,8 @@
 ---
 title: Milano by night
 date: 2006-05-17
-tags: null
+tags:
+- photography
 ---
 ![Garibaldi train station](http://static.flickr.com/49/147814800_a0631a4e8f_b.jpg)
 

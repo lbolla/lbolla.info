@@ -1,6 +1,8 @@
 ---
 title: Auto add reviewers in Gerrit
 date: 2012-08-01
+tags:
+- programming
 ---
 If you are using [Gerrit](http://code.google.com/p/gerrit/) for code review and project management of git-based projects, you might find yourself manually adding the same bunch of reviewers to your patches every single time.
 

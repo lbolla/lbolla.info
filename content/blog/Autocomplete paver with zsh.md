@@ -1,6 +1,8 @@
 ---
 title: Autocomplete paver with zsh
 date: 2014-09-14
+tags:
+- linux
 ---
 Here is a quick way to have autocompletion of [paver](http://paver.github.io/paver/) tasks on [zsh](http://www.zsh.org/). Just add these lines to your `.zshrc` file:
 

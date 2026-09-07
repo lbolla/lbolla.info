@@ -3,6 +3,8 @@ title: Simple Wordpress API lisp client
 date: 2010-08-04
 tags:
 - programming
+- lisp
+- web
 ---
 I like old things, therefore I started to learn Lisp.
 

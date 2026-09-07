@@ -1,6 +1,9 @@
 ---
 title: Command line HTML validator
 date: 2009-01-30
+tags:
+- html
+- web
 ---
 Valid HTML is something we should strive to achieve. [W3C Validator](http://validator.w3.org/) is an invaluable tool to do just that. Unfortunately, validating a local file you are working on can be annoying after the 100th time you\'ve uploaded it to the [W3C website](http://validator.w3.org/).
 

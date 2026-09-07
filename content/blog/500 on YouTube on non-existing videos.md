@@ -1,10 +1,12 @@
 ---
 title: 500 on YouTube on non-existing videos
 date: 2011-12-17
+tags:
+- google
 ---
 Now, [this is embarassing...](http://www.youtube.com/watch?v=wtf) It looks like requesting a non-existent video on YouTube causes a \"500 Internal Server Error\"!
 
-![500 on YouTube](capture.jpg)
+![500 on YouTube](/img/capture.jpg)
 
 For example:
 

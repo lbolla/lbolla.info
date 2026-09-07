@@ -1,7 +1,9 @@
 ---
 title: Numerical recipes
 date: 2008-06-11
-tags: null
+tags:
+- programming
+- math
 ---
 Numerical Recipes is a classic of Scientific Computing.
 

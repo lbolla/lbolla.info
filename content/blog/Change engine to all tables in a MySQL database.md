@@ -1,6 +1,8 @@
 ---
 title: Change engine to all tables in a MySQL database
 date: 2012-04-05
+tags:
+- database
 ---
 Here is a simple shell script to change the engine of all the tables in a MySQL database:
 
