@@ -1,3 +1,5 @@
+{{ partial "graph-theme.html" . }}
+
 <div class="graph-wrapper full-site-graph">
     <div class="graph-header">
     </div>
@@ -9,6 +11,7 @@
 <script>
     (function () {
         const container = document.getElementById('global-graph');
+        const colors = window.GraphTheme.getColors();
 
         fetch("{{ "index.json" | relURL }}")
             .then(res => res.json())
@@ -16,20 +19,19 @@
                 const width = container.clientWidth;
                 const height = 500;
 
-                // Change in graph.html, too
-                const COLOR_POST = "#64748b"; // 1st-degree Post (Slate)
-                const COLOR_TAG = "#2563eb"; // Tag Node (Bright Blue)
-                const COLOR_LINK = "#e2e8f0"; // Soft Border Grey
-
-                ForceGraph()(container)
+                const Graph = ForceGraph()(container)
                     .width(width)
                     .height(height)
                     .graphData(data)
                     .nodeId('id')
                     .nodeLabel('title')
                     .nodeRelSize(4)
-                    .nodeColor(node => node.type === 'tag' ? COLOR_TAG : COLOR_POST)
-                    .linkColor(() => COLOR_LINK)
+                    .nodeColor(node => {
+                        const c = window.GraphTheme.getColors();
+                        if (node.type === 'tag') return c.TAG;
+                        return c.POST;
+                    })
+                    .linkColor(() => window.GraphTheme.getColors().LINK)
                     .linkWidth(1)
 
                     // --- TIGHT & COMPACT LAYOUT CONFIGURATION ---
@@ -60,6 +62,14 @@
                         window.location.href = node.url;
                         // console.log(`Navigating to: ${node.url}`);
                     });
+
+                // Re-render colors seamlessly on OS dark/light switch
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    Graph.nodeColor(Graph.nodeColor())
+                        .linkColor(Graph.linkColor());
+                });
+
             });
+
     })();
 </script>

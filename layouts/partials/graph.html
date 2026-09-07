@@ -1,3 +1,5 @@
+{{ partial "graph-theme.html" . }}
+
 <div class="graph-wrapper">
     <div class="graph-header">
     </div>
@@ -52,28 +54,22 @@
                 const width = container.clientWidth;
                 const height = 300; // Slightly taller to accommodate more nodes cleanly
 
-                // Subtle Palette with opacity dimming for 2nd-degree nodes
-                // Change in global-graph.html, too
-                const COLOR_CURRENT = "#000000"; // Active Post (Black)
-                const COLOR_POST = "#64748b"; // 1st-degree Post (Slate)
-                const COLOR_POST_L2 = "#94a3b8"; // 2nd-degree Post (Lighter Slate)
-                const COLOR_TAG = "#2563eb"; // Tag Node (Bright Blue)
-                const COLOR_LINK = "#e2e8f0"; // Soft Border Grey
-
-                ForceGraph()(container)
+                const Graph = ForceGraph()(container)
                     .width(width)
                     .height(height)
                     .graphData({ nodes: localNodes, links: localLinks })
                     .nodeId('id')
                     .nodeLabel('title')
                     .nodeRelSize(4)
+
                     .nodeColor(node => {
-                        if (node.id === currentPath) return COLOR_CURRENT;
-                        if (node.type === 'tag') return COLOR_TAG;
+                        const c = window.GraphTheme.getColors();
+                        if (node.id === currentPath) return c.CURRENT;
+                        if (node.type === 'tag') return c.TAG;
                         // Distinguish 1st-degree vs 2nd-degree nodes visually
-                        return level1.has(node.id) ? COLOR_POST : COLOR_POST_L2;
+                        return level1.has(node.id) ? c.POST : c.POST_L2;
                     })
-                    .linkColor(() => COLOR_LINK)
+                    .linkColor(() => window.GraphTheme.getColors().LINK)
                     .linkWidth(1)
                     .backgroundColor('transparent')
                     .onNodeClick(node => {
@@ -81,6 +77,13 @@
                             window.location.href = node.url;
                         }
                     });
+
+                // Re-render colors seamlessly on OS dark/light switch
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    Graph.nodeColor(Graph.nodeColor())
+                        .linkColor(Graph.linkColor());
+                });
+
             });
     })();
 </script>

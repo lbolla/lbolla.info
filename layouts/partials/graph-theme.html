@@ -1,0 +1,26 @@
+<script>
+    window.GraphTheme = {
+        palettes: {
+            light: {
+                CURRENT: "#000000",
+                POST: "#64748b",
+                POST_L2: "#94a3b8",
+                TAG: "#2563eb",
+                LINK: "#e2e8f0"
+            },
+            dark: {
+                CURRENT: "#ffffff",
+                POST: "#cbd5e1",
+                POST_L2: "#64748b",
+                TAG: "#60a5fa",
+                LINK: "#334155"
+            }
+        },
+        getMode() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        },
+        getColors() {
+            return this.palettes[this.getMode()];
+        }
+    };
+</script>
