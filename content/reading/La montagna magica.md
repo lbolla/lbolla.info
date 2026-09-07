@@ -7,7 +7,7 @@ tags:
 author: "Thomas Mann"
 publication-date: "1924"
 rating: "3"
-image: "https://m.media-amazon.com/images/I/41sPlf-wpBL._SY445_SX342_ML2_.jpg"
+image: "https://www.debaser.it/files/2015/42648.jpg"
 external_url: "https://it.wikipedia.org/wiki/La_montagna_incantata"
 ---
 

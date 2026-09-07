@@ -9,10 +9,6 @@
 {{/* Inject page-specific CSS rules from front matter */}}
 {{ with .Params.custom_css }}
 <style>
-    {
-            {
-            . | safeCSS
-        }
-    }
+    {{ . | safeCSS }}
 </style>
 {{ end }}
