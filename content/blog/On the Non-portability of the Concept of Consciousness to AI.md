@@ -3,6 +3,7 @@ title: On the Non-portability of the Concept of Consciousness to AI
 date: 2026-05-11
 tags:
 - AI
+- friends
 ---
 I discussed [The Abstraction Fallacy]({{< relref "reading/The Abstraction Fallacy.md" >}}) at length with my friend [Harsha Perera](https://www.linkedin.com/in/harshaperera/). We both found the paper interesting, but somehow incomplete.
 
