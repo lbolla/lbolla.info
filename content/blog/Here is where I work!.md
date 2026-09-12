@@ -1,6 +1,8 @@
 ---
 title: Here is where I work!
 date: 2006-06-27
+tags:
+- personal
 ---
 [pic](http://quikmaps.com/show/1066) [diggin\'](http://www.digg.com), I found another cool link I\'d like to share with you: [quikmaps](http://quikmaps.com).
 

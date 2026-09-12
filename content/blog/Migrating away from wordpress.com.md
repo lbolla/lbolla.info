@@ -3,6 +3,7 @@ title: Migrating away from wordpress.com
 date: 2011-04-11
 tags:
 - javascript
+- wordpress
 ---
 Today I decided to migrate my blog from [wordpress.com](http://lbolla.wordpress.com) to [my own domain](https://lbolla.info/blog).
 

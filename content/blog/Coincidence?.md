@@ -1,6 +1,9 @@
 ---
 title: Coincidence?
 date: 2006-04-11
+tags:
+- italy
+- politics
 ---
 ![Coincidence](http://www.essentialism.net/Coincidence.gif)
 

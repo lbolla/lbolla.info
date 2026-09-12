@@ -1,8 +1,10 @@
-+++
-title = "CV"
-menu = "main"
-weight = 10
-+++
+---
+title: "CV"
+menu: "main"
+weight: 10
+tags:
+- personal
+---
 
 [EMail](mailto:contact@lbolla.info) | [GitHub](https://github.com/lbolla/) | [StackOverflow](https://stackoverflow.com/users/1063605/lbolla) | [LinkedIn](https://www.linkedin.com/in/lorenzobolla) | [Website](https://lbolla.info)
 

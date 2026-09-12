@@ -1,6 +1,10 @@
 ---
 title: Boundary Value Problem
 date: 2008-04-14
+tags:
+- programming
+- python
+- math
 ---
 For you, Python lover, who always needs Matlab functions: boundary value problems are not a problem anymore.
 

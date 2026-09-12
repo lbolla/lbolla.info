@@ -1,6 +1,8 @@
 ---
 title: Aurora 88s
 date: 2006-10-14
+tags:
+- personal
 ---
 ![aurora 88s](/img/aurora88goldcap.jpg)
 

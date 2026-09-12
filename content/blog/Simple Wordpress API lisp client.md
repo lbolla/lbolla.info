@@ -5,6 +5,7 @@ tags:
 - programming
 - lisp
 - web
+- wordpress
 ---
 I like old things, therefore I started to learn Lisp.
 

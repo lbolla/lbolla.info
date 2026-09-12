@@ -4,6 +4,7 @@ date: 2012-11-12
 tags:
 - programming
 - python
+- wordpress
 ---
 Recently, I moved away from [Wordpress](http://wordpress.com/). I did it primarily because [Wordpress is so much more than **just** a blogging platform](http://john.onolan.org/ghost/) and what I needed was just a simple way of publishing posts with embedded code, links and images. Moreover, writing blogs using Wordpress\'s web editor is less than ideal...
 

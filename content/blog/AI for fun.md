@@ -1,6 +1,8 @@
 ---
 title: AI for fun
 date: 2006-05-19
+tags:
+- ai
 ---
 ![gnod screenshot](gnod.jpg)
 
