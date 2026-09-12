@@ -1,0 +1,65 @@
+{{ define "main" }}
+{{ partial "graph-theme.html" . }}
+<div id="word-cloud"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
+
+<script>
+  (function() {
+    // 1. Hugo taxonomy data parsed into JS
+    const rawTags = [
+      {{ range .Site.Taxonomies.tags.ByCount }}
+        { text: "#{{ .Page.Title }}", size: {{ .Count }}, url: "{{ .Page.RelPermalink }}" },
+      {{ end }}
+    ];
+
+    const width = 600;
+    const height = 350;
+
+    // Scale counts (min 1, max 91) to font sizes (14px to 48px) using Math.log
+    const fontScale = d3.scaleLog()
+      .domain([1, d3.max(rawTags, d => d.size)])
+      .range([14, 48]);
+
+    const colors = window.GraphTheme ? window.GraphTheme.getColors() : { TAG: "#2563eb" };
+
+    d3.layout.cloud()
+      .size([width, height])
+      .words(rawTags)
+      .padding(4)
+      .rotate(() => (Math.random() > 0.8 ? 90 : 0)) // 20% vertical rotation
+      .font("Inter, system-ui, sans-serif")
+      .fontSize(d => fontScale(d.size))
+      .on("end", draw)
+      .start();
+
+    function draw(words) {
+      const svg = d3.select("#word-cloud").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", `translate(${width / 2},${height / 2})`);
+
+      svg.selectAll("text")
+        .data(words)
+        .enter().append("text")
+        .style("font-size", d => `${d.size}px`)
+        .style("font-family", "Inter, system-ui, sans-serif")
+        .style("font-weight", d => d.size > 28 ? "700" : "500")
+        .style("fill", colors.TAG)
+        .attr("text-anchor", "middle")
+        .attr("transform", d => `translate(${d.x}, ${d.y}) rotate(${d.rotate})`)
+        .style("cursor", "pointer")
+        .text(d => d.text)
+        .on("click", (e, d) => window.location.href = d.url);
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const newTheme = window.GraphTheme.getColors();
+        d3.selectAll("#blog-word-cloud text").style("fill", newTheme.TAG);
+    });
+
+  })();
+</script>
+{{ end }}
