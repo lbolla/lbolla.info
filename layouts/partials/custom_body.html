@@ -1,1 +1,5 @@
+{{ if or (and .IsSection (eq .Section "blog")) (eq .Kind "term") }}
+{{ partial "tag-cloud.html" . }}
+{{ else if ne .Kind "taxonomy" }}
 {{ partial "graph.html" . }}
+{{ end }}
