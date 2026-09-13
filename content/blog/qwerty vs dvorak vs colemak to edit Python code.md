@@ -198,7 +198,7 @@ Yesterday, I was intrigued by the idea of choosing a more efficient keyboard lay
 | []           |   119 times |     0.22 % |
 | ;            |   113 times |     0.21 % |
 | 0            |    86 times |     0.16 % |
-| \`           |    85 times |     0.16 % |
+| &#96;           |    85 times |     0.16 % |
 | +            |    84 times |     0.15 % |
 | 1            |    81 times |     0.15 % |
 | {            |    80 times |     0.15 % |

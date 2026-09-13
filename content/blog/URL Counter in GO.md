@@ -12,7 +12,7 @@ I\'ve spent the last few days refreshing my memories on [Go](http://golang.org/)
 
 Here is a short tutorial on how to write a simple web application in Go, and publish it on [Google App Engine](https://developers.google.com/appengine/). The application is not a mere exercise, but scratches an itch I recently had: it counts how many times each of its handlers is hit. So, for example, visiting: <http://go-count-urls.appspot.com/hello> returns how many times the `/hello` handler has been visited. You can use it as a trivial real-time tracker.
 
-For example, I used it to verify that an email I sent to someone was actually opened (and presumably read). I just picked a random URL path (like <http://go-count-urls.appspot.com/random-string-here>) and created an html email with an empty `img` tag pointing to it: `<img src`\"<http://go-count-urls.appspot.com/random-string-here>\" width=0 height=0 /\>=. Every time the email client opens the email, it requires that URL and the hit is recorded. I admit that this use is pretty lame, and that there are [other services](http://www.spypig.com/) doing this, but I needed a real-world problem to work on!
+For example, I used it to verify that an email I sent to someone was actually opened (and presumably read). I just picked a random URL path (like <http://go-count-urls.appspot.com/random-string-here>) and created an html email with an empty `img` tag pointing to it: `<img src="http://go-count-urls.appspot.com/random-string-here" width=0 height=0 />`. Every time the email client opens the email, it requires that URL and the hit is recorded. I admit that this use is pretty lame, and that there are [other services](http://www.spypig.com/) doing this, but I needed a real-world problem to work on!
 
 So here we go!
 
@@ -29,7 +29,7 @@ go-count-urls/
 
 ## Show me the code!
 
-The whole application is made of just one file =\[counter.go=\][6](https://github.com/lbolla/go-count-urls/blob/master/app/counter.go). Here it is, comments inline:
+The whole application is made of just one file [`counter.go`](https://github.com/lbolla/go-count-urls/blob/master/app/counter.go). Here it is, comments inline:
 
 ``` go
 package counter
@@ -61,7 +61,7 @@ func inc(c appengine.Context, key *datastore.Key, path string) (Counter, error)
 {
     var x Counter
 
-    if err := datastore.Get(c, key, &amp;x); err != nil &amp;&amp; err !=
+    if err := datastore.Get(c, key, &x); err != nil && err !=
 datastore.ErrNoSuchEntity {
         return getEmptyCounter(path), err
     }
@@ -72,7 +72,7 @@ datastore.ErrNoSuchEntity {
     x.Timestamp = time.Now()
 
     // Save the counter
-    if _, err := datastore.Put(c, key, &amp;x); err != nil {
+    if _, err := datastore.Put(c, key, &x); err != nil {
         return getEmptyCounter(path), err
     }
 

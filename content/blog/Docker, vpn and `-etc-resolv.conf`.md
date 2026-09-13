@@ -1,13 +1,12 @@
 ---
-title: Docker, vpn and `-etc-resolv.conf`
+title: Docker, vpn and /etc/resolv.conf
 date: 2018-06-22
 tags:
 - linux
 ---
 Today I encounter a strange issue with `/etc/resolv.conf`, while working with Docker on my company\'s VPN.
 
-When `openconnect` sets up the VPN, it modifies `/etc/resolv.conf`, as expected. The funny thing is that if I now ran `docker run
-<something>`, `docker` would change `/etc/resolv.conf` back to its original value; it wouldn\'t even restore the \"vpn\" version upon exit.
+When `openconnect` sets up the VPN, it modifies `/etc/resolv.conf`, as expected. The funny thing is that if I now ran `docker run <something>`, `docker` would change `/etc/resolv.conf` back to its original value; it wouldn\'t even restore the \"vpn\" version upon exit.
 
 After much head scratching, I figured that **maybe**, the problem was that `openconnect` and `docker` were messing with different network interfaces, therefore conflicting when writing their version of `/etc/resolv.conf`.
 
