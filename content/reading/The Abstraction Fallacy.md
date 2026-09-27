@@ -10,7 +10,7 @@ tags:
 external_url: https://deepmind.google/research/publications/231971/
 ---
 
-# The Abstraction Fallacy
+{{< article-header >}}
 
 The full title of the article is: _The Abstraction Fallacy: Why AI can simulate but not instantiate consciousness_. The article claims that computational functionalism is committing a categorical mistake when asserting that consciousness can arise from the symbolic manipulation of abstract concepts. This is called _The Abstraction Fallacy_. Functionalism ignores the physical origin of information and its causal chain. Instead of the natural order, from raw sensations to conscience to abstract concepts, functionalism assumes that conscience can be instantiated from abstract concepts, "backwards". The article claims that this inversion is not possible, and conscience cannot be instantiated from symbolic manipulation of abstract concepts, because it ignores the fundamental role of the _mapmaker_. The _mapmaker_ is who extracts abstract concepts from raw sensory data: it's the giver of meaning to the abstract symbols.
 
