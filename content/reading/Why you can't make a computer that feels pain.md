@@ -6,10 +6,8 @@ year: 1978
 tags:
   - article
 external_url: https://philpapers.org/rec/DENWYC
-dg-publish: true
 ---
 
-# Why you can't make a computer that feels pain
+{{< article-header >}}
 
-## Why
 After [The Abstraction Fallacy]({{< relref "reading/The Abstraction Fallacy.md" >}}), I got a resurgence of interest in AI-related topics.
