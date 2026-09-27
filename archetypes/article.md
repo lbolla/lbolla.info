@@ -10,4 +10,4 @@ rating: ""
 external_url: ""
 ---
 
-# {{ replace .File.ContentBaseName "-" " " | title }}
+{{< article-header >}}

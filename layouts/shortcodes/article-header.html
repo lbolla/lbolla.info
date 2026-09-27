@@ -3,7 +3,6 @@
 {{ $year := .Get "year" | default (index .Page.Params "publication-date" | default .Page.Params.year) }}
 {{ $rating := .Get "rating" | default .Page.Params.rating }}
 {{ $externalURL := .Get "external_url" | default .Page.Params.external_url }}
-{{ $image := .Get "image" | default .Page.Params.image }}
 
 <div class="book-header-card">
   <div class="book-details">
@@ -21,7 +20,7 @@
     </div>
     {{ with $externalURL }}
     <a href='{{ . }}' class="book-external-link" target="_blank" rel="noopener noreferrer">
-      <img src='{{ $image }}' alt="Book Cover" class="book-cover" />
+      Link
     </a>
     {{ end }}
   </div>
